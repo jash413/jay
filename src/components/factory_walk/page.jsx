@@ -44,7 +44,7 @@ const AirpodsAnimation = () => {
           pin: true,
           scrub: 0.1,
           // scrub: true,
-          end: "+=1600%",
+          end: "+=2000%",
         },
       })
       .to(airpodsRef.current, {

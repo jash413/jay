@@ -79,7 +79,7 @@ const Airpods = () => {
 
       // Draw the outer circle
       context.beginPath();
-      const outerCircleRadius = 140 + timeline.progress() * 140; // Adjust the multiplier as needed
+      const outerCircleRadius = 140 + timeline.progress() * 220; // Adjust the multiplier as needed
       context.arc(canvas.width / 2, canvas.height / 2, outerCircleRadius, 0, 2 * Math.PI);
       context.strokeStyle = "#218e88";
       context.lineWidth = 0.5;
@@ -87,7 +87,7 @@ const Airpods = () => {
 
       // Draw the inner circle
       context.beginPath();
-      const innerCircleRadius = 100 + timeline.progress() * 100; // Adjust the multiplier as needed
+      const innerCircleRadius = 100 + timeline.progress() * 150; // Adjust the multiplier as needed
       context.arc(canvas.width / 2, canvas.height / 2, innerCircleRadius, 0, 2 * Math.PI);
       context.fillStyle = "rgba(33, 142, 136, 0.3)";
       context.fill(); 
