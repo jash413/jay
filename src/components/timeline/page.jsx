@@ -25,7 +25,7 @@ useEffect(() => {
   // Set a fixed size for the canvas (adjust as needed)
   canvas.width = 900;
     // canvas.height = 600;
-  canvas.height = window.innerHeight;
+  canvas.height = 600;
 
   const frameCount = 501;
   const currentFrame = (index) =>
