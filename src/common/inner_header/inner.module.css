@@ -1,0 +1,152 @@
+.nav_menu_names {
+  color: #006F69;
+  font-size: 16px;
+  font-style: normal;
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.btn_outer {
+  position: absolute;
+  top: 5rem;
+  right: 7rem;
+}
+.inner_header_text {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 10rem;
+  color: white;
+}
+.inner_header_t1 {
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 500;
+}
+.inner_header_t2 {
+  font-size: 12px;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.5%;
+}
+
+.inner_header_big{
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 500;
+  left: -7rem;
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  display: flex;
+}
+
+
+.homepage_image {
+  height: 100%;
+  width: 100%;
+}
+.inner_image_outer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 70/35;
+}
+
+
+@media(min-width:1600px){
+  .inner_header_big{
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 500;
+    left: -7rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 11rem;
+    width: 100%;
+    display: flex;
+  
+  }
+}
+
+
+@media (max-width: 991px) {
+  .logo {
+    height: 100%;
+    width: 100%;
+  }
+  .btn_outer {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+  .nav_menu_names {
+    color: #006F69;
+    font-size: 16px;
+    font-style: normal;
+    z-index: 1;
+    width: 23%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .inner_image_outer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 787px) {
+  .logo {
+    height: 100%;
+    width: 100%;
+  }
+  .btn_outer {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+  .nav_menu_names {
+    color: #006F69;
+    font-size: 16px;
+    font-style: normal;
+    z-index: 1;
+    width: 23%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .inner_header_text {
+    left: 5rem;
+    width: 80%;
+  }
+  .inner_header_t1 {
+    font-size: 30px;
+  }
+  .inner_image_outer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 575px) {
+  .inner_header_text {
+    left: 1rem;
+    width: 90%;
+  }
+  .inner_header_t1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 375px) {
+  .inner_header_text {
+    top: 40%;
+  }
+}
