@@ -14,7 +14,7 @@
     .percentage_counter_outer{
       width: 50%;
       margin: auto;
-      position: relative;
+      /* position: relative; */
     }
 
     /* .counter_relm{
@@ -25,21 +25,23 @@
       color: white;
     text-align: center;
     position: absolute;
-    top: 23rem;
+    top: 55%;
     font-size: 17px;
     font-weight: 400;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
-    left: 20rem;
+    left: 50%;
     }
 
     .percentageCounter{
       color: white;
       text-align: center;
       position: absolute;
-      top: 19rem;
+      top: 50%;
+      transform: translate(-50%, -50%);
       font-size: 46px;
       font-weight: 300;
-      left: 21.7rem;
+      left: 50%;
 
     }
 
@@ -75,6 +77,22 @@
     .percentage_tag {
       color: white;
     }
+
+
+
+
+@media (min-width:1600px){
+
+}
+
+
+
+
+
+
+
+
+
     @media screen and (max-width: 425px) {
       .innerCircle {
         width: 40%;

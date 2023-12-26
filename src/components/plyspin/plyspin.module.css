@@ -6,11 +6,14 @@
 .video_extra{
   text-align: center;
   margin: auto;
-  left: 25rem;
-  bottom: 18rem;
+top: 65%;
   position: absolute;
-  width: 50%;
+  left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
+
 
 
 .plyspin_text{
@@ -23,10 +26,10 @@
 
 .plyspin_btn_outer{
   margin: auto;
-  width: 13%;
+  transform: translate(-50%, -50%);
   position: absolute;
-  left: 42rem;
-  bottom: 11rem;
+  left: 50%;
+  top: 75%;
 }
 
 .video_loop_outer{
