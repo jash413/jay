@@ -2,81 +2,97 @@
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import styles from "@/components/timeline/time.module.css"
+import styles from "@/components/timeline/time.module.css";
 
 const Home = () => {
-// usp scroller 3d model  code
-const sectionRef = useRef(null);
-const canvasRef = useRef(null);
-const textRef = useRef(null);
-const contextRef = useRef(null);
-const imagesRef = useRef([]);
-const airpodsRef = useRef({ frame: 0 });
+  const sectionRef = useRef(null);
+  const canvasRef = useRef(null);
+  const textRef = useRef(null);
+  const contextRef = useRef(null);
+  const imagesRef = useRef([]);
+  const airpodsRef = useRef({ frame: 0 });
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    const canvas = canvasRef.current;
+    const text = textRef.current;
+    const context = canvas.getContext("2d");
+    contextRef.current = context;
 
+    const setCanvasSize = () => {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
 
-useEffect(() => {
-  const section = sectionRef.current;
-  const canvas = canvasRef.current;
-  const text = textRef.current;
-  const context = canvas.getContext("2d");
-  contextRef.current = context;
+      if (windowWidth >= 1200) {
+        canvas.width = 900; // Width remains constant for desktop screens
+        canvas.height = windowHeight * 0.68; // Adjust the height for desktop screens
+      } else if (windowWidth >= 768) {
+        canvas.width = 900; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 0.5; // Adjust the height for tablet screens
+      } else {
+        canvas.width = 900; // Width remains constant for mobile screens
+        canvas.height = windowHeight * 0.6; // Adjust the height for mobile screens
+      }
 
-  // Set a fixed size for the canvas (adjust as needed)
-  canvas.width = 900;
-    // canvas.height = 600;
-  canvas.height = 600;
+      // Update ScrollTrigger end position based on canvas dimensions
+      ScrollTrigger.update();
+    };
 
-  const frameCount = 501;
-  const currentFrame = (index) =>
-    `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
-      .toString()
-      .padStart(3, "0")}-scaled.jpg`;
+    setCanvasSize();
+    window.addEventListener("resize", setCanvasSize);
 
-  for (let i = 0; i < frameCount; i++) {
-    let img = new Image();
-    img.src = currentFrame(i);
-    imagesRef.current.push(img);
-  }
+    const frameCount = 501;
 
-  gsap
-    .timeline({
-      onUpdate: render, 
-      scrollTrigger: {
-        trigger: section,
-        pin: true,
-        scrub: 1.5,
-        end: "+=350%",
-      },
-    })
-    .to(airpodsRef.current, {
-      frame: frameCount - 1,
-      snap: "frame",
-      ease: "none",
-      duration: 1,
-    })
-    // .add(() => {
-    //   text.style.opacity = 1;
-    // }, 0);
+    const currentFrame = (index) =>
+      `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
+        .toString()
+        .padStart(3, "0")}-scaled.jpg`;
 
-  imagesRef.current[0].onload = render;
+    for (let i = 0; i < frameCount; i++) {
+      let img = new Image();
+      img.src = currentFrame(i);
+      imagesRef.current.push(img);
+    }
 
-  function render() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    // Draw the image without scaling
-    context.drawImage(imagesRef.current[airpodsRef.current.frame], 0, 0, canvas.width, canvas.height);
-  }
+    gsap
+      .timeline({
+        onUpdate: render,
+        scrollTrigger: {
+          trigger: section,
+          pin: true,
+          scrub: 1.5,
+          end: "+=350%",
+        },
+      })
+      .to(airpodsRef.current, {
+        frame: frameCount - 1,
+        snap: "frame",
+        ease: "none",
+        duration: 1,
+      });
 
-  // Cleanup
-  return () => {
-    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  };
-}, []);
+    imagesRef.current[0].onload = render;
 
+    function render() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(
+        imagesRef.current[airpodsRef.current.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+    }
 
-// timeline animation code 
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", setCanvasSize);
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   const container = useRef(null);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     createAnimation();
@@ -96,6 +112,7 @@ useEffect(() => {
       stagger: 0.9,
     });
   };
+
 
   return (
     <div>
