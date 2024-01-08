@@ -6,7 +6,6 @@ import styles from "@/components/factory_walk/factory_walk.module.css"
 gsap.registerPlugin(ScrollTrigger);
 
 
-
 const AirpodsAnimation = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -24,9 +23,9 @@ const AirpodsAnimation = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const frameCount = 681;
+    const frameCount = 660;
     const currentFrame = (index) =>
-      ` https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
+      ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
         .toString()
         .padStart(6, "0")}-scaled.jpg`;
 
