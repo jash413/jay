@@ -322,7 +322,7 @@
   .line {
     position: absolute;
     z-index: 1;
-    left: calc(20% - -1px);
+    left: calc(10% - -1px);
     width: 2px;
     top: 100px;
     bottom: 111px;
@@ -335,7 +335,7 @@
     width: 1rem;
     border-radius: 50%;
     background-color: #0f8a83;
-    left: 20.3%;
+    left: 10.3%;
     z-index: 2;
     top: 27%;
     transform: translateX(-50%);
