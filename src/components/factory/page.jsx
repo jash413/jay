@@ -4,6 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 const AirpodsAnimation = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -22,9 +23,9 @@ const AirpodsAnimation = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const frameCount = 99;
+    const frameCount = 301;
     const currentFrame = (index) =>
-      `  https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
+      ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 4)
         .toString()
         .padStart(5, "0")}-scaled.jpg`;
 
@@ -41,7 +42,7 @@ const AirpodsAnimation = () => {
           trigger: section,
           pin: true,
           scrub: 1.5,
-          end: "+=200%",
+          end: "+=1500%",
         },
       })
       .to(airpodsRef.current, {
@@ -50,9 +51,6 @@ const AirpodsAnimation = () => {
         ease: "none",
         duration: 1,
       })
-      // .add(() => {
-      //   text.style.opacity = 1;
-      // }, 0);
 
     imagesRef.current[0].onload = render;
 

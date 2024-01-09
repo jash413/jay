@@ -4,6 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import styles from "@/components/timeline/time.module.css";
 
+
+
+
+
+
 const Home = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -23,15 +28,16 @@ const Home = () => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
 
-      if (windowWidth >= 1200) {
-        canvas.width = 900; // Width remains constant for desktop screens
-        canvas.height = windowHeight * 0.68; // Adjust the height for desktop screens
-      } else if (windowWidth >= 768) {
-        canvas.width = 900; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 0.5; // Adjust the height for tablet screens
+      if (windowWidth >= 1600) {
+        
+        canvas.width = 1000; // Width remains constant for desktop screens
+        canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
+      } else if (windowWidth >= 1200) {
+        canvas.width = 800; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } else {
-        canvas.width = 900; // Width remains constant for mobile screens
-        canvas.height = windowHeight * 0.6; // Adjust the height for mobile screens
+        canvas.width = 530; // Width remains constant for mobile screens
+        canvas.height = windowHeight * 0.7; // Adjust the height for mobile screens
       }
 
       // Update ScrollTrigger end position based on canvas dimensions
@@ -41,10 +47,10 @@ const Home = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 501;
+    const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 1)
+      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
         .toString()
         .padStart(3, "0")}-scaled.jpg`;
 
@@ -213,7 +219,7 @@ const Home = () => {
 
 
         <div className={styles.canvas_side_outer}>
-        <section ref={sectionRef}>
+        <section className={styles.sectionX} ref={sectionRef}>
       <canvas ref={canvasRef}></canvas>
     </section>
         </div>

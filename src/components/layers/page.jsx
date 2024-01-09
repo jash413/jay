@@ -25,9 +25,11 @@ const Airpods = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const frameCount = 231;
+
+    
+    const frameCount = 224;
     const currentFrame = (index) =>
-      `https://iraoverseas.com/wp-content/uploads/2023/12/${(index + 5)
+      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 8)
         .toString()
         .padStart(4, "0")}-scaled.jpg`;
 
@@ -54,7 +56,7 @@ const Airpods = () => {
         trigger: section,
         pin: true,
         scrub: 1.5,
-        end: "+=500%",
+        end: "+=1000%",
       },
     });
 
@@ -75,11 +77,11 @@ const Airpods = () => {
         0,
         canvas.width,
         canvas.height
-      );
+      );    
 
       // Draw the outer circle
       context.beginPath();
-      const outerCircleRadius = 140 + timeline.progress() * 220; // Adjust the multiplier as needed
+      const outerCircleRadius = 130 + timeline.progress() * 200; // Adjust the multiplier as needed
       context.arc(canvas.width / 2, canvas.height / 2, outerCircleRadius, 0, 2 * Math.PI);
       context.strokeStyle = "#218e88";
       context.lineWidth = 0.5;
@@ -87,7 +89,7 @@ const Airpods = () => {
 
       // Draw the inner circle
       context.beginPath();
-      const innerCircleRadius = 100 + timeline.progress() * 150; // Adjust the multiplier as needed
+      const innerCircleRadius = 100 + timeline.progress() * 140; // Adjust the multiplier as needed
       context.arc(canvas.width / 2, canvas.height / 2, innerCircleRadius, 0, 2 * Math.PI);
       context.fillStyle = "rgba(33, 142, 136, 0.3)";
       context.fill(); 

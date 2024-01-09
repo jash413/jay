@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import logo from "@/images/logo.png";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
@@ -9,7 +8,6 @@ import styles from "@/components/heroSection/heroSection.module.css";
 import { useEffect, ref } from "react";
 import gsap from "gsap";
 import splitType from "split-type";
-import { useReducer } from "react";
 import "./heroSection_textAnimation.css";
 const Page = (props) => {
   const router = useRouter();

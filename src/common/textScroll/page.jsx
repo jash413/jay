@@ -55,7 +55,6 @@ export default function Home() {
     <div className={styles.scroll_text_wrapper}>
 
 
-
     <div ref={container} className={styles.main}>
     <div ref={body} className={styles.body}>
       {

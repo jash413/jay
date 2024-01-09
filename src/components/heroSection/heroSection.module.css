@@ -392,7 +392,6 @@
   .header_text {
     color: #fff;
     font-size: 48px;
-   
     font-style: normal;
     position: absolute;
     letter-spacing: 1px;
@@ -416,4 +415,22 @@
       font-weight: 300;
       line-height: normal;
   }
+}
+
+
+
+@media(max-width:425px){
+  .header_text {
+    color: #fff;
+    font-size: 46px;
+    font-style: normal;
+    position: absolute;
+    letter-spacing: 0px;
+    bottom: 16rem;
+    left: 2rem;
+    font-weight: 300;
+    line-height: 50px;
+    width: 60%;
+}
+  
 }
