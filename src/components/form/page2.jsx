@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import styles from "@/components/form/form2.module.css"
 import Form from "@/components/form/page"
-import form_image from "@/images/form-section.png";
+import form_image from "@/images/contactUsformImage.jpg";
 const Page2 = () => {
   return (
     <>

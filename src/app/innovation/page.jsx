@@ -9,7 +9,7 @@ import Factory_walk from "@/components/factory_walk/page"
 import Timeline from "@/components/timeline/page"
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page2";
-import innovation_image from "@/images/innovation_header.png";
+import innovation_image from "@/images/innovationBanner.jpg";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import styles from "@/app/innovation/innovation.module.css"

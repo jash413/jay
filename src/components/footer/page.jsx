@@ -1,17 +1,60 @@
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import footer_logo from "@/images/footer_logo.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import Button from "@/common/button/button4"
 import Title from "@/components/footer/test"
 import styles from "@/components/footer/footer.module.css";
 const Page = () => {
+
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
  
   return (
     <div>
   <div className={styles.footer_upper_heading_wrapper}>
-  <h1 className={styles.footer_upper_heading}>{"Explore the Royale Experience"}</h1>
+  {/* <h1 className={styles.footer_upper_heading}>{"Explore the Royale Experience"}
+  
+  </h1> */}
+  
+  <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ duration: 0.9 }}
+         >
+        <HeadingTextAnimation
+          heading={"Explore the Royale"}
+          
+          justifyContent={"left"}
+          className={styles.footer_upper_heading}
+        />
+        <HeadingTextAnimation
+          heading={"Experience"}
+          
+          justifyContent={"left"}
+          className={styles.footer_upper_heading}
+        />
+        </motion.div>
+  
+  
+  
+  <div className={styles.justforfooterbutton}>
   <Button btn_text="Book Demo"/>
+  </div>
  
   </div>
   <Title/>

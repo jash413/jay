@@ -6,9 +6,8 @@ import Preloader from "@/components/preloader/page"
 import innovation_image  from "@/images/plywood_hero_img.jpeg"
 import Plywood_main from "@/components/plywood_main/page"
 import Plywood_lights from "@/components/plywood_lights/page"
-import Inner_page_common_img from "@/common/inner_page_common_img/page"
 import Plywood_carousal from "@/components/plywood_carousal/page"
-import common_img from "@/images/inner_page_common_img.png"
+import PlywoodNewSpecs from "@/components/plywoodNewSpecs/page"
 import Inner_header from "@/common/inner_header/page";
 import Specifications from "@/common/specifications/page"
 import Inner_page_slider2 from "@/common/inner_page_slider2/page"
@@ -45,9 +44,10 @@ const Page = () => {
     
 
     <Plywood_lights/>
-    <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
-    <Plywood_carousal/>
+    <PlywoodNewSpecs/>
+    {/* <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
     <Specifications/>
+    <Plywood_carousal/>
     <Inner_page_slider2/>
     
     

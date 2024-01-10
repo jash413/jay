@@ -4,16 +4,17 @@ import { useEffect, useState } from "react";
 import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import Layers from "@/components/layers/page"
-import Footer from "@/components/footer/page"
+import Layers from "@/components/layers/page";
+import  Quality_certificates from "@/components/quality_certificates/page";
+import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
-import Form from "@/components/form/page2"
-import Product_overview from "@/components/product_overview/page"
-import Quality_timeline from "@/common/quality_timeline/page"
-import Quality_text from "@/components/quality_text/page"
+import Form from "@/components/form/page2";
+import Quality_carousal from "@/components/quality_carousal/page";
+import Product_overview from "@/components/product_overview/page";
+import Quality_text from "@/components/quality_text/page";
 import HeroSection from "@/components/heroSection/page";
-import Technical from "@/components/technical/page"
-import Quality_slider from "@/components/quality_slider/page"
+import Technical from "@/components/technical/page";
+import Quality_slider from "@/components/quality_slider/page";
 import quality_image from "@/images/new_product.png";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,9 +36,9 @@ const Page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <div >
-          <Navbar />
-        </div>
+      <div>
+        <Navbar />
+      </div>
       <div>
         <HeroSection
           banner_image={quality_image}
@@ -45,16 +46,17 @@ const Page = () => {
           header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"
         />
       </div>
-<Product_overview/>
-<Quality_text/>
-<Quality_slider/>
-<Layers/>
-      {/* <Quality_timeline/> */}
-      <Technical/>
+      <Quality_certificates/>
+      <Product_overview />
+      <Quality_text />
+      <Quality_slider />
+      <Quality_carousal/>
+      <Layers />
+      <Technical />
       <Explore />
 
-      <Form/>
-<Footer/>
+      <Form />
+      <Footer />
     </main>
   );
 };

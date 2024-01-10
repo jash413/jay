@@ -1,9 +1,13 @@
-import React from 'react'
+"use client"
+import React from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
 import gsap from "gsap";
 import splitType from "split-type";
 import Navbar from "@/components/navbar/index";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import "./inner_header_ani.css"
@@ -66,6 +70,19 @@ const newRef = useRef("")
 
 
 
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+
   const router = useRouter();
   return (
     <div className={styles.s}>
@@ -77,7 +94,25 @@ const newRef = useRef("")
           <div className={styles.inner_header_t2}>{props.heading2}</div>
           <div className={styles.inner_header_big}>{props.heading_big}</div>
 
-
+          {/* <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ duration: 0.9 }}
+         >
+        <HeadingTextAnimation
+          heading={"Explore the Royale"}
+          
+          justifyContent={"left"}
+          className={styles.footer_upper_heading}
+        />
+        <HeadingTextAnimation
+          heading={"Experience"}
+          
+          justifyContent={"left"}
+          className={styles.footer_upper_heading}
+        />
+        </motion.div> */}
           </div>
     </div>
       <div className={styles.home_nav_setting}>
