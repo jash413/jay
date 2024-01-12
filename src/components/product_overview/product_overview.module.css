@@ -5,8 +5,8 @@
 }
 .productOverviewCard {
   width: 50%;
-  color: white;
-  background: #006F69;
+  color: rgb(0, 0, 0);
+  background: #D8D8D8;
 }
 
 .productOverviewCard h2 {
@@ -27,13 +27,24 @@
   width: 100%;
   display: block;
 }
+
+
+.heading{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.ixs{
+  text-align: center;
+}
 .contentSec {
   width: 460px;
   margin: 0 auto;
   padding: 73px 20px 73px;
 }
 .title {
-  color: #fff;
+  color: #000000;
   /* font-family: Lato; */
   font-size: 37px;
   font-style: normal;
@@ -42,17 +53,17 @@
   margin: 0 0 19px;
 }
 .content {
-  color: #fff;
+  color: #000000;
   /* font-family: Lato; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 158%;
   padding: 0 0 75px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 .secondConetnt {
-  color: #fff;
+  color: #000000;
   padding: 48px 0 0;
   /* font-family: Lato; */
   font-size: 22px;
@@ -61,7 +72,7 @@
   line-height: 158%;
 }
 .productOverviewCard:last-child {
-  background-color: #d0af6b;
+  background: #D8D8D8;
   color: black;
 }
 .productOverviewCard:last-child h2 {

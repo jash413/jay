@@ -16,8 +16,9 @@ const contentVariants = {
 };
 
 const ProductOverviewItem = ({
-  heading,
+ 
   image,
+  image1,
   title,
   content,
   secondContent,
@@ -47,7 +48,9 @@ const ProductOverviewItem = ({
   return (
     <div className={styles.productOverviewCard}>
       <div className={styles.productOverviewCard_wrapper}>
-        <h2 className={styles.heading}>{heading}</h2>
+        <div className={styles.heading}>
+        <Image className={styles.ixs} src={image1} alt="image"  />
+        </div>
         <div className={styles.image}>
           <Image src={image} alt={title}  />
         </div>

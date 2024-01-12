@@ -1,10 +1,13 @@
 import ProductOverviewItem from "@/components/product_overview/index"
 import styles from '@/components/product_overview/product_overview.module.css'
 import propImage from "@/images/quality1.png"
+import propI from "@/images/pro_image.png"
+import propI2 from "@/images/promax_image.png"
 import propMaxImage from "@/images/quality2.png"
 const productOverviewData = [
   {
-    heading: "Pro",
+    // heading: "Pro",
+    image1:propI,
     image: propImage,
     title: "Product Overview:",
     cotnent:
@@ -13,7 +16,8 @@ const productOverviewData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
-    heading: "Pro Max",
+    // heading: "Pro Max",
+    image1:propI2,
     image: propMaxImage,
     title: "Product Overview:",
     cotnent:
@@ -29,7 +33,8 @@ const ProductOverview = () => {
         {productOverviewData.map((item, index) => (
           <ProductOverviewItem
             key={index}
-            heading={item.heading}
+            // heading={item.heading}
+            image1={item.image1}
             image={item.image}
             title={item.title}
             content={item.cotnent}

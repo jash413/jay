@@ -16,7 +16,7 @@ import Specs_img13 from '@/images/spec13.svg';
 import Specs_img14 from '@/images/spec14.svg';
 import Specs_img15 from '@/images/spec15.svg';
 import Specs_img16 from '@/images/spec16.svg';
-import styles from "@/components/plywoodNewSpecs/plywoodNewSpecs.module.css";
+import styles from "@/components/plywoodNewSpecs/plywoodNewSpec.module.css";
 const Feature_specification = () => {
   return (
     <div className={styles.specs_container}>

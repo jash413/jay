@@ -3,9 +3,13 @@
   padding-bottom: 5rem;
   padding-left: 8rem;
 }
+
+.specs_container{
+  background-color: white;
+}
 .specs_text {
   color: #000;
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 50px;
   font-style: normal;
   font-weight: 300;
@@ -30,7 +34,7 @@
 }
 .specs_grid_Content_text {
   color: #000;
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 15px;
   font-style: normal;
   font-weight: 500;

@@ -13,6 +13,7 @@ import Specifications from "@/common/specifications/page"
 import Inner_page_slider2 from "@/common/inner_page_slider2/page"
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
+import ProductOverview from "@/components/product_overview/page";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -44,6 +45,7 @@ const Page = () => {
     
 
     <Plywood_lights/>
+    <ProductOverview/>
     <PlywoodNewSpecs/>
     {/* <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
     <Specifications/>
