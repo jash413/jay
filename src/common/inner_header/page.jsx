@@ -7,7 +7,6 @@ import splitType from "split-type";
 import Navbar from "@/components/navbar/index";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
 import Image from "next/image";
 import logo from "@/images/logo.png";
 import "./inner_header_ani.css"
