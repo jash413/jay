@@ -10,7 +10,7 @@ import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
 import Form from "@/components/form/page2";
 import Quality_carousal from "@/components/quality_carousal/page";
-import Product_overview from "@/components/product_overview/page";
+// import Product_overview from "@/components/product_overview/page";
 import Quality_text from "@/components/quality_text/page";
 import HeroSection from "@/components/heroSection/page";
 import Technical from "@/components/technical/page";
@@ -47,7 +47,7 @@ const Page = () => {
         />
       </div>
       <Quality_certificates/>
-      <Product_overview />
+      {/* <Product_overview /> */}
       <Quality_text />
       <Quality_slider />
       <Quality_carousal/>
