@@ -4,7 +4,7 @@ import Image from "next/image";
 import footer_logo from "@/images/footer_logo.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import  HeadingTextAnimation from "@/Common/AnimatedText/HeadingTextAnimation"
+import  HeadingTextAnimation from "@/common/AnimatedText/HeadingTextAnimation"
 import Button from "@/common/button/button4"
 import Title from "@/components/footer/test"
 import styles from "@/components/footer/footer.module.css";
