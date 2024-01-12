@@ -1,4 +1,4 @@
-import AnimatedTextWord from "@/Common/AnimatedText/HeadingAnimation"
+import AnimatedTextWord from "@/common/AnimatedText/HeadingAnimation"
 
 const HeadingTextAnimation = ({ heading, fontSize, justifyContent , className }) => {
   return (
