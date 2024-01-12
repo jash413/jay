@@ -12,6 +12,11 @@
   width: 50%;
 }
 
+
+.display{
+  display: none;
+}
+
 .timeline_animation_text {
   font-size: 68px;
   margin-left: 4rem;
@@ -149,11 +154,11 @@
 
 
 
-@media(max-width:1024px){
+@media (min-width:767px) and (max-width:1024px){
 
 
   .timeline_animation_text {
-    font-size: 56px;
+    font-size: 50px;
     margin-left: 4rem;
   }
   .contentX {
@@ -168,7 +173,7 @@
 
   .twoo {
     font-weight: 400;
-    font-size: 37px;
+    font-size: 30px;
     line-height: 125%;
     letter-spacing: 1px;
   }
@@ -178,8 +183,8 @@
     z-index: 1;
     left: calc(20% - -1px);
     width: 2px;
-    top: 117px;
-    bottom: 440px;
+    top: 80px;
+    bottom: 280px;
     border-right: 2px solid #218e88;
   }
 
@@ -189,7 +194,7 @@
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding: 2.6rem 2rem 14rem;
+    padding: 2.6rem 2rem 8rem;
     border-radius: 1rem;
     align-items: center;
     min-height: 218px;
@@ -205,10 +210,15 @@
     margin-top: 0rem;
   }
 
+  .timeline_sec_comment {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
 
 
 }
-
+/* 
 @media (max-width: 991px) {
   .contentX {
     width: 100%;
@@ -270,11 +280,27 @@
     font-size: 19px;
     font-weight: 300;
   }
-}
+} */
 
 @media (max-width: 768px) {
+  .display1{
+    display: none;
+  }
+
+  .display{
+    display: block;
+  }
 
 
+
+  .img_main{
+    color: transparent;
+    /* aspect-ratio: 1/2; */
+    height: auto;
+    max-width: 100%;
+    /* width: 100%; */
+    width: 200px;
+  }
   .first_timeline_inner {
     max-width: 800px;
     width: 100%;
@@ -290,7 +316,7 @@
 
   .contentX {
     width: 100%;
-    padding: 40px 0px 0px 150px;
+    padding: 40px 0px 0px 97px;
     width: calc(0);
     color: #26aca5;
     font-size: 20px;
@@ -324,8 +350,9 @@
     z-index: 1;
     left: calc(10% - -1px);
     width: 2px;
-    top: 100px;
-    bottom: 111px;
+    top: 323px;
+    bottom: 212px;
+
     border-right: 2px solid #218e88;
   }
   .bead {
@@ -337,7 +364,7 @@
     background-color: #0f8a83;
     left: 10.3%;
     z-index: 2;
-    top: 27%;
+    top: 56%;
     transform: translateX(-50%);
   }
 
@@ -350,22 +377,38 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width:320px) and  (max-width: 575px) {
   .contentX {
     width: 100%;
-    padding: 46px 0px 0px 80px;
+    padding: 46px 0px 0px 47px;
     width: calc(0);
     color: #26aca5;
     font-size: 20px;
     opacity: 0;
   }
 
+
+
+  .display1{
+    display: none;
+  }
+
+
+
+  .display{
+    display: block;
+  }
+  .timeline_animation_text {
+    font-size: 45px;
+    margin-left: 3rem;
+  }
   .timeline {
     position: relative;
     min-height: 150px;
     margin-bottom: 2rem;
   }
   .twoo {
+    font-size: 26px;
     font-weight: 400;
     letter-spacing: 1px;
   }
@@ -385,9 +428,9 @@
   .line {
     position: absolute;
     z-index: 1;
-    left: calc(20% - -1px);
+    left: calc(10% - -1px);
     width: 2px;
-    top: 100px;
+    top: 289px;
     bottom: 111px;
     border-right: 2px solid #218e88;
   }
@@ -398,9 +441,9 @@
     width: 1rem;
     border-radius: 50%;
     background-color: #0f8a83;
-    left: 20.3%;
+    left: 11%;
     z-index: 2;
-    top: 20%;
+    top: 47%;
     transform: translateX(-50%);
   }
 
@@ -411,4 +454,48 @@
     font-size: 19px;
     font-weight: 300;
   }
+}
+
+
+
+@media(min-width:320px){
+  .timeline_animation_text {
+    font-size: 36px;
+    margin-left: 3rem;
+  }
+
+
+
+  .twoo {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+
+
+
+
+  .line {
+    position: absolute;
+    z-index: 1;
+    left: calc(10% - -1px);
+    width: 2px;
+    top: 289px;
+    bottom: 111px;
+    border-right: 2px solid #218e88;
+  }
+  .bead {
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #0f8a83;
+    left: 11%;
+    z-index: 2;
+    top: 43%;
+    transform: translateX(-50%);
+  }
+
 }

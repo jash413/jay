@@ -1,32 +1,24 @@
 .ply_spin_outer {
   height: 100%;
   width: 100%;
-  mix-blend-mode: lighten;
-
   object-fit: cover;
 }
-.video_extra{
+.video_extra {
   text-align: center;
   margin: auto;
-top: 65%;
+  top: 65%;
   position: absolute;
   left: 50%;
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-
-
-
-
-.plyspin_text{
+.plyspin_text {
   color: white;
   font-weight: 500;
   font-size: 69px;
 }
 
-
-
-.plyspin_btn_outer{
+.plyspin_btn_outer {
   margin: auto;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -34,6 +26,69 @@ top: 65%;
   top: 75%;
 }
 
-.video_loop_outer{
+.video_loop_outer {
   position: relative;
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .ply_spin_outer {
+    height: 100vh;
+    width: 100%;
+    /* mix-blend-mode: lighten; */
+
+    object-fit: cover;
+  }
+
+  .video_extra {
+    text-align: center;
+    margin: auto;
+    top: 65%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .plyspin_text {
+    color: white;
+    font-weight: 500;
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .ply_spin_outer {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .video_extra {
+    text-align: center;
+    margin: auto;
+    top: 65%;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .plyspin_text {
+    color: white;
+    font-weight: 500;
+    font-size: 35px;
+  }
+}
+
+
+
+@media(min-width:320px){
+  .plyspin_text {
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+  }
 }

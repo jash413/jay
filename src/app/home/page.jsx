@@ -2,6 +2,7 @@
 import React from "react";
 import HeroSection from "@/components/heroSection/page";
 import Timeline from "@/components/timeline/page";
+import Timeline1 from "@/components/timeline/page2";
 import Footer from "@/components/footer/page";
 import Layers from "@/components/layers/page";
 import Factory from "@/components/factory/page";
@@ -67,6 +68,7 @@ const Page = () => {
       <Layers />
      <Plyspin/>
       <Timeline />
+      <Timeline1 />
       <New_carousal />
       <HomeStore />
       <Form />

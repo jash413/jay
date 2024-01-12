@@ -358,7 +358,7 @@
   }
   .header_name {
     color: #fff;
-    font-size: 33px;
+    font-size: 70px;
     font-style: normal;
     position: absolute;
     top: 45%;
@@ -371,13 +371,12 @@
   .header_comment {
     color: #fff;
     text-align: center;
-    font-size: 11px;
+    font-size: 22px;
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
-    width: 53%;
-
+    width: 70%;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -402,6 +401,32 @@
     width: 47%;
   }
 
+  .header_comment {
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: 70%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+
+  .header_name {
+    color: #fff;
+    font-size: 33px;
+    font-style: normal;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    font-weight: 300;
+    line-height: normal;
+  }
   .header_text2{
     color: #fff;
       font-size: 26px;
@@ -431,6 +456,33 @@
     font-weight: 300;
     line-height: 50px;
     width: 60%;
+}
+
+
+.header_comment {
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  width: 70%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header_name {
+  color: #fff;
+  font-size: 27px;
+  font-style: normal;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  font-weight: 300;
+  line-height: normal;
 }
   
 }

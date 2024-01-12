@@ -4,11 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import styles from "@/components/timeline/time.module.css";
 
-
-
-
-
-
 const Home = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -121,7 +116,7 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className={styles.display1}>
       <div className={styles.first_timeline_outer}>
         <div className={styles.first_timeline_inner}>
         <div className={styles.timeline_animation_text}>Promise Of Quality</div>
@@ -132,6 +127,7 @@ const Home = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
+ 
                 <p className={styles.timeline_number}>01</p>
                 <h2 className={styles.twoo}>
                  Vaccuum  Pressure Treatment
