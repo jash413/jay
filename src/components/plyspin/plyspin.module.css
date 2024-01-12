@@ -1,6 +1,8 @@
 .ply_spin_outer {
   height: 100%;
   width: 100%;
+  mix-blend-mode: lighten;
+
   object-fit: cover;
 }
 .video_extra{
