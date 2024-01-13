@@ -1,0 +1,39 @@
+.canvas_factory_settings {
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+      .canvas_factory_settings {
+        margin-left: -6rem;
+      }
+    }
+
+
+
+@media screen and (max-width: 768px) {
+      .canvas_factory_settings {
+        margin-left: -13rem;
+      }
+    }
+
+
+
+@media screen and (max-width: 425px) {
+  .canvas_factory_settings {
+    margin-left: -7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .canvas_factory_settings {
+    margin-left: -8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .canvas_factory_settings {
+    margin-left: -15rem;
+  }
+}

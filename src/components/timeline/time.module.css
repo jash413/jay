@@ -17,6 +17,11 @@
   display: none;
 }
 
+
+.display1{
+  display: block;
+}
+
 .timeline_animation_text {
   font-size: 68px;
   margin-left: 4rem;
@@ -107,6 +112,15 @@
   }
   
 
+  .display{
+    display: none;
+  }
+  
+  
+  .display1{
+    display: block;
+  }
+
 
   .timeline {
     position: relative;
@@ -155,6 +169,17 @@
 
 
 @media (min-width:767px) and (max-width:1024px){
+
+
+
+  .display{
+    display: none;
+  }
+  
+  
+  .display1{
+    display: block;
+  }
 
 
   .timeline_animation_text {
@@ -350,9 +375,8 @@
     z-index: 1;
     left: calc(10% - -1px);
     width: 2px;
-    top: 323px;
-    bottom: 212px;
-
+    top: 301px;
+    bottom: 216px;
     border-right: 2px solid #218e88;
   }
   .bead {
@@ -364,7 +388,7 @@
     background-color: #0f8a83;
     left: 10.3%;
     z-index: 2;
-    top: 56%;
+    top: 55%;
     transform: translateX(-50%);
   }
 
@@ -441,7 +465,7 @@
     width: 1rem;
     border-radius: 50%;
     background-color: #0f8a83;
-    left: 11%;
+    left: 10/5%;
     z-index: 2;
     top: 47%;
     transform: translateX(-50%);
@@ -458,14 +482,17 @@
 
 
 
-@media(min-width:320px){
+@media(min-width:200px) and (max-width:320px){
   .timeline_animation_text {
     font-size: 36px;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 
 
-
+  .timeline_sec_comment {
+    font-size: 16px;
+    font-weight: 300;
+  }
   .twoo {
     font-size: 22px;
     font-weight: 400;
@@ -474,7 +501,14 @@
 
 
 
-
+  .display{
+    display:block;
+  }
+  
+  
+  .display1{
+    display: none;
+  }
 
   .line {
     position: absolute;
@@ -494,7 +528,7 @@
     background-color: #0f8a83;
     left: 11%;
     z-index: 2;
-    top: 43%;
+    top: 47%;
     transform: translateX(-50%);
   }
 

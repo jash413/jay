@@ -25,8 +25,8 @@ const Page2 = () => {
           scrollTrigger: {
             trigger: container.current,
             scrub: 1,
-            start: "top 20%",
-            end: "bottom 40%",
+            start: "top 10%",
+        end: "bottom ",
           },
           opacity: 0,
           color: "white",

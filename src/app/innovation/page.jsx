@@ -6,13 +6,14 @@ import Innovation_circles from "@/components/innovation_circles/page"
 import Innovation_cards from "@/components/innovation_cards/page"
 import Innovation_flex from "@/components/innovation_flex/page"
 import Factory_walk from "@/components/factory_walk/page"
-import Timeline from "@/components/timeline/page"
+// import Timeline from "@/components/timeline/page";
+// import Timeline1 from "@/components/timeline/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page2";
 import innovation_image from "@/images/innovationBanner.jpg";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import styles from "@/app/innovation/innovation.module.css"
+// import styles from "@/app/innovation/innovation.module.css"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -39,9 +40,12 @@ const Page = () => {
         <Innovation_circles/>
         <Innovation_cards/>
         <Innovation_flex/>
-        <div className={styles.just_space}>
-        <Timeline/>
-        </div>
+
+        
+        {/* <div className={styles.just_space}>
+        <Timeline />
+      <Timeline1 />
+        </div> */}
       </div>
 
       <Form />

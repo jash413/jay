@@ -31,9 +31,23 @@
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
+  .plyspin_text {
+    color: white;
+    font-weight: 500;
+    font-size: 69px;
+  }
+  
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
+
+  .plyspin_text {
+    color: white;
+    font-weight: 500;
+    font-size: 69px;
+  }
+  
+
   .ply_spin_outer {
     height: 100vh;
     width: 100%;
@@ -85,7 +99,7 @@
 
 
 
-@media(min-width:320px){
+@media(min-width:200px) and (max-width:320px){
   .plyspin_text {
     color: white;
     font-weight: 500;
