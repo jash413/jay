@@ -10,7 +10,7 @@ import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
 import Real_Timeline from "@/common/real_timeline/page"
 import Slider from "@/components/slider/page"
-import Aboutus_hammer from "@/components/aboutUs_hammer/page"
+// import Aboutus_hammer from "@/components/aboutUs_hammer/page"
 import aboutUs_image from "@/images/new_about.png"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,7 +40,7 @@ const Page = () => {
         </div>
    <div>
    <HeroSection banner_image={aboutUs_image}   header_name="About Us" header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"/>
-   <Aboutus_hammer/>
+   {/* <Aboutus_hammer/> */}
 <Real_Timeline/>
    <Slider/>
    <Explore/>

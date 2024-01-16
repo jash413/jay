@@ -64,7 +64,7 @@ const Page = (props) => {
     return letters;
   };
   return (
-    <div>
+    <div style={{background:"white"}}>
       <div className={styles.home_nav_setting}>
         <div className={styles.nav_menu_names}>
           <Image

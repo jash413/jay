@@ -74,7 +74,7 @@ const Page = () => {
             <li className={styles.footer_item_list}>{"Careers"}</li>
             <li className={styles.footer_item_list}>{"Find Nearest Store"}</li>
             <li className={styles.footer_item_list}>{"Quality"}</li>
-            <li className={styles.footer_item_list}>{"Our Catalogues"}</li>
+            <li className={styles.footer_item_list}>{"Blogs"}</li>
           </ul>
         </div>
 
@@ -83,7 +83,7 @@ const Page = () => {
           <ul className={styles.footer_headers}>
             <li className={styles.footer_item_list}>{"Privacy policy"}</li>
             <li className={styles.footer_item_list}>{"Toll free number"}</li>
-            <li className={styles.footer_item_list}>{"Return policy"}</li>
+            <li className={styles.footer_item_list}>{"Claim warranty"}</li>
             <li className={styles.footer_item_list}>{"Contact us"}</li>
             <li className={styles.footer_item_list}>{"FAQ's"}</li>
           </ul>
