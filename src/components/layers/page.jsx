@@ -33,7 +33,13 @@ const Airpods = () => {
       if (windowWidth >= 1600) {
         canvas.width = 2000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
-      } else if (windowWidth >= 1200) {
+      } 
+      else if (windowWidth >= 1440) {
+        canvas.width = 1500; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+      } 
+      
+      else if (windowWidth >= 1200) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } else if (windowWidth >= 1024) {
