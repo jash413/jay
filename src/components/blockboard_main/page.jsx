@@ -61,7 +61,7 @@ const Blockboard = () => {
     <>
       <div className={styles.Blockboard}>
         <div className={styles.nmnm}>
-          <Common_animation text="BLOCKWOOD" />
+          <Common_animation text="BLOCKBOARD" />
         </div>
         <div className={styles.Blockboard_details}>
         <InView triggerOnce={true}>
