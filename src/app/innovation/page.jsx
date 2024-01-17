@@ -25,8 +25,10 @@ const Page = () => {
 
   setTimeout(() => {
     setIsLoading(false);
-    document.body.style.cursor = "default";
-    window.scrollTo(0, 0);
+    if (typeof document !== 'undefined') {
+      document.body.style.cursor = 'default';
+      window.scrollTo(0, 0);
+    }
   }, 2000);
   return (
     <main>
