@@ -69,6 +69,23 @@
   }
 }
 
+
+@media(max-width:1024px){
+  .percentageCounter {
+    font-size: 5em;
+    position: absolute;
+    right: -26rem;
+    bottom: -22rem;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
 @media(max-width:991px){
   .percentageCounter {
     font-size: 5em;
