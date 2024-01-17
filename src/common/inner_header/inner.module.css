@@ -41,14 +41,14 @@
   left: -7rem;
   position: absolute;
   top: 9rem;
-  width: 100%;
-  display: flex;
+  /* width: 100%; */
 }
 
 
 .homepage_image {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .inner_image_outer {
   position: relative;
@@ -57,7 +57,7 @@
 }
 
 
-@media(min-width:1600px){
+@media(min-width:1600px) and (max-width:1920px){
   .inner_header_big{
     font-size: 118px;
     font-style: normal;
@@ -66,9 +66,22 @@
     position: absolute;
     /* margin-top: 10rem; */
     top: 11rem;
-    width: 100%;
-    display: flex;
-  
+    /* width: 100%; */
+   
+  }
+}
+
+@media (max-width: 1199px) {
+  .inner_header_big{
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    left: -8rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 7rem;
+    /* width: 100%; */
+   
   }
 }
 
@@ -82,6 +95,20 @@
     position: absolute;
     top: 2rem;
     right: 5rem;
+  }
+
+
+
+  .inner_header_big{
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    left: -8rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 7rem;
+    /* width: 100%; */
+   
   }
   .nav_menu_names {
     color: #006F69;
@@ -101,11 +128,32 @@
     aspect-ratio: 1;
   }
 }
+
+@media(min-width:574px) and (max-width:787px){
+  .inner_header_big{
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    left: -3rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 13rem;
+    /* width: 100%; */
+   
+  }
+}
+
+
+
 @media (max-width: 787px) {
   .logo {
     height: 100%;
     width: 100%;
   }
+
+
+
+
   .btn_outer {
     position: absolute;
     top: 2rem;
@@ -141,12 +189,48 @@
     left: 1rem;
     width: 90%;
   }
+  .inner_header_big{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    left: 0rem;
+    position: absolute;
+    /* margin-top: 10rem; */
+    top: 11rem;
+    /* width: 100%; */
+   
+  }
+  
   .inner_header_t1 {
     font-size: 28px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .inner_header_big{
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    left: 0rem;
+    position: absolute;
+    top: 9rem;
   }
 }
 @media (max-width: 375px) {
   .inner_header_text {
     top: 40%;
   }
+}
+
+
+@media (max-width: 320px) {
+  .inner_header_big{
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    left: 0rem;
+    position: absolute;
+    top: 8rem;
+}
 }
