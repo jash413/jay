@@ -40,7 +40,7 @@ const Page = () => {
   <div >
           <Navbar />
         </div>
-   <div>
+   <div style={{background:"white"}}>
    <HeroSection banner_image={aboutUs_image}   header_name="About Us" header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"/>
    {/* <Aboutus_hammer/> */}
 <Real_Timeline/>
