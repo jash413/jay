@@ -34,10 +34,17 @@ const Airpods = () => {
         canvas.width = 2000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
       } 
-      else if (windowWidth >= 1440) {
-        canvas.width = 1500; // Width remains constant for tablet screens
+
+      else if (windowWidth >= 1599) {
+        canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } 
+      
+
+      // else if (windowWidth >= 1440) {
+      //   canvas.width = 1500; // Width remains constant for tablet screens
+      //   canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+      // } 
       
       else if (windowWidth >= 1200) {
         canvas.width = 1600; // Width remains constant for tablet screens
@@ -134,7 +141,7 @@ const Airpods = () => {
 
       // Draw the outer circle
       context.beginPath();
-      const outerCircleRadius = 130 + timeline.progress() * 200; // Adjust the multiplier as needed
+      const outerCircleRadius = 120 + timeline.progress() * 190; // Adjust the multiplier as needed
       context.arc(canvas.width / 2, canvas.height / 2, outerCircleRadius, 0, 2 * Math.PI);
       context.strokeStyle = "#218e88";
       context.lineWidth = 0.5;

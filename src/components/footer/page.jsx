@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import footer_logo from "@/images/footer_logo.png";
+import Link from 'next/link'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import  HeadingTextAnimation from "@/common/AnimatedText/HeadingTextAnimation"
@@ -70,11 +71,21 @@ const Page = () => {
         <div className={styles.footer_secondSide}>
           <div className={styles.footer_titles}>{"INFORMATION"}</div>
           <ul className={styles.footer_headers}>
-            <li className={styles.footer_item_list}>{"About us"}</li>
-            <li className={styles.footer_item_list}>{"Careers"}</li>
-            <li className={styles.footer_item_list}>{"Find Nearest Store"}</li>
-            <li className={styles.footer_item_list}>{"Quality"}</li>
-            <li className={styles.footer_item_list}>{"Blogs"}</li>
+            <li className={styles.footer_item_list}>
+            <Link href="/aboutUs">{"About us"}</Link>
+            </li>
+            {/* <li className={styles.footer_item_list}>{"Careers"}</li> */}
+            <li className={styles.footer_item_list}>
+            
+            <Link href="/findStore">{"Find Nearest Store"}</Link>
+            </li>
+            <li className={styles.footer_item_list}>
+            <Link href="/quality">{"Quality"}</Link>
+            </li>
+            <li className={styles.footer_item_list}>
+            <Link href="/Blogs">{"Blogs"}</Link>
+            
+            </li>
           </ul>
         </div>
 
@@ -82,9 +93,12 @@ const Page = () => {
           <div className={styles.footer_titles}>{"HELP"}</div>
           <ul className={styles.footer_headers}>
             <li className={styles.footer_item_list}>{"Privacy policy"}</li>
-            <li className={styles.footer_item_list}>{"Toll free number"}</li>
+            {/* <li className={styles.footer_item_list}>{"Toll free number"}</li> */}
             <li className={styles.footer_item_list}>{"Claim warranty"}</li>
-            <li className={styles.footer_item_list}>{"Contact us"}</li>
+            <li className={styles.footer_item_list}>
+            <Link href="/contactUs">{"Contact us"}</Link>
+            
+            </li>
             <li className={styles.footer_item_list}>{"FAQ's"}</li>
           </ul>
         </div>
@@ -94,6 +108,12 @@ const Page = () => {
           <ul className={styles.footer_headers}>
             <li className={styles.footer_item_list}>{"Laminates"}</li>
             <li className={styles.footer_item_list}>{"Wooden Floor"}</li>
+            <li className={styles.footer_item_list}>
+            <Link href="/product/plywood">{"Plywood"}</Link>
+            </li>
+            <li className={styles.footer_item_list}>
+            <Link href="/product/blockwood">{"Blockboard"}</Link>
+            </li>
           </ul>
         </div>
       </div>

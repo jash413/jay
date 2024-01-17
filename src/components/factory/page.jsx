@@ -33,8 +33,8 @@ const AirpodsAnimation = () => {
         canvas.width = 2000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
       } 
-      else if (windowWidth >= 1440) {
-        canvas.width = 1440; // Width remains constant for tablet screens
+      else if (windowWidth >= 1599) {
+        canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } 
 
