@@ -60,9 +60,9 @@ const Page = () => {
             />
           </div>
         </div>
-        {/* <div className="card">
+        <div className="card">
           <TextScroll />
-        </div> */}
+        </div> 
       </section>
       <Factory />
       <Layers />
