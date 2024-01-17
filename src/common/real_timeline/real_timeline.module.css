@@ -38,7 +38,7 @@
   position: relative;
   justify-content: space-evenly;
   z-index: 1;
-  margin-top: 10rem;
+  margin-top: 7rem;
   align-items: center;
   min-height: 290px;
 }
@@ -49,8 +49,8 @@
 }
 
 .timeline_comment {
-  font-size: 18px;
-  width: 80%;
+  font-size: 17px;
+  width: 57%;
   margin-bottom: 1rem;
 }
 .two {
@@ -79,49 +79,71 @@
   top: 14%;
 }
 .timeline_year {
-  font-size: 50px;
+  font-size: 65px;
   color: #000000;
   opacity: 0;
   position: absolute;
   top: 6.6rem;
-  left: 35rem;
+  left: 31rem;
 }
 
 
 
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width:1920px) {
 
   .timeline_year {
-    font-size: 50px;
+    font-size: 87px;
     color: #000000;
     opacity: 0;
     position: absolute;
     top: 6.6rem;
-    left: 46rem;
+    left: 36rem;
   }
+
+  .timeline_comment {
+    font-size: 24px;
+    width: 58%;
+    margin-bottom: 1rem;
+  }
+
 }
 @media (max-width: 1440px) {
 
   .timeline_year {
-    font-size: 50px;
+    font-size: 65px;
     color: #000000;
     opacity: 0;
     position: absolute;
     top: 6.6rem;
-    left: 35rem;
+    left: 28rem;
+  }
+
+
+  .timeline_comment {
+    font-size: 20px;
+    width: 60%;
+    margin-bottom: 1rem;
   }
 }
 
 
 @media (max-width: 1199px) {
   .timeline_year {
-    font-size: 50px;
+    font-size: 57px;
     color: #000000;
     opacity: 0;
     position: absolute;
     top: 6.7rem;
-    left: 24rem;
+    left: 17rem;
+  }
+
+
+
+  .timeline_comment {
+    font-size: 17px;
+    width: 70%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -151,7 +173,7 @@
    
   }
   .bead_outer {
-    left: 96px;
+    left: 85px;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -164,14 +186,14 @@
     top: 163px;
     right: 10px;
     padding-bottom: 0;
-    padding-top: 3rem;
+    padding-top: 4rem;
     opacity: 0;
   }
 
   .timeline_comment {
     font-size: 15px;
     width: 86%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .timeline_heading {
@@ -189,7 +211,7 @@
     opacity: 0;
     position: absolute;
     top: 8rem;
-    left: 15rem;
+    left: 13rem;
   }
 }
 
@@ -275,7 +297,7 @@
     width: 85%;
   }
   .bead_outer {
-    left: 39px;
+    left: 43px;
     display: flex;
     position: absolute;
     justify-content: center;

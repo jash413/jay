@@ -90,10 +90,21 @@ height: 100%;
     width: 86%;
   }
 
-  
 
 }
+@media (max-width: 1024px) {
+  .explore_side_one_wrapper {
+    width: 50%;
+    padding: 70px 0px 15px 45px;
+  }
 
+
+  .explore_side_two_wrapper {
+    height: 100%;
+    margin-top: 57px;
+    width: 50%;
+  }
+}
 
 
 @media (max-width: 991px) {
