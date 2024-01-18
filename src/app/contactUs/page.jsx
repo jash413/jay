@@ -35,7 +35,7 @@ const ContactUs = () => {
       </AnimatePresence>
       <div>
 
-      <div >
+      <div>
           <Navbar />
         </div>
         <HeroSection

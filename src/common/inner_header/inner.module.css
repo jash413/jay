@@ -40,8 +40,8 @@
   font-weight: 500;
   left: -7rem;
   position: absolute;
-  top: 9rem;
-  /* width: 100%; */
+  top: 8rem;
+  width: 148%;
 }
 
 .homepage_image {
@@ -57,14 +57,14 @@
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .inner_header_big {
-    font-size: 118px;
+    font-size: 120px;
     font-style: normal;
     font-weight: 500;
     left: -7rem;
     position: absolute;
     /* margin-top: 10rem; */
-    top: 11rem;
-    /* width: 100%; */
+    top: 18rem;
+    width: 112%;
   }
 }
 
@@ -176,14 +176,12 @@
     width: 90%;
   }
   .inner_header_big {
-    font-size: 60px;
+    font-size: 44px;
     font-style: normal;
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    /* margin-top: 10rem; */
-    top: 11rem;
-    /* width: 100%; */
+    top: 8rem;
   }
 
   .inner_header_t1 {
@@ -193,7 +191,7 @@
 
 @media (max-width: 425px) {
   .inner_header_big {
-    font-size: 50px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 500;
     left: 0rem;
@@ -205,15 +203,24 @@
   .inner_header_text {
     top: 40%;
   }
-}
 
-@media (max-width: 320px) {
   .inner_header_big {
-    font-size: 41px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    top: 8rem;
+    top: 10.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .inner_header_big {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    left: 0rem;
+    position: absolute;
+    top: 8.5rem;
   }
 }
