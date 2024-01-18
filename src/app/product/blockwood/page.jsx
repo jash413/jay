@@ -35,7 +35,7 @@ const Page = () => {
      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Inner_header inner_header_image={innovation_image} heading="Lorem Ipsum is simply dummy text of the printing and typesetting industry."  heading2="Lorem Ipsum is simply dummy text of"/>
+      <Inner_header inner_header_image={innovation_image} heading="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
       <Blockboard_main/>
       <Blockwood_flex/>
       

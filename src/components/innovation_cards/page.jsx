@@ -55,7 +55,7 @@ const Page = () => {
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>Cubord</p>
+                          <p className={styles.flex_cards_name}>Cupboard</p>
                           {/* <Link className={styles.flex_cards_link} href="/">
                             Link to page 1
                           </Link> */}
@@ -89,7 +89,7 @@ const Page = () => {
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>Drower</p>
+                          <p className={styles.flex_cards_name}>Drawer</p>
                           {/* <Link className={styles.flex_cards_link} href="/">
                             Link to page 2
                           </Link> */}

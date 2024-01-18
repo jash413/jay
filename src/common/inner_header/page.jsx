@@ -8,7 +8,7 @@ import Navbar from "@/components/navbar/index";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import logo from "@/images/logo.png";
+import logo from "@/images/heroLogo.svg";
 import "./inner_header_ani.css"
 import styles from "@/common/inner_header/inner.module.css"
 import { useEffect, useRef } from 'react';

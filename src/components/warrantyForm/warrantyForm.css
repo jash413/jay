@@ -1,0 +1,24 @@
+.p-dropdown-items {
+      background-color: #d9d9d9;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      margin-top: 0.3rem;
+      color: #838383;
+      font-family: Lato;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    .p-dropdown-item {
+        padding-top: 2px;
+        padding-left: 17px;
+        padding-bottom: 2px;
+    }
+    .error{
+        color: red;
+        margin-top: 0.2rem;
+    }
+    #getFile {
+        display: none;
+      }

@@ -1,3 +1,6 @@
+.sliderCard_outer_first{
+  background-color: #006861;
+}
 .slider_wrapper {
   /* display: flex; */
   justify-content: space-around;

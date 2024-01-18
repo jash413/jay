@@ -45,7 +45,7 @@ const Page = () => {
    {/* <Aboutus_hammer/> */}
 <Real_Timeline/>
    <Slider/>
-   <Explore/>
+   {/* <Explore/> */}
  
    
    </div>

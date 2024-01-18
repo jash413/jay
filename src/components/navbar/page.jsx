@@ -1,8 +1,8 @@
 "use client"
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
-import logo from "@/images/logo.png";
+import logo from "@/images/heroLogo.svg";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/navbar/index"
 const Page = () => {
@@ -13,11 +13,11 @@ const Page = () => {
    <nav className={styles.nav_parent}>
    
    <div className={styles.nav_menu_names}>
-     <Image src={logo} alt="Picture of the author" />
+     <Image src={logo} alt="logo" />
    </div>
    <div>
    <ul className={styles.nav_testing}>
-   <li className={styles.nav_menu_names}>
+   {/* <li className={styles.nav_menu_names}>
      <Link href="/">
        <p>Home</p>
      </Link>
@@ -46,7 +46,7 @@ const Page = () => {
      <Link href="/contactUs">
        <p>Contact Us</p>
      </Link>
-   </li>
+   </li> */}
   <button className={styles.nav_button} onClick={()=>router.push("/")}>New Arrivals</button>
 
   <div className={styles.nav_ham_button}>

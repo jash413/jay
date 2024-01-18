@@ -1,0 +1,60 @@
+.accordion__button:hover {
+  background: #006f69;
+}
+.accordian_header_main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.accordion {
+  border: none;
+}
+.accordian_header_main_text {
+  color: #0f8a83;
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.accordion__button {
+  background: #006f69;
+  color: white;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 250%;  */
+  text-transform: capitalize;
+  /* text-align: center;
+      display: flex;
+      align-items: center; */
+}
+.accordion__button::before {
+  float: right;
+}
+
+.accordion__button:before {
+  color: #51aea9;
+}
+.main_Accordian_header {
+  padding-left: 10rem;
+  background-color: white;
+  padding-right: 10rem;
+  padding-bottom: 6rem;
+}
+.accordion__panel {
+  color: #838383;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 177%; */
+  text-transform: capitalize;
+  background: #e4e4e4;
+}

@@ -168,7 +168,7 @@
 
   .BlogPost_image{
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     object-fit: fill;
 
   }
@@ -226,7 +226,7 @@
 
   .BlogPost_image{
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     height: 100%;
     object-fit: fill;
 
@@ -279,7 +279,7 @@
 
   .BlogPost_image{
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     height: 100%;
     object-fit: fill;
 
