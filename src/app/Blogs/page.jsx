@@ -6,6 +6,7 @@ import Inner_header from "@/common/inner_header/page";
 import Preloader from "@/components/preloader/page";
 import Blogs_banner from "@/images/blogs_banner.png";
 import Navbar from "@/components/navbar/index";
+import InnerBlogPost from "@/common/innerBlogPost/page"
 import BlogPost from "@/common/blogPosts/page";
 import BlogPostImage1 from "@/images/blogs_img1.png";
 import BlogPostImage2 from "@/images/blogs_img2.png";
@@ -33,7 +34,24 @@ const Blogs = () => {
       </AnimatePresence>
       <Navbar />
       <Inner_header inner_header_image={Blogs_banner} heading_big="BLOGS" />
-      <BlogPost
+
+<BlogPost/>
+
+
+      
+
+{/* <InnerBlogPost
+image={BlogPostImage1}
+        Date="January 11, 2024"
+        blog_name="Interior Design"
+        blogPost_heading="101 Plywoods: everything knows about plywood"
+        blogPost_text="In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…"
+        readMoreRoute="/contactUs"
+
+/> */}
+
+
+      {/* <BlogPost
         image={BlogPostImage1}
         Date="January 11, 2024"
         blog_name="Interior Design"
@@ -140,10 +158,10 @@ const Blogs = () => {
           blog_name="Interior Design"
           blogPost_heading="What is commerical plywood and its different uses"
           blogPost_text="In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…"
-          readMoreRoute="/products"
+          
         />
         <div style={{ background: "white", height: "100px" }}></div>
-      </div>
+      </div> */}
 
       <Footer />
     </main>

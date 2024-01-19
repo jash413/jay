@@ -203,7 +203,7 @@ const Airpods = () => {
           >
             {scrollPercentage}%
           </div>
-          <span className={styles.counter_text}>Royale Touche</span>
+          {/* <span className={styles.counter_text}>Royale Touche</span> */}
         </div>
         <canvas className={styles.canvas_layer_settings} ref={canvasRef}></canvas>
       </section>

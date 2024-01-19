@@ -9,6 +9,7 @@ import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
 import Form from "@/components/form/page2"
 import Real_Timeline from "@/common/real_timeline/page"
+import ThreeCards from "@/common/threeCards/page"
 import Slider from "@/components/slider/page"
 // import Aboutus_hammer from "@/components/aboutUs_hammer/page"
 import aboutUs_image from "@/images/new_about.png"
@@ -45,6 +46,7 @@ const Page = () => {
    {/* <Aboutus_hammer/> */}
 <Real_Timeline/>
    <Slider/>
+   <ThreeCards/>
    {/* <Explore/> */}
  
    
