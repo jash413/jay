@@ -21,20 +21,6 @@ export default function Example() {
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
-              What harsh truths do you prefer to ignore?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel>
-            <p className="main_accordian_header_text">
-              The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of Greenply
-              Industries Limited or by the Company.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton>
               What is the process for a warranty certificate?
             </AccordionItemButton>
           </AccordionItemHeading>
@@ -46,6 +32,7 @@ export default function Example() {
             </p>
           </AccordionItemPanel>
         </AccordionItem>
+
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
@@ -61,6 +48,8 @@ export default function Example() {
             </p>
           </AccordionItemPanel>
         </AccordionItem>
+
+
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
@@ -75,6 +64,44 @@ export default function Example() {
             </p>
           </AccordionItemPanel>
         </AccordionItem>
+
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>     
+        What kind of damages are not considered in warranty?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p className="main_accordian_header_text">
+              The owner will have to produce the proof of purchase/warranty
+              certificate issued either by the authorized dealer of Greenply
+              Industries Limited or by the Company.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+
+
+
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>     
+       Is Warranty Certificate Mandatory For Claim Handling In Future?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p className="main_accordian_header_text">
+              The owner will have to produce the proof of purchase/warranty
+              certificate issued either by the authorized dealer of Greenply
+              Industries Limited or by the Company.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+
+
+
+
+
+
       </Accordion>
     </div>
   );

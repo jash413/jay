@@ -7,13 +7,16 @@
   text-align: center;
 }
 
+
+.accordion__item{
+  margin-top: 10px;
+}
 .accordion {
   border: none;
 }
 .accordian_header_main_text {
   color: #0f8a83;
   text-align: center;
-  font-family: Lato;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -23,9 +26,8 @@
 .accordion__button {
   background: #006f69;
   color: white;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   color: #fff;
-  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -50,7 +52,6 @@
 }
 .accordion__panel {
   color: #838383;
-  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;

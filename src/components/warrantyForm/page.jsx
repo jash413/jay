@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { FormSchemas } from "./formSchema"
 import Image from "next/image";
 import Button from "@/common/button/button9"
+import Button10 from "@/common/button/button10"
 import invoice_icon from "@/images/invoice_svg.svg";
 import "./warrantyForm.css";
 import styles from  "@/components/warrantyForm/warrantyForm.module.css"
@@ -393,7 +394,7 @@ const FormCommon = () => {
           </button> */}
 
 
-          <Button   onClick={() => setshowMore(!showMore)} btn_text="Submit"/>
+          <Button10 type="submit"   onClick={() => setshowMore(!showMore)} btn_text="Add To More"/>
         </div>
         </div>
 
@@ -525,7 +526,7 @@ const FormCommon = () => {
           </div>
           {/*  */}
           <div className={styles.Form_btn_Outer_Main}>
-            {/* <button className={styles.Form_btn_inner}>Submit</button> */}
+            <button className={styles.Form_btn_inner}>Submit</button>
             <Button btn_text="Submit"/>
           </div>
         </div>
