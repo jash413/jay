@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from "react";
-import Explore from "@/components/explore/page";
+// import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import Layers from "@/components/layers/page";
+// import Layers from "@/components/layers/page";
 import  Quality_certificates from "@/components/quality_certificates/page";
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
@@ -13,7 +13,7 @@ import Quality_carousal from "@/components/quality_carousal/page";
 // import Product_overview from "@/components/product_overview/page";
 import Quality_text from "@/components/quality_text/page";
 import HeroSection from "@/components/heroSection/page";
-import Technical from "@/components/technical/page";
+// import Technical from "@/components/technical/page";
 import Quality_slider from "@/components/quality_slider/page";
 import quality_image from "@/images/new_product.png";
 const Page = () => {
@@ -54,9 +54,9 @@ const Page = () => {
       <Quality_text />
       <Quality_slider />
       <Quality_carousal/>
-      <Layers />
-      <Technical />
-      <Explore />
+      {/* <Layers />
+      <Technical /> */}
+      {/* <Explore /> */}
 
       <Form />
       <Footer />

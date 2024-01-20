@@ -5,10 +5,10 @@ import Button from "@/common/button/Button";
 import gsap from "gsap";
 import splitType from "split-type";
 import Navbar from "@/components/navbar/index";
-import { motion, useAnimation } from "framer-motion";
+import {  useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import logo from "@/images/heroLogo.svg";
+import logo from "@/images/finalNavbarLogo.png";
 import "./inner_header_ani.css"
 import styles from "@/common/inner_header/inner.module.css"
 import { useEffect, useRef } from 'react';

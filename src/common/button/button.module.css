@@ -5,6 +5,7 @@
   border-radius: 30px;
   line-height: 15px;
   padding: 13px 27px 15px;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   font-size: 20px;
   border: 2px solid #c3a464;
   color: #c3a464;
@@ -46,7 +47,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   background-color: #006f69;
   border: 1px solid #006f69;
   transform-origin: bottom center;
@@ -67,7 +68,7 @@
 .button1:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -79,7 +80,7 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   width: 100%;
   padding: 13px 27px 15px;
@@ -146,7 +147,7 @@
 .button2:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -157,7 +158,7 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 15px 30px 15px 30px;
   font-size: 20px;
@@ -200,7 +201,7 @@
   position: absolute;
   bottom: -50%;
   left: 0;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   width: 100%;
   height: 100%;
   background-color: #006f69;
@@ -221,7 +222,7 @@
 }
 
 .button3:hover span:last-child {
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
@@ -234,7 +235,7 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 20px 47px 18px;
   font-size: 20px;
@@ -279,7 +280,7 @@
   left: 0;
   width: 100%;
   color: #006f69;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   height: 100%;
   background-color: white;
   border: 1px solid #006f69;
@@ -301,7 +302,7 @@
 .button4:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -315,7 +316,7 @@
   line-height: 15px;
   padding: 15px 30px 15px 30px;
   font-size: 20px;
-
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   border: 1px solid #c3a464;
   color: #c3a464;
   text-decoration: none;
@@ -356,6 +357,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   background-color: #006f69;
   border: 1px solid #006f69;
   transform-origin: bottom center;
@@ -375,7 +377,7 @@
 
 .button5:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
@@ -387,11 +389,10 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 20px 47px 18px;
   font-size: 20px;
-
   border: 1px solid #c3a464;
   color: #c3a464;
   text-decoration: none;
@@ -464,7 +465,7 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 17px 108px 15px;
   font-size: 20px;
@@ -530,7 +531,7 @@
 .button7:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -539,11 +540,10 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 20px 47px 18px;
   font-size: 20px;
-
   border: 1px solid #c3a464;
   color: #c3a464;
   text-decoration: none;
@@ -605,7 +605,7 @@
 .button8:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -616,7 +616,7 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   padding: 20px 47px 18px;
   font-size: 20px;
@@ -682,7 +682,7 @@ margin-top: 1.5rem;
 .button9:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: lato;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
@@ -696,7 +696,7 @@ margin-top: 1.5rem;
     overflow: hidden;
     display: inline-block;
     border-radius: 30px;
-    font-family: lato;
+    font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
     line-height: 15px;
     padding: 17px 135px 15px;
     font-size: 20px;

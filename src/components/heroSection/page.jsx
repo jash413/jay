@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import logo from "@/images/heroLogo.svg";
+import logo from "@/images/finalNavbarLogo.png";
 import { useRouter } from "next/navigation";
 import Button from "@/common/button/Button";
 import styles from "@/components/heroSection/heroSection.module.css";

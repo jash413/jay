@@ -712,6 +712,7 @@ const FormCommon = () => {
             <div className={styles.form_last_section_content}>
               <div>
                 <input
+                className={styles.checkbox}
                   type="checkbox"
                   id="agreeTerms"
                   name="agreeTerms"
@@ -731,6 +732,7 @@ const FormCommon = () => {
             <div className={styles.form_last_section_content}>
               <div>
                 <input
+                className={styles.checkbox}
                   type="checkbox"
                   id="updates"
                   name="updates"
@@ -745,6 +747,7 @@ const FormCommon = () => {
             <div className={styles.form_last_section_content}>
               <div>
                 <input
+                className={styles.checkbox}
                   type="checkbox"
                   id="offers"
                   name="offers"
