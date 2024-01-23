@@ -1,14 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { InView } from 'react-intersection-observer';
+import { InView } from "react-intersection-observer";
 import Link from "next/link";
 import Image from "next/image";
-import innovation_flex_img1 from "@/images/innovation1.png";
-import innovation_flex_img2 from "@/images/innovation2.png";
-import innvotion_flex_img3 from "@/images/innvotion3.png";
+
 import styles from "@/components/innovation_cards/innovation_cards.module.css";
-const Page = () => {
-  const text = " Lorem Ipsum is simply dummy text of the printing and typesetting industry.".split(" ");
+const Page = ({
+  link1,
+  link2,
+  link3,
+  image1,
+  image2,
+  image3,
+  card1Text,
+  card2Text,
+  card3Text,
+}) => {
+  const text =
+    " Lorem Ipsum is simply dummy text of the printing and typesetting industry.".split(
+      " "
+    );
 
   return (
     <div>
@@ -49,16 +60,21 @@ const Page = () => {
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card1}>
                           <Image
-                            src={innovation_flex_img1}
+                            src={image1}
                             alt="image"
                             className={styles.flex_img}
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>Cupboard</p>
-                          {/* <Link className={styles.flex_cards_link} href="/">
-                            Link to page 1
-                          </Link> */}
+                          <p className={styles.flex_cards_name}>{card1Text}</p>
+                          {link1 && (
+                            <Link
+                              className={styles.flex_cards_link}
+                              href={link1}
+                            >
+                              View More
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </motion.div>
@@ -72,9 +88,9 @@ const Page = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={inViewImg2 ? { opacity: 1, y: 0 } : {}}
                       transition={{
-                        type: 'spring',
-                    stiffness: 500,
-                    damping: 30,
+                        type: "spring",
+                        stiffness: 500,
+                        damping: 30,
                         duration: 1,
                         delay: inViewImg2 ? 1 : 0,
                       }}
@@ -83,16 +99,21 @@ const Page = () => {
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card2}>
                           <Image
-                            src={innovation_flex_img2}
+                            src={image2}
                             alt="image"
                             className={styles.flex_img}
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>Drawer</p>
-                          {/* <Link className={styles.flex_cards_link} href="/">
-                            Link to page 2
-                          </Link> */}
+                          <p className={styles.flex_cards_name}>{card2Text}</p>
+                          {link2 && (
+                            <Link
+                              className={styles.flex_cards_link}
+                              href={link2}
+                            >
+                              View More
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </motion.div>
@@ -114,16 +135,21 @@ const Page = () => {
                       <div className={styles.innovation}>
                         <div className={styles.innovation_flex_card3}>
                           <Image
-                            src={innvotion_flex_img3}
+                            src={image3}
                             alt="image"
                             className={styles.flex_img}
                           />
                         </div>
                         <div>
-                          <p className={styles.flex_cards_name}>Lamination</p>
-                          {/* <Link className={styles.flex_cards_link} href="/">
-                            Link to page 2
-                          </Link> */}
+                          <p className={styles.flex_cards_name}>{card3Text}</p>
+                          {link3 && (
+                            <Link
+                              className={styles.flex_cards_link}
+                              href={link3}
+                            >
+                              View More
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </motion.div>
