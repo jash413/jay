@@ -73,6 +73,27 @@ text-decoration: underline;
   }
 }
 
+@media(max-width:1440px){
+  .innovation_cards_text {
+    font-size: 40px;
+    padding-top: 11rem;
+    font-weight: 500;
+    margin-top: 0rem;
+    width: 55%;
+    color: black;
+    padding-left: 7rem;
+  }
+
+
+  .innovation_cards_flex {
+    display: flex;
+    margin: 0px;
+    justify-content: end;
+    margin-right: 2rem;
+    padding-bottom: 6rem;
+  }
+}
+
 
 
 @media (max-width:1265px){
