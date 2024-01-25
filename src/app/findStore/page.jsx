@@ -3,7 +3,7 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import FindStore_search from "@/components/findStore_search/page"
 import Footer from "@/components/footer/page"
-import Form from "@/components/form/page2"
+import Form from "@/components/form/page"
 import Navbar from "@/components/navbar/index";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";

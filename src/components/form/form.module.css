@@ -1,185 +1,159 @@
+
 .contact_form {
   background: #f3f3f3;
   color: #1e1e1e;
-  padding: 110px 65px 0px 90px;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* height: 100vh; */
 }
 
 .contact_form_wrapper {
-  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 100%; */
 }
-.contact_form_title{
-  font-size: 50px;
-    margin-bottom: 45px;
+.Form_content{
+  /* width: 50%; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.Form_Container {
+  width: 35%;
+  /* height: 100%; */
+}
 
+.Image_Container {
+  width: 65%;
+}
+
+.form_image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact_form_title {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  margin: 0 0 50px;
+  margin-bottom: 26px;
+}
+
+.field label {
+  color: #1e1e1e;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 .field input {
   background: #f3f3f3;
   border: none;
-  opacity: 0.5;
+  opacity: 0.8;
   border-bottom: 1px solid #d1d1d1;
   height: 40px;
   width: 100%;
-  font-family: lato;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 .field input:focus {
   outline: none;
-}
+}                   
 
-.field label {
-  color: #1e1e1e;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.field textarea {
+  background: #f3f3f3;
+  border: none;
+  resize: none;
+  opacity: 0.8;
+  border-bottom: 1px solid #d1d1d1;
+  /* height: 40px; */
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
 }
+.field textarea:focus {
+  outline: none;
+} 
 
 .submit_btn {
-  border-radius: 500px;
+  border-radius: 25px;
   border: 1.3px solid #fff;
   background: #0f8a83;
-  width: 269px;
-  height: 52px;
+  width: 100%;
+  height: 42px;
   cursor: pointer;
   color: white;
-  flex-shrink: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .submit_btn:focus-visible {
   outline: none;
 }
 
-p.error {
+.error {
   color: red;
-  font-size: 15px;
-  margin: 0;
+  font-size: 14px;
+  margin: 3px 0 0;
 }
 
 .common_button_outer2 {
-  width: 250px;
-  margin: 0px 0px;
+  width: 100%;
   margin-top: 1rem;
 }
+/* .visible{
+  visibility: visible;
+} */
+/* .hidden {
+  display: none;
+} */
 
-@media(min-width:1600px){
-
-
-  .field input {
-    background: #f3f3f3;
-    border: none;
-    opacity: 0.5;
-    border-bottom: 1px solid #d1d1d1;
-    height: 40px;
-    width: 480px;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+@media(min-width:1500px){
+  .field{
+    margin-bottom: 30px;
   }
-
-
-  .contact_form {
-    background: #f3f3f3;
-    color: #1e1e1e;
-    padding: 130px 35px 0px 90px;
-    height: 100%;
-  }
-  
-
-  .field {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 70px;
-  }
-
-
-
-}
-
-
-
-@media only screen and (max-width: 1199px) {
-  .contact_form {
-    padding: 61px;
-  }
-
-  .contact_form_title{
-    font-size: 45px;
-      margin-bottom: 45px;
-  
-  }
-
-
-
-  .field input {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .field input {
-    width: 100%;
+  .Form_content{
+    padding-top: 5rem;
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .section-1 {
+@media(max-width:1024px){
+  .Form_Container {
     width: 40%;
   }
-
-  .field input {
+  
+  .Image_Container {
+    width: 60%;
+  }
+  .Form_content{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+}
+@media(max-width:768px){
+  .contact_form_wrapper{
+    flex-direction: column;
+  }
+  .Form_Container{
     width: 100%;
   }
-  .contact_form {
-    padding: 60px 44px 1px 43px;
-
+  .Image_Container{
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 768px) {
-
-  .section-2 {
-    width: 100%;
-  }
-  .field label {
-    font-size: 17px;
-  }
-
-  .field input {
-    width: 100%;
-  }
-  .submit_btn {
-    width: 211px;
-  }
-  .container {
-    display: block;
-    background: #f3f3f3;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .container {
-    display: block;
-    background: #f3f3f3;
-  }
-  .Image1 {
-    width: 100%;
-  }
-  .field input {
-    width: 252.5px;
-  }
-  .section-2 {
-    width: 100%;
-  }
+@media(max-width:375px){
+ .Form_content{
+  padding-left: 2rem;
+  padding-right: 2rem;
+ }
 }

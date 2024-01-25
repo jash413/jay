@@ -2,8 +2,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import contactUs_image from "@/images/contactUs_banner_image1.png";
-import Footer from "@/components/footer/page"
-import Form from "@/components/form/page2"
+import Footer from "@/components/footer/page";
+import Form from "@/components/form/page";
+// import Form from "@/components/form/page"
 import Navbar from "@/components/navbar/index";
 import Contact_Map from "@/common/contact_map/page";
 import { AnimatePresence } from "framer-motion";
@@ -19,11 +20,10 @@ const ContactUs = () => {
     })();
   }, []);
 
-  
   setTimeout(() => {
     setIsLoading(false);
-    if (typeof document !== 'undefined') {
-      document.body.style.cursor = 'default';
+    if (typeof document !== "undefined") {
+      document.body.style.cursor = "default";
       window.scrollTo(0, 0);
     }
   }, 2000);
@@ -34,8 +34,7 @@ const ContactUs = () => {
         {isLoading && <Preloader />}
       </AnimatePresence>
       <div>
-
-      <div>
+        <div>
           <Navbar />
         </div>
         <HeroSection
@@ -45,8 +44,8 @@ const ContactUs = () => {
         />
         <Contact_Map />
       </div>
-      <Form/>
-<Footer/>
+      <Form />
+      <Footer />
     </main>
   );
 };
