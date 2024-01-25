@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { InView } from 'react-intersection-observer';
+import { InView } from "react-intersection-observer";
 import plywood_main_img from "@/images/plywood_main_table.png";
 import plywood_main from "@/images/floor.png";
 import Button8 from "@/common/button/button8";
@@ -11,7 +11,33 @@ import Common_animation from "@/common/common_animation/animation";
 import styles from "@/components/plywood_main/plywood_main.module.css";
 
 const Section1 = () => {
-  const text = ["About", "Plywood", "who", "accept", "nothing", "less", "than", "the", "finest.", "Super", "Exclusive,", "handcrafted", "luxury", "laminates", "that", "make", "a", "bold", "statement.", "Always", "Classy,", "Beautifully", "Luxurious.", "ONE", "transcends", "trends", "to", "create", "timeless", "elegance."];
+  const text = [
+    "Plywood",
+    "that",
+    "stands",
+    "the",
+    "test",
+    "of",
+    "time.",
+    "For",
+    "us",
+    "plywood",
+    "is",
+    "not",
+    "just",
+    "a",
+    "building",
+    "material,",
+    "its",
+    "the",
+    "backbone.",
+    "of",
+    "beautiful",
+    "and",
+    "timeless",
+    "wooden",
+    "furniture.",
+  ];
 
   return (
     <div>
@@ -19,9 +45,9 @@ const Section1 = () => {
         <div className={styles.nmnm}>
           <Common_animation text="PLYWOOD" />
         </div>
-       <div className={styles.image_m_outer}>
-       <Image src={plywood_main} alt="none" className={styles.image_m} />
-       </div>
+        <div className={styles.image_m_outer}>
+          <Image src={plywood_main} alt="none" className={styles.image_m} />
+        </div>
 
         <div className={styles.abc}>
           <div className={styles.abc1}>
@@ -33,11 +59,14 @@ const Section1 = () => {
                   animate={inViewImage ? { opacity: 1, x: 0 } : {}}
                   transition={{
                     duration: 1,
-                    delay: 0.7 // Adjust the delay as needed
+                    delay: 0.7, // Adjust the delay as needed
                   }}
                 >
-                  <Image src={plywood_main_img} alt="none" className={styles.image2} />
-                
+                  <Image
+                    src={plywood_main_img}
+                    alt="none"
+                    className={styles.image2}
+                  />
                 </motion.div>
               )}
             </InView>
@@ -56,8 +85,11 @@ const Section1 = () => {
                           duration: 1,
                           delay: inView ? i / 15 : 0,
                         }}
-                        className={(el === "About" || el === "Plywood") ? styles.Blue_text : ""}
-                        
+                        className={
+                          el === "About" || el === "Plywood"
+                            ? styles.Blue_text
+                            : ""
+                        }
                       >
                         {el}{" "}
                       </motion.span>
@@ -75,7 +107,7 @@ const Section1 = () => {
                   animate={inViewButton ? { opacity: 1, y: 0 } : {}}
                   transition={{
                     duration: 1,
-                    delay: 1
+                    delay: 1,
                   }}
                 >
                   <Button8 btn_text={"Explore Collections"} />
