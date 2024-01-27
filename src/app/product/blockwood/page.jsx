@@ -41,11 +41,12 @@ const Page = () => {
       </AnimatePresence>
       <Inner_header
         inner_header_image={innovation_image}
-        heading="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        heading="With the dimensional stability of solid wood and appearance and sleekness of plywood, Royale 
+        Touche Blockboard gives you warp-free furniture that lasts a lifetime."
       />
       <Blockboard_main />
-      {/* <Blockwood_flex/> */}
-    
+      <Blockwood_flex/>
+
       <Inner_page_slider2 />
       {/* <Inner_page_common_img common_img={common_img}  common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
       {/* <Blockwood_slider/> */}

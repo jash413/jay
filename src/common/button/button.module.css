@@ -83,7 +83,7 @@
   font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
   line-height: 15px;
   width: 100%;
-  padding: 13px 27px 15px;
+  padding: 13px 10px 15px;
   font-size: 16px;
 
   border: 1px solid #c3a464;
@@ -123,7 +123,7 @@
   content: "";
   position: absolute;
   bottom: -50%;
-  left: 0;
+  left: -1px;
   width: 100%;
   color: #006f69;
   height: 100%;

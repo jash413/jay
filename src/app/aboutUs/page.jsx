@@ -46,7 +46,7 @@ const Page = () => {
         <HeroSection
           banner_image={aboutUs_image}
           header_name="About Us"
-          header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"
+          header_comment="Royale Touche is a leading manufacturer of luxury laminates, plywood and wooden flooring in India."
         />
         {/* <Aboutus_hammer/> */}
         <Real_Timeline />

@@ -16,7 +16,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import { useLayoutEffect } from "react";
-import "./homeParallax.css"
+import "./homeParallax.css";
 const Page = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -47,26 +47,25 @@ const Page = () => {
   }, []);
   return (
     <div>
-
-<div >
-          <Navbar />
-        </div>
+      <div>
+        <Navbar />
+      </div>
       <section className="cards">
         <div className="card">
           <div className="card-cover">
             <HeroSection
               video_bg="./video/final_k.mp4"
-              homepage_heading="Surfaces That Speak of Luxury, Whispers of Style"
+              homepage_heading="A ply that is a living shield for beautiful and timeless furniture!"
             />
           </div>
         </div>
         <div className="card">
           <TextScroll />
-        </div> 
+        </div>
       </section>
       <Factory />
       <Layers />
-     <Plyspin/>
+      <Plyspin />
       <Timeline />
       <Timeline1 />
       {/* <New_carousal /> */}
