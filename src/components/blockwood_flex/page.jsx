@@ -5,8 +5,8 @@ import icon1 from "@/images/inner_icon1.png"
 import icon2 from "@/images/inner_icon2.png"
 import icon3 from "@/images/inner_icon3.png"
 import icon4 from "@/images/inner_icon4.png"
-import rectangle from "@/images/rectangle4.png";
-import rectangle2 from "@/images/rectangle3.png";
+import rectangle from "@/images/rectangle1.png";
+import rectangle2 from "@/images/rectangle2.png";
 
 const Slide_section = () => {
   return (

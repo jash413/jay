@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import innovation_image from "@/images/plywood_hero_img.jpeg";
 import Plywood_main from "@/components/plywood_main/page";
-// import Plywood_lights from "@/components/plywood_lights/page";
+import Plywood_lights from "@/components/plywood_lights/page";
 // import Plywood_carousal from "@/components/plywood_carousal/page"
 // import PlywoodNewSpecs from "@/components/plywoodNewSpecs/page";
 import Inner_header from "@/common/inner_header/page";
