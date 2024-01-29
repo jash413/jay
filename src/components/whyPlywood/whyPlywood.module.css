@@ -1,0 +1,101 @@
+.whyPlywood {
+  padding: 50px 200px;
+}
+.whyPlywood_heading {
+  text-align: center;
+  color: #000;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0 0 175px;
+}
+.whyPlywoodItem_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -50px;
+}
+.whyPlywoodItem {
+  width: 50%;
+  padding: 0 50px;
+  margin: 0 0 110px;
+}
+.wrapper {
+}
+.plywood_icon {
+  margin: 0 0 20px;
+}
+.plywood_icon img {
+  max-width: 100%;
+  display: block;
+}
+.plywood_content p {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+@media (max-width: 1199px) {
+  .whyPlywood {
+    padding: 50px 150px;
+  }
+  .whyPlywood_heading {
+    margin: 0 0 110px;
+  }
+  .whyPlywoodItem {
+    padding: 0 50px;
+    margin: 0 0 70px;
+  }
+}
+@media (max-width: 991px) {
+  .whyPlywood {
+    padding: 50px 110px;
+  }
+  .whyPlywood_heading {
+    margin: 0 0 60px;
+  }
+  .whyPlywoodItem_wrap {
+    margin: 0 -30px;
+  }
+  .whyPlywoodItem {
+    padding: 0 30px;
+    margin: 0 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .whyPlywood {
+    padding: 50px 50px;
+  }
+  .whyPlywood_heading {
+    margin: 0 0 40px;
+  }
+  .whyPlywoodItem_wrap {
+    margin: 0 -20px;
+  }
+  .whyPlywoodItem {
+    padding: 0 20px;
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .whyPlywood {
+    padding: 50px 20px;
+  }
+  .whyPlywood_heading {
+    margin: 0 0 40px;
+    font-size: 30px;
+  }
+  .whyPlywoodItem_wrap {
+    margin: 0;
+    flex-direction: column;
+  }
+  .whyPlywoodItem {
+    padding: 0;
+    margin: 0 0 30px;
+    width: 100%;
+  }
+  .plywood_content p {
+    font-size: 18px;
+  }
+}

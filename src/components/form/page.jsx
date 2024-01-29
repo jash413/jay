@@ -8,26 +8,29 @@ import Image from "next/image";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
-import form_image from "@/images/final_form_image.png";
+import form_image from "@/images/formNewImage.png";
 import { ContactFormSchemas } from "@/components/schemas/page";
-import "./form.css"
+import "./form.css";
 const Contactform = () => {
   const [formResponse, setFormResponse] = useState("");
-  const City = [
-    { label: "Ahmedabad" },
-    { label: "Mumbai" },
-    { label: "Surat" },
-    { label: "Gandhinagar" },
+
+  const yearOptions = [
+    { value: "AL", label: "Ahmedabad" },
+    { value: "Mumbai", label: "Mumbai" },
+    { value: "Surat", label: "Surat" },
+    { value: "Vapi", label: "Vapi" },
+    { value: "Dahod", label: "Gandhinagar" },
+    { value: "Vadodara", label: "Vadodara" },
+    { value: "Kutch", label: "Kutch" },
+    { value: "Ankleshwar", label: "Ankleshwar" },
   ];
   const initialValue = {
     fullName: "",
     Email: "",
     Phone: "",
-    City: "",
+    year: "",
     message: "",
   };
-  // const [isSearchable, setIsSearchable] = useState(true);
- 
 
   const submitMessage = () => {
     toast.success("Form Submitted Successfully...");
@@ -55,11 +58,12 @@ const Contactform = () => {
         .catch((error) => {
           console.error("Email send error:", error);
         });
-        submitMessage();
+      submitMessage();
+      console.log("FINALVALUE", value);
     },
   });
 
-  console.log(values);
+  console.log("value", values);
   console.log("response", formResponse.text);
 
   return (
@@ -76,7 +80,7 @@ const Contactform = () => {
                 name="fullName"
                 onChange={handleChange}
                 value={values.fullName}
-                placeholder="John smith"
+                placeholder="Rajesh Sharma"
               />
               {touched.fullName && errors.fullName && (
                 <p className={styles.error}>{errors.fullName}</p>
@@ -89,7 +93,7 @@ const Contactform = () => {
                 name="Email"
                 onChange={handleChange}
                 value={values.Email}
-                placeholder="helloworld123@gmai.com"
+                placeholder="example@gmail.com"
               />
               {touched.Email && errors.Email && (
                 <p className={styles.error}>{errors.Email}</p>
@@ -102,7 +106,7 @@ const Contactform = () => {
                 name="Phone"
                 onChange={handleChange}
                 value={values.Phone}
-                placeholder="+91 8140X XXXXX"
+                placeholder="8140X XXXXX"
               />
               {touched.Phone && errors.Phone && (
                 <p className={styles.error}>{errors.Phone}</p>
@@ -111,19 +115,21 @@ const Contactform = () => {
             <div className={styles.field}>
               <label htmlFor="City">City</label>
               <Select
-                className="basic-single"
-                optionLabel="name"
                 placeholder="Select City"
-                name="City"
-                options={City}
-                onChange={handleChange}
-                value={values.City}
-                // onChange={() => setIsSearchable((state) => !state)}
+                value={values.year}
+                onChange={(selectedOption) => {
+                  let event = {
+                    target: { name: "year", value: selectedOption },
+                  };
+                  handleChange(event);
+                }}
+                isSearchable={true}
+                options={yearOptions}
+                name="year"
               />
-
-              {touched.City && errors.City && (
-                <p className={styles.error}>{errors.City}</p>
-              )}
+              {/* {touched.year && errors.year && (
+                <p className={styles.error}>{errors.year}</p>
+              )} */}
             </div>
             <div className={styles.field}>
               <label htmlFor="message">Message</label>
@@ -133,7 +139,7 @@ const Contactform = () => {
                 rows={5}
                 onChange={handleChange}
                 value={values.message}
-                placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                placeholder="Enter your message"
               />
               {touched.message && errors.message && (
                 <p className={styles.error}>{errors.message}</p>
@@ -141,8 +147,7 @@ const Contactform = () => {
             </div>
             <div className={styles.common_button_outer2}>
               <Button btn_text="Send Message" />
-            </div>
-            {formResponse.text === "OK" && (
+              {formResponse.text === "OK" && (
                 <ToastContainer
                   position="top-right"
                   autoClose={3000}
@@ -159,6 +164,7 @@ const Contactform = () => {
                   // progressStyle={{ background: "#f90" }}
                 />
               )}
+            </div>
           </div>
         </form>
         <div className={styles.Image_Container}>

@@ -118,9 +118,9 @@ const newRef = useRef("")
         <div className={styles.nav_menu_names}>
           <Image  onClick={()=> router.push("/")} src={logo} alt="image" className={styles.logo} />
         </div>
-        <div className={styles.btn_outer}>
+        {/* <div className={styles.btn_outer}>
           <Button onClick={()=> router.push("/")} btn_text="New Arrivals" />
-        </div>
+        </div> */}
 
         <div className={styles.nav_ham_button}>
           <Navbar />

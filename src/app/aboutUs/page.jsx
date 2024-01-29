@@ -15,8 +15,9 @@ import Innovation_cards from "@/components/innovation_cards/page";
 import image1 from "@/images/Laminate_img.png";
 import image2 from "@/images/plywood_img.png";
 import image3 from "@/images/wooden_floor_img.png";
-// import Aboutus_hammer from "@/components/aboutUs_hammer/page"
+import Aboutus_hammer from "@/components/aboutUs_hammer/page";
 import aboutUs_image from "@/images/new_about.png";
+import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -49,6 +50,7 @@ const Page = () => {
           header_comment="Royale Touche is a leading manufacturer of luxury laminates, plywood and wooden flooring in India."
         />
         {/* <Aboutus_hammer/> */}
+        <WhyPlywood />
         <Real_Timeline />
         <Slider />
         {/* <ThreeCards /> */}
