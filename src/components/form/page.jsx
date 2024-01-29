@@ -8,7 +8,7 @@ import Image from "next/image";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
-import form_image from "@/images/formNewImage.png";
+import form_image from "@/images/formNewImage.jpg";
 import { ContactFormSchemas } from "@/components/schemas/page";
 import "./form.css";
 const Contactform = () => {
