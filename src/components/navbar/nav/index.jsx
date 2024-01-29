@@ -30,10 +30,10 @@ const navItems = [
     title: "Products",
     href: "/product",
   },
-  {
-    title: "Quality",
-    href: "/quality",
-  },
+  // {
+  //   title: "Quality",
+  //   href: "/quality",
+  // },
   {
     title: "Find Store",
     href: "/findStore",

@@ -43,15 +43,15 @@ const Page = () => {
         heading="Plywood that is engineered to outsmart termites and borers, fights fire and is safe for your loved 
         ones with E-0 emissions - An all in one Ply in its true sense"
       />
-      <Plywood_lights />
-      <Plywood_main />
 
       <ProductOverview />
       <Inner_page_slider2 />
       {/* <PlywoodNewSpecs /> */}
       {/* <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
       <Specifications />
-      <Innovation_cards
+      <Plywood_lights />
+      <Plywood_main />
+      {/* <Innovation_cards
         link1={"#"}
         link2={"#"}
         link3={"#"}
@@ -61,7 +61,7 @@ const Page = () => {
         card1Text={"Laminate"}
         card2Text={"Wooden Flooring"}
         card3Text={"Plywood"}
-      />
+      /> */}
       {/* <Plywood_carousal/> */}
 
       <Form />
