@@ -50,8 +50,12 @@
 
 .timeline_comment {
   font-size: 17px;
-  width: 57%;
-  margin-bottom: 1rem;
+  width: 250px;
+  /* margin-bottom: -13rem; */
+  position: absolute;
+  top: 83%;
+  left: 30%;
+  text-align: left;
 }
 .two {
   font-weight: 400;
@@ -87,11 +91,7 @@
   left: 31rem;
 }
 
-
-
-
-@media (min-width: 1600px) and (max-width:1920px) {
-
+@media (min-width: 1600px) and (max-width: 1920px) {
   .timeline_year {
     font-size: 87px;
     color: #000000;
@@ -103,13 +103,16 @@
 
   .timeline_comment {
     font-size: 24px;
-    width: 58%;
+    width: 300px;
     margin-bottom: 1rem;
+    position: absolute;
+    top: 95%;
+    left: 28%;
+    text-align: left;
+    opacity: 0;
   }
-
 }
 @media (max-width: 1440px) {
-
   .timeline_year {
     font-size: 65px;
     color: #000000;
@@ -119,14 +122,17 @@
     left: 28rem;
   }
 
-
   .timeline_comment {
     font-size: 20px;
-    width: 60%;
-    margin-bottom: 1rem;
+    width: 250px;
+    /* margin-bottom: -13rem; */
+    position: absolute;
+    top: 83%;
+    left: 28%;
+    text-align: left;
+    opacity: 0;
   }
 }
-
 
 @media (max-width: 1199px) {
   .timeline_year {
@@ -138,20 +144,17 @@
     left: 17rem;
   }
 
-
-
   .timeline_comment {
     font-size: 17px;
-    width: 70%;
-    margin-bottom: 1rem;
+    width: 250px;
+    /* margin-bottom: -13rem; */
+    position: absolute;
+    top: 83%;
+    left: 21%;
+    text-align: left;
+    opacity: 0;
   }
 }
-
-
-
-
-
-
 
 @media (max-width: 991px) {
   .line {
@@ -165,12 +168,8 @@
     border-right: 2px solid #0f8a83;
   }
 
-
- 
-
   .timeline_image {
     height: 100%;
-   
   }
   .bead_outer {
     left: 85px;
@@ -183,8 +182,8 @@
     color: #000000;
     position: absolute;
     width: 68%;
-    top: 163px;
-    right: 10px;
+    top: 210px;
+    right: 45px;
     padding-bottom: 0;
     padding-top: 4rem;
     opacity: 0;
@@ -192,8 +191,11 @@
 
   .timeline_comment {
     font-size: 15px;
-    width: 86%;
+    width: 600px;
     margin-bottom: 0.5rem;
+    top: 70%;
+    left: 25%;
+    text-align: left;
   }
 
   .timeline_heading {
@@ -215,10 +217,6 @@
   }
 }
 
-
-
-
-
 @media (max-width: 767px) {
   .line {
     position: absolute;
@@ -236,7 +234,7 @@
     width: 85%;
   }
   .bead_outer {
-    left: 39px;
+    left: 11%;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -246,7 +244,7 @@
     color: #000000;
     position: absolute;
     width: 68%;
-    top: 163px;
+    top: 230px;
     right: 10px;
     padding-bottom: 0;
     padding-top: 3rem;
@@ -255,8 +253,10 @@
 
   .timeline_comment {
     font-size: 15px;
-    width: 86%;
+    width: 400px;
     margin-bottom: 1rem;
+    top: 67%;
+    left: 28%;
   }
 
   .timeline_heading {
@@ -274,11 +274,18 @@
     opacity: 0;
     position: absolute;
     top: 8rem;
-    left: 7rem;
+    left: 12rem;
+  }
+  .section {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    z-index: 1;
+    margin-top: 13rem;
+    align-items: center;
+    min-height: 290px;
   }
 }
-
-
 
 @media (max-width: 575px) {
   .line {
@@ -297,7 +304,7 @@
     width: 85%;
   }
   .bead_outer {
-    left: 43px;
+    left: 10.5%;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -307,16 +314,16 @@
     color: #000000;
     position: absolute;
     width: 68%;
-    top: 163px;
+    top: 230px;
     right: 10px;
     padding-bottom: 0;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
     opacity: 0;
   }
 
   .timeline_comment {
     font-size: 15px;
-    width: 86%;
+    width: 300px;
     margin-bottom: 1rem;
   }
 
@@ -335,7 +342,21 @@
     opacity: 0;
     position: absolute;
     top: 8rem;
-    left: 7rem;
+    left: 28%;
   }
-
+}
+@media(max-width:420px){
+  .timeline_comment {
+    font-size: 15px;
+    width: 220px;
+    margin-bottom: 1rem;
+  }
+  .timeline_year {
+    font-size: 30px;
+    color: #000000;
+    opacity: 0;
+    position: absolute;
+    top: 8rem;
+    left: 30%;
+  }
 }
