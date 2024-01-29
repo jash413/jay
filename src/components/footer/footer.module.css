@@ -80,6 +80,17 @@ font-weight: 300;
 
 
 
+@media(max-width:1440px){
+  .footer_upper_heading{
+    font-size: 107px;
+    font-weight: 300;
+    width: 65%;
+    color: white;
+    margin-bottom: 25px;
+  }
+}
+
+
 
 
 @media(max-width:1199px){

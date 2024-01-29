@@ -15,51 +15,39 @@ const BlogPost = (props) => {
           <p className={styles.BlogPost_date}>{props.Date}</p>
           <p className={styles.BlogPost_name}>{props.blog_name}</p>
         </div>
-        <div className={styles.BlogPost_heading}>{props.blogPost_heading}</div>
+        <div className={styles.BlogPost_heading}>{props.blogPost_heading}</div> 
         <div className={styles.BlogPost_text}>{props.blogPost_text}</div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading1}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text1}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture7} <span className={styles.BlogPost_text_inner}>{props.text7}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading2}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text2}</div>
-
+        <div className={styles.BlogPost_text_inner_header}>{props.texture6} <span className={styles.BlogPost_text_inner}>{props.text6}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading3}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text3}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture8} <span className={styles.BlogPost_text_inner}>{props.text8}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading4}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text4}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture9} <span className={styles.BlogPost_text_inner}>{props.text9}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading5}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text5}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture10} <span className={styles.BlogPost_text_inner}>{props.text10}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading6}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text6}</div>
 
-        {/* <div className={styles.BlogPost_secHeading}>{props.blogPost_heading7}</div>
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading7}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text7}</div>
-        <div className={styles.BlogPost_text_inner}>{props.blogPost_text7a}</div>
-        <div className={styles.BlogPost_text_inner}>{props.blogPost_text7b}</div>
-        <div className={styles.BlogPost_text_inner}>{props.blogPost_text7c}</div>
-        <div className={styles.BlogPost_text_inner}>{props.blogPost_text7d}</div> */}
-
-        <div className={styles.BlogPost_secHeading}>Waterproof Plywood Price:</div>
-        <div className={styles.BlogPost_text_inner_header}>Brand Reputation: <span className={styles.BlogPost_text_inner}>Established brands known for producing high-quality waterproof plywood may command a higher price due to their reputation for durability and reliability.</span></div>
-
-        <div className={styles.BlogPost_text_inner_header}>Quality of Core Material: <span className={styles.BlogPost_text_inner}>Established brands known for producing high-quality waterproof plywood may command a higher price due to their reputation for durability and reliability.</span></div>
-
-        <div className={styles.BlogPost_text_inner_header}>Brand Reputation:<span className={styles.BlogPost_text_inner}> The core material used in the plywood, whether it's hardwood or softwood, can impact the price. Hardwood core waterproof plywood tends to be more expensive but offers enhanced strength.</span></div>
-
-        <div className={styles.BlogPost_text_inner_header}>Thickness of Plywood: <span className={styles.BlogPost_text_inner}>Plywood that adheres to industry standards and certifications may have a higher price tag. Certifications ensure that the plywood meets specific quality and safety criteria.
-
-        </span></div>
-        <div className={styles.BlogPost_text_inner_header}>Additional Features: <span className={styles.BlogPost_text_inner}>Some waterproof plywood may come with additional features such as enhanced fire resistance or special coatings. These features can influence the price based on the added benefits they provide</span></div>
-
-
-
-
-
+        <div className={styles.BlogPost_text_inner_header}>{props.texture1}<span className={styles.BlogPost_text_inner}>{props.text1}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture2} <span className={styles.BlogPost_text_inner}>{props.text2}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture3}<span className={styles.BlogPost_text_inner}>{props.text3}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture4}<span className={styles.BlogPost_text_inner}>{props.text4}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture5} <span className={styles.BlogPost_text_inner}>{props.text5}</span></div>
 
 
 
@@ -68,6 +56,28 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading8}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text8}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text8a}</div>
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading9}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text9}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture11} <span className={styles.BlogPost_text_inner}>{props.text11}</span></div>
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading10}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text10}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture12} <span className={styles.BlogPost_text_inner}>{props.text12}</span></div>
+
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading11}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text11}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture13} <span className={styles.BlogPost_text_inner}>{props.text13}</span></div>
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading11}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text11}</div>
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading12}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text12}</div>
+
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading13}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text13}</div>
 
 
         

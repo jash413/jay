@@ -108,7 +108,7 @@ const Airpods = () => {
 
     const timeline = gsap.timeline({
       onUpdate: () => {
-        const progress = (timeline.progress() * 100).toFixed(0);
+        const progress = (timeline.progress() * 20).toFixed(0);
         setScrollPercentage(progress);
         render();
       },
@@ -201,7 +201,7 @@ const Airpods = () => {
             className={styles.percentageCounter}
             // style={{ fontSize: `${circleSize}px` }}
           >
-            {scrollPercentage}%
+            {scrollPercentage}
           </div>
           {/* <span className={styles.counter_text}>Royale Touche</span> */}
         </div>

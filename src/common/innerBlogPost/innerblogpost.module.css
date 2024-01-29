@@ -1,6 +1,6 @@
 .BlogPost_outer {
   background-color: white;
-  padding: 8rem 13rem 0rem 13rem;
+  padding: 8rem 13rem 2rem 13rem;
 }
 
 .BlogPost_image {
@@ -24,8 +24,8 @@
 
 
 .BlogPost_secHeading{
-  font-size: 20px;
-    margin-top: 1rem;
+  font-size: 24px;
+    margin-top: 2rem;
     font-weight: 600;
 }
 .BlogPost_name {

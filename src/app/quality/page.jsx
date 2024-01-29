@@ -8,7 +8,7 @@ import Preloader from "@/components/preloader/page";
 import  Quality_certificates from "@/components/quality_certificates/page";
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
-import Form from "@/components/form/page2";
+import Form from "@/components/form/page";
 import Quality_carousal from "@/components/quality_carousal/page";
 // import Product_overview from "@/components/product_overview/page";
 import Quality_text from "@/components/quality_text/page";

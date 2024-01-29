@@ -9,7 +9,7 @@ const Page = () => {
         Date="March 20, 2024"
         blog_name="Interior Design"
         blogPost_heading="Types of plywood size & what are the difference"
-        blogPost_text="In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…"
+        blogPost_text="Plywood, a versatile and widely used material in construction and woodworking, comes in various sizes, with 8x4 being a common dimension. Among the choices available, 18mm and 12mm plywood stand out as popular options. Let’s explore the types of plywood sizes, focusing on the differences between 18mm plywood and 12mm plywood, along with insights into pricing for both."
       />
     </div>
   );

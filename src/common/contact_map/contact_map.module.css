@@ -2,7 +2,8 @@
 
 
 .hellom{
-  float: left;
+  /* float: left; */
+  display: block;
   border: none;
 }
 @media (max-width: 787px) {

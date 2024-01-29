@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from "react";
-import Explore from "@/components/explore/page";
+// import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
 import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page";
-import Form from "@/components/form/page2";
+import Form from "@/components/form/page";
 import Real_Timeline from "@/common/real_timeline/page";
-import ThreeCards from "@/common/threeCards/page";
+// import ThreeCards from "@/common/threeCards/page";
 import Slider from "@/components/slider/page";
 import Innovation_cards from "@/components/innovation_cards/page";
 import image1 from "@/images/Laminate_img.png";
