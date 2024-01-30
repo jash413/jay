@@ -82,7 +82,7 @@ const Blockboard = () => {
                         delay: inView ? i / 15 : 0,
                       }}
                       className={
-                        el === "Super" || el === "Exclusive"
+                        el === "Unmatched" || el === "stability"
                           ? styles.Blue_text3
                           : ""
                       }

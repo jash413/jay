@@ -5,18 +5,23 @@ import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Common_animation from "@/common/common_animation/animation";
-import slide1 from "@/images/blockSlider1.jpg";
-import slide2 from "@/images/blockSlider2.jpg";
-import slide3 from "@/images/blockSlider3.jpg";
-import slide4 from "@/images/blockSlider4.jpg";
-import slide5 from "@/images/blockSlider5.jpg";
-import slide6 from "@/images/blockSlider6.jpg";
-import slide7 from "@/images/blockSlider7.jpg";
-import slide8 from "@/images/blockSlider8.jpg";
-import slide13 from "@/images/blockSlider13.jpg";
-import slide10 from "@/images/blockSlider10.jpg";
-import slide11 from "@/images/blockSlider11.jpg";
-import slide12 from "@/images/blockSlider12.jpg";
+import slide1 from "@/images/plywoodImage1.jpg";
+import slide2 from "@/images/plywoodImage2.jpg";
+import slide3 from "@/images/plywoodImage3.jpg";
+import slide4 from "@/images/plywoodImage4.jpg";
+import slide5 from "@/images/plywoodImage5.jpg";
+import slide6 from "@/images/plywoodImage6.jpg";
+import slide7 from "@/images/plywoodImage7.jpg";
+import slide8 from "@/images/plywoodImage8.jpg";
+import slide13 from "@/images/plywoodImage13.jpg";
+import slide10 from "@/images/plywoodImage10.jpg";
+import slide11 from "@/images/plywoodImage11.jpg";
+import slide12 from "@/images/plywoodImage12.jpg";
+import slide9 from "@/images/plywoodImage9.jpg";
+import slide14 from "@/images/plywoodImage14.jpg";
+import slide15 from "@/images/plywoodImage15.jpg";
+import slide16 from "@/images/plywoodImage16.jpg";
+import slide17 from "@/images/plywoodImage17.jpg";
 import styles from "@/common/inner_page_slider2/inner_slider2.module.css";
 import "@/common/inner_page_slider2/inn.css";
 import "swiper/css";
@@ -325,6 +330,33 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
+                    src={slide9}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>R</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Raw Material:
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Made from carefully selected hardwood timber to ensure
+                        high strength and durability.Gurjan species used in the
+                        face veneers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
                     src={slide10}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
@@ -407,6 +439,114 @@ const page = () => {
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
                     src={slide13}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>R</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Raw Material:
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Made from carefully selected hardwood timber to ensure
+                        high strength and durability.Gurjan species used in the
+                        face veneers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
+                    src={slide14}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>R</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Raw Material:
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Made from carefully selected hardwood timber to ensure
+                        high strength and durability.Gurjan species used in the
+                        face veneers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
+                    src={slide15}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>R</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Raw Material:
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Made from carefully selected hardwood timber to ensure
+                        high strength and durability.Gurjan species used in the
+                        face veneers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
+                    src={slide16}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>R</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Raw Material:
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Made from carefully selected hardwood timber to ensure
+                        high strength and durability.Gurjan species used in the
+                        face veneers.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
+                    src={slide17}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />

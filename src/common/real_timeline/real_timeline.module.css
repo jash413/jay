@@ -67,7 +67,7 @@
   position: absolute;
   width: 40%;
   top: 158px;
-  right: 15px;
+  right: -11rem;
   padding-bottom: 5rem;
   opacity: 0;
 }
@@ -132,6 +132,9 @@
     text-align: left;
     opacity: 0;
   }
+  .content {
+    right: -9rem;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -172,7 +175,7 @@
     height: 100%;
   }
   .bead_outer {
-    left: 85px;
+    left: 11.2%;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -183,7 +186,7 @@
     position: absolute;
     width: 68%;
     top: 210px;
-    right: 45px;
+    /* right: 45px; */
     padding-bottom: 0;
     padding-top: 4rem;
     opacity: 0;
@@ -231,7 +234,7 @@
 
   .timeline_image {
     height: 100%;
-    width: 85%;
+    width: 55%;
   }
   .bead_outer {
     left: 11%;
@@ -243,7 +246,7 @@
   .content {
     color: #000000;
     position: absolute;
-    width: 68%;
+    width: 54%;
     top: 230px;
     right: 10px;
     padding-bottom: 0;
@@ -301,7 +304,7 @@
 
   .timeline_image {
     height: 100%;
-    width: 85%;
+    width: 65%;
   }
   .bead_outer {
     left: 10.5%;
@@ -313,7 +316,6 @@
   .content {
     color: #000000;
     position: absolute;
-    width: 68%;
     top: 230px;
     right: 10px;
     padding-bottom: 0;
@@ -345,7 +347,7 @@
     left: 28%;
   }
 }
-@media(max-width:420px){
+@media (max-width: 420px) {
   .timeline_comment {
     font-size: 15px;
     width: 220px;
