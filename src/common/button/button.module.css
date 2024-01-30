@@ -167,7 +167,7 @@
   color: #c3a464;
   text-decoration: none;
   cursor: pointer;
-  z-index: 16;
+  z-index: 0;
   background: transparent;
   user-select: none;
   -webkit-user-select: none;

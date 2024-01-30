@@ -20,6 +20,114 @@ import Innovation_cards from "@/components/innovation_cards/page";
 import image1 from "@/images/Laminate_img.png";
 import image2 from "@/images/plywood_img.png";
 import image3 from "@/images/wooden_floor_img.png";
+import SmartChioceTable from "@/common/SmartChoice-Table/page";
+
+const SpecificationsLeftData = [
+  {
+    title: "GRADE:",
+    text: " BWP Grade",
+  },
+  {
+    title: "SPECIES USED:",
+    text: "Gurjan, 100% Pine Timber and selected Hardwood species",
+  },
+  {
+    title: "FACE VENEER: ",
+    text: "Both Side Gurjan (Diptocarpus spp.)",
+  },
+  {
+    title: "CORE VENEER:",
+    text: "100% Pine Timber Double Line",
+  },
+  {
+    title: "BOARD FRAME:",
+    text: "Board frame made with 100% Kiln Seasoned Pine timber.",
+  },
+  {
+    title: "SIZES OF Blockboard:",
+    text: " 2400 X 1220mm, 2140 X1220mm",
+  },
+  {
+    title: "LENGTHS:",
+    text: "Up to + 2 to 4 mm of specified length",
+  },
+  {
+    title: "WIDTHS:",
+    text: "Up to + 1 to 3 mm of specified width",
+  },
+  {
+    title: "THICKNESS TOLERANCE:",
+    text: "Full Thickness (As per specified on the sheet)",
+  },
+  {
+    title: "FACE VENEER THICKNESS:",
+    text: "0.30 MM",
+  },
+  {
+    title: "CALIBRATIONS:",
+    text: "Both Sides Calibrated",
+  },
+  {
+    title: "ADHESIVES:",
+    text: "High Solid BWP Grade Phenolic Polymer Adhesive",
+  },
+  {
+    title: "PRESERVATIVE TREATMENT:",
+    text: "Four-stage preservative treatment.",
+  },
+];
+
+const SpecificationsRightData = [
+  {
+    title: "EDGE STRAIGHTNESS:",
+    text: "0.20%",
+  },
+  {
+    title: "SQUARENESS:",
+    text: "0.20%",
+  },
+  {
+    title: "DENSITIES",
+    text: "600 TO 650 Kg/m3",
+  },
+  {
+    title: "WATER ABSORPTION (24 HRS)",
+    text: "< 3 %",
+  },
+  {
+    title: "WATER ABSORPTION (48 HRS)",
+    text: "< 5%",
+  },
+  {
+    title: "MOISTURE",
+    text: "-- 7%-10%",
+  },
+  {
+    title: "WATER RESISTANCE TESTS:",
+    text: "No delamination after 72 hours of boiling test.",
+  },
+  {
+    title: "ADHESIONS OF PLIES:",
+    text: "EXCELLENT",
+  },
+  {
+    title: "MODULUS OF ELASTICITY (N/mm2)",
+    text: "= >6000",
+  },
+  {
+    title: "MODULUS OF RUPTURE (N/mm2)",
+    text: "= > 60 ",
+  },
+  {
+    title: "SCREW HOLDING STRENGTH (KG)",
+    text: "= > 190",
+  },
+  {
+    title: "NAIL HOLDING STRENGTH (KG)",
+    text: "= > 110",
+  },
+];
+
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -44,7 +152,6 @@ const Page = () => {
         heading="With the dimensional stability of solid wood and appearance and sleekness of plywood, Royale 
         Touche Blockboard gives you warp-free furniture that lasts a lifetime."
       />
-     
 
       <Inner_page_slider2 />
       {/* <Inner_page_common_img common_img={common_img}  common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
@@ -52,9 +159,13 @@ const Page = () => {
       {/* <PlywoodNewSpecs/> */}
 
       {/* <Inner_page_slider2/> */}
-      <Specifications />
+      <Specifications
+        leftData={SpecificationsLeftData}
+        rightData={SpecificationsRightData}
+      />
+      <SmartChioceTable />
       <Blockboard_main />
-      <Blockwood_flex/>
+      <Blockwood_flex />
       {/* <Innovation_cards
         link1={"#"}
         link2={"#"}

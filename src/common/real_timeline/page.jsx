@@ -50,7 +50,7 @@ const Page = () => {
       ease: "out",
       duration: 1.5,
       ease: "slow(0.7,0.7,false)",
-      scale: 1.25,
+      scale: 1.8,
       stagger: 0.9,
     });
   };
