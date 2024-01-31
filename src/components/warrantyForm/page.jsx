@@ -2,55 +2,84 @@
 import { React, useState, useRef } from "react";
 import { Dropdown } from "primereact/dropdown";
 import { useFormik } from "formik";
-import toast, { Toaster } from "react-hot-toast";
-import { FormSchemas } from "@/components/warrantyForm/formSchema"
+import { FormSchemas } from "@/components/warrantyForm/formSchema";
 import "./warrantyForm.css";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
-import invoice_icon from "@/images/invoice_svg.svg"
-// import "react-toastify/dist/ReactToastify.css";
-import styles from "@/components/warrantyForm/warrantyForm.module.css"
+import invoice_icon from "@/images/invoice_svg.svg";
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import styles from "@/components/warrantyForm/warrantyForm.module.css";
 const FormCommon = () => {
+  const form = useRef();
   const [selectedProduct, setSelectedProduct] = useState(null);
-
   const [uploadedInvoice, setUploadedInvoice] = useState(null);
   const [uploadedInvoice1, setUploadedInvoice1] = useState(null);
   const [uploadedInvoice2, setUploadedInvoice2] = useState(null);
   const [uploadedInvoice3, setUploadedInvoice3] = useState(null);
   const products = [
-    { name: "Product 1", code: "NY" },
-    { name: "Product 2", code: "RM" },
-    { name: "Product 3", code: "LDN" },
-    { name: "Product 4", code: "IST" },
-    { name: "Product 5", code: "PRS" },
+    { name: "8ft x 4ft", code: "NY" },
+    { name: "7ft x 4ft", code: "RM" },
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  // const [selectedCategory, setSelectedCategory] = useState(null);
   const categories = [
-    { name: "CATEGORY 1", code: "1" },
-    { name: "CATEGORY 2", code: "2" },
-    { name: "CATEGORY 3", code: "3" },
-    { name: "CATEGORY 4", code: "4" },
-    { name: "CATEGORY 5", code: "5" },
+    { name: "Royale Touche Performance Ply-Promaxx", code: "1" },
+    { name: "Royale Touche Performance Ply-Promaxx+", code: "2" },
+    { name: "Royale Touche Blockboard", code: "3" },
   ];
 
-  const [selectedSheets, setSelectedSheets] = useState(null);
-  const sheets = [
-    { name: "1", code: "1" },
-    { name: "2", code: "2" },
-    { name: "3", code: "3" },
-    { name: "4", code: "4" },
-    { name: "5", code: "5" },
-  ];
+  // const [selectedThickness, setSelectedThickness] = useState(null);
+  const [thicknessOptions, setThicknessOptions] = useState([]);
+  const handleCategoryChange = (category) => {
+    values.Category = category;
+    values.Product_Name = null;
 
-  const [selectedThickness, setSelectedThickness] = useState(null);
-  const Thicknesses = [
-    { name: "1.5", code: "1" },
-    { name: "2.5", code: "2" },
-    { name: "3.5", code: "3" },
-    { name: "4.5", code: "4" },
-    { name: "5.5", code: "5" },
-  ];
+    if (category && category.code === "1") {
+      setThicknessOptions([
+        { name: "6mm", code: "6mm" },
+        { name: "9mm", code: "9mm" },
+        { name: "12mm", code: "12mm" },
+        { name: "16mm", code: "16mm" },
+        { name: "19mm", code: "19mm" },
+        { name: "25mm", code: "25mm" },
+      ]);
+    } else if (category && category.code === "2") {
+      setThicknessOptions([
+        { name: "6mm", code: "6mm" },
+        { name: "9mm", code: "9mm" },
+        { name: "12mm", code: "12mm" },
+        { name: "16mm", code: "16mm" },
+        { name: "19mm", code: "19mm" },
+        { name: "25mm", code: "25mm" },
+      ]);
+    } else {
+      setThicknessOptions([
+        { name: "6mm", code: "6mm" },
+        { name: "9mm", code: "9mm" },
+      ]);
+    }
+  };
+  // const [selectedSheets, setSelectedSheets] = useState(null);
+  // const sheets = [
+  //   { name: "1", code: "1" },
+  //   { name: "2", code: "2" },
+  //   { name: "3", code: "3" },
+  //   { name: "4", code: "4" },
+  //   { name: "5", code: "5" },
+  // ];
+  // const Thicknesses = [
+  //   { name: "6mm", code: "1" },
+  //   { name: "9mm", code: "2" },
+  //   { name: "12mm", code: "3" },
+  //   { name: "16mm", code: "4" },
+  //   { name: "19mm", code: "5" },
+  //   { name: "25mm", code: "5" },
+  // ];
+
+  const submitMessage = () => {
+    toast.success("Form Submitted Successfully...");
+  };
 
   const chooseFile = (e) => {
     const file = e.target.files[0];
@@ -138,7 +167,17 @@ const FormCommon = () => {
     }
   };
   // const [submitAttempted, setSubmitAttempted] = useState(false);
-  const [showMore, setshowMore] = useState(false);
+  const [formResponse, setFormResponse] = useState("");
+  const [sections, setSections] = useState([]);
+  const removeSection = (index) => {
+    const updatedSections = [...sections];
+    updatedSections.splice(index, 1);
+    setSections(updatedSections);
+  };
+
+  const addSection = () => {
+    setSections([...sections, {}]);
+  };
 
   const initialValue = {
     fullName: "",
@@ -153,15 +192,15 @@ const FormCommon = () => {
     Dealer_Name: "",
     Category: "",
     Product_Name: "",
-    no_of_sheets: "",
+    sheets: "",
     No_of_thickness: "",
     Invoice_File: "",
     Invoice_File1: "",
     Invoice_File2: "",
     Invoice_File3: "",
-    agreeTerms: "",
-    updates: "",
-    offers: "",
+    // agreeTerms: "",
+    // updates: "",
+    // offers: "",
   };
 
   const clearUploadedFile = () => {
@@ -180,15 +219,20 @@ const FormCommon = () => {
   //   }
   //   clearUploadedFile();
   // };
- 
 
+  // const handleThicknessChange = (thickness) => {
+    // values.No_of_thickness = thickness;
+  // };
+  // const handleProductChange = (products1) => {
+    // values.Product_Name = products1;
+  // };
 
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,
     validationSchema: FormSchemas,
-    // onClick: notify,
+    // innerRef: form,
     onSubmit: (value, action) => {
-      console.log("value", value);
+      console.log("Form values", value);
       if (uploadedInvoice) {
         console.log("Uploaded PDF file:", uploadedInvoice);
       }
@@ -202,53 +246,20 @@ const FormCommon = () => {
         )
         .then((response) => {
           console.log("Email sent successfully:", response);
-          // resetForm(); 
+          setFormResponse(response);
+          action.resetForm();
+          // resetForm();
         })
         .catch((error) => {
           console.error("Email send error:", error);
         });
-      action.resetForm();
-    
+      submitMessage();
     },
-
   });
+  console.log("FINAL VALUES",values);
+  console.log("response", formResponse.text);
 
-  console.log(values);
 
- 
-
-  const form = useRef();
-
-  const notify = () =>
-  toast.success("Form Submitted Successfully!", {
-    position: "top-right",
-    autoClose: 8000,
-    hideProgressBar: false,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
-
-  // const sendEmail = (e) => {
-  //   // e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_6pitte7",
-  //       "template_g1gqwr7",
-  //       form.current,
-  //       "dp6xvACY2kw4Z6gwc"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
 
   return (
     <div className={styles.Form_Container}>
@@ -449,8 +460,12 @@ const FormCommon = () => {
                   Category Name
                 </label>
                 <Dropdown
-                  value={selectedCategory}
-                  onChange={(e) => setSelectedCategory(e.value)}
+                  value={values.Category}
+                  onChange={(e) => {
+                    handleCategoryChange(e.value);
+                    setSelectedProduct(null);
+                  }}
+                  // onChange={(e) => setSelectedCategory(e.value)}
                   options={categories}
                   optionLabel="name"
                   name="Category"
@@ -458,23 +473,30 @@ const FormCommon = () => {
                   className={styles.input_field}
                   // value={values.Category}
                 />
-                 {touched.Category && errors.Category && (
-                <p className="error">{errors.Category}</p>
-              )}
+                {touched.Category && errors.Category && (
+                  <p className="error">{errors.Category}</p>
+                )}
               </div>
               <div className={styles.RT_Form_field}>
                 <label htmlFor="Category_Name" className={styles.form_Label}>
                   Select Product *
                 </label>
                 <Dropdown
-                  value={selectedProduct}
-                  onChange={(e) => setSelectedProduct(e.value)}
+                  value={values.Product_Name}
+                  // onChange={(e) => {
+                  //   handleProductChange(e.value);
+                  // }}
+                  onChange={handleChange}
+                  // onChange={(e) => setSelectedProduct(e.value)}
                   options={products}
                   optionLabel="name"
                   name="Product_Name"
-                  placeholder="Product Name"
+                  placeholder="Product"
                   className={styles.input_field}
                 />
+                {touched.Product_Name && errors.Product_Name && (
+                  <p className="error">{errors.Product_Name}</p>
+                )}
               </div>
             </div>
             {/* sheets */}
@@ -483,7 +505,7 @@ const FormCommon = () => {
                 <label htmlFor="Sheets" className={styles.form_Label}>
                   No Of Sheets
                 </label>
-                <Dropdown
+                {/* <Dropdown
                   value={selectedSheets}
                   onChange={(e) => setSelectedSheets(e.value)}
                   options={sheets}
@@ -491,51 +513,78 @@ const FormCommon = () => {
                   name="no_of_sheets"
                   placeholder="Enter No Of Sheets"
                   className={styles.input_field}
+                /> */}
+                <input
+                  type="number"
+                  placeholder="Enter No of sheets"
+                  name="sheets"
+                  className={styles.input_field}
+                  onChange={handleChange}
+                  value={values.sheets}
                 />
+                {touched.sheets && errors.sheets && (
+                  <p className="error">{errors.sheets}</p>
+                )}
               </div>
               <div className={styles.RT_Form_field}>
                 <label htmlFor="Thickness" className={styles.form_Label}>
                   Thickness
                 </label>
                 <Dropdown
-                  value={selectedThickness}
-                  onChange={(e) => setSelectedThickness(e.value)}
-                  options={Thicknesses}
+                  value={values.No_of_thickness}
+                  onChange={handleChange}
+                  // onChange={(e) => handleThicknessChange(e.value)}
+                  options={thicknessOptions}
                   optionLabel="name"
                   name="No_of_thickness"
                   placeholder="Select Thickness"
                   className={styles.input_field}
+                  // disabled={!selectedProduct}
                 />
+                {touched.No_of_thickness && errors.No_of_thickness && (
+                  <p className="error">{errors.No_of_thickness}</p>
+                )}
               </div>
             </div>
           </div>
 
-          {showMore && (
-            <div className={styles.Form_Second_Part}>
+          {sections.map((section, index) => (
+            <div key={index} className={styles.Form_Second_Part}>
               <div className={styles.RT_Form_Flex}>
                 <div className={styles.RT_Form_field}>
                   <label htmlFor="Category_Name" className={styles.form_Label}>
                     Category Name
                   </label>
                   <Dropdown
-                    value={selectedCategory}
-                    onChange={(e) => setSelectedCategory(e.value)}
+                    value={values.Category}
+                    onChange={(e) => {
+                      handleCategoryChange(e.value);
+                      setSelectedProduct(null);
+                    }}
+                    // onChange={(e) => setSelectedCategory(e.value)}
                     options={categories}
                     optionLabel="name"
+                    name="Category"
                     placeholder="Select Category"
                     className={styles.input_field}
+                    // value={values.Category}
                   />
+                  {touched.Category && errors.Category && (
+                    <p className="error">{errors.Category}</p>
+                  )}
                 </div>
                 <div className={styles.RT_Form_field}>
                   <label htmlFor="Category_Name" className={styles.form_Label}>
                     Select Product *
                   </label>
                   <Dropdown
-                    value={selectedProduct}
-                    onChange={(e) => setSelectedProduct(e.value)}
+                    value={values.Product_Name}
+                    onChange={handleChange}
+                    // onChange={(e) => setSelectedProduct(e.value)}
                     options={products}
                     optionLabel="name"
-                    placeholder="Product Name"
+                    name="Product_Name"
+                    placeholder="Product"
                     className={styles.input_field}
                   />
                 </div>
@@ -546,43 +595,83 @@ const FormCommon = () => {
                   <label htmlFor="Sheets" className={styles.form_Label}>
                     No Of Sheets
                   </label>
-                  <Dropdown
-                    value={selectedSheets}
-                    onChange={(e) => setSelectedSheets(e.value)}
-                    options={sheets}
-                    optionLabel="name"
-                    placeholder="Enter No Of Sheets"
+                  {/* <Dropdown
+                 value={selectedSheets}
+                 onChange={(e) => setSelectedSheets(e.value)}
+                 options={sheets}
+                 optionLabel="name"
+                 name="no_of_sheets"
+                 placeholder="Enter No Of Sheets"
+                 className={styles.input_field}
+               /> */}
+                  <input
+                    type="number"
+                    placeholder="Enter No of sheets"
+                    name="sheets"
                     className={styles.input_field}
+                    onChange={handleChange}
+                    value={values.sheets}
                   />
+                  {touched.sheets && errors.sheets && (
+                    <p className="error">{errors.sheets}</p>
+                  )}
                 </div>
                 <div className={styles.RT_Form_field}>
                   <label htmlFor="Thickness" className={styles.form_Label}>
                     Thickness
                   </label>
                   <Dropdown
-                    value={selectedThickness}
-                    onChange={(e) => setSelectedThickness(e.value)}
-                    options={Thicknesses}
+                    value={values.No_of_thickness}
+                    // onChange={handleThicknessChange}
+                    onChange={handleChange}
+                    // onChange={(e) => handleThicknessChange(e.value)}
+                    options={thicknessOptions}
                     optionLabel="name"
+                    name="No_of_thickness"
                     placeholder="Select Thickness"
                     className={styles.input_field}
+                    // disabled={!selectedProduct}
                   />
                 </div>
               </div>
+
+              <div className={styles.Form_btn_Outer1}>
+                <button
+                  onClick={() => removeSection(index)}
+                  class="button-571"
+                  role="button"
+                >
+                  <span class="text">Remove</span>
+                  <span>Remove</span>
+                </button>
+              </div>
             </div>
-          )}
+          ))}
+
 
           <div className={styles.Form_btn_Outer}>
-            {/* <div
-              className="button-57"
-              onClick={() => setshowMore(!showMore)}
-            >
-              {showMore ? "ADD TO MORE" : "ADD TO MORE"}
-            </div> */}
-
-
-
-            <button onClick={() => setshowMore(!showMore)} class="button-57" role="button"><span class="text"> ADD TO MORE</span><span> ADD TO MORE</span></button>
+            <button onClick={addSection} class="button-57" role="button">
+              <span className="text">
+                {/* <div className=""> */}
+                <svg
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="svg_add"
+                >
+                  <path
+                    d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z"
+                    fill-rule="white"
+                  />
+                </svg>
+                {/* </div> */}
+                ADD MORE 
+              </span>
+              <span>CLICK TO ADD MORE</span>
+            </button>
           </div>
         </div>
 
@@ -592,7 +681,7 @@ const FormCommon = () => {
             <p className={styles.upload_invoice_text}>
               Click here to upload invoice*
             </p>
-          </div>
+          </div>  
           {/* Invoice */}
           <div className={styles.invoice_Main}>
             <div className={styles.inovoice_inner_flex}>
@@ -608,6 +697,8 @@ const FormCommon = () => {
                     id="getFile"
                     name="Invoice_File"
                     onChange={chooseFile}
+                    value={values.Invoice_File}
+                    // onChange={(e) => handleInvoiceFileChange(e.target.files[0])}
                   />
                 </label>
                 {uploadedInvoice && (
@@ -636,6 +727,7 @@ const FormCommon = () => {
                     id="getFile1"
                     name="Invoice_File1"
                     onChange={chooseFile1}
+                    // onChange={(e) => handleInvoiceFileChange(e.target.files[0])}
                   />
                 </label>
                 {uploadedInvoice1 && (
@@ -664,6 +756,7 @@ const FormCommon = () => {
                     id="getFile2"
                     name="Invoice_File2"
                     onChange={chooseFile2}
+                    // onChange={(e) => handleInvoiceFileChange(e.target.files[0])}
                   />
                 </label>
                 {uploadedInvoice2 && (
@@ -692,6 +785,7 @@ const FormCommon = () => {
                     id="getFile3"
                     name="Invoice_File3"
                     onChange={chooseFile3}
+                    // onChange={(e) => handleInvoiceFileChange(e.target.files[0])}
                   />
                 </label>
                 {uploadedInvoice3 && (
@@ -712,7 +806,7 @@ const FormCommon = () => {
             <div className={styles.form_last_section_content}>
               <div>
                 <input
-                className={styles.checkbox}
+                  className={styles.checkbox}
                   type="checkbox"
                   id="agreeTerms"
                   name="agreeTerms"
@@ -729,7 +823,7 @@ const FormCommon = () => {
               </p>
             </div>
 
-            <div className={styles.form_last_section_content}>
+            {/* <div className={styles.form_last_section_content}>
               <div>
                 <input
                 className={styles.checkbox}
@@ -743,8 +837,8 @@ const FormCommon = () => {
               <p className={styles.form_agree_content}>
                 Click here to receive updates on WhatsApp
               </p>
-            </div>
-            <div className={styles.form_last_section_content}>
+            </div> */}
+            {/* <div className={styles.form_last_section_content}>
               <div>
                 <input
                 className={styles.checkbox}
@@ -758,17 +852,36 @@ const FormCommon = () => {
               <p className={styles.form_agree_content}>
                 I wish to apply for consumer promotion offer
               </p>
-            </div>
+            </div> */}
           </div>
           {/*  */}
           <div className={styles.Form_btn_Outer_Main}>
-
-          <button onClick={notify} class="button-57" role="button"><span class="text"> Submit</span><span> Submit</span></button>
+            <button class="button-57" role="button">
+              <span class="text"> Submit</span>
+              <span> Submit</span>
+            </button>
 
             {/* <button className={styles.Form_btn_inner} onClick={notify}>
               Submit
             </button> */}
-            <Toaster position="top-right" />
+            {/* <Toaster position="top-right" /> */}
+            {formResponse.text === "OK" && (
+              <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={true}
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable={false}
+                pauseOnHover={false}
+                theme="light"
+                transition={Slide}
+                className={"contactFormNotification"}
+                // progressStyle={{ background: "#f90" }}
+              />
+            )}
           </div>
         </div>
       </form>
