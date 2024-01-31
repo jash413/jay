@@ -105,6 +105,10 @@ const page = () => {
               },
               991: {
                 // width: 991,
+                slidesPerView: 2,
+              },
+              1340: {
+                // width: 991,
                 slidesPerView: 3,
               },
             }}
@@ -117,18 +121,20 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>V</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      Vacuum Pressure Chemical Treatment (VPT)
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.
+                        The only plywood in India made with 100% scientifically
+                        researched proprietary Vacuum Pressure Chemical Treated
+                        veneer to provide protection against termites, borers
+                        and fire.
                       </div>
                     </div>
                   </div>
@@ -149,13 +155,12 @@ const page = () => {
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      High Solid Polymer used adhesives:
+                      100% Hard Wood & Core
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Use of 100% BWP grade, High solid Phenolic polymer
-                        ensures better bonding strength and excellent boiling
-                        waterproof properties.
+                        made from carefully selected hardwood timber such as
+                        Eucalyptus to ensure high strength and durability.
                       </div>
                     </div>
                   </div>
@@ -171,18 +176,17 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>S</div>
+                  <div className={styles.inner_carousal_word}>G</div>
                 </div>
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Strength and durability by balanced construction:
+                      Gurjan Face
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        The plywood is constructed using an advanced
-                        cross-bonding technology, which enhances its strength
-                        and durability.
+                        100% high quality Gurjan face veneer gives strength and
+                        sleek look to the plywood.
                       </div>
                     </div>
                   </div>
@@ -198,18 +202,18 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>W</div>
+                  <div className={styles.inner_carousal_word}>T</div>
                 </div>
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_headingx}>
-                      Weather Durability by longer conditioning system of raw
-                      material and pressed material:
+                      4X TER-BO KILL
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        High durability against all weather conditions, ensuring
-                        longevity and warp-free performance.{" "}
+                        Four-stage preservative treatment against the termites
+                        and borers at different processing stages to ensure 100%
+                        protection for a lifetime
                       </div>
                     </div>
                   </div>
@@ -225,19 +229,20 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>F</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      FIRE RETARDANT
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Fully vacuum pressure-treated veneer with fire-retardant
+                        chemical containing nano particles, and organ phosphorus
+                        chemicals used during the process, providing excellent
+                        fire-retardant properties.
                       </div>
                     </div>
                   </div>
@@ -253,18 +258,18 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>W</div>
+                  <div className={styles.inner_carousal_word}>T</div>
                 </div>
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_headingx}>
-                      Weather Durability by longer conditioning system of raw
-                      material and pressed material:
+                      4-Times Pressing Technology
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        High durability against all weather conditions, ensuring
-                        longevity and warp-free performance.{" "}
+                        Manufactured using four times pressing to ensure
+                        equilibrium moisture content level within the glue line
+                        for enhanced stability in the sheet.
                       </div>
                     </div>
                   </div>
@@ -280,19 +285,18 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>P</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      100% Phenolic Resins
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        100% BWP grade high solid phenolic polymers ensures
+                        excellent bonding and waterproof properties
                       </div>
                     </div>
                   </div>
@@ -307,19 +311,18 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>M</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      Microbial Shield by Nano-based chemicals
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Shielded against microbes, viruses, bacteria, fungi,
+                        termites, and borers in their favourable conditions.
                       </div>
                     </div>
                   </div>
@@ -334,19 +337,19 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>F</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      Fully Composed Core & Panels
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        100% composed veneer sheets made using sophisticated
+                        core and panel composers to ensure precise manufacturing
+                        of high quality plywood.
                       </div>
                     </div>
                   </div>
@@ -361,19 +364,19 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>G</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      100% Gapless
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Use of high-quality hardwood species which are fully
+                        composed to have zero gaps in the plywood, giving it the
+                        desired strength and durability.
                       </div>
                     </div>
                   </div>
@@ -388,19 +391,19 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>C</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      100% Calibrated
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Uniform thickness across the sheet through the
+                        calibration process ensures even load distribution,
+                        enhancing the appearance and performance of furniture.
                       </div>
                     </div>
                   </div>
@@ -415,19 +418,19 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>H</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      High Screw & Nail Holding Capacity
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        made from all composed full sheet veneers of select
+                        hardwood species, ensuring a robust and well-structured
+                        plywood.
                       </div>
                     </div>
                   </div>
@@ -442,19 +445,20 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>I</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      100% In-House Manufacturing
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Every Ply a Promise - Manufactured in-house with
+                        cutting-edge technology to meet stringent industry
+                        standards, and ensure that quality is of utmost priority
+                        and never compromised.
                       </div>
                     </div>
                   </div>
@@ -469,20 +473,16 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>L</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      Lifetime Warranty
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
-                      <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
-                      </div>
+                      <div className={styles.inner_carousal_paragraph1}></div>
                     </div>
                   </div>
                 </div>
@@ -496,19 +496,19 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>E</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      E0 Emission Compliant
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Zero emission of free formaldehyde by use of scavengers
+                        in the resin, contributing to a healthier indoor
+                        environment.
                       </div>
                     </div>
                   </div>
@@ -523,26 +523,25 @@ const page = () => {
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
-                  <div className={styles.inner_carousal_word}>R</div>
+                  <div className={styles.inner_carousal_word}>C</div>
                 </div>
 
                 <div className={styles.inner_carousal_data_outer}>
                   <div>
                     <div className={styles.inner_carousal_data_heading}>
-                      Raw Material:
+                      CARB Certified E0
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                        Zero emission plywood supported by testing and
+                        certification from California Air Resources Board (CARB)
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -568,7 +567,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
