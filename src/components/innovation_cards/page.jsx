@@ -17,7 +17,7 @@ const Page = ({
   card3Text,
 }) => {
   const text =
-    " Lorem Ipsum is simply dummy text of the printing and typesetting industry.".split(
+    "Revitalize your living spaces with plywood - where craftsmanship meets everyday luxury.".split(
       " "
     );
 

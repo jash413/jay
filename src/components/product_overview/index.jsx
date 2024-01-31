@@ -1,9 +1,9 @@
 // ProductOverviewItem.jsx
-import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
-import styles from '@/components/product_overview/product_overview.module.css';
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+import styles from "@/components/product_overview/product_overview.module.css";
 
 // Animation variants for the content
 const contentVariants = {
@@ -16,7 +16,6 @@ const contentVariants = {
 };
 
 const ProductOverviewItem = ({
- 
   image,
   image1,
   title,
@@ -25,15 +24,21 @@ const ProductOverviewItem = ({
 }) => {
   const controlsFirstContent = useAnimation();
   const controlsSecondContent = useAnimation();
-  const [refFirstContent, inViewFirstContent] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
-  const [refSecondContent, inViewSecondContent] = useInView({ triggerOnce: true, rootMargin: '-100px 0px' });
+  const [refFirstContent, inViewFirstContent] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
+  const [refSecondContent, inViewSecondContent] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
 
   useEffect(() => {
     if (inViewFirstContent) {
-      controlsFirstContent.start('visible').then(() => {
+      controlsFirstContent.start("visible").then(() => {
         // Start the second content animation with a slight delay after the first content animation
         setTimeout(() => {
-          controlsSecondContent.start('visible');
+          controlsSecondContent.start("visible");
         }, 0.2 * 1000); // 0.2 seconds delay
       });
     }
@@ -41,7 +46,7 @@ const ProductOverviewItem = ({
 
   useEffect(() => {
     if (inViewSecondContent && !inViewFirstContent) {
-      controlsSecondContent.start('visible');
+      controlsSecondContent.start("visible");
     }
   }, [controlsSecondContent, inViewSecondContent, inViewFirstContent]);
 
@@ -49,10 +54,10 @@ const ProductOverviewItem = ({
     <div className={styles.productOverviewCard}>
       <div className={styles.productOverviewCard_wrapper}>
         <div className={styles.heading}>
-        <Image className={styles.ixs} src={image1} alt="image"  />
+          <Image className={styles.ixs} src={image1} alt="image" />
         </div>
         <div className={styles.image}>
-          <Image src={image} alt={title}  />
+          <Image src={image} alt={title} />
         </div>
         <div className={styles.contentSec}>
           <div className={styles.title}>{title}</div>
@@ -65,15 +70,17 @@ const ProductOverviewItem = ({
           >
             {content}
           </motion.div>
-          <motion.div
-            ref={refSecondContent}
-            variants={contentVariants}
-            initial="hidden"
-            animate={controlsSecondContent}
-            className={styles.secondConetnt}
-          >
-            {secondContent}
-          </motion.div>
+          {secondContent && (
+            <motion.div
+              ref={refSecondContent}
+              variants={contentVariants}
+              initial="hidden"
+              animate={controlsSecondContent}
+              className={styles.secondConetnt}
+            >
+              {secondContent}
+            </motion.div>
+          )}
         </div>
       </div>
     </div>
