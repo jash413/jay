@@ -50,9 +50,9 @@ const Page = () => {
           image1={innovation_flex_img1}
           image2={innovation_flex_img2}
           image3={innvotion_flex_img3}
-          card1Text={"Laminate"}
-          card2Text={"Wooden Flooring"}
-          card3Text={"Plywood"}
+          card1Text={"Cupboard"}
+          card2Text={"Drawer "}
+          card3Text={"Cabinets"}
         />
         <Innovation_flex />
 

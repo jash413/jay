@@ -43,12 +43,12 @@
   width: 25%;
 }
 .readmore {
-  color: white;
+  color: #c3a464 !important;
   transition: all 0.4s;
   cursor: pointer;
 }
 .readmore:hover {
-  color: #c3a464;
+  color: #fff !important;
 }
 @media screen and (max-width: 1176px) {
   .specifications_content {
@@ -63,9 +63,7 @@
     font-weight: 500;
     padding: 2rem 0rem;
   }
-  .specifications_img {
-    display: none;
-  }
+ 
 }
 @media screen and (max-width: 991px) {
   .specifications_content {
@@ -85,6 +83,9 @@
   }
   .specifications_content_right {
     width: 45%;
+  }
+  .specifications_img {
+    display: none;
   }
 }
 @media screen and (max-width: 770px) {

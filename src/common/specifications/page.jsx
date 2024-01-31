@@ -149,7 +149,7 @@ const Page = ({ leftData, rightData }) => {
                       onClick={handleReadmore}
                       className={styles.readmore}
                     >
-                      {readmore ? "Readless" : "Readmore"}
+                      {readmore ? "Read Less -" : "Read More +"}
                     </motion.p>
                   ) : null}
                 </motion.div>

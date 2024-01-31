@@ -18,6 +18,7 @@ import image3 from "@/images/wooden_floor_img.png";
 import Aboutus_hammer from "@/components/aboutUs_hammer/page";
 import aboutUs_image from "@/images/new_about.png";
 import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
+import OurStory from "@/components/ourStory/page";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -50,6 +51,7 @@ const Page = () => {
           header_comment="Royale Touche is a leading manufacturer of luxury laminates, plywood and wooden flooring in India."
         />
         {/* <Aboutus_hammer/> */}
+        <OurStory />
         <WhyPlywood />
         <Real_Timeline />
         <Slider />
