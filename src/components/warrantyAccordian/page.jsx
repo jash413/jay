@@ -10,7 +10,7 @@ import {
 // import styles from "@/Components/Accordian/Accordian.module.css"
 // Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
-import "./warrantyAccordian.css"
+import "./warrantyAccordian.css";
 export default function Example() {
   return (
     <div className="main_Accordian_header">
@@ -26,9 +26,8 @@ export default function Example() {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p className="main_accordian_header_text">
-              The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of plywood
-              Industries Limited or by the Company.
+              Purchase would be verified by the warranty team and warranty
+              certificate would be sent to you on your Email ID and/or WhatsApp.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
@@ -42,13 +41,11 @@ export default function Example() {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p className="main_accordian_header_text">
-              The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of plywood
-              Industries Limited or by the Company.
+              Yes, a valid and original invoice is compulsory registering for
+              warranty.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
-
 
         <AccordionItem>
           <AccordionItemHeading>
@@ -58,34 +55,31 @@ export default function Example() {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p className="main_accordian_header_text">
-              The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of plywood
-              Industries Limited or by the Company.
+              Go to Claim Warranty tab, fill relevant information and apply for
+              a warranty claim.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
 
         <AccordionItem>
           <AccordionItemHeading>
-            <AccordionItemButton>     
-        What kind of damages are not considered in warranty?
+            <AccordionItemButton>
+              What kind of damages are not considered in warranty?
             </AccordionItemButton>
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p className="main_accordian_header_text">
-              The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of plywood
-              Industries Limited or by the Company.
+              Damage resulting from improper storage, handling, machining,
+              joinery, and other mechanical, chemical, or any other treatment is
+              not covered under this warranty.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
 
-
-
         <AccordionItem>
           <AccordionItemHeading>
-            <AccordionItemButton>     
-       Is Warranty Certificate Mandatory For Claim Handling In Future?
+            <AccordionItemButton>
+              Is Warranty Certificate Mandatory For Claim Handling In Future?
             </AccordionItemButton>
           </AccordionItemHeading>
           <AccordionItemPanel>
@@ -96,12 +90,6 @@ export default function Example() {
             </p>
           </AccordionItemPanel>
         </AccordionItem>
-
-
-
-
-
-
       </Accordion>
     </div>
   );
