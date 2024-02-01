@@ -88,7 +88,7 @@ const page = () => {
             spaceBetween={12}
             slidesPerView={3}
             loop={true}
-            autoplay={{ delay: 5000 }}
+            // autoplay={{ delay: 5000 }}
             breakpoints={{
               10: {
                 // width: 576,
