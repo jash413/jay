@@ -62,8 +62,8 @@ const Page = () => {
         <div className="card">
           <TextScroll />
         </div>
-      </section>
       <Factory />
+      </section>
       <Layers />
       <Plyspin />
       <Timeline />
