@@ -59,7 +59,7 @@ const Page = () => {
         texture1="Brand Reputation: "
          text1="Established brands known for producing high-quality waterproof plywood may command a higher price due to their reputation for durability and reliability"
 
-         texture2="Quality of Core Material:  "
+         texture2="Quality of Core Material:"
          text2="The core material used in the plywood, whether it's hardwood or softwood, can impact the price. Hardwood core waterproof plywood tends to be more expensive but offers enhanced strength."
 
          texture3="Thickness of Plywood: "
