@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from "react";
-// import Explore from "@/components/explore/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
@@ -9,13 +8,11 @@ import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import Real_Timeline from "@/common/real_timeline/page";
-// import ThreeCards from "@/common/threeCards/page";
 import Slider from "@/components/slider/page";
 import Innovation_cards from "@/components/innovation_cards/page";
 import image1 from "@/images/Laminate_img.png";
 import image2 from "@/images/plywood_img.png";
 import image3 from "@/images/wooden_floor_img.png";
-import Aboutus_hammer from "@/components/aboutUs_hammer/page";
 import aboutUs_image from "@/images/new_about.png";
 import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
@@ -44,7 +41,7 @@ const Page = () => {
       <div>
         <Navbar />
       </div>
-      <div style={{ background: "white" }}>
+      <div style={{ background: "#d9d9d9" }}>
         <HeroSection
           banner_image={aboutUs_image}
           header_name="About Us"

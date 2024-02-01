@@ -38,6 +38,11 @@ const navItems = [
     title: "Find Store",
     href: "/findStore",
   },
+
+  {
+    title: "Blogs",
+    href: "/Blogs",
+  },
  
   {
     title: "Contact Us",

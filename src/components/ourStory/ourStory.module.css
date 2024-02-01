@@ -5,8 +5,6 @@
 .wrapper {
   padding: 0 200px;
 }
-.heading {
-}
 .heading h3 {
   color: #000;
   font-size: 60px;
@@ -116,14 +114,27 @@
   .right {
     width: 100%;
   }
-  .image img {
+  /* .image img {
     height: revert-layer;
-  }
+  } */
   .content {
     font-size: 18px;
     margin: 0 0 20px;
   }
   .right_wrapper {
     padding: 40px 0 0;
+  }
+}
+
+
+@media(max-width:575px){
+  .heading h3 {
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    margin: 0 0 60px;
   }
 }

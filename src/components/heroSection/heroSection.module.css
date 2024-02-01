@@ -1,16 +1,13 @@
 .homepage_image_wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 70/35;
+  aspect-ratio: 72/35;
 }
 .logo {
   height: 100%;
   cursor:pointer;
   width: 100%;
 }
-
-
-
 
 
 
@@ -122,6 +119,34 @@
   background-color: #ffffff00;
   padding: 12px 28px;
 }
+
+
+@media(min-width:1600px) and (max-width:1920px){
+  .homepage_image_wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 67/35;
+  }
+
+
+
+  .header_comment {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: 30%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+}
+
+
 
 @media(min-width:1600px){
   .header_text {
@@ -389,7 +414,7 @@
     text-align: center;
     font-size: 22px;
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
     width: 70%;
@@ -526,7 +551,7 @@
   text-align: center;
   font-size: 14px;
   position: absolute;
-  top: 58%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   width: 90%;
