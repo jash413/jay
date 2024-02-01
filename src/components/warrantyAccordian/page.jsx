@@ -85,7 +85,7 @@ export default function Example() {
           <AccordionItemPanel>
             <p className="main_accordian_header_text">
               The owner will have to produce the proof of purchase/warranty
-              certificate issued either by the authorized dealer of Greenply
+              certificate issued either by the authorized dealer of Royale Touche
               Industries Limited or by the Company.
             </p>
           </AccordionItemPanel>

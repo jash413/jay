@@ -41,24 +41,71 @@ const Data = [
         image: BlogPostImage2,
         date: "March 20, 2024",
         blog_name: "Interior Design5",
-        blogPost_heading: "5 Tips on how to maintain plywood sheets",
-        blogPost_text: "In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…",
+        blogPost_heading: "101 Plywoods: everything knows about plywood",
+        blogPost_text: "Plywood, a versatile and widely-used building material, plays a crucial role in various industries and experience....",
         readMoreRoute: "/allPosts/post5",
     },
     {
         image: BlogPostImage3,
         date: "March 20, 2024",
         blog_name: "Interior Design6",
-        blogPost_heading: "7 Easy ways to clean plywood furniture",
-        blogPost_text: "In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…",
+        blogPost_heading: "Fire-resistant plywood: Things you should know",
+        blogPost_text: "In the realm of construction and woodworking, safety is paramount. When it comes to building structures that need an extra layer of protection against fire, fire-resistant plywood emerges as a crucial material…",
         readMoreRoute: "/allPosts/post6",
     },
     {
         image: BlogPostImage2,
         date: "March 20, 2024",
         blog_name: "Interior Design7",
-        blogPost_heading: "5 Tips on how to maintain plywood sheets",
-        blogPost_text: "In the rich tapestry of Indian culture, the pooja room holds a unique and revered place. It’s not merely a physical space within a home; it’s a sanctuary where families come together to connect with their spirituality, find solace, and offer their devotion. Designing a pooja room is not just a matter of aesthetics; it’s about crafting an environment that…",
+        blogPost_heading: "How to choose best plywood for interiors",
+        blogPost_text: "Embarking on an interior design project involves meticulous decision-making, and at the core of this process lies the crucial choice of plywood. Not only does plywood contribute to the structural integrity of your interiors, but it also plays a significant role in determining the overall aesthetic appeal…",
+        readMoreRoute: "/allPosts/post7",
+    },
+
+    {
+        image: BlogPostImage3,
+        date: "March 20, 2023",
+        blog_name: "Interior Design8",
+        blogPost_heading: "How to choose high-quality plywoods for furniture",
+        blogPost_text: "When it comes to crafting durable and visually appealing furniture, the choice of materials plays a pivotal role. Among the various options available, plywood stands out as a versatile and widely used material",
+        readMoreRoute: "/allPosts/post7",
+    },
+
+    {
+        image: BlogPostImage1,
+        date: "March 20, 2024",
+        blog_name: "Interior Design9",
+        blogPost_heading: "Kitchen plywood: which plywood is best for modular kitchen",
+        blogPost_text: "Designing a modern and functional kitchen involves careful consideration of materials, and when it comes to cabinets and other elements, plywood is often the material of choice.",
+        readMoreRoute: "/allPosts/post7",
+    },
+
+    {
+        image: BlogPostImage2,
+        date: "March 20, 2024",
+        blog_name: "Interior Design10",
+        blogPost_heading: "Know everything about veneer plywood",
+        blogPost_text: "When it comes to woodworking and construction, the choice of materials plays a pivotal role in determining the durability, aesthetics, and overall quality of the end product. Among the plethora of options available, veneer plywood stands out as a versatile and popular choice.",
+        readMoreRoute: "/allPosts/post7",
+    },
+
+
+    {
+        image: BlogPostImage3,
+        date: "March 20, 2024",
+        blog_name: "Interior Design11",
+        blogPost_heading: "Make your furniture strong using termite-resistant ply",
+        blogPost_text: "Creating durable and long-lasting furniture requires careful consideration of materials, especially when it comes to protecting against the silent menace of termites. Termite-resistant plywood, known for its ability to withstand termite attacks, is a game-changer in the world of furniture construction.",
+        readMoreRoute: "/allPosts/post7",
+    },
+
+
+    {
+        image: BlogPostImage1,
+        date: "March 20, 2024",
+        blog_name: "Interior Design12",
+        blogPost_heading: "What is commercial plywood and its different uses?",
+        blogPost_text: "Commercial plywood, a key player in the construction and furniture sectors, is known for its flexibility and strength. This guide will explore the intricacies of commercial plywood, detailing its types, distinguishing it from regular plywood, and uncovering its many uses.",
         readMoreRoute: "/allPosts/post7",
     },
 //     {
