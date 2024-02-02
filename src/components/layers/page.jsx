@@ -87,7 +87,7 @@ const Airpods = () => {
 
 
 
-    const frameCount = 298;
+    const frameCount = 250;
     const currentFrame = (index) =>
       `https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 10)
         .toString()
@@ -109,7 +109,7 @@ const Airpods = () => {
 
     const timeline = gsap.timeline({
       onUpdate: () => {
-        const progress = (timeline.progress() * 20).toFixed(0);
+        const progress = (timeline.progress() * 13).toFixed(0);
         setScrollPercentage(progress);
         render();
       },
