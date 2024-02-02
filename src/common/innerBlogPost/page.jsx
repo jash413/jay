@@ -43,6 +43,7 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_text_inner_header}>{props.texture21} <span className={styles.BlogPost_text_inner}>{props.text21}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading3}</div>
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading14}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text3}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture8} <span className={styles.BlogPost_text_inner}>{props.text8}</span></div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture22} <span className={styles.BlogPost_text_inner}>{props.text22}</span></div>
@@ -78,6 +79,7 @@ const BlogPost = (props) => {
 
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading7}</div>
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading15}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text7}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture1}<span className={styles.BlogPost_text_inner}>{props.text1}</span></div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture2} <span className={styles.BlogPost_text_inner}>{props.text2}</span></div>
@@ -93,26 +95,45 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading9}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text9}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture11} <span className={styles.BlogPost_text_inner}>{props.text11}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture40} <span className={styles.BlogPost_text_inner}>{props.text40}</span></div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading10}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text10}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture12} <span className={styles.BlogPost_text_inner}>{props.text12}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture41} <span className={styles.BlogPost_text_inner}>{props.text41}</span></div>
 
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading11}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text11}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture13} <span className={styles.BlogPost_text_inner}>{props.text13}</span></div>
-
+        <div className={styles.BlogPost_text_inner_header}>{props.texture42} <span className={styles.BlogPost_text_inner}>{props.text42}</span></div>
+      
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading11}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text11}</div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading12}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text12}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture43} <span className={styles.BlogPost_text_inner}>{props.text43}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture44} <span className={styles.BlogPost_text_inner}>{props.text44}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture45} <span className={styles.BlogPost_text_inner}>{props.text45}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture46} <span className={styles.BlogPost_text_inner}>{props.text46}</span></div>
+      
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading13}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text13}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture47} <span className={styles.BlogPost_text_inner}>{props.text47}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture48} <span className={styles.BlogPost_text_inner}>{props.text48}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture49} <span className={styles.BlogPost_text_inner}>{props.text49}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture50} <span className={styles.BlogPost_text_inner}>{props.text50}</span></div>
+      
 
-
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading16}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text20}</div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture51} <span className={styles.BlogPost_text_inner}>{props.text51}</span></div>
+        <div className={styles.BlogPost_text_inner_header}>{props.texture52} <span className={styles.BlogPost_text_inner}>{props.text52}</span></div>
+        
+        <div className={styles.BlogPost_secHeading}>{props.blogPost_heading17}</div>
+        <div className={styles.BlogPost_text_inner}>{props.blogPost_text22}</div>
         
 
 

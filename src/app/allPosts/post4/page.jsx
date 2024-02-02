@@ -1,9 +1,35 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import Navbar from "@/components/navbar/index";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
 import BlogPostImage1 from "@/images/blogs_img1.png";
 const Page = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
+  setTimeout(() => {
+    setIsLoading(false);
+    if (typeof document !== "undefined") {
+      document.body.style.cursor = "default";
+      window.scrollTo(0, 0);
+    }
+  }, 2000);
   return (
     <div>
+          
+<AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
+
+      <Navbar />
       <InnerBlogPost
         image={BlogPostImage1}
         Date="March 20, 2024"
