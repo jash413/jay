@@ -17,6 +17,7 @@ import slide10 from "@/images/blockSlider5.jpg";
 import slide11 from "@/images/plywoodImage13.jpg";
 import slide12 from "@/images/blockSlider10.jpg";
 import slide13 from "@/images/blockSlider11.jpg";
+import slide14 from "@/images/blockSlider15.jpg";
 import styles from "@/common/inner_page_slider2/inner_slider2.module.css";
 import "@/common/inner_page_slider2/inn.css";
 import "swiper/css";
@@ -426,6 +427,34 @@ const page = () => {
                         face veneers.
                       </div>
                     </div> */}
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.inner_carousal_slider_outer}>
+                <div className={styles.inner_carousal_slider_img_outer}>
+                  <Image
+                    src={slide14}
+                    alt="slide"
+                    className={styles.inner_carousal_slider_img}
+                  />
+                  <div className={styles.inner_carousal_word}>D</div>
+                </div>
+
+                <div className={styles.inner_carousal_data_outer}>
+                  <div>
+                    <div className={styles.inner_carousal_data_heading}>
+                      Dual Line Core
+                    </div>
+                    <div className={styles.inner_carousal_paragraph_flex}>
+                      <div className={styles.inner_carousal_paragraph1}>
+                        Dual veneer enhances the aesthetic appearance of the
+                        blockboard and improves its overall finish. It also
+                        contributes to increased durability, making the
+                        blockboard resistant to wear and tear.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -87,11 +87,12 @@ const Airpods = () => {
 
 
 
-    const frameCount = 224;
+    const frameCount = 298;
     const currentFrame = (index) =>
-      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 8)
+      `https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 10)
         .toString()
-        .padStart(4, "0")}-scaled.jpg`;
+        .padStart(4, "0")}.png`;
+        // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
