@@ -91,8 +91,8 @@
     cursor: pointer;
     position: absolute;
     transform: rotate(180deg);
-    z-index: 19;
-    bottom: 23rem;
+    z-index: 1;
+    bottom: 25rem;
     left: 108rem;
     height: 85px;
   }
@@ -112,7 +112,7 @@
     z-index: 9;
     transform: rotate(0deg);
     position: absolute;
-    bottom: 23rem;
+    bottom: 25rem;
     left: 102rem;
     height: 85px;
   }
