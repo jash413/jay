@@ -68,7 +68,7 @@ const Data = [
         blog_name: "Interior Design8",
         blogPost_heading: "How to choose high-quality plywoods for furniture",
         blogPost_text: "When it comes to crafting durable and visually appealing furniture, the choice of materials plays a pivotal role. Among the various options available, plywood stands out as a versatile and widely used material",
-        readMoreRoute: "/allPosts/post7",
+        readMoreRoute: "/allPosts/post8",
     },
 
     {
@@ -77,7 +77,7 @@ const Data = [
         blog_name: "Interior Design9",
         blogPost_heading: "Kitchen plywood: which plywood is best for modular kitchen",
         blogPost_text: "Designing a modern and functional kitchen involves careful consideration of materials, and when it comes to cabinets and other elements, plywood is often the material of choice.",
-        readMoreRoute: "/allPosts/post7",
+        readMoreRoute: "/allPosts/post9",
     },
 
     {
@@ -86,7 +86,7 @@ const Data = [
         blog_name: "Interior Design10",
         blogPost_heading: "Know everything about veneer plywood",
         blogPost_text: "When it comes to woodworking and construction, the choice of materials plays a pivotal role in determining the durability, aesthetics, and overall quality of the end product. Among the plethora of options available, veneer plywood stands out as a versatile and popular choice.",
-        readMoreRoute: "/allPosts/post7",
+        readMoreRoute: "/allPosts/post10",
     },
 
 
@@ -96,7 +96,7 @@ const Data = [
         blog_name: "Interior Design11",
         blogPost_heading: "Make your furniture strong using termite-resistant ply",
         blogPost_text: "Creating durable and long-lasting furniture requires careful consideration of materials, especially when it comes to protecting against the silent menace of termites. Termite-resistant plywood, known for its ability to withstand termite attacks, is a game-changer in the world of furniture construction.",
-        readMoreRoute: "/allPosts/post7",
+        readMoreRoute: "/allPosts/post11",
     },
 
 
@@ -106,7 +106,7 @@ const Data = [
         blog_name: "Interior Design12",
         blogPost_heading: "What is commercial plywood and its different uses?",
         blogPost_text: "Commercial plywood, a key player in the construction and furniture sectors, is known for its flexibility and strength. This guide will explore the intricacies of commercial plywood, detailing its types, distinguishing it from regular plywood, and uncovering its many uses.",
-        readMoreRoute: "/allPosts/post7",
+        readMoreRoute: "/allPosts/post12",
     },
 //     {
 //         image: BlogPostImage3,

@@ -28,7 +28,7 @@ const Page = () => {
 
 <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence>  
 
       <Navbar />
       <InnerBlogPost
