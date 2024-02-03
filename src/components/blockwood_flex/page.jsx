@@ -1,10 +1,5 @@
-import React from "react";
 import Image from "next/image";
 import "./blockwood_flex.css";
-import icon1 from "@/images/inner_icon1.png";
-import icon2 from "@/images/inner_icon2.png";
-import icon3 from "@/images/inner_icon3.png";
-import icon4 from "@/images/inner_icon4.png";
 import rectangle from "@/images/blockCard1.png";
 import rectangle2 from "@/images/blockCard2.png";
 

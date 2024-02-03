@@ -1,4 +1,3 @@
-import React from 'react';
 import BlogPostImage1 from "@/images/blogs_img1.png";
 import BlogPostImage2 from "@/images/blogs_img2.png";
 import BlogPostImage3 from "@/images/blogs_img3.png";

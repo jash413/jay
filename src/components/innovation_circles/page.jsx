@@ -1,4 +1,4 @@
-import React from "react";
+
 import Image from "next/image";
 import Functionality_Image from "@/images/Functionality.png";
 import Innovation_Image from "@/images/Innovation_img.png";

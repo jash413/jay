@@ -1,5 +1,5 @@
 "use client"
-import React, { useState , useRef , useEffect } from 'react';
+import { useState , useRef , useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMapPin, faPhoneVolume, faClock } from '@fortawesome/free-solid-svg-icons';
 import gsap from "gsap";

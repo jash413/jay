@@ -1,7 +1,5 @@
 "use client"
-import React from "react";
 import { useRouter } from "next/navigation";
-import Button from "@/common/button/Button";
 import gsap from "gsap";
 import splitType from "split-type";
 import Navbar from "@/components/navbar/index";

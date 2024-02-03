@@ -1,5 +1,5 @@
 "use client";
-import { React, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { Dropdown } from "primereact/dropdown";
 import { useFormik } from "formik";
 import { FormSchemas } from "@/components/warrantyForm/formSchema";
@@ -210,22 +210,6 @@ const FormCommon = () => {
     setUploadedInvoice3(null);
   };
 
-  // const handleSubmit = (values, action) => {
-  //   action.resetForm();
-  //   console.log("Form Values:", values);
-
-  //   if (uploadedInvoice) {
-  //     console.log("Uploaded PDF file:", uploadedInvoice);
-  //   }
-  //   clearUploadedFile();
-  // };
-
-  // const handleThicknessChange = (thickness) => {
-    // values.No_of_thickness = thickness;
-  // };
-  // const handleProductChange = (products1) => {
-    // values.Product_Name = products1;
-  // };
 
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,

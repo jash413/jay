@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import footer_logo from "@/images/finalFooterLogo.png";
 import Link from "next/link";
