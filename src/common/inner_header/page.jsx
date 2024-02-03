@@ -91,34 +91,12 @@ const newRef = useRef("")
           <div className={styles.inner_header_t2}>{props.heading2}</div>
           <div className={styles.inner_header_big}>{props.heading_big}</div>
 
-          {/* <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        transition={{ duration: 0.9 }}
-         >
-        <HeadingTextAnimation
-          heading={"Explore the Royale"}
-          
-          justifyContent={"left"}
-          className={styles.footer_upper_heading}
-        />
-        <HeadingTextAnimation
-          heading={"Experience"}
-          
-          justifyContent={"left"}
-          className={styles.footer_upper_heading}
-        />
-        </motion.div> */}
           </div>
     </div>
       <div className={styles.home_nav_setting}>
         <div className={styles.nav_menu_names}>
           <Image  onClick={()=> router.push("/")} src={logo} alt="image" className={styles.logo} />
         </div>
-        {/* <div className={styles.btn_outer}>
-          <Button onClick={()=> router.push("/")} btn_text="New Arrivals" />
-        </div> */}
 
         <div className={styles.nav_ham_button}>
           <Navbar />

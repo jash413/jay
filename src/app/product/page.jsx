@@ -91,11 +91,7 @@ const Page = () => {
             <h2 className={`${styles.plywood_title} two_heading_animation`}>
               {splitWords("Plywood")}
             </h2>
-            {/* <div className={styles.plywood_text}>
-              {
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy"
-              }
-            </div> */}
+        
           </div>
           <div className={styles.big_arrow_outer}>
             <Link href="product/plywood">
@@ -121,11 +117,7 @@ const Page = () => {
             <h2 className={`${styles.blockboard_title} two_heading_animation`}>
               {splitWords("Blockboard")}
             </h2>
-            {/* <div className={styles.blockboard_text}>
-              {
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy"
-              }
-            </div> */}
+          
           </div>
           <div className={styles.big_arrow_outer}>
             <Link href="/product/blockwood">

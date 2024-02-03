@@ -11,7 +11,6 @@ import Plyspin from "@/components/plyspin/page"
 import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
 import TextScroll from "@/common/textScroll/page";
-// import New_carousal from "@/common/new_carousal/page";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";

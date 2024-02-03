@@ -16,10 +16,10 @@
 }
 .inner_header_text {
   position: absolute;
-  top: 50%;
-  width: 51%;
-  left: 10rem;
-  color: white;
+    top: 50%;
+    width: 61%;
+    left: 10rem;
+    color: white;
 }
 .inner_header_t1 {
   font-size: 37px;
@@ -62,9 +62,16 @@
     font-weight: 500;
     left: -7rem;
     position: absolute;
-    /* margin-top: 10rem; */
     top: 18rem;
     width: 112%;
+  }
+
+  .inner_header_text {
+    position: absolute;
+      top: 50%;
+      width: 49%;
+      left: 10rem;
+      color: white;
   }
 
 
