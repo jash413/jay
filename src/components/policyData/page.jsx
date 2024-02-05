@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "@/components/policyData/policyData.module.css"
 
 const data = {

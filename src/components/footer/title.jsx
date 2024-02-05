@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import styles from "@/components/footer/title.module.css";
-import { useScroll, motion, useTransform, useMotionTemplate } from 'framer-motion';
+import { useScroll,  useTransform, useMotionTemplate } from 'framer-motion';
 
 export default function index({ data, setSelectedProject, openLink }) {
   return (

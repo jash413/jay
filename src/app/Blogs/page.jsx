@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "@/components/footer/page";
 import { AnimatePresence } from "framer-motion";
 import Inner_header from "@/common/inner_header/page";

@@ -1,4 +1,3 @@
-import { React } from "react";
 import Image from "next/image";
 import Specs_img1 from '@/images/spec1.svg';
 import Specs_img2 from '@/images/spec2.svg';

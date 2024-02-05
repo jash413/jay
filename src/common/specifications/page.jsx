@@ -5,8 +5,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import spec_img from "@/images/spec_img.png";
 import styles from "@/common/specifications/specifications.module.css";
-import LeftContent from "@/common/specifications/data";
-import RightContent from "@/common/specifications/data2";
+// import LeftContent from "@/common/specifications/data";
+// import RightContent from "@/common/specifications/data2";
 import Common_animation from "@/common/common_animation/animation";
 const Page = ({ leftData, rightData }) => {
   const [ref, inView] = useInView({ triggerOnce: true });

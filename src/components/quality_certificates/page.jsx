@@ -1,4 +1,3 @@
-import { React } from "react";
 import Image from "next/image";
 import Certificate_image from "@/images/certificate_img.png";
 import styles  from "@/components/quality_certificates/qualityCerticates.module.css"

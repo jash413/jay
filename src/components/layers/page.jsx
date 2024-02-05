@@ -87,11 +87,14 @@ const Airpods = () => {
 
 
 
-    const frameCount = 224;
+    const frameCount = 250;
     const currentFrame = (index) =>
-      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 8)
+      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
         .toString()
-        .padStart(4, "0")}-scaled.jpg`;
+        .padStart(4, "0")}.png`;
+        // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
+
+        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -108,7 +111,7 @@ const Airpods = () => {
 
     const timeline = gsap.timeline({
       onUpdate: () => {
-        const progress = (timeline.progress() * 20).toFixed(0);
+        const progress = (timeline.progress() * 13).toFixed(0);
         setScrollPercentage(progress);
         render();
       },

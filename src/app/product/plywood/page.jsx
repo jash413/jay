@@ -3,22 +3,15 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import innovation_image from "@/images/plywood_hero_img.jpeg";
+import innovation_image from "@/images/plywood_hero_img.jpg";
 import Plywood_main from "@/components/plywood_main/page";
 import Plywood_lights from "@/components/plywood_lights/page";
-// import Plywood_carousal from "@/components/plywood_carousal/page"
-// import PlywoodNewSpecs from "@/components/plywoodNewSpecs/page";
 import Inner_header from "@/common/inner_header/page";
 import Specifications from "@/common/specifications/page";
-import Inner_page_slider2 from "@/common/inner_page_slider2/page";
 import Inner_page_slider3 from "@/common/inner_page_slider3/page";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
-import Innovation_cards from "@/components/innovation_cards/page";
 import ProductOverview from "@/components/product_overview/page";
-import image1 from "@/images/Laminate_img.png";
-import image2 from "@/images/plywood_img.png";
-import image3 from "@/images/wooden_floor_img.png";
 import SmartChioceTable from "@/common/SmartChoice-Table/page";
 
 const SpecificationsLeftData = [
@@ -172,11 +165,7 @@ const Page = () => {
       />
 
       <ProductOverview />
-      {/* <Inner_page_slider2 /> */}
       <Inner_page_slider3 />
-
-      {/* <PlywoodNewSpecs /> */}
-      {/* <Inner_page_common_img common_img={common_img} common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
       <Specifications
         leftData={SpecificationsLeftData}
         rightData={SpecificationsRightData}
@@ -184,19 +173,6 @@ const Page = () => {
       <SmartChioceTable />
       <Plywood_lights />
       <Plywood_main />
-      {/* <Innovation_cards
-        link1={"#"}
-        link2={"#"}
-        link3={"#"}
-        image1={image1}
-        image2={image2}
-        image3={image3}
-        card1Text={"Laminate"}
-        card2Text={"Wooden Flooring"}
-        card3Text={"Plywood"}
-      /> */}
-      {/* <Plywood_carousal/> */}
-
       <Form />
       <Footer />
     </main>

@@ -1,5 +1,5 @@
 // TechnicalSpecifications.js
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "@/components/technical/technical.module.css"; // Ensure the path is correct
 
 const TechnicalSpecifications = () => {

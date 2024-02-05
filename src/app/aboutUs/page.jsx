@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
@@ -47,12 +46,10 @@ const Page = () => {
           header_name="About Us"
           header_comment="Royale Touche is a leading manufacturer of luxury laminates, plywood and wooden flooring in India."
         />
-        {/* <Aboutus_hammer/> */}
         <OurStory />
         <WhyPlywood />
         <Real_Timeline />
         <Slider />
-        {/* <ThreeCards /> */}
         <Innovation_cards
           link1={"#"}
           link2={"#"}
@@ -64,7 +61,6 @@ const Page = () => {
           card2Text={"Wooden Flooring"}
           card3Text={"Plywood"}
         />
-        {/* <Explore/> */}
       </div>
       <Form />
       <Footer />

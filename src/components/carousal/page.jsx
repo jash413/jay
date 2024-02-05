@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from "next/image";
 import image3 from "@/images/quality_banner_image.png"
 import image5 from "@/images/ProductPage_banner_image.png"

@@ -1,5 +1,5 @@
 "use client"
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import Image from "next/image";
 import styles from "@/components/explore/explore.module.css";
 import explore from "@/images/explore_image.png";

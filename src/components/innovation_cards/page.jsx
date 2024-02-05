@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import Link from "next/link";

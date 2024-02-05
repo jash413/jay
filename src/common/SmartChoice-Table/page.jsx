@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 // import Image from 'next/image';
 import styles from "@/common/SmartChoice-Table/SmartChoice.module.css";
 
@@ -35,7 +33,7 @@ const CrossSVG = () => (
     <path d="M6 6l12 12" />
   </svg>
 );
-const page = () => {
+const Page = () => {
   return (
     <div>
       <div className={styles.SmartChoice_section}>
@@ -145,4 +143,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

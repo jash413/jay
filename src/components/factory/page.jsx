@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import styles from "@/components/factory/factory.module.css"
+import styles from "@/components/factory/factory.module.css";
 gsap.registerPlugin(ScrollTrigger);
-
 
 const AirpodsAnimation = () => {
   const sectionRef = useRef(null);
@@ -24,7 +23,6 @@ const AirpodsAnimation = () => {
     // canvas.width = window.innerWidth;
     // canvas.height = window.innerHeight;
 
-
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
@@ -32,13 +30,10 @@ const AirpodsAnimation = () => {
       if (windowWidth >= 1600) {
         canvas.width = 2000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
-      } 
-      else if (windowWidth >= 1599) {
+      } else if (windowWidth >= 1599) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } 
-
-      else if (windowWidth >= 1200) {
+      } else if (windowWidth >= 1200) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } else if (windowWidth >= 1024) {
@@ -47,25 +42,16 @@ const AirpodsAnimation = () => {
       } else if (windowWidth >= 768) {
         canvas.width = 1200; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      }
-      
-      else if (windowWidth >= 425) {
+      } else if (windowWidth >= 425) {
         canvas.width = 700; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } 
-
-      else if (windowWidth >= 375) {
+      } else if (windowWidth >= 375) {
         canvas.width = 700; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } 
-
-
-      else if (windowWidth >= 320) {
+      } else if (windowWidth >= 320) {
         canvas.width = 800; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } 
-      
-      else {
+      } else {
         canvas.width = 400; // Adjust the width for screen width 320
         canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
       }
@@ -77,11 +63,15 @@ const AirpodsAnimation = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 301;
+    const frameCount = 300;
     const currentFrame = (index) =>
-      ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 4)
+      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(
+        index + 1
+      )
         .toString()
-        .padStart(5, "0")}-scaled.jpg`;
+        .padStart(5, "0")}.png`;
+
+    // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/00300.png
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -104,14 +94,20 @@ const AirpodsAnimation = () => {
         snap: "frame",
         ease: "none",
         duration: 1,
-      })
+      });
 
     imagesRef.current[0].onload = render;
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
       // Draw the image without scaling
-      context.drawImage(imagesRef.current[airpodsRef.current.frame], 0, 0, canvas.width, canvas.height);
+      context.drawImage(
+        imagesRef.current[airpodsRef.current.frame],
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
     }
 
     // Cleanup
@@ -123,7 +119,10 @@ const AirpodsAnimation = () => {
 
   return (
     <section ref={sectionRef}>
-      <canvas className={styles.canvas_factory_settings}  ref={canvasRef}></canvas>
+      <canvas
+        className={styles.canvas_factory_settings}
+        ref={canvasRef}
+      ></canvas>
     </section>
   );
 };

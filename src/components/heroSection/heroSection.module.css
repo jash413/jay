@@ -152,12 +152,10 @@
   .header_text {
     color: #fff;
     font-size: 71px;
-    /* letter-spacing: 9.17px; */
     font-style: normal;
     position: absolute;
     bottom: 23rem;
     left: 6rem;
-    /* text-transform: uppercase; */
     font-weight: 300;
     line-height: normal;
     width: 50%;
@@ -166,13 +164,11 @@
   .header_text2{
     color: #fff;
       font-size: 86px;
-      /* letter-spacing: 15.17px; */
       font-style: normal;
       width: 75%;
       position: absolute;
       bottom: 25rem;
       left: 5rem;
-      /* text-transform: uppercase; */
       font-weight: 300;
       line-height: normal;
   }
@@ -186,7 +182,6 @@
     position: absolute;
     bottom: 6rem;
     left: 4rem;
-
     font-weight: 300;
     line-height: normal;
     width: 100%;
@@ -195,13 +190,11 @@
   .header_text2{
     color: #fff;
       font-size: 86px;
-      /* letter-spacing: 15.17px; */
       font-style: normal;
       width: 72%;
       position: absolute;
       bottom: 25rem;
       left: 5rem;
-      /* text-transform: uppercase; */
       font-weight: 300;
       line-height: normal;
   }
@@ -222,9 +215,9 @@
   .header_comment {
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 23px;
     position: absolute;
-    top: 53%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
     width: 50%;
@@ -243,7 +236,6 @@
     position: absolute;
     bottom: 8rem;
     left: 2rem;
-
     font-weight: 300;
     line-height: normal;
     width: 100%;
@@ -270,7 +262,6 @@
     position: absolute;
     bottom: 12rem;
     left: 2rem;
-    /* text-transform: uppercase; */
     font-weight: 300;
     line-height: normal;
     width: 72%;
@@ -315,11 +306,10 @@
     text-align: center;
     font-size: 20px;
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
     width: 53%;
-
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -445,7 +435,7 @@
   .header_comment {
     color: #fff;
     text-align: center;
-    font-size: 11px;
+    font-size: 16px;
     position: absolute;
     top: 58%;
     left: 50%;

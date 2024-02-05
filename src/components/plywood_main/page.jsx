@@ -1,6 +1,3 @@
-// Section1.js
-
-import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";

@@ -1,5 +1,5 @@
-import React from "react";
-import styles from"@/common/button/button.module.css"
+
+import styles from "@/common/button/button.module.css"
 import { useRouter } from "next/navigation";
 function Button(props) {
     const router = useRouter();

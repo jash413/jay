@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "@/components/footer/desc.module.css"
 
 export default function index({data, selectedProject}) {
