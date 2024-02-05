@@ -165,8 +165,8 @@
     left: 12%;
     transform: translateX(-50%);
     width: 2px;
-    top: 63px;
-    bottom: -90px;
+    top: 135px;
+    bottom: -200px;
     border-right: 2px solid #0f8a83;
   }
 
@@ -193,10 +193,10 @@
 
   .timeline_comment {
     font-size: 15px;
-    width: 600px;
+    width: 500px;
     margin-bottom: 0.5rem;
     top: 70%;
-    left: 25%;
+    left: 26%;
     text-align: left;
   }
 

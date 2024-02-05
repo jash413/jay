@@ -106,14 +106,28 @@
     right: 5rem;
   }
 
+
+  .inner_header_text {
+    position: absolute;
+    top: 70%;
+    width: 88%;
+    left: 2rem;
+    color: white;
+  }
+  .inner_header_t1 {
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
   .inner_header_big {
     font-size: 100px;
     font-style: normal;
     font-weight: 500;
-    left: -8rem;
+    left: 0;
     position: absolute;
     /* margin-top: 10rem; */
-    top: 14rem;
+    top: 5rem;
     /* width: 100%; */
   }
   .nav_menu_names {
@@ -143,7 +157,7 @@
     left: -3rem;
     position: absolute;
     /* margin-top: 10rem; */
-    top: 13rem;
+    top: 7rem;
     /* width: 100%; */
   }
 }
@@ -210,7 +224,7 @@
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    top: 9rem;
+    top: 4rem;
   }
 }
 @media (max-width: 375px) {

@@ -144,6 +144,16 @@
   }
   
 }
+
+
+@media(max-width:991px){
+  .Form_content{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+
 @media(max-width:768px){
   .contact_form_wrapper{
     flex-direction: column;

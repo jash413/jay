@@ -178,6 +178,13 @@
   }
 }
 @media (max-width: 991px) {
+
+
+
+  .innovation_cards_outer {
+    background-color: #fffcf5;
+    padding: 1rem;
+  }
   .flexing {
     width: 50%;
   }
