@@ -99,7 +99,7 @@ const Contactform = () => {
         .send(
           "service_6pitte7",
           "template_azgm81o",
-          values,
+          values, 
           "dp6xvACY2kw4Z6gwc"
         )
         .then((response) => {
@@ -118,7 +118,7 @@ const Contactform = () => {
 
   console.log("value", values);
   console.log("response", formResponse.text);
-
+            
   return (
     <div className={styles.contact_form}>
       <div className={styles.contact_form_wrapper}>

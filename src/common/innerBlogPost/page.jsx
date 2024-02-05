@@ -114,7 +114,7 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading12}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text12}</div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture43} <span className={styles.BlogPost_text_inner}>{props.text43}</span></div>
-        <div className={styles.BlogPost_text_inner_header}>{props.texture44} <span className={styles.BlogPost_text_inner}>{props.text44}</span></div>
+        <div className={styles        .BlogPost_text_inner_header}>{props.texture44} <span className={styles.BlogPost_text_inner}>{props.text44}</span></div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture45} <span className={styles.BlogPost_text_inner}>{props.text45}</span></div>
         <div className={styles.BlogPost_text_inner_header}>{props.texture46} <span className={styles.BlogPost_text_inner}>{props.text46}</span></div>
       
@@ -136,7 +136,7 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text22}</div>
         
 
-
+          
       </div>
     </div>
   );
