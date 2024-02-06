@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Airpods = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [circleSize, setCircleSize] = useState(100); // Initial circle size
+  const [counterCount, setCounterCount] = useState(0);
+  const [displayText, setDisplayText] = useState("");
 
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
@@ -20,11 +22,6 @@ const Airpods = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
-
-    // Set a fixed size for the canvas (adjust as needed)
-    // canvas.width = window.innerWidth;
-    // canvas.height = window.innerHeight;
-
 
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
@@ -127,6 +124,7 @@ const Airpods = () => {
       onUpdate: () => {
         const progress = (timeline.progress() * 13).toFixed(0);
         setScrollPercentage(progress);
+        setCounterCount(parseInt(progress)); // Update counter count
         render();
       },
       scrollTrigger: {
@@ -182,8 +180,6 @@ const Airpods = () => {
   }, []);
 
 
-
-
   // Update the circle size on scroll
 
   useEffect(() => {
@@ -210,17 +206,31 @@ const Airpods = () => {
     };
   }, []);
 
+
+
+  useEffect(() => {
+    // Set display text based on counter count
+    if (counterCount >= 1 && counterCount <= 11) {
+      setDisplayText("Crafted using advanced cross-bonding technology, adjacent layers of select hardwood species ");
+    } else if (counterCount >= 12 && counterCount <= 13) {
+      setDisplayText("100% imported Gurjan face veneer imparts strength, durability and elegance to the plywood");
+    } else {
+      setDisplayText(""); // Default to empty string
+    }
+  }, [counterCount]);
+
+
+
+
   return (
     <div className={styles.counter_relm}>
       <section ref={sectionRef}>
         <div className={styles.percentage_counter_outer}>
-          <div
-            className={styles.percentageCounter}
-            // style={{ fontSize: `${circleSize}px` }}
-          >
+          {/* Conditional rendering for text */}
+          {displayText && <div className={styles.dynamicText}>{displayText}</div>}
+          <div className={styles.percentageCounter}>
             {scrollPercentage}
           </div>
-          {/* <span className={styles.counter_text}>Royale Touche</span> */}
         </div>
         <canvas className={styles.canvas_layer_settings} ref={canvasRef}></canvas>
       </section>
