@@ -236,7 +236,7 @@
   margin: 4px;
 }
 
-@media(min-width:1600px){
+@media(min-width:1600px) and (max-width:1920px){
   .content30 {
     width: 32%;
     margin: 30px;
@@ -246,6 +246,32 @@
     padding-right: 10px;
   }
 }
+
+@media (max-width: 1199px) {
+  .content30 {
+    width: 29.5%;
+    margin: 30px;
+    height: 562px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .content30 {
+    width: 34.2%;
+    margin: 30px;
+    height: 562px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+  }
+}
+
+
+
 
 @media (max-width: 768px) {
   .map_section2 {
