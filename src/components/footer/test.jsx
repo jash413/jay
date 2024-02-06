@@ -23,7 +23,7 @@ const data = [
     },
     {
         title: "YouTube",
-        url:"https://www.youtube.com/RoyaleToucheOfficia?utm_source=Royale-Touche&utm_medium=store_locator&utm_content=footer",
+        url:"https://www.youtube.com/@RoyaleToucheOfficial",
          // Replace with your YouTube channel URL
         speed: 0.5
     }

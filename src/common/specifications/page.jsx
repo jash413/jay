@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import spec_img from "@/images/spec_img.png";
+import spec_img from "@/images/plywood thickness_6.png";
+import spec_img1 from "@/images/plywood thickness_12.png";
+import spec_img2 from "@/images/plywood thickness_25.png";
 import styles from "@/common/specifications/specifications.module.css";
 // import LeftContent from "@/common/specifications/data";
 // import RightContent from "@/common/specifications/data2";
@@ -165,6 +167,26 @@ const Page = ({ leftData, rightData }) => {
           className={styles.specifications_img}
         >
           <Image src={spec_img} alt="image" className={styles.s} />
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={animationVariant}
+          className={styles.specifications_img1}
+        >
+          <Image src={spec_img1} alt="image" className={styles.s} />
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={animationVariant}
+          className={styles.specifications_img2}
+        >
+          <Image src={spec_img2} alt="image" className={styles.s} />
         </motion.div>
       </div>
     </div>

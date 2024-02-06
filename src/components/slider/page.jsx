@@ -4,12 +4,12 @@ import Image from "next/image";
 import slider_image from "@/images/tst.png";
 import slider_image2 from "@/images/tst.png";
 import rightArrow from "@/images/arrow2.svg";
-import image1 from "@/images/Stateoftheartfacility-01.jpg"
-import image2 from "@/images/VacuumPressureTreatment.jpg"
-import image3 from "@/images/gapless.jpg"
-import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood.jpg"
-import image5 from "@/images/4PressTechnology.jpg"
-import image6 from "@/images/Multiplequalitychecks.jpg"
+import image1 from "@/images/Stateoftheartfacility-0101.png"
+import image2 from "@/images/VacuumPressureTreatment.png"
+import image3 from "@/images/gapless.png"
+import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood.png"
+import image5 from "@/images/4PressTechnology.png"
+import image6 from "@/images/Multiplequalitychecks.png"
 
 // Import Swiper styles
 import "swiper/css";

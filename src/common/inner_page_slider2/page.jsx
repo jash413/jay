@@ -377,7 +377,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -403,7 +403,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>

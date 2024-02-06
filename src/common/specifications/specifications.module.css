@@ -28,8 +28,24 @@
   position: absolute;
   max-width: 100%;
   display: block;
-  bottom: -50px;
-  left: 50%;
+  bottom: -19px;
+  left: 48%;
+  transform: translateX(-50%) !important;
+}
+.specifications_img1 {
+  position: absolute;
+  max-width: 100%;
+  display: block;
+  bottom: -19px;
+  left: 52%;
+  transform: translateX(-50%) !important;
+}
+.specifications_img2 {
+  position: absolute;
+  max-width: 100%;
+  display: block;
+  bottom: -19px;
+  left: 57%;
   transform: translateX(-50%) !important;
 }
 .specification_second_Section {
@@ -49,6 +65,10 @@
 }
 .readmore:hover {
   color: #fff !important;
+}
+.s{
+  width: 100%;
+  height: 100vh;
 }
 @media screen and (max-width: 1176px) {
   .specifications_content {
@@ -84,7 +104,7 @@
   .specifications_content_right {
     width: 45%;
   }
-  .specifications_img {
+  .specifications_img,  .specifications_img1, .specifications_img2 {
     display: none;
   }
 }

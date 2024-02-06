@@ -88,15 +88,19 @@ const Page = () => {
             <li className={styles.footer_item_list}>
               <Link href="/contactUs">{"Contact us"}</Link>
             </li>
-            <li className={styles.footer_item_list}>{"FAQ's"}</li>
+            {/* <li className={styles.footer_item_list}>{"FAQ's"}</li> */}
           </ul>
         </div>
 
         <div className={styles.footer_forthSide}>
           <div className={styles.footer_titles}>{"PRODUCT GUIDE"}</div>
           <ul className={styles.footer_headers}>
-            <li className={styles.footer_item_list}>{"Laminates"}</li>
-            <li className={styles.footer_item_list}>{"Wooden Floor"}</li>
+            <li className={styles.footer_item_list}>
+             <Link href="https://royaletouche.com/" >{"Laminates"}</Link>
+              </li>
+            <li className={styles.footer_item_list}>
+              <Link href="https://royaletouche.com/woodenfloors/"> {"Wooden Floor"} </Link>
+              </li>
             <li className={styles.footer_item_list}>
               <Link href="/product/plywood">{"Plywood"}</Link>
             </li>
