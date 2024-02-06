@@ -108,6 +108,8 @@ const Airpods = () => {
 
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
 
+        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
+
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);

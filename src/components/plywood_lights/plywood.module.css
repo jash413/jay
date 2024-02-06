@@ -123,7 +123,40 @@
     width: 100%;
   }
   .plywood_lights_small_text {
-    font-size: 20px;
-    margin: 20px 0 0;
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .plywood_lights_text {
+    color: #C3A464;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 144.5%;
+  }
+
+
+  .plywood_lights_small_text {
+    font-size: 18px;
+    margin: 0px 0 0;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .plywood_lights_text {
+    color: #C3A464;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 144.5%;
+  }
+
+
+  .plywood_lights_small_text {
+    font-size: 16px;
+    margin: 0px 0 0;
   }
 }

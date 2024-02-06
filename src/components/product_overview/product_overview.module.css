@@ -53,18 +53,14 @@
 }
 .content {
   color: #000000;
-  /* font-family: Lato; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 158%;
-  /* padding: 0 0 75px;
-  border-bottom: 1px solid rgb(0, 0, 0); */
 }
 .secondConetnt {
   color: #000000;
   padding: 48px 0 0;
-  /* font-family: Lato; */
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -113,12 +109,50 @@
     padding: 0 0 65px;
   }
 }
+
+
+@media (max-width: 1024px) {
+  .image img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .content {
+    color: #000000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+  }
+
+
+  .content {
+    padding: 0 0 0px;
+  }
+}
+
+
 @media (max-width: 991px) {
   .contentSec {
     width: 370px;
     padding: 60px 20px 60px;
   }
 
+  .content {
+    color: #000000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+  }
+
+
+
+  .content {
+    padding: 0 0 0px;
+  }
   .title {
     color: #000000;
     font-size: 32px;
@@ -128,9 +162,18 @@
     margin: 0 0 19px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .wrapper {
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+
+
+  .content {
+    color: #000000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
   }
   .productOverviewCard {
     width: 100%;
@@ -141,6 +184,15 @@
   }
 }
 @media (max-width: 575px) {
+  .heading{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
 
   .productOverviewCard h2 {
     padding: 15px;
@@ -157,7 +209,7 @@
 
 
   .title {
-    color: #fff;
+    /* color: #fff; */
     /* font-family: Lato; */
     font-size: 35px;
     font-style: normal;
@@ -168,6 +220,6 @@
 
   .contentSec {
     width: 100%;
-    padding: 60px 25px 55px 25px;
+    padding: 40px 20px 40px 20px;
   }
 }
