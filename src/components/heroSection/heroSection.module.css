@@ -143,12 +143,7 @@
     font-weight: 300;
     line-height: normal;
   }
-  
-}
 
-
-
-@media(min-width:1600px){
   .header_text {
     color: #fff;
     font-size: 71px;
@@ -160,7 +155,7 @@
     line-height: normal;
     width: 50%;
   }
-  
+
   .header_text2{
     color: #fff;
       font-size: 86px;
@@ -172,12 +167,15 @@
       font-weight: 300;
       line-height: normal;
   }
+  
 }
+
+
 @media(max-width:1440px){
   .header_text {
     color: #fff;
     font-size: 40px;
-    letter-spacing: 15.17px;
+    /* letter-spacing: 15.17px; */
     font-style: normal;
     position: absolute;
     bottom: 6rem;
@@ -230,19 +228,29 @@
 @media (max-width: 1024px) {
   .header_text {
     color: #fff;
-    font-size: 40px;
-    letter-spacing: 15.17px;
+    font-size: 72px;
+    /* letter-spacing: 4.17px; */
     font-style: normal;
     position: absolute;
-    bottom: 8rem;
+    bottom: 12rem;
     left: 2rem;
     font-weight: 300;
     line-height: normal;
-    width: 100%;
+    width: 72%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .logo {
+    height: 100%;
+    cursor:pointer;
+    width: revert-layer;
   }
 }
 
 @media (max-width: 991px) {
+
   .btn_outer {
     position: absolute;
     top: 5.1rem;
@@ -251,13 +259,13 @@
   .logo {
     height: 100%;
     cursor:pointer;
-    width: 100%;
+    width: revert-layer;
   }
 
   .header_text {
     color: #fff;
     font-size: 72px;
-    letter-spacing: 4.17px;
+    /* letter-spacing: 4.17px; */
     font-style: normal;
     position: absolute;
     bottom: 12rem;

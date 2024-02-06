@@ -55,7 +55,7 @@
   position: absolute;
   top: 83%;
   left: 30%;
-  text-align: left;
+  text-align: right;
 }
 .two {
   font-weight: 400;
@@ -102,13 +102,13 @@
   }
 
   .timeline_comment {
-    font-size: 24px;
-    width: 300px;
+    font-size: 22px;
+    width: 320px;
     margin-bottom: 1rem;
     position: absolute;
     top: 95%;
     left: 28%;
-    text-align: left;
+    text-align: right;
     opacity: 0;
   }
 }
@@ -124,12 +124,12 @@
 
   .timeline_comment {
     font-size: 20px;
-    width: 250px;
+    width: 280px;
     /* margin-bottom: -13rem; */
     position: absolute;
     top: 83%;
-    left: 28%;
-    text-align: left;
+    left: 24%;
+    text-align: right;
     opacity: 0;
   }
   .content {
@@ -144,7 +144,7 @@
     opacity: 0;
     position: absolute;
     top: 6.7rem;
-    left: 17rem;
+    left: 27%;
   }
 
   .timeline_comment {
@@ -154,7 +154,6 @@
     position: absolute;
     top: 83%;
     left: 21%;
-    text-align: left;
     opacity: 0;
   }
 }
@@ -166,8 +165,8 @@
     left: 12%;
     transform: translateX(-50%);
     width: 2px;
-    top: 63px;
-    bottom: -90px;
+    top: 135px;
+    bottom: -200px;
     border-right: 2px solid #0f8a83;
   }
 
@@ -188,16 +187,16 @@
     top: 210px;
     /* right: 45px; */
     padding-bottom: 0;
-    padding-top: 4rem;
+    padding-top: 5rem;
     opacity: 0;
   }
 
   .timeline_comment {
     font-size: 15px;
-    width: 600px;
+    width: 500px;
     margin-bottom: 0.5rem;
     top: 70%;
-    left: 25%;
+    left: 26%;
     text-align: left;
   }
 

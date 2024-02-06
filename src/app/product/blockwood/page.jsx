@@ -154,11 +154,6 @@ const Page = () => {
       />
 
       <Inner_page_slider2 />
-      {/* <Inner_page_common_img common_img={common_img}  common_text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/> */}
-      {/* <Blockwood_slider/> */}
-      {/* <PlywoodNewSpecs/> */}
-
-      {/* <Inner_page_slider2/> */}
       <Specifications
         leftData={SpecificationsLeftData}
         rightData={SpecificationsRightData}
@@ -166,17 +161,6 @@ const Page = () => {
       <SmartChioceTable />
       <Blockboard_main />
       <Blockwood_flex />
-      {/* <Innovation_cards
-        link1={"#"}
-        link2={"#"}
-        link3={"#"}
-        image1={image1}
-        image2={image2}
-        image3={image3}
-        card1Text={"Laminate"}
-        card2Text={"Wooden Flooring"}
-        card3Text={"Plywood"}
-      /> */}
       <Form />
       <Footer />
     </main>

@@ -138,18 +138,22 @@
     font-weight: 400;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    left: 56%;
+    left: 50%;
+  }
+
+  .canvas_layer_settings {
+    margin-left: -4rem;
   }
   
   .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 49%;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 56%;
+    left: 51%;
   }
 
 
@@ -158,6 +162,10 @@
 
 
 @media screen and (max-width: 1024px) {
+
+  .canvas_layer_settings {
+    margin-left: -30rem;
+  }
   .counter_text {
     color: white;
     text-align: center;
@@ -179,6 +187,14 @@
     font-size: 46px;
     font-weight: 300;
     left: 51%;
+  }
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .canvas_layer_settings {
+    margin-left: -37rem;
   }
 }
 
@@ -212,7 +228,22 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .canvas_layer_settings {
+    margin-left: -30.2rem;
+  }
 
+  .percentageCounter {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    font-weight: 300;
+    left: 50%;
+  }
+}
 
 
 
@@ -227,7 +258,7 @@
   }
 
   .canvas_layer_settings {
-    margin-left: -11rem;
+    margin-left: -24.2rem;
   }
 
   .counter_text {
@@ -246,11 +277,11 @@
     color: white;
     text-align: center;
     position: absolute;
-    top: 49%;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 53%;
+    left: 50%;
   }
 }
 
@@ -276,5 +307,25 @@
     font-size: 46px;
     font-weight: 300;
     left: 53%;
+  }
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+  .canvas_layer_settings {
+    margin-left: -37.2rem;
+  }
+
+  .percentageCounter {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    font-weight: 300;
+    left: 52%;
   }
 }

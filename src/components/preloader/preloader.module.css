@@ -58,7 +58,7 @@
   color: #fff;
 }
 
-@media(min-width:1600px){
+@media(min-width:1600px) and (max-width:1920px){
   .percentageCounter {
     font-size: 5em;
     font-size:100px;
@@ -91,7 +91,7 @@
     font-size: 5em;
     position: absolute;
     right: -18rem;
-    bottom: -20rem;
+    bottom: -35rem;
     color: #fff;
   }
 

@@ -45,7 +45,6 @@
 }
 .title {
   color: #000000;
-  /* font-family: Lato; */
   font-size: 37px;
   font-style: normal;
   font-weight: 600;
@@ -116,8 +115,17 @@
 }
 @media (max-width: 991px) {
   .contentSec {
-    width: 350px;
+    width: 370px;
     padding: 60px 20px 60px;
+  }
+
+  .title {
+    color: #000000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 144.5%;
+    margin: 0 0 19px;
   }
 }
 @media (max-width: 767px) {

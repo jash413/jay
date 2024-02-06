@@ -43,7 +43,7 @@
 } */
 .plywood_desk {
   color: transparent;
-  max-width: 100%;
+  /* max-width: 100%; */
   position: absolute;
   left: -15rem;
   bottom: 0;
@@ -78,11 +78,14 @@
 }
 @media (max-width: 991px) {
   .plywood_lights_text_outer {
-    padding: 8rem 7rem 5rem 6rem;
-    width: 90%;
+    padding: 3rem 5rem 3rem 2rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
   }
   .plywood_desk {
-    left: -10rem;
+    display: none;
+    left: -16rem;
     bottom: 0;
   }
   .plywood_wall_light {
@@ -112,6 +115,7 @@
   }
   .plywood_desk {
     left: -10rem;
+    display: block;
     bottom: 0;
   }
   .plywood_lights_text_outer {

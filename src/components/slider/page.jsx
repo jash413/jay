@@ -4,6 +4,12 @@ import Image from "next/image";
 import slider_image from "@/images/tst.png";
 import slider_image2 from "@/images/tst.png";
 import rightArrow from "@/images/arrow2.svg";
+import image1 from "@/images/Stateoftheartfacility-01.jpg"
+import image2 from "@/images/VacuumPressureTreatment.jpg"
+import image3 from "@/images/gapless.jpg"
+import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood.jpg"
+import image5 from "@/images/4PressTechnology.jpg"
+import image6 from "@/images/Multiplequalitychecks.jpg"
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,7 +42,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={image1}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -63,7 +69,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={image2}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -90,7 +96,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={image3}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -116,7 +122,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image}
+                    src={image4}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -144,7 +150,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={image5}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
@@ -168,7 +174,7 @@ const Page = () => {
               <div className={styles.slider_side_two}>
                 <div className={styles.slider_image_outer}>
                   <Image
-                    src={slider_image2}
+                    src={image6}
                     alt="Picture of the author"
                     className={styles.slider_image_test}
                   />
