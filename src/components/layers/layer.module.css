@@ -32,6 +32,18 @@
   left: 52%;
 }
 
+.dynamicText{
+  position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    bottom: 3rem;
+}
+
+
+
 .percentageCounter {
   color: white;
   text-align: center;
@@ -71,7 +83,15 @@
 .canvas_layer_settings {
 }
 @media (min-width: 1600px ) and (max-width:1920px) {
-
+  .dynamicText{
+    position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      bottom: 6rem;
+  }
 
   .counter_text {
     color: white;

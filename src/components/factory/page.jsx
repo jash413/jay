@@ -19,10 +19,6 @@ const AirpodsAnimation = () => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
 
-    // Set a fixed size for the canvas (adjust as needed)
-    // canvas.width = window.innerWidth;
-    // canvas.height = window.innerHeight;
-
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
@@ -56,7 +52,6 @@ const AirpodsAnimation = () => {
         canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
       }
 
-      // Update ScrollTrigger end position based on canvas dimensions
       ScrollTrigger.update();
     };
 
@@ -70,8 +65,6 @@ const AirpodsAnimation = () => {
       )
         .toString()
         .padStart(5, "0")}.png`;
-
-    // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/00300.png
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -100,7 +93,6 @@ const AirpodsAnimation = () => {
 
     function render() {
       context.clearRect(0, 0, canvas.width, canvas.height);
-      // Draw the image without scaling
       context.drawImage(
         imagesRef.current[airpodsRef.current.frame],
         0,
@@ -110,20 +102,107 @@ const AirpodsAnimation = () => {
       );
     }
 
-    // Cleanup
     return () => {
       window.removeEventListener("resize", setCanvasSize);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
+
+
+
+
+
+
+
+
+
+
+
+  const phrase =
+  "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";
+
+  let refs = useRef([]);
+  const body = useRef(null);
+  const container = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    createAnimation();
+  }, []);
+
+  const createAnimation = () => {
+    gsap.to(refs.current, {
+      scrollTrigger: {
+        trigger: container.current,
+        scrub: true,
+        start: `top 40%`,
+        end: `+=${window.innerHeight / 1.55}`,
+      },
+      opacity: 1,
+      ease: "none",
+      stagger: 0.1,
+      color: "#c3a464",
+    });
+  };
+
+  const splitWords = (phrase) => {
+    let body = [];
+    phrase.split(" ").forEach((word, i) => {
+      const letters = splitLetters(word);
+      body.push(<p key={word + "_" + i}>{letters}</p>);
+    });
+    return body;
+  };
+
+  const splitLetters = (word) => {
+    let letters = [];
+    word.split("").forEach((letter, i) => {
+      letters.push(
+        <span
+          key={letter + "_" + i}
+          ref={(el) => {
+            refs.current.push(el);
+          }}
+        >
+          {letter}
+        </span>
+      );
+    });
+    return letters;
+  };
+
+
+
+
+
+
+
+
   return (
-    <section ref={sectionRef}>
+
+    
+  
+      <section>
+     
+        <section ref={sectionRef}>
       <canvas
         className={styles.canvas_factory_settings}
         ref={canvasRef}
       ></canvas>
     </section>
+    <div className={styles.scroll_text_wrapper}>
+      <div ref={container} className={styles.main}>
+        <div ref={body} className={styles.body}>
+          {splitWords(phrase)}
+          <h1 className={styles.scroll_text_header}>
+            Royale Touché Performance Ply
+          </h1>
+        </div>
+      </div>
+    </div>
+      </section>
+ 
   );
 };
 
