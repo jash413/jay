@@ -31,6 +31,9 @@
   box-shadow: none !important;
   outline: none !important;
 }
+.css-1fdsijx-ValueContainer{
+  padding: 0px !important;
+}
 
 .css-13cymwt-control {
   /* border-bottom: 1px solid #d1d1d1 !important; */
@@ -39,6 +42,7 @@
 .css-1dimb5e-singleValue {
   color: black !important;
   font-size: 17px !important;
+  /* font-family: "lato" !important; */
 }
 
 .css-qbdosj-Input {

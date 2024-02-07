@@ -109,6 +109,9 @@
     font-size: 46px;
     margin-bottom: 30px;
   }
+  .contact_form_wrapper{
+    height: 94vh;
+  }
 
   .Form_content{
     /* width: 50%; */
@@ -126,7 +129,7 @@
 @media(min-width:1500px){
   
   .Form_content{
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 }
 
