@@ -81,7 +81,7 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 500rem;
-    margin-top: -9800px;
+    margin-top: -1087vh;
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
   }
@@ -94,7 +94,8 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 500rem;
-    margin-top: -9800px;
+    /* margin-top: -9800px; */
+    margin-top: -1087vh;
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
   }
