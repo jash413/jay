@@ -34,7 +34,6 @@
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 1041vh;
-  /* margin-top: -584%; */
   margin-top: -534%;
   color: rgb(211, 211, 211);
 }
@@ -45,8 +44,6 @@
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 410rem;
-  /* margin-top: -584%; */
-  /* margin-top: -507rem; */
   margin-top: -1084vh;
   color: rgb(211, 211, 211);
 }
@@ -91,7 +88,6 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 1041vh;
-    /* margin-top: -584%; */
     margin-top: -1087vh;
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
@@ -105,7 +101,6 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 580rem;
-    /* margin-top: -9800px; */
     margin-top: -1087vh;
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
@@ -118,7 +113,6 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 440rem;
-    /* margin-top: -7200px; */
     margin-top: -1084vh;
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
@@ -200,7 +194,6 @@
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 1041vh;
-    /* margin-top: -584%; */
     margin-top: -1275%;
     color: rgb(211, 211, 211);
   }
@@ -214,15 +207,6 @@
     font-weight: 300;
   }
 
-  /* .main {
-    display: flex;
-    height: 100vh;
-    margin-top: 10rem;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 10vh;
-    color: rgb(211, 211, 211);
-  } */
 }
 
 @media (max-width: 575px) {
@@ -234,15 +218,6 @@
     left: 0;
     font-weight: 300;
   }
-  /* .main {
-    display: flex;
-    height: 100vh;
-    margin-top: 0;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 10vh;
-    color: rgb(211, 211, 211);
-  } */
 
   .main {
     display: flex;
