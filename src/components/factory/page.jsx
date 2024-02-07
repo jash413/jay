@@ -58,11 +58,9 @@ const AirpodsAnimation = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 300;
+    const frameCount = 298;
     const currentFrame = (index) =>
-      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(
-        index + 1
-      )
+      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 1)
         .toString()
         .padStart(5, "0")}.png`;
 
