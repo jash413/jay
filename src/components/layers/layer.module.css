@@ -32,17 +32,15 @@
   left: 52%;
 }
 
-.dynamicText{
+.dynamicText {
   position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    bottom: 3rem;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  bottom: 3rem;
 }
-
-
 
 .percentageCounter {
   color: white;
@@ -82,15 +80,15 @@
 
 .canvas_layer_settings {
 }
-@media (min-width: 1600px ) and (max-width:1920px) {
-  .dynamicText{
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .dynamicText {
     position: absolute;
-      width: 100%;
-      left: 0;
-      text-align: center;
-      font-size: 30px;
-      color: white;
-      bottom: 6rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    bottom: 6rem;
   }
 
   .counter_text {
@@ -104,7 +102,7 @@
     text-transform: uppercase;
     left: 52%;
   }
-  
+
   .percentageCounter {
     color: white;
     text-align: center;
@@ -115,11 +113,7 @@
     font-weight: 300;
     left: 52%;
   }
-
 }
-
-
-
 
 @media screen and (max-width: 1599px) {
   .counter_text {
@@ -133,7 +127,7 @@
     text-transform: uppercase;
     left: 52%;
   }
-  
+
   .percentageCounter {
     color: white;
     text-align: center;
@@ -144,11 +138,9 @@
     font-weight: 300;
     left: 52%;
   }
-
 }
 
 @media screen and (max-width: 1440px) {
-
   .counter_text {
     color: white;
     text-align: center;
@@ -164,7 +156,7 @@
   .canvas_layer_settings {
     margin-left: -4rem;
   }
-  
+
   .percentageCounter {
     color: white;
     text-align: center;
@@ -175,14 +167,9 @@
     font-weight: 300;
     left: 51%;
   }
-
-
-
 }
 
-
 @media screen and (max-width: 1024px) {
-
   .canvas_layer_settings {
     margin-left: -30rem;
   }
@@ -210,18 +197,11 @@
   }
 }
 
-
-
 @media screen and (max-width: 991px) {
   .canvas_layer_settings {
     margin-left: -37rem;
   }
 }
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .counter_text {
@@ -263,9 +243,16 @@
     font-weight: 300;
     left: 50%;
   }
+  .dynamicText {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    bottom: 3rem;
+  }
 }
-
-
 
 @media screen and (max-width: 425px) {
   .innerCircle {
@@ -330,10 +317,7 @@
   }
 }
 
-
-
 @media screen and (max-width: 375px) {
-
   .canvas_layer_settings {
     margin-left: -37.2rem;
   }
