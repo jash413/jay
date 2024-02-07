@@ -719,6 +719,9 @@ margin-top: 1.5rem;
     padding: 17px 63px 13px;
     margin: 2rem 23rem;
   }
+  .button2{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 991px) {
