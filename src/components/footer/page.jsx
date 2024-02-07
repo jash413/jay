@@ -88,7 +88,7 @@ const Page = () => {
             <li className={styles.footer_item_list}>
               <Link href="/contactUs">{"Contact us"}</Link>
             </li>
-            {/* <li className={styles.footer_item_list}>{"FAQ's"}</li> */}
+            <li className={styles.footer_item_list}>{"FAQ's"}</li>
           </ul>
         </div>
 
