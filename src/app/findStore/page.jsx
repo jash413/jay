@@ -40,7 +40,8 @@ const Page = () => {
         </div>
       
       <div>
-      <HeroSection banner_image={findStore_image}   header_name="Partners" header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"/>
+      <HeroSection banner_image={findStore_image}   header_name="Partners" header_comment="Navigate Through Our Extensive Channel Partner Network for Quality Products and Exceptional Service, Right in Your Neighborhood!
+"/>
       <FindStore_search/>
       </div>
       <Form/>

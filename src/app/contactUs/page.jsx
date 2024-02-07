@@ -39,7 +39,7 @@ const ContactUs = () => {
         <HeroSection
           banner_image={contactUs_image}
           header_name="Contact Us"
-          header_comment="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum"
+          header_comment="Connect with Confidence: Reach Out to Royal Touch Plywood's Dedicated Channel Partners for Prompt Assistance and Expert Guidance with Any Queries or Concerns You Have."
         />
         <Contact_Map />
       </div>
