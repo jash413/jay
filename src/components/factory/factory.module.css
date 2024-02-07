@@ -1,5 +1,3 @@
-
-
 @media screen and (max-width: 1024px) {
   .canvas_factory_settings {
     margin-left: -6rem;
@@ -30,14 +28,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
 .main {
   display: flex;
   height: 90vh;
@@ -47,8 +37,7 @@
   /* margin-top: -584%; */
   margin-top: -534%;
   color: rgb(211, 211, 211);
-} 
-
+}
 
 .main {
   display: flex;
@@ -61,8 +50,6 @@
   margin-top: -1084vh;
   color: rgb(211, 211, 211);
 }
-
-
 
 .scroll_text_wrapper {
   position: relative;
@@ -97,8 +84,7 @@
   background-color: #006f69;
 }
 
-
-@media(min-width:1600px) and (max-width:1920px){
+@media (min-width: 1600px) and (max-width: 1920px) {
   .main {
     display: flex;
     height: 100%;
@@ -110,11 +96,6 @@
     /* margin-top: -534%; */
     color: rgb(211, 211, 211);
   }
-
-
-
-
-
 }
 
 @media (max-height: 1000px) {

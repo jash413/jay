@@ -51,9 +51,9 @@ const Page = () => {
         <Real_Timeline />
         <Slider />
         <Innovation_cards
-          link1={"#"}
-          link2={"#"}
-          link3={"#"}
+          link1={"https://royaletouche.com/"}
+          link2={"https://royaletouche.com/woodenfloors/"}
+          link3={"/product/plywood"}
           image1={image1}
           image2={image2}
           image3={image3}

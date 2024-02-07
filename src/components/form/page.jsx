@@ -180,9 +180,9 @@ const Contactform = () => {
                 options={yearOptions}
                 name="year"
               />
-              {/* {touched.year && errors.year && (
+              {touched.year && errors.year && (
                 <p className={styles.error}>{errors.year}</p>
-              )} */}
+              )}
             </div>
             <div className={styles.field}>
               <label htmlFor="message">Message</label>

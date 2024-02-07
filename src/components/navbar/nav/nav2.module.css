@@ -98,7 +98,7 @@
   .menu .body {
     box-sizing: border-box;
     height: 100%;
-    padding: 80px 30px 20px 165px;
+    padding: 80px 85px 20px 165px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,7 +118,7 @@
   .menu .body {
     box-sizing: border-box;
     height: 100%;
-    padding: 80px 30px 20px 117px;
+    padding: 80px 59px 20px 117px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
