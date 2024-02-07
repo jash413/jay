@@ -163,6 +163,13 @@
 
 }
 
+@media (max-width: 1024px) {
+
+  .image{
+    margin: 0;
+  }
+}
+
 @media (max-width: 991px) {
   .heading {
     font-size: 35px;
