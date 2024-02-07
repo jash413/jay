@@ -96,14 +96,12 @@ const Airpods = () => {
 
 
 
-    const frameCount = 250;
+    const frameCount = 251;
     const currentFrame = (index) =>
-      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
+      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 8)
         .toString()
         .padStart(4, "0")}.png`;
-        // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
-
-        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
+        https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
 
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
 
