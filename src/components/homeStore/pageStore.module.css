@@ -78,6 +78,23 @@
   margin: 0 110px;
 }
 
+
+@media (max-width: 1440px) {
+
+  .content1 {
+    flex: 1;
+    margin: 0px 0px 115px 10px;
+  }
+
+  .image_wrapper {
+    flex: 1;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
 @media (max-width: 1199px) {
 
   .heading {

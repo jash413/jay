@@ -27,10 +27,21 @@ const Home = () => {
         
         canvas.width = 1000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
-      } else if (windowWidth >= 1200) {
+      }
+      else if (windowWidth >= 1440) {
+        canvas.width = 800; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
+      }
+      
+      else if (windowWidth >= 1200) {
         canvas.width = 800; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } else {
+      }
+
+     
+      
+      
+      else {
         canvas.width = 530; // Width remains constant for mobile screens
         canvas.height = windowHeight * 0.7; // Adjust the height for mobile screens
       }
@@ -205,16 +216,7 @@ properties.</p>
 well-structured plywood.</p>
               </div>
             </div>
-            {/* <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
-              <p className={styles.timeline_number}>08</p>
-                <h2 className={styles.twoo}>
-                  Customer Satisfaction
-                </h2>
-                <p className={styles.timeline_sec_comment}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.</p>
-              </div>
-            </div> */}
+          
           </div>
         </div>
 

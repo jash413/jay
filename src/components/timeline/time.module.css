@@ -12,13 +12,11 @@
   width: 50%;
 }
 
-
-.display{
+.display {
   display: none;
 }
 
-
-.display1{
+.display1 {
   display: block;
 }
 
@@ -43,11 +41,6 @@
   line-height: 130%;
   letter-spacing: 1px;
 }
-
-
-/* .sectionX{
-  left: 663px !important;
-} */
 
 .section {
   display: flex;
@@ -100,8 +93,7 @@
   opacity: 0;
 }
 
-@media (min-width: 1600px) {
-
+@media (min-width: 1600px) and (max-width: 1920px) {
   .contentX {
     width: 100%;
     padding: 67px 0px 0px 220px;
@@ -110,17 +102,14 @@
     font-size: 35px;
     opacity: 0;
   }
-  
 
-  .display{
+  .display {
     display: none;
   }
-  
-  
-  .display1{
+
+  .display1 {
     display: block;
   }
-
 
   .timeline {
     position: relative;
@@ -128,7 +117,6 @@
     margin-bottom: 8rem;
     margin-top: 15rem;
   }
-
 
   .section {
     display: flex;
@@ -159,29 +147,54 @@
     border-right: 2px solid #218e88;
   }
 
-
   .timeline_animation_text {
     font-size: 86px;
     margin-left: 4rem;
   }
 }
 
+@media (max-width: 1440px) {
+  .twoo {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
 
+  .line {
+    position: absolute;
+    z-index: 1;
+    left: calc(20% - -1px);
+    width: 2px;
+    top: 125px;
+    bottom: 450px;
+    border-right: 2px solid #218e88;
+  }
+}
 
-@media (min-width:767px) and (max-width:1024px){
+.section {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 2.6rem 0rem 15rem;
+  border-radius: 1rem;
+  align-items: center;
+  min-height: 218px;
+  color: white;
+}
 
-
-
-  .display{
+@media (min-width: 768px) and (max-width: 1024px) {
+  .display {
     display: none;
   }
-  
-  
-  .display1{
+
+  .display1 {
     display: block;
   }
+}
 
-
+@media (min-width: 767px) and (max-width: 1024px) {
   .timeline_animation_text {
     font-size: 50px;
     margin-left: 4rem;
@@ -195,7 +208,6 @@
     opacity: 0;
   }
 
-
   .twoo {
     font-weight: 400;
     font-size: 30px;
@@ -203,7 +215,7 @@
     letter-spacing: 1px;
   }
 
-  .line{
+  .line {
     position: absolute;
     z-index: 1;
     left: calc(20% - -1px);
@@ -212,7 +224,6 @@
     bottom: 280px;
     border-right: 2px solid #218e88;
   }
-
 
   .section {
     display: flex;
@@ -226,8 +237,6 @@
     color: white;
   }
 
-
-
   .timeline {
     position: relative;
     min-height: 150px;
@@ -239,9 +248,6 @@
     font-size: 15px;
     font-weight: 300;
   }
-
-
-
 }
 /* 
 @media (max-width: 991px) {
@@ -308,22 +314,18 @@
 } */
 
 @media (max-width: 768px) {
-  .display1{
+  .display1 {
     display: none;
   }
 
-  .display{
+  .display {
     display: block;
   }
 
-
-
-  .img_main{
+  .img_main {
     color: transparent;
-    /* aspect-ratio: 1/2; */
     height: auto;
     max-width: 100%;
-    /* width: 100%; */
     width: 200px;
   }
   .first_timeline_inner {
@@ -331,13 +333,10 @@
     width: 100%;
   }
 
-
   .canvas_side_outer {
     width: 50%;
     display: none;
   }
-
-
 
   .contentX {
     width: 100%;
@@ -401,7 +400,7 @@
   }
 }
 
-@media (min-width:320px) and  (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 575px) {
   .contentX {
     width: 100%;
     padding: 46px 0px 0px 47px;
@@ -411,20 +410,16 @@
     opacity: 0;
   }
 
-
-
-  .display1{
+  .display1 {
     display: none;
   }
 
-
-
-  .display{
+  .display {
     display: block;
   }
   .timeline_animation_text {
     font-size: 45px;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
   .timeline {
     position: relative;
@@ -475,19 +470,16 @@
     font-size: 20px;
   }
   .timeline_sec_comment {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
   }
 }
 
-
-
-@media(min-width:200px) and (max-width:320px){
+@media (min-width: 200px) and (max-width: 320px) {
   .timeline_animation_text {
     font-size: 36px;
     margin-left: 2rem;
   }
-
 
   .timeline_sec_comment {
     font-size: 16px;
@@ -499,14 +491,11 @@
     letter-spacing: 1px;
   }
 
-
-
-  .display{
-    display:block;
+  .display {
+    display: block;
   }
-  
-  
-  .display1{
+
+  .display1 {
     display: none;
   }
 
@@ -531,5 +520,4 @@
     top: 47%;
     transform: translateX(-50%);
   }
-
 }
