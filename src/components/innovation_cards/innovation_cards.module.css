@@ -224,6 +224,13 @@
   }
 }
 
+@media (max-width: 820px) {
+  .innovation_cards_text{
+    width: 100%;
+  }
+
+}
+
 @media (max-width: 768px) {
   .flexing {
     width: 50%;

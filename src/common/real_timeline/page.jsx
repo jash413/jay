@@ -110,7 +110,7 @@ const Page = () => {
     <div>
       <div className={styles.timeline_outer}>
         <div className={styles.timeline_wrapper}>
-          <h2 className={styles.timeline_heading}>Our Story</h2>
+          <h2 className={styles.timeline_heading}>Our Journey</h2>
           <div className={styles.timeline_main_outer}>
             <div className={styles.timeline_width}>
               <div className={styles.timeline} ref={container}>

@@ -103,7 +103,15 @@
   
 }
 
+@media(max-width:820px){
 
+.preloader_text{
+    position: absolute;
+    right: -8rem;
+    bottom: 5rem;
+  }
+
+}
 
 
 
