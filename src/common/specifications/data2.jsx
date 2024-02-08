@@ -10,7 +10,7 @@ const Data=[
           },
           {
               title:"PRESERVATIVE TREATMENT: ",
-              text:" Four-stage preservative treatment.        "
+              text:" Four-stage preservative treatment."
           },
           {
               title:"EDGE STRAIGHTNESS: ",
