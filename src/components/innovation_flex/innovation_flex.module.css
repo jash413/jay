@@ -44,6 +44,12 @@
   }
 }
 
+@media(max-width:820px){
+.innovation_flex_fifty_side2{
+  width: 100%;
+}
+}
+
 @media (max-width: 768px) {
 
   .innovation_flex_fifty_text {
