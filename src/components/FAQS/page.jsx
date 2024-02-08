@@ -1,4 +1,4 @@
-import styles from "@/components/Faqs/faqs.module.css";
+import styles from "@/components/faqs/faqs.module.css";
 
 const Page = () => {
   return (
