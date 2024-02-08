@@ -30,7 +30,7 @@ const Blogs = () => {
       </AnimatePresence>
       <Navbar />
       <Inner_header inner_header_image={Claim_banner} heading_big="FAQ's" />
- <Faqs/>
+<Faqs/>
 
       <Footer />
     </main>
