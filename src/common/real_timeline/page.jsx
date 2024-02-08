@@ -8,7 +8,8 @@ import img6 from "@/images/img6.png";
 import img7 from "@/images/img7.png";
 import img8 from "@/images/img8.png";
 import img9 from "@/images/img9.png";
-import img10 from "@/images/img10.png";
+import img10 from "@/images/Rectangle 139.svg";
+// import img10 from "@/images/Factory image for story.jpg";
 
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
