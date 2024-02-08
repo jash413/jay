@@ -1,6 +1,6 @@
 import styles from "@/components/Faqs/faqs.module.css";
 
-const page = () => {
+const Page = () => {
   return (
     <div style={{ backgroundColor: "white" }}>
       <div className={styles.privacyPolicySection}>
@@ -203,4 +203,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
