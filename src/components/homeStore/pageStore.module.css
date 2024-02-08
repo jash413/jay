@@ -41,16 +41,16 @@
 
 .submit_btn1 {
   border-radius: 500px;
-    background: #c3a464;
-    width: 250px;
-    height: 50px;
-    border: none;
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    cursor: pointer;
+  background: #c3a464;
+  width: 250px;
+  height: 50px;
+  border: none;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
 }
 
 .responsive_section {
@@ -78,9 +78,7 @@
   margin: 0 110px;
 }
 
-
 @media (max-width: 1440px) {
-
   .content1 {
     flex: 1;
     margin: 0px 0px 115px 10px;
@@ -93,10 +91,7 @@
   }
 }
 
-
-
 @media (max-width: 1199px) {
-
   .heading {
     color: #c3a464;
     font-size: 62px;
@@ -104,7 +99,7 @@
     font-weight: 300;
     /* line-height: 146%; */
   }
-  
+
   .heading span {
     color: #c3a464;
     font-size: 65px;
@@ -119,7 +114,7 @@
     font-weight: 500;
     /* line-height: 145.5%; */
   }
-  
+
   .content {
     color: white;
     font-size: 22px;
@@ -130,41 +125,41 @@
     font-weight: 300;
     line-height: 132%;
   }
-  
+
   .common_button_outer3 {
     width: 250px;
     margin: 0px 0px;
     margin-top: 20px;
   }
-  
+
   .submit_btn1 {
     border-radius: 500px;
-      background: #c3a464;
-      width: 250px;
-      height: 50px;
-      border: none;
-      color: #000;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      cursor: pointer;
+    background: #c3a464;
+    width: 250px;
+    height: 50px;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
   }
-  
+
   .responsive_section {
     display: flex;
     flex-direction: row;
     /* height: 100vh; */
     flex-wrap: wrap;
-  
+
     padding: 0px 0px 0px 31px;
   }
-  
+
   .content1 {
     flex: 1;
     margin: 190px 0px 115px 10px;
   }
-  
+
   .image_wrapper {
     flex: 1;
     margin-top: 128px;
@@ -173,16 +168,11 @@
   .image {
     height: 100%;
     width: 90%;
-
   }
-
-
-
 }
 
 @media (max-width: 1024px) {
-
-  .image{
+  .image {
     margin: 0;
   }
 }
@@ -210,10 +200,9 @@
     margin: -25px 0;
   }
   .image {
-   margin: 0;
+    margin: 0;
   }
 }
-
 
 @media (max-width: 768px) {
   .responsive_section {
@@ -228,11 +217,10 @@
     height: auto;
     font-size: 20px;
   }
-  .image{
+  .image {
     height: 100%;
     margin: 0;
   }
-
 
   .heading {
     font-size: 36px;
@@ -251,7 +239,7 @@
     height: 65px;
   }
   .image_wrapper {
- padding: 30px;
+    padding: 30px;
     margin-top: 0;
   }
   .content1 {
@@ -259,7 +247,6 @@
     padding: 0px 30px 0px 30px;
     margin: 0;
   }
-
 
   .common_button_outer3 {
     width: 250px;
