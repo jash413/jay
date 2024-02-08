@@ -8,7 +8,7 @@ import Claim_banner from "@/images/claim_banner.png"
 // import Faqs from "@/components/faqs/page"
 import Faqs_page from "@/components/faqs_page/page"
 // import Faqs  from "@/components/faqs/page";
-import Navbar from "@/components/navbar/index"
+// import Navbar from "@/components/navbar/index"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -30,7 +30,7 @@ const Page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Navbar />
+      {/* <Navbar /> */}
       <Inner_header inner_header_image={Claim_banner} heading_big="FAQ's" />
       <Faqs_page/>
 {/* <Faqs /> */}
