@@ -5,7 +5,8 @@ import { AnimatePresence } from "framer-motion"
 import Inner_header from "@/common/inner_header/page"
 import Preloader from "@/components/preloader/page"
 import Claim_banner from "@/images/claim_banner.png"
-import Faqs from "@/components/faqs/page"
+// import Faqs from "@/components/faqs/page"
+import Faqs  from "@/components/faqs/page";
 import Navbar from "@/components/navbar/index"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
