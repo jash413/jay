@@ -7,7 +7,7 @@ import Preloader from "@/components/preloader/page"
 import Claim_banner from "@/images/claim_banner.png"
 import Faqs from "@/components/faqs/page"
 import Navbar from "@/components/navbar/index"
-const Blogs = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -38,4 +38,5 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+
+export default Page;
