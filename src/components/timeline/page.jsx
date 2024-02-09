@@ -161,7 +161,7 @@ const Home = () => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>03</p>
-                <h2 className={styles.twoo}>100% Phenolic Resigns</h2>
+                <h2 className={styles.twoo}>100% Phenolic Resins</h2>
                 <p className={styles.timeline_sec_comment}>
                   100% BWP grade high solid phenolic polymers ensures excellent
                   bonding and waterproof properties.
@@ -172,7 +172,7 @@ const Home = () => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>04</p>
-                <h2 className={styles.twoo}>Ternite & Bores Proof</h2>
+                <h2 className={styles.twoo}>Ternite & Borer Proof</h2>
                 <p className={styles.timeline_sec_comment}>
                   Shielded against microbes, viruses, bacteria, fungi, termites,
                   and borers in their favourable conditions.

@@ -13,20 +13,6 @@
 .percentage_counter_outer {
   width: 50%;
   margin: auto;
-
-}
-
-
-.counter_text {
-  color: white;
-  text-align: center;
-  position: absolute;
-  top: 56%;
-  font-size: 17px;
-  font-weight: 400;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  left: 52%;
 }
 
 .dynamicText {
@@ -47,7 +33,7 @@
   transform: translate(-50%, -50%);
   font-size: 46px;
   font-weight: 300;
-  left: 52%;
+  left: 50%;
 }
 
 .innerCircle {
@@ -76,7 +62,7 @@
 }
 
 .canvas_layer_settings {
-  width:100%;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   object-position: center;
@@ -92,18 +78,6 @@
     bottom: 6rem;
   }
 
-  .counter_text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 55%;
-    font-size: 17px;
-    font-weight: 400;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 52%;
-  }
-
   .percentageCounter {
     color: white;
     text-align: center;
@@ -112,51 +86,37 @@
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 52%;
+    left: 50%;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  .counter_text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 55%;
-    font-size: 17px;
-    font-weight: 400;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 52%;
-  }
-
   .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 49%;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 52%;
+    left: 50%;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .counter_text {
+  .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 56%;
-    font-size: 17px;
-    font-weight: 400;
+    top: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 300;
     left: 50%;
   }
+}
 
-  /* .canvas_layer_settings {
-    margin-left: -4rem;
-  } */
+@media screen and (max-width: 1024px) {
 
   .percentageCounter {
     color: white;
@@ -166,74 +126,25 @@
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 51%;
+    left: 50%;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  /* .canvas_layer_settings {
-    margin-left: -30rem;
-  } */
-  .counter_text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 55%;
-    font-size: 17px;
-    font-weight: 400;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 51%;
-  }
-
-  .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 49%;
-    transform: translate(-50%, -50%);
-    font-size: 46px;
-    font-weight: 300;
-    left: 51%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  /* .canvas_layer_settings {
-    margin-left: -37rem;
-  } */
 }
 
 @media screen and (max-width: 768px) {
-  .counter_text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 54%;
-    font-size: 17px;
-    font-weight: 400;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 52%;
-  }
 
   .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 49%;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 52%;
+    left: 50%;
   }
 }
 
 @media screen and (max-width: 430px) {
-  /* .canvas_layer_settings {
-    margin-left: -30.2rem;
-  } */
-
   .percentageCounter {
     color: white;
     text-align: center;
@@ -265,21 +176,19 @@
     height: 90%;
   }
 
-  /* .canvas_layer_settings {
-    margin-left: -24.2rem;
-  } */
-
-  .counter_text {
+  .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 54%;
-    font-size: 17px;
-    font-weight: 400;
+    top: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 52%;
+    font-size: 46px;
+    font-weight: 300;
+    left: 50%;
   }
+}
+
+@media screen and (max-width: 375px) {
 
   .percentageCounter {
     color: white;
@@ -293,51 +202,17 @@
   }
 }
 
+
 @media screen and (max-width: 320px) {
-  .counter_text {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 54%;
-    font-size: 17px;
-    font-weight: 400;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    left: 52%;
-  }
-
   .percentageCounter {
     color: white;
     text-align: center;
     position: absolute;
-    top: 49%;
+    top: 40%;
     transform: translate(-50%, -50%);
     font-size: 46px;
     font-weight: 300;
-    left: 53%;
+    left: 50%;
   }
 }
 
-@media screen and (max-width: 375px) {
-  /* .canvas_layer_settings {
-    margin-left: -37.2rem;
-  } */
-
-  .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 49%;
-    transform: translate(-50%, -50%);
-    font-size: 46px;
-    font-weight: 300;
-    left: 52%;
-  }
-}
-
-
-@media(min-width:280px ) and (max-width:425px){
-  /* .canvas_layer_settings {
-    margin-left: -37.2rem;
-  } */
-}
