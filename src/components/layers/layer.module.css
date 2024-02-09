@@ -13,12 +13,9 @@
 .percentage_counter_outer {
   width: 50%;
   margin: auto;
-  /* position: relative; */
+
 }
 
-/* .counter_relm{
-      position: relative;
-    } */
 
 .counter_text {
   color: white;
@@ -79,6 +76,10 @@
 }
 
 .canvas_layer_settings {
+  width:100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .dynamicText {
@@ -153,9 +154,9 @@
     left: 50%;
   }
 
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -4rem;
-  }
+  } */
 
   .percentageCounter {
     color: white;
@@ -170,9 +171,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -30rem;
-  }
+  } */
   .counter_text {
     color: white;
     text-align: center;
@@ -198,9 +199,9 @@
 }
 
 @media screen and (max-width: 991px) {
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -37rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -229,9 +230,9 @@
 }
 
 @media screen and (max-width: 430px) {
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -30.2rem;
-  }
+  } */
 
   .percentageCounter {
     color: white;
@@ -264,9 +265,9 @@
     height: 90%;
   }
 
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -24.2rem;
-  }
+  } */
 
   .counter_text {
     color: white;
@@ -318,9 +319,9 @@
 }
 
 @media screen and (max-width: 375px) {
-  .canvas_layer_settings {
+  /* .canvas_layer_settings {
     margin-left: -37.2rem;
-  }
+  } */
 
   .percentageCounter {
     color: white;
@@ -332,4 +333,11 @@
     font-weight: 300;
     left: 52%;
   }
+}
+
+
+@media(min-width:280px ) and (max-width:425px){
+  /* .canvas_layer_settings {
+    margin-left: -37.2rem;
+  } */
 }

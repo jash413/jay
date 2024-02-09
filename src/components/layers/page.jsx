@@ -57,7 +57,7 @@ const Airpods = () => {
       }
       
       else if (windowWidth >= 768) {
-        canvas.width = 800; // Adjust the width for screen width 425
+        canvas.width = 1500; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       }
 
@@ -72,13 +72,13 @@ const Airpods = () => {
       } 
 
       else if (windowWidth >= 375) {
-        canvas.width = 1600; // Adjust the width for screen width 375
+        canvas.width = 1200; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } 
 
 
       else if (windowWidth >= 320) {
-        canvas.width = 690; // Adjust the width for screen width 375
+        canvas.width = 1200; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } 
       
