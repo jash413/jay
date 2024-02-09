@@ -93,7 +93,7 @@ const Blockboard = () => {
               </div>
             )}
           </InView>
-          <InView triggerOnce={true}>
+          {/* <InView triggerOnce={true}>
             {({ inView: inViewButton, ref: refButton }) => (
               <motion.div
                 className="blockboard_button"
@@ -108,7 +108,7 @@ const Blockboard = () => {
                 <Button8 btn_text={"Explore Collections"} />
               </motion.div>
             )}
-          </InView>
+          </InView> */}
         </div>
         <div className={styles.Blockboard_led} ref={refLed}>
           <motion.div

@@ -51,8 +51,9 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>01</p>
                 <h2 className={styles.twoo}>Vaccuum Pressure Treatment</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  The only plywood in India made with 100% scientifically
+                  researched proprietary Vacuum Pressure Chemical Treated veneer
+                  to provide protection against termites, borers and fire
                 </p>
               </div>
             </div>
@@ -65,8 +66,9 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>02</p>
                 <h2 className={styles.twoo}>Fully Composed Core & Panels</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  100% composed veneer sheets made using sophisticated core and
+                  panel composers to ensure precise manufacturing of high
+                  quality plywood
                 </p>
               </div>
             </div>
@@ -79,8 +81,8 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>03</p>
                 <h2 className={styles.twoo}>100% Phenolic Resigns</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  100% BWP grade high solid phenolic polymers ensures excellent
+                  bonding and waterproof properties.
                 </p>
               </div>
             </div>
@@ -93,8 +95,8 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>04</p>
                 <h2 className={styles.twoo}>Ternite & Bores Proof</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  Shielded against microbes, viruses, bacteria, fungi, termites,
+                  and borers in their favourable conditions.
                 </p>
               </div>
             </div>
@@ -107,8 +109,10 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>05</p>
                 <h2 className={styles.twoo}>Fire Resistant</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  Fully vacuum pressure-treated veneer with fire-retardant
+                  chemical containing nano particles, and organ phosphorus
+                  chemicals used during the process, providing excellent
+                  fire-retardant properties.
                 </p>
               </div>
             </div>
@@ -121,8 +125,8 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>06</p>
                 <h2 className={styles.twoo}>Boiling Water Proof</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  100% BWP grade high solid phenolic polymers ensures excellent
+                  bonding and waterproof properties.
                 </p>
               </div>
             </div>
@@ -135,8 +139,8 @@ const Page2 = () => {
                 <p className={styles.timeline_number}>07</p>
                 <h2 className={styles.twoo}>High Nail Welding Capacity</h2>
                 <p className={styles.timeline_sec_comment}>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum odit numquam magnam nesciunt. Aliquid, excepturi.
+                  made from all composed full sheet veneers of select hardwood
+                  species, ensuring a robust and well-structured plywood.
                 </p>
               </div>
             </div>

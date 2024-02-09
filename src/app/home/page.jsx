@@ -10,7 +10,6 @@ import Form from "@/components/form/page";
 import Plyspin from "@/components/plyspin/page"
 import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
-import TextScroll from "@/common/textScroll/page";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
@@ -54,20 +53,16 @@ const Page = () => {
           <div className="card-cover">
             <HeroSection
               video_bg="./video/final_k.mp4"
-              homepage_heading="A ply that is a living shield for beautiful and timeless furniture!"
+              homepage_heading="A ply that is a living shield for beautiful and timeless furniture"
             />
           </div>
         </div>
-        {/* <div className="card">
-          <TextScroll />
-        </div> */}
       <Factory />
       </section>
       <Layers />
       <Plyspin />
       <Timeline />
       <Timeline1 />
-      {/* <New_carousal /> */}
       <HomeStore />
       <Form />
       <Footer />

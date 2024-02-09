@@ -157,7 +157,7 @@
 }
 
 
-@media(max-width:768px){
+@media(max-width:820px){
   .contact_form_wrapper{
     flex-direction: column;
   }

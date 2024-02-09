@@ -7,7 +7,7 @@ import Preloader from "@/components/preloader/page";
 import Claim_banner from "@/images/claim_banner.png";
 import WarrantyForm from "@/components/warrantyForm/page";
 import WarrantyAccordian from "@/components/warrantyAccordian/page";
-import Navbar from "@/components/navbar/index";
+// import Navbar from "@/components/navbar/index";
 const Blogs = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -29,7 +29,7 @@ const Blogs = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Navbar />
+      {/* <Navbar /> */}
       <Inner_header inner_header_image={Claim_banner} heading_big="CLAIM WARRANTY" />
  
 <WarrantyForm/>

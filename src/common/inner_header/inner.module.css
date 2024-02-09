@@ -5,6 +5,7 @@
   z-index: 1;
   position: absolute;
   top: 2rem;
+  cursor: pointer;
   left: 2rem;
   font-weight: 500;
   line-height: normal;
@@ -86,10 +87,10 @@
     font-size: 100px;
     font-style: normal;
     font-weight: 500;
-    left: -8rem;
+    left: 0rem;
     position: absolute;
     /* margin-top: 10rem; */
-    top: 7rem;
+    top: 1rem;
     /* width: 100%; */
   }
 }
@@ -135,7 +136,7 @@
   }
 
   .inner_header_big {
-    font-size: 100px;
+    font-size: 83px;
     font-style: normal;
     font-weight: 500;
     left: 0;
@@ -168,7 +169,7 @@
     font-size: 80px;
     font-style: normal;
     font-weight: 500;
-    left: -3rem;
+    left: 0rem;
     position: absolute;
     /* margin-top: 10rem; */
     top: 7rem;
@@ -240,7 +241,7 @@
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    top: 4rem;
+    top: 6rem;
   }
 
   .inner_header_text {
@@ -269,7 +270,7 @@
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    top: 4rem;
+    top: 6rem;
   }
 
   .inner_header_text {
@@ -313,7 +314,7 @@
     font-weight: 500;
     left: 0rem;
     position: absolute;
-    top: 10.5rem;
+    top: 5.5rem;
   }
 }
 
@@ -322,9 +323,9 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
-    left: 0rem;
+    left: 0rem;          
     position: absolute;
-    top: 8.5rem;
+    top: 5.5rem;
   }
 
 
