@@ -102,12 +102,12 @@
   }
 
   .timeline_comment {
-    font-size: 22px;
+    font-size: 18px;
     width: 320px;
     margin-bottom: 1rem;
     position: absolute;
     top: 95%;
-    left: 28%;
+    left: 27%;
     text-align: right;
     opacity: 0;
   }
