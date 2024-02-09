@@ -98,7 +98,7 @@ const Airpods = () => {
 
     const frameCount = 251;
     const currentFrame = (index) =>
-      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 8)
+      ` https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 8)
         .toString()
         .padStart(4, "0")}.png`;
         https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
