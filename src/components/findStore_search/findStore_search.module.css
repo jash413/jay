@@ -392,13 +392,18 @@
   }
 }
 
+@media (max-width: 375px) {
+  .content_Text {
+    font-size: 26px;
+  }
+}
 
 @media (max-width: 325px) {
   .map_section1 {
     padding-left: 20px;
   }
   .content_Text {
-    font-size: 27px;
+    font-size: 22px;
   }
   .search_button {
     margin-left: -25px;
