@@ -70,11 +70,16 @@
 }
 
 @media (max-width: 1024px) {
+  .preloader_text{
+    position: absolute;
+    right: -8rem;
+    bottom: 13rem;
+  }
   .percentageCounter {
     font-size: 5em;
     position: absolute;
-    right: -26rem;
-    bottom: -22rem;
+    right: -22rem;
+    bottom: -5rem;
     color: #fff;
   }
 }
