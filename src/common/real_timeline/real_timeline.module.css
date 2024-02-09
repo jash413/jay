@@ -122,6 +122,16 @@
     left: 28rem;
   }
 
+  .content {
+    color: #000000;
+    position: absolute;
+    width: 43%;
+    top: 158px;
+    right: -11rem;
+    padding-bottom: 5rem;
+    opacity: 0;
+  }
+
   .timeline_comment {
     font-size: 20px;
     width: 280px;
@@ -152,8 +162,8 @@
     width: 250px;
     /* margin-bottom: -13rem; */
     position: absolute;
-    top: 83%;
-    left: 21%;
+    top: 75%;
+    left: 19%;
     opacity: 0;
   }
 }
@@ -196,7 +206,7 @@
     width: 500px;
     margin-bottom: 0.5rem;
     top: 70%;
-    left: 26%;
+    left: 28%;
     text-align: left;
   }
 
@@ -301,6 +311,14 @@
     border-right: 2px solid #0f8a83;
   }
 
+  .timeline_comment {
+    font-size: 14px;
+    width: 400px;
+    margin-bottom: 1rem;
+    top: 67%;
+    left: 26%;
+  }
+
   .timeline_image {
     height: 100%;
     width: 65%;
@@ -325,6 +343,7 @@
   .timeline_comment {
     font-size: 15px;
     width: 300px;
+    width: 50%;
     margin-bottom: 1rem;
   }
 
@@ -360,4 +379,22 @@
     top: 8rem;
     left: 30%;
   }
+}
+
+
+@media (max-width: 320px) {
+  .timeline_comment {
+    font-size: 15px;
+    width: 208px;
+    margin-bottom: 1rem;
+  }
+
+
+  .bead_outer {
+    left: 10%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+  }
+
 }

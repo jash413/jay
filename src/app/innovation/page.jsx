@@ -6,8 +6,6 @@ import Innovation_circles from "@/components/innovation_circles/page";
 import Innovation_cards from "@/components/innovation_cards/page";
 import Innovation_flex from "@/components/innovation_flex/page";
 import Factory_walk from "@/components/factory_walk/page";
-// import Timeline from "@/components/timeline/page";
-// import Timeline1 from "@/components/timeline/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import innovation_image from "@/images/InnovationNewBanner.jpg";
@@ -16,7 +14,6 @@ import Preloader from "@/components/preloader/page";
 import innovation_flex_img1 from "@/images/innovation1.png";  
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
-// import styles from "@/app/innovation/innovation.module.css"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -55,11 +52,6 @@ const Page = () => {
           card3Text={"Cabinets"}
         />
         <Innovation_flex />
-
-        {/* <div className={styles.just_space}>
-        <Timeline />
-      <Timeline1 />
-        </div> */}
       </div>
 
       <Form />
