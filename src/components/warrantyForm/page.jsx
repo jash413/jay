@@ -521,7 +521,7 @@ const FormCommon = () => {
                   options={thicknessOptions}
                   optionLabel="name"
                   name="No_of_thickness"
-                  placeholder="Select Thickness"
+                  placeholder="Select Thickness"  
                   className={styles.input_field}
                   // disabled={!selectedProduct}
                 />
