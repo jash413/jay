@@ -179,15 +179,15 @@
 @media(max-width:1440px){
   .header_text {
     color: #fff;
-    font-size: 40px;
+    font-size: 62px;
     /* letter-spacing: 15.17px; */
     font-style: normal;
     position: absolute;
-    bottom: 6rem;
+    bottom: 14rem;
     left: 4rem;
     font-weight: 300;
     line-height: normal;
-    width: 100%;
+    width: 722px;
   }
   
   .header_text2{
@@ -207,6 +207,18 @@
 }
 
 @media (max-width: 1199px) {
+  .header_text {
+    color: #fff;
+    font-size: 52px;
+    /* letter-spacing: 15.17px; */
+    font-style: normal;
+    position: absolute;
+    bottom: 11rem;
+    left: 4rem;
+    font-weight: 300;
+    line-height: normal;
+    width: 650px;
+  }
   .header_name {
     color: #fff;
     font-size: 70px;
@@ -233,11 +245,10 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .header_text {
     color: #fff;
-    font-size: 72px;
-    /* letter-spacing: 4.17px; */
+    font-size: 42px;
     font-style: normal;
     position: absolute;
     bottom: 12rem;
@@ -246,7 +257,7 @@
     line-height: normal;
     width: 72%;
   }
-}
+} */
 
 
 @media (max-width: 1024px) {
@@ -272,7 +283,7 @@
 
   .header_text {
     color: #fff;
-    font-size: 72px;
+    font-size: 45px;
     /* letter-spacing: 4.17px; */
     font-style: normal;
     position: absolute;
@@ -280,7 +291,7 @@
     left: 2rem;
     font-weight: 300;
     line-height: normal;
-    width: 72%;
+    width: 600px;
   }
 
 
@@ -382,14 +393,14 @@
 
   .header_text {
     color: #fff;
-    font-size: 35px;
+    font-size: 42px;
     font-style: normal;
     position: absolute;
-    bottom: 5rem;
+    bottom: 12rem;
     left: 2rem;
     font-weight: 300;
     line-height: normal;
-    width: 99%;
+    width: 70%;
   }
 
 
@@ -439,15 +450,16 @@
 @media (max-width: 575px) {
   .header_text {
     color: #fff;
-    font-size: 48px;
+    font-size: 38px;
     font-style: normal;
     position: absolute;
     letter-spacing: 1px;
     bottom: 12rem;
-    left: 2.3rem;
+    left: 0;
     font-weight: 300;
     line-height: 53px;
-    width: 52%;
+    width: 100%;
+    padding: 0 20px;
   }
 
   .header_comment {
@@ -495,7 +507,7 @@
 
 
 @media(max-width:425px){
-  .header_text {
+  /* .header_text {
     color: #fff;
     font-size: 46px;
     font-style: normal;
@@ -506,7 +518,7 @@
     font-weight: 300;
     line-height: 50px;
     width: 60%;
-}
+} */
 
 
 .header_comment {
@@ -546,7 +558,7 @@
 
 
 @media(max-width:320px){
-  .header_text {
+  /* .header_text {
     color: #fff;
     font-size: 43px;
     font-style: normal;
@@ -557,7 +569,7 @@
     font-weight: 300;
     line-height: 50px;
     width: 60%;
-}
+} */
 
 
 .header_comment {

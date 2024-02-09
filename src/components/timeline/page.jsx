@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useRef, useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -24,7 +24,6 @@ const Home = () => {
       const windowHeight = window.innerHeight;
 
       if (windowWidth >= 1600) {
-        
         canvas.width = 1000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
       }
@@ -125,108 +124,104 @@ const Home = () => {
     });
   };
 
-
   return (
     <div className={styles.display1}>
       <div className={styles.first_timeline_outer}>
         <div className={styles.first_timeline_inner}>
-        <div className={styles.timeline_animation_text}>Promise Of Quality</div>
-          <div
-            className={styles.timeline}
-            ref={container}>
+          <div className={styles.timeline_animation_text}>
+            Promise Of Quality
+          </div>
+          <div className={styles.timeline} ref={container}>
             <div className={styles.line}></div>
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
- 
                 <p className={styles.timeline_number}>01</p>
-                <h2 className={styles.twoo}>
-                 Vaccuum  Pressure Treatment
-                </h2>
-                <p className={styles.timeline_sec_comment}>The only plywood in India made with 100% scientifically researched proprietary Vacuum Pressure Chemical Treated veneer to provide protection against termites, borers and fire</p>
+                <h2 className={styles.twoo}>Vaccuum Pressure Treatment</h2>
+                <p className={styles.timeline_sec_comment}>
+                  The only plywood in India made with 100% scientifically
+                  researched proprietary Vacuum Pressure Chemical Treated veneer
+                  to provide protection against termites, borers and fire
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>02</p>
-                <h2 className={styles.twoo}>
-                  Fully Composed Core & Panels
-                </h2>
-                <p className={styles.timeline_sec_comment}>100% composed veneer sheets made using sophisticated core and panel composers to ensure
-precise manufacturing of high quality plywood
-</p>
+                <h2 className={styles.twoo}>Fully Composed Core & Panels</h2>
+                <p className={styles.timeline_sec_comment}>
+                  100% composed veneer sheets made using sophisticated core and
+                  panel composers to ensure precise manufacturing of high
+                  quality plywood
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
-              <p className={styles.timeline_number}>03</p>
-                <h2 className={styles.twoo}>
-                  100% Phenolic Resigns
-                </h2>
-                <p className={styles.timeline_sec_comment}>100% BWP grade high solid phenolic polymers ensures excellent bonding and waterproof 
-properties.</p>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
+                <p className={styles.timeline_number}>03</p>
+                <h2 className={styles.twoo}>100% Phenolic Resigns</h2>
+                <p className={styles.timeline_sec_comment}>
+                  100% BWP grade high solid phenolic polymers ensures excellent
+                  bonding and waterproof properties.
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
-              <p className={styles.timeline_number}>04</p>
-                <h2 className={styles.twoo}>
-                Ternite & Bores Proof
-                  
-                </h2>
-                <p className={styles.timeline_sec_comment}>Shielded against microbes, viruses, bacteria, fungi, termites, and borers in their favourable 
-conditions.</p>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
+                <p className={styles.timeline_number}>04</p>
+                <h2 className={styles.twoo}>Ternite & Bores Proof</h2>
+                <p className={styles.timeline_sec_comment}>
+                  Shielded against microbes, viruses, bacteria, fungi, termites,
+                  and borers in their favourable conditions.
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
-              <p className={styles.timeline_number}>05</p>
-                <h2 className={styles.twoo}>
-                Fire Resistant
-                  
-                </h2>
-                <p className={styles.timeline_sec_comment}>Fully vacuum pressure-treated veneer with fire-retardant chemical containing nano particles, 
-and organ phosphorus chemicals used during the process, providing excellent fire-retardant 
-properties.</p>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
+                <p className={styles.timeline_number}>05</p>
+                <h2 className={styles.twoo}>Fire Resistant</h2>
+                <p className={styles.timeline_sec_comment}>
+                  Fully vacuum pressure-treated veneer with fire-retardant
+                  chemical containing nano particles, and organ phosphorus
+                  chemicals used during the process, providing excellent
+                  fire-retardant properties.
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>06</p>
-                <h2 className={styles.twoo}>
-                Boiling Water Proof
-               
-                </h2>
-                <p className={styles.timeline_sec_comment}>100% BWP grade high solid phenolic polymers ensures excellent bonding and waterproof properties.</p>
+                <h2 className={styles.twoo}>Boiling Water Proof</h2>
+                <p className={styles.timeline_sec_comment}>
+                  100% BWP grade high solid phenolic polymers ensures excellent
+                  bonding and waterproof properties.
+                </p>
               </div>
             </div>
             <div className={styles.section}>
-            <div className={styles.bead}></div>
-            <div className={`${styles.contentX} triggered-element`}>
-              <p className={styles.timeline_number}>07</p>
-                <h2 className={styles.twoo}>
-                High Nail Welding Capacity
-                </h2>
-                <p className={styles.timeline_sec_comment}>made from all composed full sheet veneers of select hardwood species, ensuring a robust and
-well-structured plywood.</p>
+              <div className={styles.bead}></div>
+              <div className={`${styles.contentX} triggered-element`}>
+                <p className={styles.timeline_number}>07</p>
+                <h2 className={styles.twoo}>High Nail Welding Capacity</h2>
+                <p className={styles.timeline_sec_comment}>
+                  made from all composed full sheet veneers of select hardwood
+                  species, ensuring a robust and well-structured plywood.
+                </p>
               </div>
             </div>
           
           </div>
         </div>
 
-
-
-
         <div className={styles.canvas_side_outer}>
-        <section className={styles.sectionX} ref={sectionRef}>
-      <canvas ref={canvasRef}></canvas>
-    </section>
+          <section className={styles.sectionX} ref={sectionRef}>
+            <canvas ref={canvasRef}></canvas>
+          </section>
         </div>
       </div>
     </div>
