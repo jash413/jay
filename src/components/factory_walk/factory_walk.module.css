@@ -42,7 +42,6 @@
   width: 100px;
   width: 30px;
   height: 30px;
-  /* background-color: #006f69; */
   padding: 5px 5px;
   border-radius: 100%;
   border: 1px solid #c3a464;
@@ -52,7 +51,6 @@
   position: absolute;
   height: 100vh;
   background-color: #fff;
-  /* right: 0; */
   transition: all 0.7s;
   padding: 30px 20px;
   overflow-y: scroll;
@@ -81,23 +79,13 @@
 }
 @media (max-width: 991px) {
   .info {
-    background-color: #fff;
-    cursor: pointer;
-    position: absolute;
     right: 34px;
-    border-radius: 50%;
     padding: 1px 9px;
     top: 145px;
   }
 }
 @media (max-width: 787px) {
   .info {
-    background-color: #fff;
-    cursor: pointer;
-    position: absolute;
-    right: 34px;
-    border-radius: 50%;
-    padding: 1px 9px;
     top: 105px;
   }
 }

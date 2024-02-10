@@ -21,19 +21,12 @@ const navItems = [
     title: "Innovation",
     href: "/innovation",
   },
-  // {
-  //   title: "Products",
-  //   href: "/products",
-  // },
 
   {
     title: "Products",
     href: "/product",
   },
-  // {
-  //   title: "Quality",
-  //   href: "/quality",
-  // },
+
   {
     title: "Find Store",
     href: "/findStore",

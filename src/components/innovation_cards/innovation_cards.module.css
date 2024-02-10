@@ -64,14 +64,11 @@
   text-decoration: underline;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1920px) {
   .innovation_cards_text {
     font-size: 50px;
-    padding-top: 11rem;
     font-weight: 500;
     margin-top: 0rem;
-    width: 50%;
-    color: black;
     padding-left: 7rem;
   }
 }
@@ -79,11 +76,9 @@
 @media (max-width: 1440px) {
   .innovation_cards_text {
     font-size: 40px;
-    padding-top: 11rem;
     font-weight: 500;
     margin-top: 0rem;
     width: 55%;
-    color: black;
     padding-left: 7rem;
   }
 
@@ -113,7 +108,6 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 60%;
-    color: black;
     padding-left: 1rem;
   }
 
@@ -154,15 +148,9 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 60%;
-    color: black;
     padding-left: 1rem;
   }
 
-  .flex_border {
-    width: 97%;
-    border-bottom: 1px solid black;
-    margin: 28px 0px 26px 11px;
-  }
   .innovation_cards_flex {
     display: flex;
     flex-wrap: wrap;
@@ -178,11 +166,7 @@
   }
 }
 @media (max-width: 991px) {
-
-
-
   .innovation_cards_outer {
-    background-color: #fffcf5;
     padding: 1rem;
   }
   .flexing {
@@ -200,15 +184,9 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 60%;
-    color: black;
     padding-left: 1rem;
   }
 
-  .flex_border {
-    width: 97%;
-    border-bottom: 1px solid black;
-    margin: 28px 0px 26px 11px;
-  }
   .innovation_cards_flex {
     display: flex;
     flex-wrap: wrap;
@@ -225,10 +203,9 @@
 }
 
 @media (max-width: 820px) {
-  .innovation_cards_text{
+  .innovation_cards_text {
     width: 100%;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -242,14 +219,7 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 50%;
-    color: black;
     padding-left: 1rem;
-  }
-
-  .flex_border {
-    width: 97%;
-    border-bottom: 1px solid black;
-    margin: 28px 0px 26px 11px;
   }
   .innovation_cards_flex {
     display: flex;
@@ -272,7 +242,6 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 100%;
-    color: black;
     padding-left: 1rem;
   }
 
@@ -287,7 +256,6 @@
 
   .flex_border {
     width: 95%;
-    border-bottom: 1px solid black;
     margin: 28px 0px 26px 11px;
   }
   .innovation_cards_flex {
@@ -310,7 +278,6 @@
     font-weight: 500;
     margin-top: 0rem;
     width: 100%;
-    color: black;
     padding-left: 1rem;
   }
   .flex_img {
@@ -324,7 +291,6 @@
 
   .flex_border {
     width: 95%;
-    border-bottom: 1px solid black;
     margin: 28px 0px 26px 11px;
   }
   .innovation_cards_flex {

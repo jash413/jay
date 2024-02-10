@@ -69,99 +69,48 @@
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .dynamicText {
-    position: absolute;
-    width: 100%;
     left: 0;
-    text-align: center;
     font-size: 30px;
-    color: white;
     bottom: 6rem;
   }
 
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 1599px) {
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 1440px) {
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 430px) {
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
   .dynamicText {
-    position: absolute;
     width: 100%;
     left: 0;
-    text-align: center;
     font-size: 22px;
-    color: white;
     bottom: 3rem;
   }
 }
@@ -177,42 +126,18 @@
   }
 
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 375px) {
-
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
-
 
 @media screen and (max-width: 320px) {
   .percentageCounter {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
     font-size: 46px;
-    font-weight: 300;
-    left: 50%;
   }
 }
-

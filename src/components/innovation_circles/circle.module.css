@@ -1,7 +1,6 @@
 .Main_Circle_Container {
   padding-top: 10rem;
   padding-bottom: 5rem;
-  /* background: #006f69; */
 }
 .Main_Circle_Section {
   display: flex;
@@ -68,13 +67,11 @@
   }
 }
 
-
 @media only screen and (max-width: 991px) {
   .Circle_Text {
     width: 100%;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .Main_Circle_Container {
@@ -98,10 +95,8 @@
     padding-bottom: 3rem;
   }
 
-
   .Circle_Text {
-  font-size: 16px;
-
+    font-size: 16px;
   }
   .Overlay_text {
     font-size: 18px;
@@ -124,19 +119,15 @@
 
   .Circle_Text {
     font-size: 16px;
-  
-    }
+  }
   .Circle_Text {
     width: 100%;
     font-size: 15px;
   }
 }
 
-
-
 @media only screen and (max-width: 280px) {
   .Circle_Text {
     font-size: 11px;
-  
-    }
+  }
 }

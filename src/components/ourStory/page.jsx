@@ -19,7 +19,8 @@ const Page = () => {
             <div className={styles.right_wrapper}>
               <div className={styles.content}>
                 The year was
-                <span>{" "}
+                <span>
+                  {" "}
                   1978 when 5 brothers Ashwin Patel, Arvind Patel, Dinesh Patel,
                   Bharat Patel and Jitendra Patel
                 </span>{" "}
@@ -29,7 +30,8 @@ const Page = () => {
               </div>
               <div className={styles.content}>
                 The dream was turned into reality when the
-                <span>{" "}
+                <span>
+                  {" "}
                   Royale Touches' first-ever manufacturing unit was set up in
                   Wadhwan city
                 </span>{" "}
@@ -38,25 +40,24 @@ const Page = () => {
                 It was a start-up built on two simple rules:
                 <ol>
                   <li>
-                    Ever-changing designs and
-                    {" "}<span>never-changing quality</span>
+                    Ever-changing designs and{" "}
+                    <span>never-changing quality</span>
                   </li>
                   <li>
-                    A royale customer is to
-                    {" "}<span>be treated like Royalty</span>
+                    A royale customer is to <span>be treated like Royalty</span>
                   </li>
                 </ol>
               </div>
               <div className={styles.content}>
-                Over time, Royale Touché has grown to be
-                {" "}<span>India’s most premium laminate brand</span>{" "}in the building
+                Over time, Royale Touché has grown to be{" "}
+                <span>India’s most premium laminate brand</span> in the building
                 material sector with a vast variety of designs and the promise
                 of impeccable quality.
               </div>
               <div className={styles.content}>
                 With the same values and principles, Royale Touché has decided
-                to foray into the
-                {" "}<span>plywood industry and revolutionize</span>{" "} the way people
+                to foray into the{" "}
+                <span>plywood industry and revolutionize</span> the way people
                 look at plywood.
               </div>
             </div>

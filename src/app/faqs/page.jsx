@@ -27,12 +27,8 @@ const Page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      {/* <Navbar /> */}
       <Inner_header inner_header_image={Claim_banner} heading_big="FAQ's" />
       <Faqs_page/>
-{/* <Faqs /> */}
-
-
       <Footer />
     </main>
   );

@@ -4,22 +4,13 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import Inner_header from "@/common/inner_header/page";
-// import PlywoodNewSpecs from "@/components/plywoodNewSpecs/page";
-// import Blockwood_slider from "@/components/blockwood_slider/page";
 import Blockwood_flex from "@/components/blockwood_flex/page";
 import Blockboard_main from "@/components/blockboard_main/page";
 import innovation_image from "@/images/blockwood_header_img.png";
-// import Inner_page_common_img from "@/common/inner_page_common_img/page";
-// import common_img from "@/images/inner_page_common_img.png";
 import Specifications from "@/common/specifications/page2";
-// import Inner_page_slider2 from "@/common/inner_page_slider2/page"
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import Inner_page_slider2 from "@/common/inner_page_slider2/page";
-import Innovation_cards from "@/components/innovation_cards/page";
-import image1 from "@/images/Laminate_img.png";
-import image2 from "@/images/plywood_img.png";
-import image3 from "@/images/wooden_floor_img.png";
 import SmartChioceTable from "@/common/SmartChoice-Table/page2";
 
 const SpecificationsLeftData = [

@@ -8,9 +8,6 @@
 .css-13cymwt-control:hover {
   outline: none !important;
 }
-/* .css-t3ipsp-control{
-  border-color: none !important;
-} */
 .css-qbdosj-Input:focus-visible {
   outline: none !important;
 }
@@ -36,31 +33,18 @@
 }
 
 .css-13cymwt-control {
-  /* border-bottom: 1px solid #d1d1d1 !important; */
   border-radius: 0% !important;
 }
 .css-1dimb5e-singleValue {
   color: black !important;
   font-size: 17px !important;
-  /* font-family: "lato" !important; */
 }
 
 .css-qbdosj-Input {
   border: none !important;
   outline: none !important;
   z-index: -1 !important;
-  /* height: 40px !important;
-  width: 480px !important; */
 }
 .css-b62m3t-container:focus-visible {
   outline: none !important;
 }
-.css-1fdsijx-ValueContainer {
-  /* padding: 0px !important; */
-}
-/* menu */
-/* .css-1nmdiq5-menu{
-  background-color: red !important;
-} */
-
-/* .css-qbdosj-Input:after */
