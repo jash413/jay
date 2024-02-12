@@ -8,8 +8,8 @@
 }
 .specifications_content {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem 6.8rem;
+  justify-content: space-around;
+  /* margin: 1rem 6.8rem; */
   padding-bottom: 3.5rem;
 }
 .specifications_content span {
@@ -27,8 +27,8 @@
   position: absolute;
   max-width: 100%;
   display: block;
-  bottom: -19px;
-  left: 48%;
+  bottom: -2px;
+  left: 50%;
   transform: translateX(-50%) !important;
 }
 .specifications_img1 {

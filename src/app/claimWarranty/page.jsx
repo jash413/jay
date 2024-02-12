@@ -24,14 +24,17 @@ const Blogs = () => {
     }
   }, 2000);
   return (
-    <main >
+    <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Inner_header inner_header_image={Claim_banner} heading_big="CLAIM WARRANTY" />
- 
-<WarrantyForm/>
-<WarrantyAccordian/>
+      <Inner_header
+        inner_header_image={Claim_banner}
+        heading_big="CLAIM WARRANTY"
+      />
+
+      <WarrantyForm />
+      {/* <WarrantyAccordian /> */}
       <Footer />
     </main>
   );

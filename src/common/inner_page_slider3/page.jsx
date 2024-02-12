@@ -491,7 +491,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide15}
+                    src={slide16}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -518,7 +518,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide16}
+                    src={slide15}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />

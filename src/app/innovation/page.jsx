@@ -42,8 +42,8 @@ const Page = () => {
           heading_big="INNOVATION"
         />
         <Factory_walk />
-        <Innovation_circles />
-        <Innovation_cards
+        {/* <Innovation_circles /> */}
+        {/* <Innovation_cards
           image1={innovation_flex_img1}
           image2={innovation_flex_img2}
           image3={innvotion_flex_img3}
@@ -51,7 +51,7 @@ const Page = () => {
           card2Text={"Drawer "}
           card3Text={"Cabinets"}
         />
-        <Innovation_flex />
+        <Innovation_flex /> */}
       </div>
 
       <Form />

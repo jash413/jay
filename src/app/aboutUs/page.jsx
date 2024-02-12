@@ -50,7 +50,7 @@ const Page = () => {
         <WhyPlywood />
         <Real_Timeline />
         <Slider />
-        <Innovation_cards
+        {/* <Innovation_cards
           link1={"https://royaletouche.com/"}
           link2={"https://royaletouche.com/woodenfloors/"}
           link3={"/product/plywood"}
@@ -60,12 +60,11 @@ const Page = () => {
           card1Text={"Laminate"}
           card2Text={"Wooden Flooring"}
           card3Text={"Plywood"}                 
-        />
+        /> */}
       </div>
       <Form />
       <Footer />
     </main>
   );
 };
-
 export default Page;

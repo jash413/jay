@@ -191,6 +191,10 @@
 .Toster_notification {
   background-color: red;
 }
+.check{
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 1500px) {
   .invoice_upload_container {
     padding-left: 13rem;
