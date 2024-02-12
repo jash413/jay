@@ -11,6 +11,13 @@
   width: 50%;
 }
 
+.canvas_layer{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .display {
   display: none;
 }
@@ -131,6 +138,16 @@
     font-size: 86px;
     margin-left: 4rem;
   }
+}
+
+@media (max-width:1440px){
+  .twoo {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {

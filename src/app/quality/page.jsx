@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -6,10 +7,8 @@ import  Quality_certificates from "@/components/quality_certificates/page";
 import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
 import Form from "@/components/form/page";
-import Quality_carousal from "@/components/quality_carousal/page";
 import Quality_text from "@/components/quality_text/page";
 import HeroSection from "@/components/heroSection/page";
-import Quality_slider from "@/components/quality_slider/page";
 import quality_image from "@/images/new_product.png";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,9 +45,6 @@ const Page = () => {
       </div>
       <Quality_certificates/>
       <Quality_text />
-      <Quality_slider />
-      <Quality_carousal/>
-
       <Form />
       <Footer />
     </main>

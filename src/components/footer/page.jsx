@@ -97,7 +97,7 @@ const Page = () => {
              <Link href="https://royaletouche.com/" >{"Laminates"}</Link>
               </li>
             <li className={styles.footer_item_list}>
-              <Link href="https://royaletouche.com/woodenfloors/"> {"Wooden Floor"} </Link>
+              <Link href="https://royaletouche.com/woodenfloors/"> {"Wooden Floors"} </Link>
               </li>
             <li className={styles.footer_item_list}>
               <Link href="/product/plywood">{"Plywood"}</Link>

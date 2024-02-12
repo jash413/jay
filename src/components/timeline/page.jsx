@@ -220,7 +220,7 @@ const Home = () => {
 
         <div className={styles.canvas_side_outer}>
           <section className={styles.sectionX} ref={sectionRef}>
-            <canvas ref={canvasRef}></canvas>
+            <canvas  className={styles.canvas_layer} ref={canvasRef}></canvas>
           </section>
         </div>
       </div>
