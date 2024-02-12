@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import homepage_box from "@/images/india.svg";
 import Button from "@/common/button/button2";

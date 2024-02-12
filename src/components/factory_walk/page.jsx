@@ -201,7 +201,7 @@ const AirpodsAnimation = () => {
             </div>
           </div>
         </div>
-        <canvas ref={canvasRef}></canvas>
+        <canvas className={styles.canvas_layer_setting} ref={canvasRef}></canvas>
       </section>
     </div>
   );

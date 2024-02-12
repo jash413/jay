@@ -9,7 +9,6 @@ import Contact_Map from "@/common/contact_map/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
-
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

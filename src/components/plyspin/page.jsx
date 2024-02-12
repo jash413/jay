@@ -38,7 +38,7 @@ const Page = () => {
             variants={variants}
             transition={{ duration: 0.6, delay: 1 }}
           >
-            The Royalè Experiènce
+            The Royalè Experience
           </motion.div>
         </div>
 

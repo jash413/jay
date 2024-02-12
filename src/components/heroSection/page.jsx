@@ -73,9 +73,6 @@ const Page = (props) => {
             className={styles.logo}
           />
         </div>
-        {/* <div className={styles.btn_outer}>
-          <Button onClick={() => router.push("/")} btn_text="New Arrivals" />
-        </div> */}
       </div>
       <div className={styles.homepage_image_wrapper}>
         {props.video_bg && (

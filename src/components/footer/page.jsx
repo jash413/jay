@@ -62,13 +62,9 @@ const Page = () => {
             <li className={styles.footer_item_list}>
               <Link href="/aboutUs">{"About us"}</Link>
             </li>
-            {/* <li className={styles.footer_item_list}>{"Careers"}</li> */}
             <li className={styles.footer_item_list}>
               <Link href="/findStore">{"Find Nearest Store"}</Link>
             </li>
-            {/* <li className={styles.footer_item_list}>
-              <Link href="/quality">{"Quality"}</Link>
-            </li> */}
             <li className={styles.footer_item_list}>
               <Link href="/Blogs">{"Blogs"}</Link>
             </li>

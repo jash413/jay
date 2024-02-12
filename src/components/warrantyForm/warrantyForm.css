@@ -1,7 +1,5 @@
 .p-dropdown-items {
   background-color: white;
-  /* padding-top: 0.5rem; */
-  /* padding-bottom: 0.5rem; */
   margin-top: 0.3rem;
   color: #838383;
   font-size: 20px;
@@ -63,9 +61,6 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   -webkit-text-fill-color: #838383 !important;
 }
-/* .go2072408551{
-    background-color: red;
-  } */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -77,7 +72,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  font-family: "__Lato_d890f0", "__Lato_Fallback_d890f0";
+  font-family: "__Lato_d890f0";
   line-height: 15px;
   padding: 20px 47px 18px;
   font-size: 20px;

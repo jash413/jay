@@ -57,7 +57,7 @@ const Airpods = () => {
       }
       
       else if (windowWidth >= 768) {
-        canvas.width = 800; // Adjust the width for screen width 425
+        canvas.width = 1500; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       }
 
@@ -72,13 +72,13 @@ const Airpods = () => {
       } 
 
       else if (windowWidth >= 375) {
-        canvas.width = 1600; // Adjust the width for screen width 375
+        canvas.width = 1200; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } 
 
 
       else if (windowWidth >= 320) {
-        canvas.width = 690; // Adjust the width for screen width 375
+        canvas.width = 1200; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } 
       
@@ -101,9 +101,6 @@ const Airpods = () => {
       ` https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 8)
         .toString()
         .padStart(4, "0")}.png`;
-        // https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/0001.png
-
-        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/0001.png
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
