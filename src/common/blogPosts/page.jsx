@@ -74,9 +74,10 @@ const BlogPost = ({ readMoreRoute }) => {
                         // showFirstButton	
                         sx={{
                             '& .MuiPaginationItem-root': {
+                              
                                 backgroundColor: 'transparent',
-                                border: '1px solid #CC7D45',
-                                color: '#CC7D45',
+                                border: '1px solid #C3A464',
+                                color: '#C3A464',
                                 margin: '0 10px',
                                 padding: "18px 13px",
                                 fontSize: "20px",

@@ -87,7 +87,7 @@ const AirpodsAnimation = () => {
 
   return (
     <div>
-      <div className={styles.factory_walk_text}>Lorem ipsum dolor sit</div>
+      {/* <div className={styles.factory_walk_text}>Lorem ipsum dolor sit</div> */}
 
       <section ref={sectionRef} className={styles.factoryWalk_sec}>
         {!info && (

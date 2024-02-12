@@ -7,8 +7,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "@/common/AnimatedText/HeadingTextAnimation";
 import Button from "@/common/button/button4";
+import ScrollToTop from "react-scroll-to-top";
 import Title from "@/components/footer/test";
 import styles from "@/components/footer/footer.module.css";
+import "./scroll_to_top.css"
 const Page = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -97,7 +99,7 @@ const Page = () => {
              <Link href="https://royaletouche.com/" >{"Laminates"}</Link>
               </li>
             <li className={styles.footer_item_list}>
-              <Link href="https://royaletouche.com/woodenfloors/"> {"Wooden Floor"} </Link>
+              <Link href="https://royaletouche.com/woodenfloors/"> {"Wooden Floors"} </Link>
               </li>
             <li className={styles.footer_item_list}>
               <Link href="/product/plywood">{"Plywood"}</Link>
@@ -107,6 +109,9 @@ const Page = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div>
+        <ScrollToTop smooth color="#C3A464"/>
       </div>
     </div>
   );

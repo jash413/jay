@@ -14,6 +14,25 @@ import "./form.css";
 const Contactform = () => {
   const [formResponse, setFormResponse] = useState("");
 
+  const stateOption = [
+    { value: "Gujarat", label: "Gujarat" },
+    { value: "Maharastra", label: "Maharastra" },
+    { value: "Kerela", label: "Kerela" },
+    { value: "Karnataka", label: "Karnataka" },
+    { value: "Delhi", label: "Delhi" },
+    { value: "Punjab", label: "Punjab" },
+    { value: "Himachal Pradesh", label: "Himachal Pradesh" },
+    { value: "Chhattisgarh", label: "Chhattisgarh" },
+    { value: "Uttar Pradesh", label: "Uttar Pradesh" },
+    { value: "Madhya Pradesh", label: "Madhya Pradesh" },
+    { value: "Mizoram", label: "Mizoram" },
+    { value: "Assam", label: "Assam" },
+    { value: "Bihar", label: "Bihar" },
+    { value: "Goa", label: "Goa" },
+    { value: "Odisha", label: "Odisha" },
+
+  ]
+
   const yearOptions = [
     { value: "Ahmedabad", label: "Ahmedabad" },
     { value: "Amreli", label: "Amreli" },
@@ -81,6 +100,7 @@ const Contactform = () => {
     fullName: "",
     Email: "",
     Phone: "",
+    state: "",
     year: "",
     message: "",
   };
@@ -165,6 +185,27 @@ const Contactform = () => {
                 <p className={styles.error}>{errors.Phone}</p>
               )}
             </div>
+
+            <div className={styles.field}>
+              <label htmlFor="State">State</label>
+              <Select
+                placeholder="Select State"
+                value={values.state}
+                onChange={(selectedOption) => {
+                  let event = {
+                    target: { name: "state", value: selectedOption },
+                  };
+                  handleChange(event);
+                }}
+                isSearchable={true}
+                options={stateOption}
+                name="state"
+              />
+              {touched.state && errors.state && (
+                <p className={styles.error}>{errors.state}</p>
+              )}
+            </div>
+
             <div className={styles.field}>
               <label htmlFor="City">City</label>
               <Select
