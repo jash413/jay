@@ -60,9 +60,12 @@ const Home = () => {
     const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
+      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
         .toString()
         .padStart(3, "0")}-scaled.jpg`;
+
+
+        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
