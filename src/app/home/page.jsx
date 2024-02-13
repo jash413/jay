@@ -48,7 +48,7 @@ const Page = () => {
       <div>
         <Navbar />
       </div>
-      {/* <section className="cards">
+      <section className="cards">
         <div className="card">
           <div className="card-cover">
             <HeroSection
@@ -58,7 +58,7 @@ const Page = () => {
           </div>
         </div>
       <Factory />
-      </section> */}
+      </section>
       <Layers />
       <Plyspin />
       <Timeline />
