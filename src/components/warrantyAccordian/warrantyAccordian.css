@@ -12,7 +12,7 @@
   margin-top: 10px;
 }
 .accordion {
-  border: none;
+  border: none !important;
 }
 .accordian_header_main_text {
   color: white;
@@ -24,8 +24,8 @@
   text-transform: uppercase;
 }
 .accordion__button {
-  background: #006f69;
-  color: white;
+  background: #006f69 !important;
+  color: white !important;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
