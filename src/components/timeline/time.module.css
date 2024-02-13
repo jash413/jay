@@ -143,9 +143,30 @@
 @media (max-width:1440px){
   .twoo {
     font-weight: 400;
-    font-size: 52px;
+    font-size: 58px;
     line-height: 130%;
     letter-spacing: 1px;
+  }
+
+  .contentX {
+    width: 100%;
+    padding: 46px 0px 0px 220px;
+    width: calc(100% - 0rem);
+    color: #26aca5;
+    font-size: 35px;
+    opacity: 0;
+  }
+
+  .section {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 2.6rem 0rem 14rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 218px;
+    color: white;
   }
 
 }
@@ -164,13 +185,13 @@
     margin-left: 4rem;
   }
   .contentX {
-    padding: 19px 0px 0px 150px;
-    width: calc(100% - 2rem);
+    padding: 19px 0px 0px 112px;
+    width: calc(100% - 0rem);
     font-size: 25px;
   }
 
   .twoo {
-    font-size: 30px;
+    font-size: 38px;
     letter-spacing: 1px;
   }
 
@@ -182,7 +203,7 @@
   }
 
   .section {
-    padding: 2.6rem 2rem 8rem;
+    padding: 2.6rem 2rem 14rem;
     border-radius: 1rem;
     min-height: 218px;
   }

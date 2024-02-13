@@ -37,6 +37,11 @@ const Home = () => {
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       }
 
+      else if (windowWidth >= 1024) {
+        canvas.width = 800; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
+      }
+
      
       
       
