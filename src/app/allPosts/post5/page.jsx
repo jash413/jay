@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
+import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
@@ -104,6 +105,7 @@ const Page = () => {
         blogPost_text8a="In this journey through the layers of plywood, we hope you've gained valuable insights into this remarkable material and its myriad applications. Whether you're a DIY enthusiast or a professional builder, the right knowledge about plywood can make a significant difference in the success of your projects."
 
       />
+         <Footer />
     </div>
   );
 };

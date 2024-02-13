@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Footer from "@/components/footer/page"
 import Navbar from "@/components/navbar/index";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
@@ -113,6 +114,7 @@ const Page = () => {
 
 
       />
+         <Footer />
     </div>
   );
 };

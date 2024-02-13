@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
+import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
@@ -57,6 +58,7 @@ const Page = () => {
         blogPost_heading8="Conclusion"
         blogPost_text8="Fire-resistant plywood is a critical component in creating structures that prioritize safety in the face of fire emergencies. Understanding its classifications, construction, applications, code compliance, maintenance requirements, and cost considerations empowers builders, architects, and homeowners to make informed choices. By incorporating fire-resistant plywood into your projects, you not only enhance fire safety but also contribute to the overall resilience of your built environment."
       />
+         <Footer />
     </div>
   );
 };

@@ -4,8 +4,6 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory_walk/factory_walk.module.css";
 import "./factoryWalk.css";
-import closeIcon from "@/images/closeR.svg";
-import Images from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 const AirpodsAnimation = (props) => {
