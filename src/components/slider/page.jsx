@@ -2,12 +2,12 @@ import { Navigation, EffectFade, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import rightArrow from "@/images/arrow2.svg";
-import image1 from "@/images/Stateoftheartfacility-0101.png";
-import image2 from "@/images/VacuumPressureTreatment.png";
-import image3 from "@/images/gapless.png";
-import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood.png";
-import image5 from "@/images/4PressTechnology.png";
-import image6 from "@/images/Multiplequalitychecks.png";
+import image1 from "@/images/Stateoftheartfacility-01011.jpg";
+import image2 from "@/images/VacuumPressureTreatment1.jpg";
+import image3 from "@/images/gapless1.jpg";
+import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood1.jpg";
+import image5 from "@/images/4PressTechnology1.jpg";
+import image6 from "@/images/Multiplequalitychecks1.jpg";
 
 // Import Swiper styles
 import "swiper/css";

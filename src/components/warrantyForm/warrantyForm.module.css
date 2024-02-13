@@ -93,6 +93,7 @@
   line-height: normal;
 }
 .invoice_upload_container {
+ 
   padding-left: 9rem;
   padding-right: 9rem;
 }
@@ -113,11 +114,15 @@
 .inovoice_inner_flex {
   width: 100%;
 }
+.invc_img{
+  cursor: pointer;
+}
 .invoice_inner_cards {
   background-color: #d9d9d9;
   height: 340px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
 }

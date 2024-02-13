@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import { Dropdown } from "primereact/dropdown";
 import { useFormik } from "formik";
+import { useRouter } from "next/navigation";
 import { FormSchemas } from "@/components/warrantyForm/formSchema";
 import "./warrantyForm.css";
 import Image from "next/image";
@@ -11,6 +12,7 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "@/components/warrantyForm/warrantyForm.module.css";
 const FormCommon = () => {
+  const router = useRouter();
   const form = useRef();
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [uploadedInvoice, setUploadedInvoice] = useState(null);
@@ -676,7 +678,7 @@ const FormCommon = () => {
                   htmlFor="img"
                  
                 >
-                  <Image src={invoice_icon} alt="none" />
+                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
                   <input
                     type="file"
                     data-max-size="2048"
@@ -705,7 +707,7 @@ const FormCommon = () => {
                 <label
                   htmlFor="img"
                 >
-                  <Image src={invoice_icon} alt="none" />
+                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
                   <input
                     type="file"
                     data-max-size="2048"
@@ -733,7 +735,7 @@ const FormCommon = () => {
                 <label
                   htmlFor="img"
                 >
-                  <Image src={invoice_icon} alt="none" />
+                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
                   <input
                     type="file"
                     data-max-size="2048"
@@ -761,7 +763,7 @@ const FormCommon = () => {
                 <label
                   htmlFor="img"
                 >
-                  <Image src={invoice_icon} alt="none" />
+                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
                   <input
                     type="file"
                     data-max-size="2048"
@@ -802,8 +804,8 @@ const FormCommon = () => {
              
               <p className={styles.form_agree_content}>
                 Click here to agree to{" "}
-                <span className={styles.forms_terms_condition}>
-                  Terms And Conditions
+                <span className={styles.forms_terms_condition} onClick={()=> router.push("/terms_and_condition")}>
+                Terms And Conditions
                 </span>
               </p>
             </div>
