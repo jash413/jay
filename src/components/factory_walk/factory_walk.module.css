@@ -4,6 +4,14 @@
   margin-top: 3rem;
   margin-left: 4rem;
 }
+
+.canvas_layer_setting{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
 .factoryWalk_sec {
   position: relative;
 }
@@ -34,7 +42,6 @@
   width: 100px;
   width: 30px;
   height: 30px;
-  /* background-color: #006f69; */
   padding: 5px 5px;
   border-radius: 100%;
   border: 1px solid #c3a464;
@@ -44,7 +51,6 @@
   position: absolute;
   height: 100vh;
   background-color: #fff;
-  /* right: 0; */
   transition: all 0.7s;
   padding: 30px 20px;
   overflow-y: scroll;
@@ -71,25 +77,106 @@
 .content {
   font-size: 16px;
 }
+
+/* button */
+
+
+.buttonShow {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 30px;
+  line-height: 15px;
+  padding: 13px 27px 15px;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+  font-size: 20px;
+  border: 2px solid #c3a464;
+  color: #c3a464;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 20;
+  background: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonShow span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.buttonShow span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 70%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.buttonShow:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+  background-color: #006f69;
+  border: 1px solid #006f69;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.buttonShow:hover {
+  border: 2px solid #006f69;
+}
+.buttonShow:hover:after {
+  transform-origin: bottom center;
+  border: 1px solid #006f69;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.buttonShow:hover span:last-child {
+  transform: translateX(-50%) translateY(-110%);
+  opacity: 1;
+  font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 991px) {
   .info {
-    background-color: #fff;
-    cursor: pointer;
-    position: absolute;
     right: 34px;
-    border-radius: 50%;
     padding: 1px 9px;
     top: 145px;
   }
 }
 @media (max-width: 787px) {
   .info {
-    background-color: #fff;
-    cursor: pointer;
-    position: absolute;
-    right: 34px;
-    border-radius: 50%;
-    padding: 1px 9px;
     top: 105px;
   }
 }

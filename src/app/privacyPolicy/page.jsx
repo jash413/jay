@@ -6,7 +6,6 @@ import Inner_header from "@/common/inner_header/page"
 import Preloader from "@/components/preloader/page"
 import Claim_banner from "@/images/claim_banner.png"
 import PolicyData from "@/components/policyData/page"
-// import Navbar from "@/components/navbar/index"
 const Blogs = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -28,7 +27,6 @@ const Blogs = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      {/* <Navbar /> */}
       <Inner_header inner_header_image={Claim_banner} heading_big="PRIVACY POLICY" />
  <PolicyData/>
 

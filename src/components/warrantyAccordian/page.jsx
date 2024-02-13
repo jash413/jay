@@ -1,4 +1,4 @@
-"use client";
+
 import {
   Accordion,
   AccordionItem,
@@ -6,8 +6,6 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-// import styles from "@/Components/Accordian/Accordian.module.css"
-// Demo styles, see 'Styles' section below for some notes on use.
 import "react-accessible-accordion/dist/fancy-example.css";
 import "./warrantyAccordian.css";
 export default function Example() {

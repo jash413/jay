@@ -211,6 +211,7 @@ const FormCommon = () => {
   };
 
 
+
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,
     validationSchema: FormSchemas,
@@ -242,6 +243,7 @@ const FormCommon = () => {
   });
   console.log("FINAL VALUES",values);
   console.log("response", formResponse.text);
+  
 
 
 
@@ -521,7 +523,7 @@ const FormCommon = () => {
                   options={thicknessOptions}
                   optionLabel="name"
                   name="No_of_thickness"
-                  placeholder="Select Thickness"
+                  placeholder="Select Thickness"  
                   className={styles.input_field}
                   // disabled={!selectedProduct}
                 />
@@ -669,10 +671,10 @@ const FormCommon = () => {
           {/* Invoice */}
           <div className={styles.invoice_Main}>
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards}>
+              <div className={styles.invoice_inner_cards}  onClick={() => document.getElementById("getFile").click()}>
                 <label
                   htmlFor="img"
-                  onClick={() => document.getElementById("getFile").click()}
+                 
                 >
                   <Image src={invoice_icon} alt="none" />
                   <input
@@ -699,10 +701,9 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards}>
+              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile1").click()}>
                 <label
                   htmlFor="img"
-                  onClick={() => document.getElementById("getFile1").click()}
                 >
                   <Image src={invoice_icon} alt="none" />
                   <input
@@ -728,10 +729,9 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards}>
+              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile").click()}>
                 <label
                   htmlFor="img"
-                  onClick={() => document.getElementById("getFile2").click()}
                 >
                   <Image src={invoice_icon} alt="none" />
                   <input
@@ -757,10 +757,9 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards}>
+              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile").click()}>
                 <label
                   htmlFor="img"
-                  onClick={() => document.getElementById("getFile3").click()}
                 >
                   <Image src={invoice_icon} alt="none" />
                   <input
@@ -788,17 +787,19 @@ const FormCommon = () => {
           {/* invoice ends */}
           <div className={styles.form_last_section}>
             <div className={styles.form_last_section_content}>
-              <div>
+              <div className={styles.check}>
                 <input
                   className={styles.checkbox}
                   type="checkbox"
                   id="agreeTerms"
                   name="agreeTerms"
-                  checked={values.agreeTerms}
+                  value={values.agreeTerms}
+                  // checked={values.agreeTerms}
                   onChange={handleChange}
                   required
                 />
               </div>
+             
               <p className={styles.form_agree_content}>
                 Click here to agree to{" "}
                 <span className={styles.forms_terms_condition}>
@@ -806,6 +807,7 @@ const FormCommon = () => {
                 </span>
               </p>
             </div>
+            
 
             {/* <div className={styles.form_last_section_content}>
               <div>
@@ -840,7 +842,7 @@ const FormCommon = () => {
           </div>
           {/*  */}
           <div className={styles.Form_btn_Outer_Main}>
-            <button class="button-57" role="button">
+            <button class="button-57" role="button"  disabled={!values.agreeTerms}>
               <span class="text"> Submit</span>
               <span> Submit</span>
             </button>

@@ -17,7 +17,6 @@
 
 .specification {
   display: flex;
-
   padding: 16px;
   border-bottom: 1px solid #816835;
   justify-content: space-between;
@@ -43,13 +42,11 @@
 
 .button {
   display: block;
-  /* width: 100%; */
   font-family: lato;
   margin-top: 2rem;
   padding: 15px 30px;
   font-size: 20px;
   background-color: transparent;
-  /* background-color: #f0f0f0; */
   border: 1px solid #000;
   cursor: pointer;
 }
@@ -62,9 +59,6 @@
 
   .title {
     font-size: 20px;
-  }
-
-  .specification {
   }
 
   .value {

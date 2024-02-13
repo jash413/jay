@@ -95,7 +95,7 @@ const Section1 = () => {
                 )}
               </InView>
             </div>
-            {/* <InView triggerOnce={true}>
+            <InView triggerOnce={true}>
               {({ inView: inViewButton, ref: refButton }) => (
                 <motion.div
                   className="explore_btn"
@@ -107,10 +107,10 @@ const Section1 = () => {
                     delay: 1,
                   }}
                 >
-                  <Button8 btn_text={"Explore Collections"} />
+                  <Button8 btn_text={"Buy Now"} />
                 </motion.div>
               )}
-            </InView> */}
+            </InView>
           </div>
         </div>
       </div>

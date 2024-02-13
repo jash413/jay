@@ -1,4 +1,3 @@
-
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -6,20 +5,19 @@
 .productOverviewCard {
   width: 50%;
   color: rgb(0, 0, 0);
-  background: #D8D8D8;
+  background: #d8d8d8;
 }
 
 .productOverviewCard h2 {
   text-align: center;
   color: #fff;
-  /* font-family: Lato; */
   font-size: 74.688px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   padding: 48px 0;
 }
-.productOverviewCard h2:hover{
+.productOverviewCard h2:hover {
   background-color: #026863;
 }
 .image img {
@@ -28,14 +26,13 @@
   display: block;
 }
 
-
-.heading{
+.heading {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
-.ixs{
+.ixs {
   text-align: center;
 }
 .contentSec {
@@ -67,13 +64,13 @@
   line-height: 158%;
 }
 .productOverviewCard:last-child {
-  background: #D8D8D8;
+  background: #d8d8d8;
   color: black;
 }
 .productOverviewCard:last-child h2 {
   color: black;
 }
- 
+
 .productOverviewCard:last-child h2:hover {
   background-color: #bd974b;
 }
@@ -82,20 +79,16 @@
 }
 .productOverviewCard:last-child .content {
   color: black;
-  /* border-bottom: 1px solid black; */
 }
 .productOverviewCard:last-child .secondConetnt {
   color: black;
 }
 
-
-
-@media (min-width:1600px){
+@media (min-width: 1600px) {
   .contentSec {
     width: 600px;
     margin: 0 auto;
     padding: 73px 0px 73px;
-
   }
 }
 @media (max-width: 1199px) {
@@ -110,7 +103,6 @@
   }
 }
 
-
 @media (max-width: 1024px) {
   .image img {
     max-width: 100%;
@@ -120,19 +112,13 @@
   }
 
   .content {
-    color: #000000;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 158%;
   }
-
 
   .content {
     padding: 0 0 0px;
   }
 }
-
 
 @media (max-width: 991px) {
   .contentSec {
@@ -141,39 +127,19 @@
   }
 
   .content {
-    color: #000000;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 158%;
-  }
-
-
-
-  .content {
     padding: 0 0 0px;
   }
+
   .title {
-    color: #000000;
     font-size: 32px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 144.5%;
     margin: 0 0 19px;
   }
 }
 @media (max-width: 768px) {
-  .wrapper {
-    /* flex-direction: column; */
-  }
-
-
   .content {
-    color: #000000;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 158%;
   }
   .productOverviewCard {
     width: 100%;
@@ -184,7 +150,7 @@
   }
 }
 @media (max-width: 575px) {
-  .heading{
+  .heading {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -197,22 +163,16 @@
   .productOverviewCard h2 {
     padding: 15px;
     font-size: 40px;
-  
   }
 
-
   .image img {
-   height: 100%;
+    height: 100%;
     width: 100%;
     display: block;
   }
 
-
   .title {
-    /* color: #fff; */
-    /* font-family: Lato; */
     font-size: 35px;
-    font-style: normal;
     font-weight: 500;
     line-height: 144.5%;
     margin: 0 0 19px;

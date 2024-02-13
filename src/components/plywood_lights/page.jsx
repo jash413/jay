@@ -134,20 +134,6 @@ const Page = () => {
               Product Overview:
             </motion.div>
             <p className={styles.plywood_lights_small_text}>
-              {/* {text.map((el, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  animate={inView ? { opacity: 1 } : {}}
-                  transition={{
-                    duration: 1,
-                    delay: inView ? i / 20 : 0,
-                  }}
-                  className={styles.innovation_flex_fifty_text}
-                >
-                  {el}{" "}
-                </motion.span>
-              ))} */}
               {
                 "Royale Touche Performance Ply is a premium-grade waterproof plywood made from carefully selected hardwood timber, offering exceptional strength, high load- bearing capacity, durability against all weather conditions and protection against termites and borers. Utilizing an advanced vacuum pressure treatment system with nano-molecule chemicals ensures top-notch performance and longevity of the plywood. With E-0 compliance and fire retardant properties, it is an all in one plywood in its true sense."
               }

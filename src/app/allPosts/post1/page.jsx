@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
+import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
@@ -77,6 +78,7 @@ const Page = () => {
         blogPost_text8="Choosing waterproof plywood is a decision that brings a multitude of advantages, from unparalleled water resistance to increased durability and versatility. While the initial cost may be slightly higher than that of standard plywood, the long-term benefits, including reduced maintenance costs and extended lifespan, make it a sound investment."
         blogPost_text8a="When evaluating waterproof plywood prices, it's essential to consider factors such as brand reputation, core material quality, thickness, certifications, and any additional features. By understanding the advantages of waterproof plywood and its associated costs, you can make informed decisions that align with the specific requirements of your project, ensuring a resilient and enduring outcome."
       />
+          <Footer />
     </main>
   );
 };

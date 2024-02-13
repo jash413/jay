@@ -11,7 +11,6 @@
 .icon_section {
   display: flex;
   justify-content: space-evenly;
-
   margin-bottom: 4rem;
   text-align: center;
   padding: 1rem;
@@ -79,26 +78,21 @@
 }
 
 .left img {
-  background-color: cornflowerblue;
-  /* height: 100%; */
+
   width: 100%;
   object-fit: cover;
 }
 .right img {
-  background-color: cornflowerblue;
-  /* height: 100%; */
   width: 100%;
   object-fit: cover;
 }
 
-/* -------------------------------------------------- */
 @media screen and (max-width: 1660px) {
   .card_section {
     display: flex;
     justify-content: space-between;
   }
 }
-/* -------------------------------------------------- */
 
 @media screen and (max-width: 1025px) {
   .icon_section {
@@ -119,25 +113,20 @@
   }
 
   .blockCardText1 .blockCardTextHeading {
-    color: #fff;
     font-size: 22px;
     margin: 0 0 10px;
   }
   .blockCardText2 .blockCardTextHeading {
-    color: #c3a464;
     font-size: 22px;
     margin: 0 0 10px;
   }
   .blockCardText1 .blockCardTextContent {
-    color: #000;
     font-size: 15px;
   }
   .blockCardText2 .blockCardTextContent {
-    color: #fff;
     font-size: 15px;
   }
 }
-/* -------------------------------------------------- */
 @media screen and (max-width: 769px) {
   .section {
     padding: 2rem 1.9rem;
@@ -163,7 +152,6 @@
     gap: 30px;
   }
 }
-/* ------------------------------------------------------ */
 @media screen and (max-width: 475px) {
   .section {
     padding: 1rem 1.5rem;
@@ -198,25 +186,18 @@
 }
 
 @media screen and (max-width: 320px) {
-
   .blockCardText1 .blockCardTextHeading {
-    color: #fff;
     font-size: 18px;
     margin: 0 0 10px;
   }
   .blockCardText2 .blockCardTextHeading {
-    color: #c3a464;
     font-size: 18px;
     margin: 0 0 10px;
   }
   .blockCardText1 .blockCardTextContent {
-    color: #000;
     font-size: 14px;
   }
   .blockCardText2 .blockCardTextContent {
-    color: #fff;
     font-size: 14px;
   }
-
-
 }

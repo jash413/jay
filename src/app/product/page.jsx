@@ -85,7 +85,8 @@ const Page = () => {
     <>
       <div className={styles.ply_bock}>
         <Navbar />
-        <div className={styles.ply_side1}>
+            <Link className={styles.ply_side1} href="product/plywood">
+      
           <div className={styles.plywood} ref={plywoodRef}>
           
             <h2 className={`${styles.plywood_title} two_heading_animation`}>
@@ -94,7 +95,6 @@ const Page = () => {
         
           </div>
           <div className={styles.big_arrow_outer}>
-            <Link href="product/plywood">
               <div
                 ref={(el) => {
                   plywoodRef.current = el;
@@ -109,10 +109,13 @@ const Page = () => {
                   className={styles.big_arrow}
                 />
               </div>
-            </Link>
           </div>
-        </div>
-        <div className={styles.block_side2}>
+       
+            </Link>
+
+
+            <Link className={styles.block_side2} href="/product/blockwood">
+    
           <div className={styles.blockboard} ref={blockboardRef}>
             <h2 className={`${styles.blockboard_title} two_heading_animation`}>
               {splitWords("Blockboard")}
@@ -120,7 +123,6 @@ const Page = () => {
           
           </div>
           <div className={styles.big_arrow_outer}>
-            <Link href="/product/blockwood">
               <div
                 ref={(el) => (blockboardRef.current = el)}
                 onMouseEnter={() => handleImageHover(blockboardRef.current)}
@@ -132,9 +134,10 @@ const Page = () => {
                   className={styles.big_arrow}
                 />
               </div>
-            </Link>
           </div>
-        </div>
+   
+            </Link>
+
       </div>
     </>
   );

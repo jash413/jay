@@ -5,11 +5,17 @@
   display: flex;
   font-weight: 400;
   color: white;
-  /* background: #006f69; */
 }
 .first_timeline_inner {
   max-width: 800px;
   width: 50%;
+}
+
+.canvas_layer{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .display {
@@ -41,11 +47,6 @@
   line-height: 130%;
   letter-spacing: 1px;
 }
-
-/* .sectionX{
-  left: 663px !important;
-} */
-
 .section {
   display: flex;
   position: relative;
@@ -99,12 +100,7 @@
 
 @media (min-width: 1600px) {
   .contentX {
-    width: 100%;
     padding: 67px 0px 0px 220px;
-    width: calc(100% - 2rem);
-    color: #26aca5;
-    font-size: 35px;
-    opacity: 0;
   }
 
   .display {
@@ -116,34 +112,21 @@
   }
 
   .timeline {
-    position: relative;
-    min-height: 150px;
     margin-bottom: 8rem;
     margin-top: 15rem;
   }
 
   .section {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
     padding: 2.6rem 0rem 12rem;
     border-radius: 1rem;
-    align-items: center;
-    min-height: 218px;
-    color: white;
   }
 
   .twoo {
-    font-weight: 400;
     font-size: 65px;
-    line-height: 130%;
     letter-spacing: 1px;
   }
 
   .line {
-    position: absolute;
-    z-index: 1;
     left: calc(20% - -1px);
     width: 2px;
     top: 117px;
@@ -155,6 +138,16 @@
     font-size: 86px;
     margin-left: 4rem;
   }
+}
+
+@media (max-width:1440px){
+  .twoo {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -171,45 +164,30 @@
     margin-left: 4rem;
   }
   .contentX {
-    width: 100%;
     padding: 19px 0px 0px 150px;
     width: calc(100% - 2rem);
-    color: #26aca5;
     font-size: 25px;
-    opacity: 0;
   }
 
   .twoo {
-    font-weight: 400;
     font-size: 30px;
-    line-height: 125%;
     letter-spacing: 1px;
   }
 
   .line {
-    position: absolute;
-    z-index: 1;
     left: calc(20% - -1px);
     width: 2px;
     top: 80px;
     bottom: 280px;
-    border-right: 2px solid #218e88;
   }
 
   .section {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
     padding: 2.6rem 2rem 8rem;
     border-radius: 1rem;
-    align-items: center;
     min-height: 218px;
-    color: white;
   }
 
   .timeline {
-    position: relative;
     min-height: 150px;
     margin-bottom: 0rem;
     margin-top: 0rem;
@@ -220,69 +198,6 @@
     font-weight: 300;
   }
 }
-/* 
-@media (max-width: 991px) {
-  .contentX {
-    width: 100%;
-    padding: 19px 0px 0px 174px;
-    width: calc(100% - 2rem);
-    color: #26aca5;
-    font-size: 25px;
-    opacity: 0;
-  }
-
-  .timeline {
-    position: relative;
-    min-height: 150px;
-    margin-bottom: 15rem;
-  }
-  .twoo {
-    font-weight: 400;
-    letter-spacing: 1px;
-  }
-
-  .section {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    padding: 2.6rem 2rem 7rem;
-    border-radius: 1rem;
-    align-items: center;
-    min-height: 218px;
-    color: white;
-  }
-
-  .line {
-    position: absolute;
-    z-index: 1;
-    left: calc(20% - -1px);
-    width: 2px;
-    top: 100px;
-    bottom: 111px;
-    border-right: 2px solid #218e88;
-  }
-  .bead {
-    position: absolute;
-    display: block;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    background-color: #0f8a83;
-    left: 20.3%;
-    z-index: 2;
-    top: 20%;
-    transform: translateX(-50%);
-  }
-
-  .timeline_number {
-    font-size: 20px;
-  }
-  .timeline_sec_comment {
-    font-size: 19px;
-    font-weight: 300;
-  }
-} */
 
 @media (max-width: 991px) {
   .display1 {
@@ -294,33 +209,25 @@
   }
   .img_main {
     color: transparent;
-    /* aspect-ratio: 1/2; */
     height: auto;
     max-width: 100%;
-    /* width: 100%;  */
     width: 200px;
     height: 200px;
     object-fit: cover;
   }
   .first_timeline_inner {
-    /* max-width: 800px; */
     width: 70%;
   }
   .line {
-    position: absolute;
-    z-index: 1;
     left: 65px;
     width: 2px;
     top: 306px;
     bottom: 245px;
-    border-right: 2px solid #218e88;
   }
   .bead {
-    position: absolute;
     display: block;
     height: 1rem;
     width: 1rem;
-    border-radius: 50%;
     background-color: #0f8a83;
     left: 66px;
     z-index: 2;
@@ -331,14 +238,10 @@
     width: 100%;
     padding: 40px 0px 0px 120px;
     width: calc(0);
-    color: #26aca5;
     font-size: 20px;
-    opacity: 0;
   }
   .twoo {
-    font-weight: 400;
     font-size: 35px;
-    line-height: 125%;
     letter-spacing: 1px;
   }
   .timeline_sec_comment {
@@ -359,13 +262,6 @@
 }
 
 @media (max-width: 768px) {
-  /* .display1{
-    display: none;
-  }
-
-  .display {
-    display: block;
-  }  */
 
   .img_main {
     color: transparent;
@@ -384,16 +280,12 @@
   }
 
   .contentX {
-    width: 100%;
     padding: 40px 0px 0px 97px;
     width: calc(0);
-    color: #26aca5;
     font-size: 20px;
-    opacity: 0;
   }
 
   .timeline {
-    position: relative;
     min-height: 150px;
     margin-bottom: 15rem;
   }
@@ -403,20 +295,12 @@
   }
 
   .section {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
     padding: 2.6rem 2rem 7rem;
     border-radius: 1rem;
-    align-items: center;
     min-height: 218px;
-    color: white;
   }
 
   .line {
-    position: absolute;
-    z-index: 1;
     left: calc(10% - -1px);
     width: 2px;
     top: 306px;
@@ -428,8 +312,6 @@
     display: block;
     height: 1rem;
     width: 1rem;
-    border-radius: 50%;
-    background-color: #0f8a83;
     left: 10.3%;
     z-index: 2;
     top: 55%;
@@ -450,18 +332,8 @@
     width: 100%;
     padding: 46px 0px 0px 47px;
     width: calc(0);
-    color: #26aca5;
     font-size: 20px;
-    opacity: 0;
   }
-
-  /* .display1{
-    display: none;
-  }
-
-  .display {
-    display: block;
-  }  */
   .timeline_animation_text {
     font-size: 45px;
     margin-left: 2rem;
@@ -478,25 +350,16 @@
   }
 
   .section {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
     padding: 2.6rem 2rem 7rem;
     border-radius: 1rem;
-    align-items: center;
     min-height: 218px;
-    color: white;
   }
 
   .line {
-    position: absolute;
-    z-index: 1;
     left: calc(10% - -1px);
     width: 2px;
     top: 310px;
     bottom: 308px;
-    border-right: 2px solid #218e88;
   }
   .bead {
     position: absolute;

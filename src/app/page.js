@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Preloader from "@/components/preloader/page";
-import styles from './page.module.css';
 import Home from "@/app/home/page";
 
 export default function Page() {
@@ -24,7 +23,7 @@ export default function Page() {
   }, 2000);
 
   return (
-    <main className={styles.main}>
+    <main>
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>

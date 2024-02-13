@@ -21,7 +21,6 @@ import slide13 from "@/images/plywoodImage14.jpg";
 import slide14 from "@/images/plywoodImage15.jpg";
 import slide15 from "@/images/plywoodImage5.jpg";
 import slide16 from "@/images/plywoodImage6.jpg";
-import slide17 from "@/images/plywoodImage17.jpg";
 import styles from "@/common/inner_page_slider2/inner_slider2.module.css";
 import "@/common/inner_page_slider2/inn.css";
 import "swiper/css";
@@ -492,7 +491,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide15}
+                    src={slide16}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -519,7 +518,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide16}
+                    src={slide15}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />

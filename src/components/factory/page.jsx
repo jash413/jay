@@ -58,11 +58,13 @@ const AirpodsAnimation = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 298;
+    const frameCount = 285;
     const currentFrame = (index) =>
-      ` https://siddhguru.pvotdesigns.xyz/wp-content/uploads/2024/02/${(index + 1)
+      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 5)
         .toString()
-        .padStart(5, "0")}.png`;
+        .padStart(5, "0")}-scaled.jpg`;
+
+        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -105,15 +107,6 @@ const AirpodsAnimation = () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
-
-
-
-
-
-
-
-
-
 
 
 
