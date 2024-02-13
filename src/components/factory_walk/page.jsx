@@ -43,6 +43,8 @@ const AirpodsAnimation = (props) => {
         .toString()
         .padStart(6, "0")}-scaled.jpg`;
 
+        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
+
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);

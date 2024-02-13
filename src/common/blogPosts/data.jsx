@@ -1,10 +1,15 @@
-import BlogPostImage1 from "@/images/blogs_img1.png";
-import BlogPostImage2 from "@/images/blogs_img2.png";
-import BlogPostImage3 from "@/images/blogs_img3.png";
+import BlogPostImage1 from "@/images/BlogImage1.jpg";
+import BlogPostImage2 from "@/images/BlogImage2.jpg";
+import BlogPostImage3 from "@/images/BlogImage3.jpg";
+import BlogPostImage4 from "@/images/BlogImage4.jpg";
+import BlogPostImage5 from "@/images/BlogImage5.jpg";
+import BlogPostImage6 from "@/images/BlogImage6.jpg";
+import BlogPostImage7 from "@/images/Blogs_img1.png";
+
 
 const Data = [
     {
-        image: BlogPostImage1,
+        image: BlogPostImage7,
         date: "January 11, 2024",
         blog_name: "Interior Design1",
         blogPost_heading: "5 Advantages of choosing waterproof plywood",
@@ -12,7 +17,7 @@ const Data = [
         readMoreRoute: "/allPosts/post1",
     },
     {
-        image: BlogPostImage2,
+        image: BlogPostImage7,
         date: "March 20, 2024",
         blog_name: "Interior Design2",
         blogPost_heading: "5 Tips on how to maintain plywood sheets",
@@ -20,7 +25,7 @@ const Data = [
         readMoreRoute: "/allPosts/post2",
     },
     {
-        image: BlogPostImage3,
+        image: BlogPostImage1,
         date: "March 20, 2024",
         blog_name: "Interior Design3",
         blogPost_heading: "7 Easy ways to clean plywood furniture",
@@ -29,7 +34,7 @@ const Data = [
     },
 
     {
-        image: BlogPostImage1,
+        image: BlogPostImage6,
         date: "January 11, 2024",
         blog_name: "Interior Design4",
         blogPost_heading: "Types of plywood size & what are the difference",
@@ -45,7 +50,7 @@ const Data = [
         readMoreRoute: "/allPosts/post5",
     },
     {
-        image: BlogPostImage3,
+        image: BlogPostImage7,
         date: "March 20, 2024",
         blog_name: "Interior Design6",
         blogPost_heading: "Fire-resistant plywood: Things you should know",
@@ -53,7 +58,7 @@ const Data = [
         readMoreRoute: "/allPosts/post6",
     },
     {
-        image: BlogPostImage2,
+        image: BlogPostImage7,
         date: "March 20, 2024",
         blog_name: "Interior Design7",
         blogPost_heading: "How to choose best plywood for interiors",
@@ -71,7 +76,7 @@ const Data = [
     },
 
     {
-        image: BlogPostImage1,
+        image: BlogPostImage4,
         date: "March 20, 2024",
         blog_name: "Interior Design9",
         blogPost_heading: "Kitchen plywood: which plywood is best for modular kitchen",
@@ -80,7 +85,7 @@ const Data = [
     },
 
     {
-        image: BlogPostImage2,
+        image: BlogPostImage5,
         date: "March 20, 2024",
         blog_name: "Interior Design10",
         blogPost_heading: "Know everything about veneer plywood",
@@ -90,7 +95,7 @@ const Data = [
 
 
     {
-        image: BlogPostImage3,
+        image: BlogPostImage7,
         date: "March 20, 2024",
         blog_name: "Interior Design11",
         blogPost_heading: "Make your furniture strong using termite-resistant ply",
@@ -100,7 +105,7 @@ const Data = [
 
 
     {
-        image: BlogPostImage1,
+        image: BlogPostImage7,
         date: "March 20, 2024",
         blog_name: "Interior Design12",
         blogPost_heading: "What is commercial plywood and its different uses?",
