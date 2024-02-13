@@ -4,7 +4,7 @@ import BlogPostImage3 from "@/images/BlogImage3.jpg";
 import BlogPostImage4 from "@/images/BlogImage4.jpg";
 import BlogPostImage5 from "@/images/BlogImage5.jpg";
 import BlogPostImage6 from "@/images/BlogImage6.jpg";
-import BlogPostImage7 from "@/images/Blogs_img1.png";
+import BlogPostImage7 from "@/images/blogs_img1.png";
 
 
 const Data = [
