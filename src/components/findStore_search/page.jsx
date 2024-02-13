@@ -223,9 +223,7 @@ function Mapsection() {
     const handleUseMyLocation = () => {
         window.open('https://www.google.com/maps/place/Crown+Decor+Private+Limited,+One42,+North+Tower,+Suite+401+-+403,+4th+Floor,+Ambli+-+Bopal+Rd,+B%2FH,+Ashok+Vatika,+Ahmedabad,+Gujarat+380058');
     };
-
-
-
+    
     const storeRef = useRef("")
     let refs = useRef([]);
     useEffect(() => {
