@@ -101,7 +101,7 @@ const Contactform = () => {
   const handleStateChange = (selectedOption) => {
     setSelectedState(selectedOption);
     setFieldValue("state", selectedOption.value);
-    setFieldValue("year", ""); 
+    setFieldValue("year", "");
     switch (selectedOption.value) {
       case "Gujarat":
         setCities(["Ahmedabad", "Surat", "Vadodara"]);
@@ -109,6 +109,46 @@ const Contactform = () => {
       case "Maharastra":
         setCities(["Mumbai", "Nashik", "Nagpur"]);
         break;
+      case "Kerela":
+        setCities(["Thiruvananthapuram", "Kochi", "Kollam"]);
+        break;
+      case "Karnataka":
+        setCities(["Bellary", "Belagavi", "Kolar"]);
+        break;
+      case "Delhi":
+        setCities(["Gokalpur", "Hastsal", "Alipur"]);
+        break;
+      case "Punjab":
+        setCities(["Lahore", "Faisalabad", "Gurgaon"]);
+        break;
+      case "Himachal Pradesh":
+        setCities(["Solan", "Dharamsala", "Shimla"]);
+        break;
+      case "Chhattisgarh":
+        setCities(["Raipur", "Bilaspur", "Ambikapur"]);
+        break;
+      case "Uttar Pradesh":
+        setCities(["Kanpur", "Lucknow", "Noida"]);
+        break;
+      case "Madhya Pradesh":
+        setCities(["Indore", "Bhopal", "Jabalpur"]);
+        break;
+      case "Mizoram":
+        setCities(["Saiha", "Champhai", "Lunglei"]);
+        break;
+      case "Assam":
+        setCities(["Guwahati", "Tezpur", "Dibrugarh"]);
+        break;
+      case "Bihar":
+        setCities(["Patna", "Nashik", "Nagpur"]);
+        break;
+      case "Goa":
+        setCities(["Panaji", "Mapusa", "Bicholim"]);
+        break;
+      case "Odisha":
+        setCities(["Bhubaneshwar", "Cuttack", "Raurkela"]);
+        break;
+
       // Add cases for other states
       default:
         setCities([]);
@@ -129,32 +169,33 @@ const Contactform = () => {
     toast.success("Form Submitted Successfully...");
   };
 
-  const { values, errors, touched, handleChange, handleSubmit,  setFieldValue } = useFormik({
-    initialValues: initialValue,
-    validationSchema: ContactFormSchemas,
-    onSubmit: (value, action) => {
-      action.resetForm();
-      console.log("value", value);
-      emailjs
-        .send(
-          "service_6pitte7",
-          "template_azgm81o",
-          values,
-          "dp6xvACY2kw4Z6gwc"
-        )
-        .then((response) => {
-          console.log("Email sent successfully:", response);
-          setFormResponse(response);
-          action.resetForm();
-          // resetForm();
-        })
-        .catch((error) => {
-          console.error("Email send error:", error);
-        });
-      submitMessage();
-      console.log("FINALVALUE", value);
-    },
-  });
+  const { values, errors, touched, handleChange, handleSubmit, setFieldValue } =
+    useFormik({
+      initialValues: initialValue,
+      validationSchema: ContactFormSchemas,
+      onSubmit: (value, action) => {
+        action.resetForm();
+        console.log("value", value);
+        emailjs
+          .send(
+            "service_6pitte7",
+            "template_azgm81o",
+            values,
+            "dp6xvACY2kw4Z6gwc"
+          )
+          .then((response) => {
+            console.log("Email sent successfully:", response);
+            setFormResponse(response);
+            action.resetForm();
+            // resetForm();
+          })
+          .catch((error) => {
+            console.error("Email send error:", error);
+          });
+        submitMessage();
+        console.log("FINALVALUE", value);
+      },
+    });
 
   console.log("value", values);
   console.log("response", formResponse.text);

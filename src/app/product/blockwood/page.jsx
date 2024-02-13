@@ -143,15 +143,16 @@ const Page = () => {
         heading="With the dimensional stability of solid wood and appearance and sleekness of plywood, Royale 
         Touche Blockboard gives you warp-free furniture that lasts a lifetime."
       />
-
+      <Blockwood_flex />
       <Inner_page_slider2 />
+
       <Specifications
         leftData={SpecificationsLeftData}
         rightData={SpecificationsRightData}
       />
       <SmartChioceTable />
       <Blockboard_main />
-      <Blockwood_flex />
+
       <Form />
       <Footer />
     </main>

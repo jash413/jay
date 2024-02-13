@@ -4,6 +4,8 @@ import Image from "next/image";
 import plywood_wall_light from "@/images/wall_light.png";
 import plywood_standing_lamp from "@/images/standing_lamp.png";
 import plywood_desk from "@/images/desk.png";
+import Promax_image from "@/images/pro_image.png"
+import Promaxplus_image from "@/images/promax_image.png"
 import styles from "@/components/plywood_lights/plywood.module.css";
 const Page = () => {
   const deskControls = useAnimation();
@@ -186,7 +188,22 @@ const Page = () => {
               src={plywood_wall_light}
               alt="image"
             />
+            <div>
+          <Image
+              className={styles.plywood_promax}
+              src={Promax_image}
+              alt="image"
+            />
+          </div>
+          <div>
+          <Image
+              className={styles.plywood_promaxplus}
+              src={Promaxplus_image}
+              alt="image"
+            />
+          </div>
           </motion.div>
+          
         </div>
       </div>
     </div>

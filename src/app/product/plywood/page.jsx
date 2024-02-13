@@ -163,16 +163,20 @@ const Page = () => {
         heading="Plywood that is engineered to outsmart termites and borers, fights fire and is safe for your loved 
         ones with E-0 emissions - An all in one Ply in its true sense"
       />
-
-      <ProductOverview />
+      <Plywood_lights />
       <Inner_page_slider3 />
       <Specifications
         leftData={SpecificationsLeftData}
         rightData={SpecificationsRightData}
       />
       <SmartChioceTable />
-      <Plywood_lights />
       <Plywood_main />
+      {/* <ProductOverview /> */}
+     
+     
+      
+      
+     
       <Form />
       <Footer />
     </main>
