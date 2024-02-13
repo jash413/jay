@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/layers/layer.module.css";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Airpods = () => {
@@ -222,7 +221,9 @@ const Airpods = () => {
       <section ref={sectionRef}>
         <div className={styles.percentage_counter_outer}>
           {/* Conditional rendering for text */}
-          {displayText && <div className={styles.dynamicText}>{displayText}</div>}
+          {displayText && <div className={styles.dynamicText}>
+          
+          {displayText}</div>}
           <div className={styles.percentageCounter}>
             {scrollPercentage}
           </div>

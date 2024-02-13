@@ -249,6 +249,17 @@
     font-weight: 300;
   }
 }
+@media (max-width: 991px) {
+  .time_line__huvvH {
+    position: absolute;
+    z-index: 1;
+    left: 64px;
+    width: 2px;
+    top: 343px;
+    bottom: 275px;
+    border-right: 2px solid #218e88;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -292,8 +303,9 @@
   .line {
     left: calc(10% - -1px);
     width: 2px;
-    top: 301px;
-    bottom: 216px;
+    top: 306px;
+    bottom: 222px;
+    border-right: 2px solid #218e88;
   }
   .bead {
     position: absolute;

@@ -1,4 +1,3 @@
-"use client";
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import usp1 from "@/images/ix1x.jpg";
