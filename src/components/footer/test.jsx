@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from "@/components/footer/test.module.css"
 import Title from "@/components/footer/title"
 import Descriptions from "@/components/footer/desc"
+import WARRANTY_Accordian from "@/components/warrantyAccordian/page"
 
 const data = [
     {
@@ -41,6 +42,9 @@ export default function Projects() {
         <div className={styles.container}>
             <Title data={data} setSelectedProject={setSelectedProject} openLink={openLink}/>
             <Descriptions data={data} selectedProject={selectedProject}/>
+            <div>
+                <WARRANTY_Accordian/>
+            </div>
         </div>
     )
 }

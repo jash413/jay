@@ -6,3 +6,11 @@
       transition-property: transform;
       display: block;
     }
+    .swiper-button-prev
+    {
+      color: #006861 !important;
+    }
+    .swiper-button-next
+    {
+      color: #006861 !important;
+    }

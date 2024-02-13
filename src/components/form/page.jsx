@@ -13,6 +13,8 @@ import { ContactFormSchemas } from "@/components/schemas/page";
 import "./form.css";
 const Contactform = () => {
   const [formResponse, setFormResponse] = useState("");
+  const [selectedState, setSelectedState] = useState("");
+  const [cities, setCities] = useState([]);
 
   const stateOption = [
     { value: "Gujarat", label: "Gujarat" },
@@ -30,72 +32,130 @@ const Contactform = () => {
     { value: "Bihar", label: "Bihar" },
     { value: "Goa", label: "Goa" },
     { value: "Odisha", label: "Odisha" },
-
-  ]
-
-  const yearOptions = [
-    { value: "Ahmedabad", label: "Ahmedabad" },
-    { value: "Amreli", label: "Amreli" },
-    { value: "Anand", label: "Anand" },
-    { value: "Banaskantha", label: "Banaskantha" },
-    { value: "Bhavnagar", label: "Bhavnagar" },
-    { value: "Dahod", label: "Dahod" },
-    { value: "Dang", label: "Dang" },
-    { value: "Gandhinagar", label: "Gandhinagar" },
-    { value: "Godhara", label: "Godhara" },
-    { value: "Jamnagar", label: "Jamnagar" },
-    { value: "Junagadh", label: "Junagadh" },
-    { value: "Kheda", label: "Kheda" },
-    { value: "Kutch", label: "Kutch" },
-    { value: "Mahesana", label: "Mahesana" },
-    { value: "Narmada", label: "Narmada" },
-    { value: "Navsari", label: "Navsari" },
-    { value: "Patan", label: "Patan" },
-    { value: "Porbandar", label: "Porbandar" },
-    { value: "Rajkot", label: "Rajkot" },
-    { value: "Sabarkantha", label: "Sabarkantha" },
-    { value: "Surat", label: "Surat" },
-    { value: "Surendranagar", label: "Surendranagar" },
-    { value: "Vadodara", label: "Vadodara" },
-    { value: "Valsad", label: "Valsad" },
-    { value: "Tapi", label: "Tapi" },
-    { value: "Navsari", label: "Navsari" },
-    { value: "Pune", label: "Pune" },
-    { value: "Nagpur", label: "Nagpur" },
-    { value: "Mumbai", label: "Mumbai" },
-    { value: "Maharastra", label: "Maharastra" },
-    { value: "Rajasthan", label: "Rajasthan" },
-    { value: "Delhi", label: "Delhi" },
-    { value: "Kerela", label: "Kerela" },
-    { value: "Kolkata", label: "Kolkata" },
-    { value: "Jaipur", label: "Jaipur" },
-    { value: "Goa", label: "Goa" },
-    { value: "Karnataka", label: "Karnataka" },
-    { value: "BHOPAL", label: "BHOPAL" },
-    { value: "Ujjain", label: "Ujjain" },
-    { value: "Jagatpur", label: "Jagatpur" },
-    { value: "Jaipur", label: "Jaipur" },
-    { value: "Tripura", label: "Tripura" },
-    { value: "Mirzapur", label: "Mirzapur" },
-    { value: "Mathura", label: "Mathura" },
-    { value: "Patna", label: "Patna" },
-    { value: "Raipur", label: "Raipur" },
-    { value: "Kota", label: "Kota" },
-    { value: "Rohini", label: "Rohini" },
-    { value: "Ranchi", label: "Ranchi" },
-    { value: "Nepal", label: "Nepal" },
-    { value: "Chennai", label: "Chennai" },
-    { value: "Odisha", label: "Odisha" },
-    { value: "Lucknow", label: "Lucknow" },
-    { value: "Odisha", label: "Odisha" },
-    { value: "Assam", label: "Assam" },
-    { value: "Rewa", label: "Rewa" },
-    { value: "Solapur", label: "Solapur" },
-    { value: "Mansa", label: "Mansa" },
-    { value: "Jaisalmer", label: "Jaisalmer" },
-    { value: "Udaipur", label: "Udaipur" },
-    { value: "Hyderabad", label: "Hyderabad" },
   ];
+
+  // const yearOptions = [
+  //   { value: "Ahmedabad", label: "Ahmedabad" },
+  //   { value: "Amreli", label: "Amreli" },
+  //   { value: "Anand", label: "Anand" },
+  //   { value: "Banaskantha", label: "Banaskantha" },
+  //   { value: "Bhavnagar", label: "Bhavnagar" },
+  //   { value: "Dahod", label: "Dahod" },
+  //   { value: "Dang", label: "Dang" },
+  //   { value: "Gandhinagar", label: "Gandhinagar" },
+  //   { value: "Godhara", label: "Godhara" },
+  //   { value: "Jamnagar", label: "Jamnagar" },
+  //   { value: "Junagadh", label: "Junagadh" },
+  //   { value: "Kheda", label: "Kheda" },
+  //   { value: "Kutch", label: "Kutch" },
+  //   { value: "Mahesana", label: "Mahesana" },
+  //   { value: "Narmada", label: "Narmada" },
+  //   { value: "Navsari", label: "Navsari" },
+  //   { value: "Patan", label: "Patan" },
+  //   { value: "Porbandar", label: "Porbandar" },
+  //   { value: "Rajkot", label: "Rajkot" },
+  //   { value: "Sabarkantha", label: "Sabarkantha" },
+  //   { value: "Surat", label: "Surat" },
+  //   { value: "Surendranagar", label: "Surendranagar" },
+  //   { value: "Vadodara", label: "Vadodara" },
+  //   { value: "Valsad", label: "Valsad" },
+  //   { value: "Tapi", label: "Tapi" },
+  //   { value: "Navsari", label: "Navsari" },
+  //   { value: "Pune", label: "Pune" },
+  //   { value: "Nagpur", label: "Nagpur" },
+  //   { value: "Mumbai", label: "Mumbai" },
+  //   { value: "Maharastra", label: "Maharastra" },
+  //   { value: "Rajasthan", label: "Rajasthan" },
+  //   { value: "Delhi", label: "Delhi" },
+  //   { value: "Kerela", label: "Kerela" },
+  //   { value: "Kolkata", label: "Kolkata" },
+  //   { value: "Jaipur", label: "Jaipur" },
+  //   { value: "Goa", label: "Goa" },
+  //   { value: "Karnataka", label: "Karnataka" },
+  //   { value: "BHOPAL", label: "BHOPAL" },
+  //   { value: "Ujjain", label: "Ujjain" },
+  //   { value: "Jagatpur", label: "Jagatpur" },
+  //   { value: "Jaipur", label: "Jaipur" },
+  //   { value: "Tripura", label: "Tripura" },
+  //   { value: "Mirzapur", label: "Mirzapur" },
+  //   { value: "Mathura", label: "Mathura" },
+  //   { value: "Patna", label: "Patna" },
+  //   { value: "Raipur", label: "Raipur" },
+  //   { value: "Kota", label: "Kota" },
+  //   { value: "Rohini", label: "Rohini" },
+  //   { value: "Ranchi", label: "Ranchi" },
+  //   { value: "Nepal", label: "Nepal" },
+  //   { value: "Chennai", label: "Chennai" },
+  //   { value: "Odisha", label: "Odisha" },
+  //   { value: "Lucknow", label: "Lucknow" },
+  //   { value: "Odisha", label: "Odisha" },
+  //   { value: "Assam", label: "Assam" },
+  //   { value: "Rewa", label: "Rewa" },
+  //   { value: "Solapur", label: "Solapur" },
+  //   { value: "Mansa", label: "Mansa" },
+  //   { value: "Jaisalmer", label: "Jaisalmer" },
+  //   { value: "Udaipur", label: "Udaipur" },
+  //   { value: "Hyderabad", label: "Hyderabad" },
+  // ];
+
+  const handleStateChange = (selectedOption) => {
+    setSelectedState(selectedOption);
+    setFieldValue("state", selectedOption.value);
+    setFieldValue("year", "");
+    switch (selectedOption.value) {
+      case "Gujarat":
+        setCities(["Ahmedabad", "Surat", "Vadodara"]);
+        break;
+      case "Maharastra":
+        setCities(["Mumbai", "Nashik", "Nagpur"]);
+        break;
+      case "Kerela":
+        setCities(["Thiruvananthapuram", "Kochi", "Kollam"]);
+        break;
+      case "Karnataka":
+        setCities(["Bellary", "Belagavi", "Kolar"]);
+        break;
+      case "Delhi":
+        setCities(["Gokalpur", "Hastsal", "Alipur"]);
+        break;
+      case "Punjab":
+        setCities(["Lahore", "Faisalabad", "Gurgaon"]);
+        break;
+      case "Himachal Pradesh":
+        setCities(["Solan", "Dharamsala", "Shimla"]);
+        break;
+      case "Chhattisgarh":
+        setCities(["Raipur", "Bilaspur", "Ambikapur"]);
+        break;
+      case "Uttar Pradesh":
+        setCities(["Kanpur", "Lucknow", "Noida"]);
+        break;
+      case "Madhya Pradesh":
+        setCities(["Indore", "Bhopal", "Jabalpur"]);
+        break;
+      case "Mizoram":
+        setCities(["Saiha", "Champhai", "Lunglei"]);
+        break;
+      case "Assam":
+        setCities(["Guwahati", "Tezpur", "Dibrugarh"]);
+        break;
+      case "Bihar":
+        setCities(["Patna", "Nashik", "Nagpur"]);
+        break;
+      case "Goa":
+        setCities(["Panaji", "Mapusa", "Bicholim"]);
+        break;
+      case "Odisha":
+        setCities(["Bhubaneshwar", "Cuttack", "Raurkela"]);
+        break;
+
+      // Add cases for other states
+      default:
+        setCities([]);
+        break;
+    }
+  };
+
   const initialValue = {
     fullName: "",
     Email: "",
@@ -109,36 +169,37 @@ const Contactform = () => {
     toast.success("Form Submitted Successfully...");
   };
 
-  const { values, errors, touched, handleChange, handleSubmit } = useFormik({
-    initialValues: initialValue,
-    validationSchema: ContactFormSchemas,
-    onSubmit: (value, action) => {
-      action.resetForm();
-      console.log("value", value);
-      emailjs
-        .send(
-          "service_6pitte7",
-          "template_azgm81o",
-          values, 
-          "dp6xvACY2kw4Z6gwc"
-        )
-        .then((response) => {
-          console.log("Email sent successfully:", response);
-          setFormResponse(response);
-          action.resetForm();
-          // resetForm();
-        })
-        .catch((error) => {
-          console.error("Email send error:", error);
-        });
-      submitMessage();
-      console.log("FINALVALUE", value);
-    },
-  });
+  const { values, errors, touched, handleChange, handleSubmit, setFieldValue } =
+    useFormik({
+      initialValues: initialValue,
+      validationSchema: ContactFormSchemas,
+      onSubmit: (value, action) => {
+        action.resetForm();
+        console.log("value", value);
+        emailjs
+          .send(
+            "service_6pitte7",
+            "template_azgm81o",
+            values,
+            "dp6xvACY2kw4Z6gwc"
+          )
+          .then((response) => {
+            console.log("Email sent successfully:", response);
+            setFormResponse(response);
+            action.resetForm();
+            // resetForm();
+          })
+          .catch((error) => {
+            console.error("Email send error:", error);
+          });
+        submitMessage();
+        console.log("FINALVALUE", value);
+      },
+    });
 
   console.log("value", values);
   console.log("response", formResponse.text);
-            
+
   return (
     <div className={styles.contact_form}>
       <div className={styles.contact_form_wrapper}>
@@ -190,12 +251,15 @@ const Contactform = () => {
               <label htmlFor="State">State</label>
               <Select
                 placeholder="Select State"
-                value={values.state}
+                value={selectedState}
+                // onChange={(selectedOption) => {
+                //   let event = {
+                //     target: { name: "state", value: selectedOption },
+                //   };
+                //   handleChange(event);
+                // }}
                 onChange={(selectedOption) => {
-                  let event = {
-                    target: { name: "state", value: selectedOption },
-                  };
-                  handleChange(event);
+                  handleStateChange(selectedOption);
                 }}
                 isSearchable={true}
                 options={stateOption}
@@ -209,7 +273,9 @@ const Contactform = () => {
             <div className={styles.field}>
               <label htmlFor="City">City</label>
               <Select
-                placeholder="Select City"
+                placeholder={
+                  selectedState ? "Select City" : "Please select a state first"
+                }
                 value={values.year}
                 onChange={(selectedOption) => {
                   let event = {
@@ -218,8 +284,10 @@ const Contactform = () => {
                   handleChange(event);
                 }}
                 isSearchable={true}
-                options={yearOptions}
+                options={cities.map((city) => ({ value: city, label: city }))}
+                // options={yearOptions}
                 name="year"
+                isDisabled={!selectedState}
               />
               {touched.year && errors.year && (
                 <p className={styles.error}>{errors.year}</p>
