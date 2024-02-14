@@ -11,9 +11,9 @@
   width: 50%;
 }
 
-.canvas_layer{
+.canvas_layer {
   height: 100%;
-  width:100%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -98,7 +98,7 @@
   opacity: 0;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1600px) and (max-width: 1920px) {
   .contentX {
     padding: 67px 0px 0px 260px;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-@media (max-width:1440px){
+@media (max-width: 1440px) {
   .twoo {
     font-weight: 400;
     font-size: 58px;
@@ -178,7 +178,6 @@
     min-height: 218px;
     color: white;
   }
-
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -190,17 +189,16 @@
     display: none;
   }
 
-
   .first_timeline_inner {
     /* max-width: 800px; */
     width: 100%;
   }
-  .img_main{
+  .img_main {
     height: 100%;
-    width:100%;
+    width: 100%;
   }
 
-  .img_main_outer{
+  .img_main_outer {
     width: 30%;
   }
 
@@ -213,7 +211,6 @@
     color: white;
   }
 
-  
   .section {
     display: block;
     position: relative;
@@ -238,7 +235,7 @@
 
   .twoo {
     font-size: 68px;
-    width:72%;
+    width: 72%;
     letter-spacing: 1px;
   }
 
@@ -247,7 +244,6 @@
     width: 2px;
     top: 477px;
     bottom: 270px;
-
   }
 
   .bead {
@@ -337,7 +333,6 @@
 }
 
 @media (max-width: 768px) {
-
   .display {
     display: block;
   }
@@ -346,17 +341,16 @@
     display: none;
   }
 
-
   .first_timeline_inner {
     /* max-width: 800px; */
     width: 100%;
   }
-  .img_main{
+  .img_main {
     height: 100%;
-    width:100%;
+    width: 100%;
   }
 
-  .img_main_outer{
+  .img_main_outer {
     width: 30%;
   }
 
@@ -369,7 +363,6 @@
     color: white;
   }
 
-  
   .section {
     display: block;
     position: relative;
@@ -406,7 +399,6 @@
     bottom: 220px;
   }
 
-  
   .bead {
     left: 7.2%;
     z-index: 2;
@@ -431,7 +423,6 @@
     width: 70%;
     font-weight: 300;
   }
-
 
   /* .img_main {
     color: transparent;
@@ -517,10 +508,11 @@
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 1px;
+    width: 100%;
   }
 
   .section {
-    padding: 2.6rem 2rem 7rem;
+    padding: 2.6rem 2rem 3rem;
     border-radius: 1rem;
     min-height: 218px;
   }
@@ -528,8 +520,8 @@
   .line {
     left: calc(10% - -1px);
     width: 2px;
-    top: 310px;
-    bottom: 308px;
+    top: 214px;
+    bottom: 217px;
   }
   .bead {
     position: absolute;
@@ -538,7 +530,7 @@
     width: 1rem;
     border-radius: 50%;
     background-color: #0f8a83;
-    left: 10/5%;
+    left: 10.3%;
     z-index: 2;
     top: 47%;
     transform: translateX(-50%);
@@ -548,8 +540,15 @@
     font-size: 20px;
   }
   .timeline_sec_comment {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
+    width: 100%;
+  }
+}
+@media (max-width: 455px) {
+  .line {
+    top: 215px;
+    bottom: 200px;
   }
 }
 
