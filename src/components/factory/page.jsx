@@ -127,7 +127,7 @@ const AirpodsAnimation = () => {
       scrollTrigger: {
         trigger: container.current,
         scrub: true,
-        start: `top 40%`,
+        start: `top 90%`,
         end: `+=${window.innerHeight / 1.55}`,
       },
       opacity: 1,

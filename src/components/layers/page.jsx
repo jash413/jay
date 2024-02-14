@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { motion, useAnimation } from "framer-motion";
 import styles from "@/components/layers/layer.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Airpods = () => {
+  const controls = useAnimation();
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [circleSize, setCircleSize] = useState(100); // Initial circle size
   const [counterCount, setCounterCount] = useState(0);
@@ -125,7 +127,7 @@ const Airpods = () => {
         trigger: section,
         pin: true,
         scrub: 1.5,
-        end: "+=1000%",
+        end: "+=900%",
       },
     });
 
@@ -174,7 +176,22 @@ const Airpods = () => {
   }, []);
 
 
-  // Update the circle size on scroll
+
+  useEffect(() => {
+    if (counterCount === 12) {
+      controls.start({
+        opacity: 0,
+        y: 50,
+        transition: { duration: 0.5 },
+      }).then(() => {
+        controls.start({
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.5 },
+        });
+      });
+    }
+  }, [counterCount, controls]);
 
   useEffect(() => {
     const handleScrollDirection = () => {
@@ -218,19 +235,22 @@ const Airpods = () => {
 
   return (
     <div className={styles.counter_relm}>
-      <section ref={sectionRef}>
-        <div className={styles.percentage_counter_outer}>
-          {/* Conditional rendering for text */}
-          {displayText && <div className={styles.dynamicText}>
-          
-          {displayText}</div>}
-          <div className={styles.percentageCounter}>
-            {scrollPercentage}
-          </div>
-        </div>
-        <canvas className={styles.canvas_layer_settings} ref={canvasRef}></canvas>
-      </section>
-    </div>
+    <section ref={sectionRef}>
+      <div className={styles.percentage_counter_outer}>
+        {displayText && (
+          <motion.div
+            animate={controls}
+            className={styles.dynamicText}
+          >
+            {displayText}
+          </motion.div>
+        )}
+        <div className={styles.percentageCounter}>{scrollPercentage}</div>
+      </div>
+      <canvas className={styles.canvas_layer_settings} ref={canvasRef}></canvas>
+    </section>
+  </div>
+
   );
 };
 

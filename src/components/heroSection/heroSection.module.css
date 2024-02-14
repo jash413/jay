@@ -8,7 +8,9 @@
   cursor: pointer;
   width: 100%;
 }
-
+.homepage_image{
+  filter: brightness(0.8);
+}
 .homepage_image_wrapper3 {
   position: relative;
   width: 100%;
@@ -130,6 +132,7 @@
     font-size: 22px;
     top: 48%;
     left: 50%;
+    font-weight: 400;
     transform: translate(-50%, -50%) !important;
     width: 30%;
     font-style: normal;

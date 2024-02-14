@@ -48,7 +48,7 @@ const Page = () => {
         </motion.div>
         {location != "/contactUs" && (
           <div className={styles.justforfooterbutton}>
-            <Button btn_text="Contact Now" />
+            <Button btn_text="Contact Us" />
           </div>
         )}
       </div>
