@@ -137,7 +137,16 @@
     font-weight: 300;
   }
 }
-
+@media (max-height: 1400px) {
+  .main {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 720rem;
+    margin-top: -1080vh;
+  }
+}
 @media (max-width: 575px) {
   .scroll_text_header {
     position: absolute;
