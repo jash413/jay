@@ -552,7 +552,7 @@
   }
 }
 
-@media (min-width: 200px) and (max-width: 320px) {
+@media (max-width: 320px) {
   .timeline_animation_text {
     font-size: 36px;
     margin-left: 2rem;
@@ -561,11 +561,13 @@
   .timeline_sec_comment {
     font-size: 16px;
     font-weight: 300;
+    width: 100%;
   }
   .twoo {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 1px;
+    width: 100%;
   }
 
   .display {
@@ -596,5 +598,8 @@
     z-index: 2;
     top: 47%;
     transform: translateX(-50%);
+  }
+  .contentX {
+    padding: 0 1rem 0 3rem;
   }
 }
