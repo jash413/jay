@@ -72,8 +72,8 @@ const BlogPost = ({ readMoreRoute }) => {
             size="small"
             variant="outlined"
             onChange={handlePageChange}
-            // hidePrevButton
-            // hideNextButton
+            hidePrevButton
+            hideNextButton
             // showFirstButton
             sx={{
               "& .MuiPaginationItem-root": {

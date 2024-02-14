@@ -19,18 +19,18 @@ const Page2 = () => {
   }, []);
 
   const createAnimation = () => {
-    gsap.to(".triggered-element", {
-      scrollTrigger: {
-        trigger: container.current,
-        scrub: 1,
-        start: "top 10%",
-        end: "bottom ",
-      },
-      opacity: 0,
-      color: "white",
-      ease: "none",
-      stagger: 0.9,
-    });
+    // gsap.to(".triggered-element", {
+    //   scrollTrigger: {
+    //     trigger: container.current,
+    //     scrub: 1,
+    //     start: "top 10%",
+    //     end: "bottom ",
+    //   },
+    //   opacity: 0,
+    //   color: "white",
+    //   ease: "none",
+    //   stagger: 0.9,
+    // });
   };
   return (
     <div className={styles.display}>
@@ -44,7 +44,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp1} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>01</p>
@@ -59,7 +59,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp2} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>02</p>
@@ -74,7 +74,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp3} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>03</p>
@@ -88,7 +88,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp4} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>04</p>
@@ -102,7 +102,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp5} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>05</p>
@@ -118,7 +118,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp6} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>06</p>
@@ -132,7 +132,7 @@ const Page2 = () => {
             <div className={styles.section}>
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
-                <div>
+                <div className={styles.img_main_outer}>
                   <Image src={usp7} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>07</p>
