@@ -18,7 +18,8 @@
 .dynamicText {
   position: absolute;
   width: 39%;
-  left: 455px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   font-size: 22px;
   color: white;
@@ -70,7 +71,7 @@
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .dynamicText {
-    left: 34%;
+    /* left: 34%; */
     width: 30%;
     font-size: 22px;
     bottom: 6rem;
@@ -99,7 +100,7 @@
     font-size: 46px;
   }
   .dynamicText {
-    left: 25%;
+    /* left: 25%; */
     width: 50%;
     font-size: 22px;
     bottom: 4rem;
@@ -111,7 +112,7 @@
     font-size: 46px;
   }
   .dynamicText {
-    left: 15%;
+    /* left: 15%; */
     width: 67%;
     font-size: 20px;
     bottom: 4rem;
@@ -125,7 +126,7 @@
   }
   .dynamicText {
     width: 100%;
-    left: 0;
+    /* left: 0; */
     font-size: 22px;
     bottom: 3rem;
   }
@@ -147,7 +148,7 @@
 
   .dynamicText {
     width: 100%;
-    left: 0;
+    /* left: 0; */
     font-size: 18px;
     bottom: 8rem;
   }
@@ -159,7 +160,7 @@
   }
   .dynamicText {
     width: 78%;
-    left: 35px;
+    /* left: 35px; */
     font-size: 18px;
     bottom: 8rem;
   }
@@ -171,7 +172,7 @@
   }
   .dynamicText {
     width: 90%;
-    left: 17px;
+    /* left: 17px; */
     font-size: 18px;
     bottom: 8rem;
 
