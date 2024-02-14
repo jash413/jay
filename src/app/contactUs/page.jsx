@@ -11,12 +11,12 @@ import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
