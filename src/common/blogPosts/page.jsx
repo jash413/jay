@@ -29,9 +29,7 @@ const BlogPost = ({ readMoreRoute }) => {
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
-    projectsRef.current.scrollIntoView({
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
