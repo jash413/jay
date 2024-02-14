@@ -5,7 +5,7 @@ import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage3 from "@/images/blogs_img3.png";
+import BlogPostImage3 from "@/images/BlogImage3.jpg";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 

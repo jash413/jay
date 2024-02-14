@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar/index";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage2 from "@/images/blogs_img2.png";
+import BlogPostImage8 from "@/images/blogs_imgs_8.jpg";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const Page = () => {
 
       <Navbar />
       <InnerBlogPost
-        image={BlogPostImage2}
+        image={BlogPostImage8}
         Date="March 20, 2024"
         blog_name="Interior Design7"
         blogPost_heading="How to choose best plywood for interiors"

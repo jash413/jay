@@ -5,7 +5,7 @@ import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage2 from "@/images/blogs_img2.png";
+import BlogPostImage7 from "@/images/blogs_images_1.jpg";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const Page = () => {
 
       <Navbar />
       <InnerBlogPost
-        image={BlogPostImage2}
+        image={BlogPostImage7}
         Date="March 20, 2024"
         blog_name="Interior Design"
         blogPost_heading="5 Advantage why to choose waterproof plywood"

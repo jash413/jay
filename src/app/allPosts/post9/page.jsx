@@ -5,7 +5,7 @@ import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage3 from "@/images/blogs_img3.png";
+import BlogPostImage4 from "@/images/BlogImage4.jpg";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,7 +31,7 @@ const Page = () => {
 
       <Navbar />
       <InnerBlogPost
-        image={BlogPostImage3}
+        image={BlogPostImage4}
         Date="March 20, 2024"
         blog_name="Interior Design9"
         blogPost_heading="Kitchen plywood: which plywood is best for modular kitchen"

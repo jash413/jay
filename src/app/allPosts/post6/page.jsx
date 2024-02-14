@@ -5,7 +5,7 @@ import Footer from "@/components/footer/page"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage1 from "@/images/blogs_img1.png";
+import BlogPostImage6 from "@/images/blogs_imgs_6.jpg";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -32,7 +32,7 @@ const Page = () => {
 
       <Navbar />
       <InnerBlogPost
-        image={BlogPostImage1}
+        image={BlogPostImage6}
         Date="March 20, 2024"
         blog_name="Interior Design6"
         blogPost_heading="Fire-resistant plywood: Things you should know"
