@@ -122,8 +122,8 @@ const Home = () => {
       scrollTrigger: {
         trigger: container.current,
         scrub: 1,
-        start: "top 70%",
-        end: "bottom 90%",
+        start: "top 50%",
+        end: "bottom 40%",
       },
       opacity: 1,
       color: "white",

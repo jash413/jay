@@ -17,9 +17,9 @@
 
 .dynamicText {
   position: absolute;
-  width: 39%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 38%;
+  left: 32%;
+  /* transform: translateX(-50%); */
   text-align: center;
   font-size: 22px;
   color: white;
@@ -71,7 +71,7 @@
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .dynamicText {
-    /* left: 34%; */
+    left: 34%;
     width: 30%;
     font-size: 22px;
     bottom: 6rem;
