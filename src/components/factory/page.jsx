@@ -60,11 +60,13 @@ const AirpodsAnimation = () => {
 
     const frameCount = 285;
     const currentFrame = (index) =>
-      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 5)
+      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(
+        index + 5
+      )
         .toString()
         .padStart(5, "0")}-scaled.jpg`;
 
-        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
+    // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -108,10 +110,8 @@ const AirpodsAnimation = () => {
     };
   }, []);
 
-
-
   const phrase =
-  "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";
+    "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";
 
   let refs = useRef([]);
   const body = useRef(null);
@@ -163,37 +163,25 @@ const AirpodsAnimation = () => {
     return letters;
   };
 
-
-
-
-
-
-
-
   return (
-
-    
-  
-      <section>
-     
-        <section ref={sectionRef}>
-      <canvas
-        className={styles.canvas_factory_settings}
-        ref={canvasRef}
-      ></canvas>
-    </section>
-    <div className={styles.scroll_text_wrapper}>
-      <div ref={container} className={styles.main}>
-        <div ref={body} className={styles.body}>
-          {splitWords(phrase)}
-          <h1 className={styles.scroll_text_header}>
-            Royale Touché Performance Ply
-          </h1>
+    <section>
+      <section ref={sectionRef}>
+        <canvas
+          className={styles.canvas_factory_settings}
+          ref={canvasRef}
+        ></canvas>
+      </section>
+      <div className={styles.scroll_text_wrapper}>
+        <div ref={container} className={styles.main}>
+          <div ref={body} className={styles.body}>
+            {splitWords(phrase)}
+            <h1 className={styles.scroll_text_header}>
+              Royale Touché Performance Ply
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
-      </section>
- 
+    </section>
   );
 };
 
