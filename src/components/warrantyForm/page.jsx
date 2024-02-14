@@ -805,7 +805,7 @@ const FormCommon = () => {
               <p className={styles.form_agree_content}>
                 Click here to agree to{" "}
                 <span className={styles.forms_terms_condition} onClick={()=> router.push("/terms_and_condition")}>
-                Terms And Conditions
+                <a href="/terms_and_condition" target="_blank">Terms And Conditions</a>
                 </span>
               </p>
             </div>
