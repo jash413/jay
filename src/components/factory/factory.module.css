@@ -77,7 +77,7 @@
     height: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 447rem;
+    margin-bottom: 430rem;
     margin-top: -1077vh;
   }
 }
@@ -172,7 +172,7 @@
 
 @media (max-width: 375px) {
   .main {
-    margin-bottom: 527rem;
+    margin-bottom: 420rem;
     margin-top: -1080vh;
   }
 }

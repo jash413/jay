@@ -90,7 +90,8 @@ const page = () => {
             slidesPerView={3}
             loop={true}
             navigation={true}
-            // autoplay={{ delay: 5000 }}
+            autoplay={{ delay: 5000 }}
+            speed={1000}
             breakpoints={{
               10: {
                 // width: 576,
