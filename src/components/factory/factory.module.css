@@ -71,6 +71,18 @@
   }
 }
 
+
+@media (max-height: 920px) {
+  .main {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 530rem !important;
+    margin-top: -1077vh !important;
+  }
+}
+
 @media (max-height: 800px) {
   .main {
     display: flex;
