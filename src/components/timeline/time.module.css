@@ -388,7 +388,6 @@
   .twoo {
     font-size: 40px;
     width: 59%;
-
     letter-spacing: 1px;
   }
 
@@ -499,6 +498,11 @@
     font-size: 45px;
     margin-left: 2rem;
   }
+
+
+  .img_main_outer {
+    width: 50%;
+  }
   .timeline {
     position: relative;
     min-height: 150px;
@@ -532,7 +536,7 @@
     background-color: #0f8a83;
     left: 10.3%;
     z-index: 2;
-    top: 47%;
+    top: 52%;
     transform: translateX(-50%);
   }
 
@@ -547,8 +551,8 @@
 }
 @media (max-width: 455px) {
   .line {
-    top: 215px;
-    bottom: 200px;
+    top: 257px;
+    bottom: 212px;
   }
 }
 
@@ -564,7 +568,7 @@
     width: 100%;
   }
   .twoo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;
     width: 100%;
@@ -578,13 +582,17 @@
     display: none;
   }
 
+  .img_main_outer {
+    width: 70%;
+  }
+
   .line {
     position: absolute;
     z-index: 1;
     left: calc(10% - -1px);
     width: 2px;
-    top: 289px;
-    bottom: 111px;
+    top: 231px;
+    bottom: 230px;
     border-right: 2px solid #218e88;
   }
   .bead {
@@ -600,6 +608,6 @@
     transform: translateX(-50%);
   }
   .contentX {
-    padding: 0 1rem 0 3rem;
+    padding: 0 0rem 0 2rem;
   }
 }

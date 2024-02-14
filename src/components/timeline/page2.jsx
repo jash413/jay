@@ -6,7 +6,8 @@ import usp3 from "@/images/ix3x.jpg";
 import usp4 from "@/images/ix4x.jpg";
 import usp5 from "@/images/ix5x.jpg";
 import usp6 from "@/images/ix6x.jpg";
-import usp7 from "@/images/ix7x.jpg";
+// import usp7 from "@/images/ix7x.jpg";
+import usp8 from "@/images/alone.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import styles from "@/components/timeline/time.module.css";
@@ -133,7 +134,7 @@ const Page2 = () => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <div className={styles.img_main_outer}>
-                  <Image src={usp7} alt="image" className={styles.img_main} />
+                  <Image src={usp8} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>07</p>
                 <h2 className={styles.twoo}>High Nail Welding Capacity</h2>
