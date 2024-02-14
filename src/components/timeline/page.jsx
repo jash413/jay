@@ -25,7 +25,7 @@ const Home = () => {
 
       if (windowWidth >= 1600) {
         canvas.width = 1000; // Width remains constant for desktop screens
-        canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
+        canvas.height = windowHeight * 1; // Adjust the height for desktop screens
       }
       else if (windowWidth >= 1440) {
         canvas.width = 800; // Width remains constant for tablet screens
