@@ -101,7 +101,7 @@
   .specifications_content {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 550px;
+    height: 464px;
     display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;

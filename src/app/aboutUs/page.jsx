@@ -17,12 +17,12 @@ import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -50,17 +50,6 @@ const Page = () => {
         <WhyPlywood />
         <Real_Timeline />
         <Slider />
-        {/* <Innovation_cards
-          link1={"https://royaletouche.com/"}
-          link2={"https://royaletouche.com/woodenfloors/"}
-          link3={"/product/plywood"}
-          image1={image1}
-          image2={image3}
-          image3={image2}
-          card1Text={"Laminate"}
-          card2Text={"Wooden Flooring"}
-          card3Text={"Plywood"}                 
-        /> */}
       </div>
       <Form />
       <Footer />

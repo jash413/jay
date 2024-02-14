@@ -4,6 +4,7 @@
   font-style: normal;
   z-index: 1;
   position: absolute;
+  filter: drop-shadow(1px 1px 4px black);
   top: 2rem;
   cursor: pointer;
   left: 2rem;
