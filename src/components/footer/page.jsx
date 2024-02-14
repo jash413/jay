@@ -80,7 +80,8 @@ const Page = () => {
           <div className={styles.footer_titles}>{"HELP"}</div>
           <ul className={styles.footer_headers}>
             <li className={styles.footer_item_list}>
-              <Link href="/privacyPolicy">{"Privacy policy"}</Link>
+              <a href="/privacyPolicy" target="_blank" rel="noopener noreferrer">{"Privacy policy"}
+                </a>
             </li>
 
             <li className={styles.footer_item_list}>

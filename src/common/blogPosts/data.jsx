@@ -3,8 +3,11 @@ import BlogPostImage2 from "@/images/BlogImage2.jpg";
 import BlogPostImage3 from "@/images/BlogImage3.jpg";
 import BlogPostImage4 from "@/images/BlogImage4.jpg";
 import BlogPostImage5 from "@/images/BlogImage5.jpg";
-import BlogPostImage6 from "@/images/BlogImage6.jpg";
-import BlogPostImage7 from "@/images/blogs_img1.png";
+import BlogPostImage6 from "@/images/blogs_imgs_6.jpg";
+import BlogPostImage7 from "@/images/blogs_images_1.jpg";
+import BlogPostImage8 from "@/images/blogs_imgs_8.jpg";
+import BlogPostImage11 from "@/images/blogs_imgs_11.jpg";
+import BlogPostImage12 from "@/images/blogs_imgs_12.jpg"
 
 
 const Data = [
@@ -17,7 +20,7 @@ const Data = [
         readMoreRoute: "/allPosts/post1",
     },
     {
-        image: BlogPostImage7,
+        image: BlogPostImage6,
         date: "March 20, 2024",
         blog_name: "Interior Design2",
         blogPost_heading: "5 Tips on how to maintain plywood sheets",
@@ -50,7 +53,7 @@ const Data = [
         readMoreRoute: "/allPosts/post5",
     },
     {
-        image: BlogPostImage7,
+        image: BlogPostImage6,
         date: "March 20, 2024",
         blog_name: "Interior Design6",
         blogPost_heading: "Fire-resistant plywood: Things you should know",
@@ -58,7 +61,7 @@ const Data = [
         readMoreRoute: "/allPosts/post6",
     },
     {
-        image: BlogPostImage7,
+        image: BlogPostImage8,
         date: "March 20, 2024",
         blog_name: "Interior Design7",
         blogPost_heading: "How to choose best plywood for interiors",
@@ -95,7 +98,7 @@ const Data = [
 
 
     {
-        image: BlogPostImage7,
+        image: BlogPostImage11,
         date: "March 20, 2024",
         blog_name: "Interior Design11",
         blogPost_heading: "Make your furniture strong using termite-resistant ply",
@@ -105,7 +108,7 @@ const Data = [
 
 
     {
-        image: BlogPostImage7,
+        image: BlogPostImage12,
         date: "March 20, 2024",
         blog_name: "Interior Design12",
         blogPost_heading: "What is commercial plywood and its different uses?",

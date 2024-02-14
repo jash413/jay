@@ -9,13 +9,14 @@ const BlogPost = (props) => {
     <div>
       <div className={styles.BlogPost_outer}>
         <div className={styles.BlogPost_imageOuter}>
+        <div className={styles.BlogPost_heading}>{props.blogPost_heading}</div> 
           <Image src={props.image} className={styles.BlogPost_image} alt='image_blog' />
         </div>
         <div className={styles.BlogPost_smallOuter}>
           <p className={styles.BlogPost_date}>{props.Date}</p>
           <p className={styles.BlogPost_name}>{props.blog_name}</p>
         </div>
-        <div className={styles.BlogPost_heading}>{props.blogPost_heading}</div> 
+     
         <div className={styles.BlogPost_text}>{props.blogPost_text}</div>
 
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading1}</div>
