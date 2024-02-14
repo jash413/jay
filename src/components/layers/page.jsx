@@ -201,7 +201,7 @@ const Airpods = () => {
           window.pageYOffset || document.documentElement.scrollTop;
         if (currentScrollTop > lastScrollTop) {
           // Scrolling down
-          setScrollPercentage(0); // Hide the counter when scrolling down
+          // setScrollPercentage(0); // Hide the counter when scrolling down
         } else {
           // Scrolling up
           // The counter will be updated by the GSAP timeline onUpdate
