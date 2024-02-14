@@ -12,7 +12,7 @@ import Innovation_cards from "@/components/innovation_cards/page";
 import image1 from "@/images/Laminate.jpg";
 import image2 from "@/images/Plywood.jpg";
 import image3 from "@/images/Wooden-Floor.jpg";
-import aboutUs_image from "@/images/new_about.png";
+import aboutUs_image from "@/images/new_about.jpg";
 import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
 const Page = () => {

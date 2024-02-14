@@ -14,18 +14,24 @@ import "./findStore.css";
 function Mapsection() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [selectedOption1, setSelectedOption1] = useState("");
-  const options1 = ["Mumbai", "Gujarat", "Goa", "Rajasthan"];
+  const options1 = ["Gujarat", "Telangana", "Kerela", "Karnataka","Madhya Pradesh", "West Bengal", "Bihar", "Haryana", "Chandigarh", "Himachal Pradesh", "Maharastra", "Goa", "Jharkhand", "Andhra Pradesh", "Assam", "Punjab"];
   const stateDistricts = [
-    {
-      state: "Mumbai",
-      districts: ["District1", "District2", "District3", "District4"],
-    },
-    { state: "Gujarat", districts: ["Surat", "Ahmedabad", "Rajkot", "Bhuj"] },
-    {
-      state: "Goa",
-      districts: ["DistrictA", "DistrictB", "DistrictC", "DistrictD"],
-    },
-    { state: "Rajasthan", districts: ["Jaipur", "Udaipur", "Jodhpur", "Kota"] },
+    { state: "Gujarat", districts: ["Ahmedabad" ,"Dahod", "Rajpipla-Narmada", "Ankleshwar-Bharuch", "Gandhinagar" ,"Surat", "Vapi" ,"Vadodara","Himatnagar","Khedbrahma","Anand","Bhuj","Rajkot","Baroda","Morbi","Keshod","Gondal" ,"Porbandar"] },
+    { state: "Telangana", districts: ["Hyderabad", "Warangal", "Karimnagar", "Khamman"],},
+    { state: "Kerela", districts: ["Kochi", "Kannar", "Trivendrum", "Trichur","Palakkad","Calicut","Kottayam","Penthalmanna"],},
+    { state: "Karnataka", districts: ["Chitradurga", "Belgaun", "Bijapur", "Bidar","Hubli","Raichur","Ballari","Bagalkot","Kalaburgi","Hospet","Bangalore","Devangere"] },
+    { state: "Madhya Pradesh", districts: ["Khandwa", "Khargone", "Burhanpur", "Bhopal","Shujalpur","Indore","Shivpuri","Ratlam","Guna","Jabalpur"] },
+    { state: "West Bengal", districts: ["Kolkata", "Asansol", "Durgapur"] },
+    { state: "Bihar", districts: ["Nalanda", "Gaya", "Mugattarpur", "Araah", "Darbhanga","Saharsa", "Patna"] },
+    { state: "Haryana", districts: ["Ambala", "Kaithal", "Rewari", "Gurugram"] },
+    { state: "Chandigarh", districts: ["Chandigarh"] },
+    { state: "Himachal Pradesh", districts: ["Una"] },
+    { state: "Maharastra", districts: ["Bhandara", "Hinganghat", "Thane", "Chandrapur","Gadchiroli","Warora","Wadsa","Nandurbar","Nagpur","Washim","Panvel","Dhule","Pune","Ahmednagar","Vashi","Mumbai","Yavatmal","Amravati","Gondia","Dhule","Akola"] },
+    { state: "Goa", districts: ["Margao"] },
+    { state: "Jharkhand", districts: ["Jamshedpur", "Dhanbad"] },
+    { state: "Andhra Pradesh", districts: ["Jaipur", "Udaipur", "Jodhpur", "Kota"] },
+    { state: "Assam", districts: ["Guwahati"] },
+    { state: "Punjab", districts: ["Sangrur"] },
   ];
   const options2 =
     stateDistricts.find((item) => item.state === selectedOption1)?.districts ||
@@ -36,24 +42,23 @@ function Mapsection() {
   const locationsData = {
     Gujarat: {
       Ahmedabad: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Ahmedabad",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Naroda, Ahmedabad, Gujarat 382345",
-        mapLocation: "Naroda, Ahmedabad",
-        phone: "0635 9800 014",
-        hours: "09:00 AM to 07:00 PM",
-        destinationLat: 23.0227968,
-        destinationLng: 72.5090304,
+        content1: "SWAMI MARKETING - Ahmedabad",
+        // address: "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Naroda, Ahmedabad, Gujarat 382345",
+        mapLocation: "Ahmedabad",
+        phone: "97278 08833",
+        // hours: "09:00 AM to 07:00 PM",
+        // destinationLat: 23.0227968,
+        // destinationLng: 72.5090304,
       },
-      Surat: {
+      Dahod: {
         content1: "Royalé Touché Laminates and Wooden Floors - Surat",
         address:
           "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Surat, Gujarat 11111",
         mapLocation: "Varacha, Surat",
         phone: "78787 7474 5555",
         hours: "09:00 AM to 06:00 PM",
-        destinationLat: 23.0227968,
-        destinationLng: 72.5090304,
+        // destinationLat: 23.0227968,
+        // destinationLng: 72.5090304,
       },
       Rajkot: {
         content1: "Royalé Touché Laminates and Wooden Floors - Rajkot",
@@ -238,7 +243,8 @@ function Mapsection() {
 
       const url = `https://www.google.com/maps/dir/?api=1&destination=${selectedLocation.destinationLat},${selectedLocation.destinationLng}`;
       setGetDirectionURL(url);
-    } else {
+    } else 
+    {
       setSelectedLocationContent({
         content1: "Invalid Selection",
         address: "Invalid Selection",
@@ -254,11 +260,11 @@ function Mapsection() {
     updateSelectedLocationContent();
   };
 
-  const handleUseMyLocation = () => {
-    window.open(
-      "https://www.google.com/maps/place/Crown+Decor+Private+Limited,+One42,+North+Tower,+Suite+401+-+403,+4th+Floor,+Ambli+-+Bopal+Rd,+B%2FH,+Ashok+Vatika,+Ahmedabad,+Gujarat+380058"
-    );
-  };
+  // const handleUseMyLocation = () => {
+  //   window.open(
+  //     "https://www.google.com/maps/place/Crown+Decor+Private+Limited,+One42,+North+Tower,+Suite+401+-+403,+4th+Floor,+Ambli+-+Bopal+Rd,+B%2FH,+Ashok+Vatika,+Ahmedabad,+Gujarat+380058"
+  //   );
+  // };
 
   const storeRef = useRef("");
   let refs = useRef([]);
@@ -385,17 +391,8 @@ function Mapsection() {
             Search
           </button>
         </div>
-        <p className={styles.location}>
-          <FontAwesomeIcon icon={faLocationDot} />
-          <span
-            onClick={handleUseMyLocation}
-            className={styles.use_my_location}
-          >
-            {" "}
-            Use my location
-          </span>
-        </p>
       </div>
+
       <div className={styles.map_section2}>
         <div className={styles.content30}>
           <div>
@@ -404,15 +401,6 @@ function Mapsection() {
             </p>
             <div className={styles.main_content}>
               <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faLocationDot}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.address}
-                </div>
-              </div>
-              <div className={styles.content}>
                 <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
                 <div className={styles.address}>
                   {selectedLocationContent.mapLocation}
@@ -427,22 +415,6 @@ function Mapsection() {
                   {selectedLocationContent.phone}
                 </div>
               </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faClock} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.hours}
-                </div>
-              </div>
-            </div>
-            <div className={styles.content_buttons}>
-              {getDirectionURL && (
-                <button
-                  className={styles.content_button}
-                  onClick={() => window.open(getDirectionURL, "_blank")}
-                >
-                  Get Direction
-                </button>
-              )}
             </div>
             <div className={styles.content_border}>
               <svg
@@ -456,7 +428,7 @@ function Mapsection() {
               </svg>
             </div>
           </div>
-          <div>
+          {/* <div>
             <p className={styles.content_1}>
               {selectedLocationContent.content1}
             </p>
@@ -513,7 +485,7 @@ function Mapsection() {
                 <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.content70}>
           <iframe

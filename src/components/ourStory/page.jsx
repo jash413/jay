@@ -1,4 +1,4 @@
-import image from "@/images/dummyImage.png";
+import image from "@/images/our-story.jpg";
 import Image from "next/image";
 import styles from "@/components/ourStory/ourStory.module.css";
 
