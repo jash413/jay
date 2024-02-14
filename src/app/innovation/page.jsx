@@ -23,18 +23,92 @@ const Page = () => {
   //   })();
   // }, []);
 
-  setTimeout(() => {
-    setIsLoading(false);
-    if (typeof document !== "undefined") {
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  //   if (typeof document !== "undefined") {
+  //     document.body.style.cursor = "default";
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, 2000);
+
+
+  const setLoadingComplete = (status) => {
+    setIsLoading(!status);
+  };
+
+  useEffect(() => {
+    const loadComponents = async () => {
+      await Promise.all([
+        new Promise((resolve, reject) => {
+          const images = document.querySelectorAll("img");
+       
+          const videos = document.querySelectorAll("video");
+
+          let loadedCount = 0;
+          const totalAssets = images.length + videos.length;
+
+          const checkAllAssetsLoaded = () => {
+            loadedCount++;
+            if (loadedCount === totalAssets) {
+              resolve();
+            }
+          };
+
+          const handleError = () => {
+            reject();
+          };
+
+          images.forEach((image) => {
+            if (image.complete) {
+              checkAllAssetsLoaded();
+            } else {
+              image.addEventListener("load", checkAllAssetsLoaded);
+              image.addEventListener("error", handleError);
+            }
+          });
+
+          fonts.forEach((font) => {
+            font.addEventListener("load", checkAllAssetsLoaded);
+            font.addEventListener("error", handleError);
+          });
+
+          videos.forEach((video) => {
+            if (video.readyState >= 3) {
+              checkAllAssetsLoaded();
+            } else {
+              video.addEventListener("loadedmetadata", checkAllAssetsLoaded);
+              video.addEventListener("error", handleError);
+            }
+          });
+        }),
+      ]);
+      setIsLoading(false);
       document.body.style.cursor = "default";
       window.scrollTo(0, 0);
-    }
-  }, 2000);
+    };
+
+    loadComponents()
+      .catch(() => {
+        console.error("Failed to load assets");
+      });
+  }, []);
+
+
+
+
+
+
+
+
   return (
     <main>
-      <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence>
+      <AnimatePresence>
+        {isLoading ? (
+          // Pass setLoadingComplete to Preloader component
+          <Preloader setLoadingComplete={setLoadingComplete} />
+        ) : (
+          <>
+     
 
       <div>
         <Inner_header
@@ -42,20 +116,14 @@ const Page = () => {
           heading_big="INNOVATION"
         />
         <Factory_walk />
-        {/* <Innovation_circles /> */}
-        {/* <Innovation_cards
-          image1={innovation_flex_img1}
-          image2={innovation_flex_img2}
-          image3={innvotion_flex_img3}
-          card1Text={"Cupboard"}
-          card2Text={"Drawer "}
-          card3Text={"Cabinets"}
-        />
-        <Innovation_flex /> */}
+  
       </div>
 
       <Form />
       <Footer />
+      </>
+        )}
+      </AnimatePresence>
     </main>
   );
 };
