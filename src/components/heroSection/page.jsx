@@ -27,7 +27,7 @@ const Page = (props) => {
           y: 0,
           opacity: 1,
           stagger: 0.02,
-          duration: 2,
+          duration: 1,
           rotate: "0deg",
           ease: "power4.out",
         }
