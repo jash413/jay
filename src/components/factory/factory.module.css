@@ -55,7 +55,7 @@
     height: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 557rem;
+    margin-bottom: 800rem;
     margin-top: -1080vh;
   }
 }
@@ -78,7 +78,7 @@
     height: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 530rem !important;
+    margin-bottom: 480rem !important;
     margin-top: -1077vh !important;
   }
 }
@@ -95,15 +95,15 @@
 }
 @media (max-width: 1440px) {
   .main {
-    margin-bottom: 527rem;
-    margin-top: -1080vh;
+    margin-bottom: 420rem !important;
+    margin-top: -1080vh !important;
   }
 }
 
 @media (max-width: 1340px) {
   .main {
-    margin-bottom: 720rem;
-    margin-top: -1155vh;
+    margin-bottom: 770rem !important;
+    margin-top: -1155vh !important;
   }
 }
 /* @media (max-height: 1400px) {
