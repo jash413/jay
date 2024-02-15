@@ -167,6 +167,12 @@
     width: 722px;
   }
 
+  .logo {
+    height: 100%;
+    cursor: pointer;
+    width: revert-layer;
+  }
+
   .header_text2 {
     font-size: 86px;
     width: 72%;

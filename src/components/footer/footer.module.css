@@ -126,11 +126,11 @@
     padding: 60px 50px;
     display: block;
   }
-  .footer_firstSide,
+  /* .footer_firstSide,
   .footer_secondSide,
   .footer_thirdSide {
     margin: 20px 0;
-  }
+  } */
 
   .footer_upper_heading {
     font-size: 87px;
@@ -157,19 +157,21 @@
 
 @media (max-width: 787px) {
   .footer_wrapper {
-    padding: 60px 25px;
+    padding: 35px 25px;
     display: block;
   }
-
+/* 
   .footer_logo_image {
     height: 100%;
     width: 100%;
-  }
+  } */
 
   .footer_firstSide {
     height: 100%;
     width: 75%;
     margin-left: 2rem;
+    margin-bottom: 3rem;
+
   }
 
   .footer_secondSide,
@@ -196,5 +198,13 @@
   }
   .copyright_company_name {
     font-weight: 400;
+  }
+}
+
+
+@media (max-width: 787px) {
+  .footer_wrapper {
+    padding: 25px 25px;
+    display: block;
   }
 }

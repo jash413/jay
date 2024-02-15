@@ -143,9 +143,19 @@
     opacity: 0;
   }
   .content {
+    right: -12rem;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .content {
     right: -9rem;
   }
 }
+
+
 
 @media (max-width: 1199px) {
   .timeline_year {

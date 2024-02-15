@@ -171,7 +171,7 @@ const Airpods = () => {
         trigger: section,
         pin: true,
         scrub: 1.5,
-        end: "+=900%",
+        end: "+=700%",
       },
     });
 

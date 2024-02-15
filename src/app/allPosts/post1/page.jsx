@@ -2,10 +2,14 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
+import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
 import BlogPostImage7 from "@/images/blogs_images_1.jpg";
+import Image from "next/image";
+import logo from "@/images/finalNavbarLogo.png";
+import "@/app/allPosts/commonstyles.css"
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -30,6 +34,15 @@ const Page = () => {
       </AnimatePresence>
 
       <Navbar />
+      <div className="iamouter">
+  <Image
+    onClick={() => router.push("/")}
+    src={logo}
+    alt="image"
+    className="iamimage"
+   
+  />
+</div>
       <InnerBlogPost
         image={BlogPostImage7}
         Date="March 20, 2024"
