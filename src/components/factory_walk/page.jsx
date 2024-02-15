@@ -37,11 +37,11 @@ const AirpodsAnimation = (props) => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const frameCount = 1032;
+    const frameCount = 855;
     const currentFrame = (index) =>
-      ` https://iraoverseas.com/wp-content/uploads/2024/01/${(index + 1)
+      ` https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalk/F${(index + 1)
         .toString()
-        .padStart(6, "0")}-scaled.jpg`;
+        .padStart(3, "0")}.jpg`;
 
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
 

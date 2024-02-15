@@ -60,7 +60,7 @@ const Page = () => {
         <Factory />
       </section>
       <Layers />
-      <Plyspin />
+      {/* <Plyspin /> */}
       <Timeline />
       <Timeline1 />
       <HomeStore />
