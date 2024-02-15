@@ -238,7 +238,7 @@
 @media(max-width:1440px){
   .video_loop_outer{
     position: relative;
-    margin-top: -50%;
+    margin-top: -55%;
     margin-bottom: 5rem;
   }
 }
@@ -271,7 +271,7 @@
 
   .video_loop_outer{
     position: relative;
-    margin-top: -50%;
+    margin-top: -105%;
     margin-bottom: 5rem;
   }
 
@@ -302,8 +302,8 @@
 
   .video_loop_outer{
     position: relative;
-    margin-top: -50%;
-    margin-bottom: 5rem;
+    margin-top: -179%;
+    margin-bottom: 10rem;
   }
 
   .video_extra {
