@@ -825,7 +825,7 @@ const FormCommon = () => {
               <p className={styles.form_agree_content}>
                 Click here to receive updates on WhatsApp
               </p>
-            </div> */}
+            </div> */}           
             {/* <div className={styles.form_last_section_content}>
               <div>
                 <input

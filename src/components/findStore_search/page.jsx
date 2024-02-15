@@ -14,22 +14,148 @@ import "./findStore.css";
 function Mapsection() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [selectedOption1, setSelectedOption1] = useState("");
-  const options1 = ["Gujarat", "Telangana", "Kerela", "Karnataka","Madhya Pradesh", "West Bengal", "Bihar", "Haryana", "Chandigarh", "Himachal Pradesh", "Maharastra", "Goa", "Jharkhand", "Andhra Pradesh", "Assam", "Punjab"];
+  const options1 = [
+    "Gujarat",
+    "Telangana",
+    "Kerela",
+    "Karnataka",
+    "Madhya_Pradesh",
+    "West_Bengal",
+    "Bihar",
+    "Haryana",
+    "Chandigarh",
+    "Himachal_Pradesh",
+    "Maharastra",
+    "Goa",
+    "Jharkhand",
+    "Andhra_Pradesh",
+    "Assam",
+    "Punjab",
+  ];
   const stateDistricts = [
-    { state: "Gujarat", districts: ["Ahmedabad" ,"Dahod", "Rajpipla-Narmada", "Ankleshwar-Bharuch", "Gandhinagar" ,"Surat", "Vapi" ,"Vadodara","Himatnagar","Khedbrahma","Anand","Bhuj","Rajkot","Baroda","Morbi","Keshod","Gondal" ,"Porbandar"] },
-    { state: "Telangana", districts: ["Hyderabad", "Warangal", "Karimnagar", "Khamman"],},
-    { state: "Kerela", districts: ["Kochi", "Kannar", "Trivendrum", "Trichur","Palakkad","Calicut","Kottayam","Penthalmanna"],},
-    { state: "Karnataka", districts: ["Chitradurga", "Belgaun", "Bijapur", "Bidar","Hubli","Raichur","Ballari","Bagalkot","Kalaburgi","Hospet","Bangalore","Devangere"] },
-    { state: "Madhya Pradesh", districts: ["Khandwa", "Khargone", "Burhanpur", "Bhopal","Shujalpur","Indore","Shivpuri","Ratlam","Guna","Jabalpur"] },
-    { state: "West Bengal", districts: ["Kolkata", "Asansol", "Durgapur"] },
-    { state: "Bihar", districts: ["Nalanda", "Gaya", "Mugattarpur", "Araah", "Darbhanga","Saharsa", "Patna"] },
-    { state: "Haryana", districts: ["Ambala", "Kaithal", "Rewari", "Gurugram"] },
+    {
+      state: "Gujarat",
+      districts: [
+        "Ahmedabad",
+        "Dahod",
+        "Rajpipla_Narmada",
+        "Ankleshwar_Bharuch",
+        "Gandhinagar",
+        "Surat",
+        "Vapi",
+        "Vadodara",
+        "Himatnagar",
+        "Khedbrahma",
+        "Anand",
+        "Bhuj",
+        "Rajkot",
+        "Baroda",
+        "Morbi",
+        "Keshod",
+        "Gondal",
+        "Porbandar",
+      ],
+    },
+    {
+      state: "Telangana",
+      districts: ["Hyderabad", "Warangal", "Karimnagar", "Khamman"],
+    },
+    {
+      state: "Kerela",
+      districts: [
+        "Kochi",
+        "Kannar",
+        "Trivendrum",
+        "Trichur",
+        "Palakkad",
+        "Calicut",
+        "Kottayam",
+        "Penthalmanna",
+      ],
+    },
+    {
+      state: "Karnataka",
+      districts: [
+        "Chitradurga",
+        "Belgaun",
+        "Bijapur",
+        "Bidar",
+        "Hubli",
+        "Raichur",
+        "Ballari",
+        "Bagalkot",
+        "Kalaburgi",
+        "Hospet",
+        "Bangalore",
+        "Devangere",
+      ],
+    },
+    {
+      state: "Madhya_Pradesh",
+      districts: [
+        "Khandwa",
+        "Khargone",
+        "Burhanpur",
+        "Bhopal",
+        "Shujalpur",
+        "Indore",
+        "Shivpuri",
+        "Ratlam",
+        "Guna",
+        "Jabalpur",
+      ],
+    },
+    { state: "West_Bengal", districts: ["Kolkata", "Asansol", "Durgapur"] },
+    {
+      state: "Bihar",
+      districts: [
+        "Nalanda",
+        "Gaya",
+        "Mugattarpur",
+        "Araah",
+        "Darbhanga",
+        "Saharsa",
+        "Patna",
+      ],
+    },
+    {
+      state: "Haryana",
+      districts: ["Ambala", "Kaithal", "Rewari", "Gurugram"],
+    },
     { state: "Chandigarh", districts: ["Chandigarh"] },
-    { state: "Himachal Pradesh", districts: ["Una"] },
-    { state: "Maharastra", districts: ["Bhandara", "Hinganghat", "Thane", "Chandrapur","Gadchiroli","Warora","Wadsa","Nandurbar","Nagpur","Washim","Panvel","Dhule","Pune","Ahmednagar","Vashi","Mumbai","Yavatmal","Amravati","Gondia","Dhule","Akola"] },
+    { state: "Himachal_Pradesh", districts: ["Una"] },
+    {
+      state: "Maharastra",
+      districts: [
+        "Bhandara",
+        "Hinganghat",
+        "Thane",
+        "Chandrapur",
+        "Gadchiroli",
+        "Warora",
+        "Wadsa",
+        "Nandurbar",
+        "Nagpur",
+        "Washim",
+        "Panvel",
+        "Dhule",
+        "Pune",
+        "Ahmednagar",
+        "Vashi",
+        "Mumbai",
+        "Yavatmal",
+        "Amravati",
+        "Gondia",
+        "Dhule",
+        "Akola",
+      ],
+    },
     { state: "Goa", districts: ["Margao"] },
     { state: "Jharkhand", districts: ["Jamshedpur", "Dhanbad"] },
-    { state: "Andhra Pradesh", districts: ["Jaipur", "Udaipur", "Jodhpur", "Kota"] },
+    {
+      state: "Andhra_Pradesh",
+      districts: ["Kurnool"],
+    },
     { state: "Assam", districts: ["Guwahati"] },
     { state: "Punjab", districts: ["Sangrur"] },
   ];
@@ -41,172 +167,817 @@ function Mapsection() {
 
   const locationsData = {
     Gujarat: {
-      Ahmedabad: {
-        content1: "SWAMI MARKETING - Ahmedabad",
-        // address: "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Naroda, Ahmedabad, Gujarat 382345",
-        mapLocation: "Ahmedabad",
-        phone: "97278 08833",
-        // hours: "09:00 AM to 07:00 PM",
-        // destinationLat: 23.0227968,
-        // destinationLng: 72.5090304,
-      },
-      Dahod: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Surat",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Surat, Gujarat 11111",
-        mapLocation: "Varacha, Surat",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        // destinationLat: 23.0227968,
-        // destinationLng: 72.5090304,
-      },
-      Rajkot: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Rajkot",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Rajkot, Gujarat 787847",
-        mapLocation: "Mavdi, Rajkot",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 23.0227968,
-        destinationLng: 72.5090304,
-      },
-      Bhuj: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Bhuj",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Bhuj, Gujarat 787847",
-        mapLocation: "Mavdi, Bhuj",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 23.0227968,
-        destinationLng: 72.5090304,
-      },
+      Ahmedabad: [
+        {
+          content1: "SWAMI MARKETING - Ahmedabad",
+          mapLocation: "Ahmedabad, Gujarat",
+          phone: "97278 08833",
+        },
+        {
+          content1: "MA UMIYA PLYWOOD & HARDWARE - Ahmedabad",
+          mapLocation: "Ahmedabad, Gujarat",
+          phone: "97278 08833",
+        },
+        {
+          content1: "WOODLINK - Ahmedabad",
+          mapLocation: "Ahmedabad, Gujarat",
+          phone: "97278 08833",
+        },
+        {
+          content1: "R D THAKKAR AND SONS - Ahmedabad",
+          mapLocation: "Ahmedabad, Gujarat",
+          phone: "97278 08833",
+        },
+        {
+          content1: "DEVDEEP DÉCOR LLP - Ahmedabad",
+          mapLocation: "Ahmedabad, Gujarat",
+          phone: "97278 08833",
+        },
+      ],
+      Dahod: [
+        {
+          content1: "BURHANI GENERAL HARDWARE - Dahod",
+          mapLocation: "Dahod , Gujarat",
+          phone: "90237 22900",
+        },
+      ],
+      Rajpipla_Narmada: [
+        {
+          content1: "PAYAL PLY AND GLASS HARDWARE - Rajpipla-Narmada",
+          mapLocation: "Rajpipla_Narmada, Gujarat",
+          phone: "90237 22900",
+        },
+      ],
+      Ankleshwar_Bharuch: [
+        {
+          content1: "JALARAM HARDWARE AND PLYWOOD CENTER - Ankleshwar Bharuch",
+          mapLocation: "Ankleshwar-Bharuch, Gujarat",
+          phone: "98752 49406",
+        },
+      ],
+      Gandhinagar: [
+        {
+          content1: "RAJDHANI PLYWOOD - Gandhinagar",
+          mapLocation: "Gandhinagar, Gujarat",
+          phone: "97278 08833",
+        },
+      ],
+      Surat: [
+        {
+          content1: "ARIHANT INTERIOR GALLERY - Surat",
+          mapLocation: "Surat, Gujarat",
+          phone: "81550 06003",
+        },
+        {
+          content1: "KANAIYA HARDWARE - Surat",
+          mapLocation: "Surat, Gujarat",
+          phone: "81550 06003",
+        },
+      ],
+      Vapi: [
+        {
+          content1: "FURNIPART - Vapi",
+          mapLocation: "Vapi, Gujarat",
+          phone: "81550 06003",
+        },
+      ],
+      Vadodara: [
+        {
+          content1: "RK PATEL & CO. - Vadodara",
+          mapLocation: "Vadodara, Gujarat",
+          phone: "90237 22900",
+        },
+      ],
+      Himatnagar: [
+        {
+          content1: "UMA SALES - Himatnagar",
+          mapLocation: "Himatnagar, Gujarat",
+          phone: "97278 08833",
+        },
+      ],
+      Khedbrahma: [
+        {
+          content1: "LAXMI HARDWARE STORES - Khedbrahma",
+          mapLocation: "Khedbrahma, Gujarat",
+          phone: "97278 08833",
+        },
+      ],
+      Anand: [
+        {
+          content1: "GAYATRI LAMINATES - Anand",
+          mapLocation: "Anand, Gujarat",
+          phone: "90237 22900",
+        },
+      ],
+      Bhuj: [
+        {
+          content1: "SILVER BHUJ - Bhuj",
+          mapLocation: "Bhuj, Gujarat",
+          phone: "98793 21830",
+        },
+      ],
+      Rajkot: [
+        {
+          content1: "DEVDEEP DÉCOR LLP - Rajkot",
+          mapLocation: "Rajkot, Gujarat",
+          phone: "97234 12040",
+        },
+      ],
+      Surat: [
+        {
+          content1: "ROYALE TOUCHE SURAT - Surat",
+          mapLocation: "Surat, Gujarat",
+          phone: "81550 06003",
+        },
+      ],
+      Baroda: [
+        {
+          content1: "ROYALE TOUCHE SALES - Baroda",
+          mapLocation: "Baroda, Gujarat",
+          phone: "90237 22900",
+        },
+      ],
+      Morbi: [
+        {
+          content1: "RAJA WOODEN SUPPLIERS - Morbi",
+          mapLocation: "Morbi, Gujarat",
+          phone: "97234 12040",
+        },
+      ],
+      Keshod: [
+        {
+          content1: "MILAN PLYWOOD - Keshod",
+          mapLocation: "Keshod, Gujarat",
+          phone: "97234 12040",
+        },
+      ],
+      Gondal: [
+        {
+          content1: "BHOLENATH ENTERPRISES - Gondal",
+          mapLocation: "Gondal, Gujarat",
+          phone: "97234 12040",
+        },
+      ],
+      Porbandar: [
+        {
+          content1: "M/S J K ENTERPRISE - Porbandar",
+          mapLocation: "Porbandar, Gujarat",
+          phone: "97234 12040",
+        },
+      ],
     },
-    Mumbai: {
-      District1: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District-1",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Naroda, Mumbai 382345",
-        mapLocation: "District1, Mumbai",
-        phone: "0635 9800 014",
-        hours: "09:00 AM to 07:00 PM",
-        destinationLat: 19.06263015951215,
-        destinationLng: 72.87587933411474,
-      },
-      District2: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District2",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, District2,11111",
-        mapLocation: "District2, Mumbai",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 19.06263015951215,
-        destinationLng: 72.87587933411474,
-      },
-      District3: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District3",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, District3, 787847",
-        mapLocation: "District3, Mumbai",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 19.06263015951215,
-        destinationLng: 72.87587933411474,
-      },
-      District4: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District4",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, District4, 787847",
-        mapLocation: "District4, Mumbai",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 19.06263015951215,
-        destinationLng: 72.87587933411474,
-      },
+
+    Telangana: {
+      Hyderabad: [
+        {
+          content1: "SRI DATTA AGENCIES - Hyderabad",
+          mapLocation: "Hyderabad, India",
+          phone: "83470 09868",
+        },
+        {
+          content1: "MAHAVEER ENTERPRISE - Hyderabad",
+          mapLocation: "Hyderabad, India",
+          phone: "83470 09868",
+        },
+        {
+          content1: "SRI BALAJI IRON STEEL & HARDWARE MART - Hyderabad",
+          mapLocation: "Hyderabad, India",
+          phone: "83470 09868",
+        },
+      ],
+      Warangal: [
+        {
+          content1: "KANDAKATLA ARJUN RAO GLASS MART - Warangal",
+          mapLocation: "Warangal , India",
+          phone: "83470 09868",
+        },
+      ],
+      Karimnagar: [
+        {
+          content1: "LAXMI HARDWARE AND PLYWOOD - Karimnagar",
+          mapLocation: "Karimnagar, India",
+          phone: "83470 09868",
+        },
+      ],
+      Khamman: [
+        {
+          content1: "SRI UMIYA HARDWARE - Khamman",
+          mapLocation: "Khamman, India",
+          phone: "83470 09868",
+        },
+      ],
     },
+
+    Kerela: {
+      Kochi: [
+        {
+          content1: "VPK DISTRIBUTORS - Kochi",
+          mapLocation: "Kochi, India",
+          phone: "92657 01798",
+        },
+      ],
+      Kannar: [
+        {
+          content1: "K L ABDUL SATHAR IMPEX PVT LTD - Kannar",
+          mapLocation: "Kannar , India",
+          phone: "92657 01798",
+        },
+      ],
+      Trivendrum: [
+        {
+          content1: "ARUN ENTERPRISES - Trivendrum",
+          mapLocation: "Trivendrum, India",
+          phone: "92657 01798",
+        },
+      ],
+      Trichur: [
+        {
+          content1: "PLYLAND & HARDWARES - Trichur",
+          mapLocation: "Trichur, India",
+          phone: "92657 01798",
+        },
+      ],
+      Palakkad: [
+        {
+          content1: "OLIVE PLY - Palakkad",
+          mapLocation: "Palakkad, India",
+          phone: "92657 01798",
+        },
+      ],
+      Calicut: [
+        {
+          content1: "M K VENEERS & LAMINATES - Calicut",
+          mapLocation: "Calicut, India",
+          phone: "92657 01798",
+        },
+      ],
+      Kottayam: [
+        {
+          content1: "FAIR TRADERS - Kottayam",
+          mapLocation: "Kottayam, India",
+          phone: "92657 01798",
+        },
+      ],
+      Penthalmanna: [
+        {
+          content1: "WOOD PLY - Penthalmanna",
+          mapLocation: "Penthalmanna, India",
+          phone: "92657 01798",
+        },
+      ],
+    },
+
+    Karnataka: {
+      Chitradurga: [
+        {
+          content1: "SRI MAHALAXMI FRAME WORKS - Chitradurga",
+          mapLocation: "Chitradurga, India",
+          phone: "81519 03444",
+        },
+      ],
+      Belgaun: [
+        {
+          content1: "HEDA PLYWOODS - Belgaun",
+          mapLocation: "Belgaun , India",
+          phone: "81519 03444",
+        },
+      ],
+      Bijapur: [
+        {
+          content1: "PREM HARDWARE - Bijapur",
+          mapLocation: "Bijapur, India",
+          phone: "81519 03444",
+        },
+      ],
+      Bidar: [
+        {
+          content1: "SURYA PLYWOOD AND GLASS CENTER - Bidar",
+          mapLocation: "Bidar, India",
+          phone: "81519 03444",
+        },
+      ],
+      Hubli: [
+        {
+          content1: "RVM BUILDZONE LLP - Hubli",
+          mapLocation: "Hubli, India",
+          phone: "81519 03444",
+        },
+      ],
+      Raichur: [
+        {
+          content1: "SHANTI HARDWARE & PLYWOOD CENTRE - Raichur",
+          mapLocation: "Raichur, India",
+          phone: "81519 03444",
+        },
+      ],
+      Ballari: [
+        {
+          content1: "JAIN HARDWARE - Ballari",
+          mapLocation: "Ballari, India",
+          phone: "81519 03444",
+        },
+      ],
+      Bagalkot: [
+        {
+          content1: "PATIL PLYWOOD AND HARDWARE - Bagalkot",
+          mapLocation: "Bagalkot, India",
+          phone: "81519 03444",
+        },
+      ],
+      Kalaburgi: [
+        {
+          content1: "HINDUSTAN TRADERS - Kalaburgi",
+          mapLocation: "Kalaburgi, India",
+          phone: "81519 03444",
+        },
+      ],
+      Hospet: [
+        {
+          content1: "HEERA TRADE LINKS - Hospet",
+          mapLocation: "Hospet, India",
+          phone: "81519 03444",
+        },
+      ],
+      Bangalore: [
+        {
+          content1: "OM TIMBER - Bangalore",
+          mapLocation: "Bangalore, India",
+          phone: "81519 03444",
+        },
+        {
+          content1: "ANAND ENTERPRISES - Bangalore",
+          mapLocation: "Bangalore, India",
+          phone: "81519 03444",
+        },
+        {
+          content1: "BHARAT WOOD - Bangalore",
+          mapLocation: "Bangalore, India",
+          phone: "81519 03444",
+        },
+      ],
+      Devangere: [
+        {
+          content1: "N S JAYADEVA PLYWOODS - Devangere",
+          mapLocation: "Devangere, India",
+          phone: "81519 03444",
+        },
+      ],
+    },
+
+    Madhya_Pradesh: {
+      Khandwa: [
+        {
+          content1: "SETHI PLYWOOD & GLASSS HOUSE - Khandwa",
+          mapLocation: "Khandwa, India",
+          phone: "95129 00101",
+        },
+      ],
+      Khargone: [
+        {
+          content1: "SUMUKH PLYWOOD AND HARDWARE - Khargone",
+          mapLocation: "Khargone , India",
+          phone: "95129 00101",
+        },
+      ],
+      Burhanpur: [
+        {
+          content1: "SHAAMA HARDWARE STORE - Burhanpur",
+          mapLocation: "Burhanpur, India",
+          phone: "95129 00101",
+        },
+      ],
+      Bhopal: [
+        {
+          content1: "ARYA PLYWOODS - Bhopal",
+          mapLocation: "Bhopal, India",
+          phone: "95129 00101",
+        },
+      ],
+      Shujalpur: [
+        {
+          content1: "KHURANA PLY & FURNITURE HOME - Shujalpur",
+          mapLocation: "Shujalpur, India",
+          phone: "95129 00101",
+        },
+      ],
+      Indore: [
+        {
+          content1: "NATIONAL PLYWOOD GALLERY - Indore",
+          mapLocation: "Indore, India",
+          phone: "95129 00101",
+        },
+      ],
+      Shivpuri: [
+        {
+          content1: "ASHISH HARDWARE & SANITARY STORE - Shivpuri",
+          mapLocation: "Shivpuri, India",
+          phone: "95129 00101",
+        },
+      ],
+      Ratlam: [
+        {
+          content1: "AVIRAJ TIMBER AND PLYWOOD - Ratlam",
+          mapLocation: "Ratlam, India",
+          phone: "95129 00101",
+        },
+      ],
+      Guna: [
+        {
+          content1: "NEW BRIJENDRA STORES - Guna",
+          mapLocation: "Guna, India",
+          phone: "95129 00101",
+        },
+      ],
+      Jabalpur: [
+        {
+          content1: "NATRAJ TRADES - Jabalpur",
+          mapLocation: "Jabalpur, India",
+          phone: "95129 00101",
+        },
+      ],
+    },
+
+    West_Bengal: {
+      Kolkata: [
+        {
+          content1: "THE LIVING IDEA - Kolkata",
+          mapLocation: "Kolkata, India",
+          phone: "83470 04478",
+        },
+      ],
+      Asansol: [
+        {
+          content1: "SWASTIK PLY & GLASS - Asansol",
+          mapLocation: "Asansol , India",
+          phone: "83470 04478",
+        },
+      ],
+      Durgapur: [
+        {
+          content1: "SHREE DURGA PLYWOOD - Durgapur",
+          mapLocation: "Durgapur, India",
+          phone: "83470 04478",
+        },
+      ],
+    },
+
+    Bihar: {
+      Nalanda: [
+        {
+          content1: "M.R. GLASS AND HARDWARE PLY - Nalanda",
+          mapLocation: "Nalanda, India",
+          phone: "98211 99577",
+        },
+      ],
+      Gaya: [
+        {
+          content1: "MODERN PLY HOUSE - Gaya",
+          mapLocation: "Gaya , India",
+          phone: "98211 99577",
+        },
+      ],
+      Mugattarpur: [
+        {
+          content1: "MARUTI PLY AND GLASS - Mugattarpur",
+          mapLocation: "Mugattarpur, India",
+          phone: "98211 99577",
+        },
+      ],
+      Araah: [
+        {
+          content1: "SHEKHAR INTERIOR SOLUTION - Araah",
+          mapLocation: "Araah, India",
+          phone: "98211 99577",
+        },
+      ],
+      Darbhanga: [
+        {
+          content1: "APOLLO FURNITURE - Darbhanga",
+          mapLocation: "Darbhanga, India",
+          phone: "98211 99577",
+        },
+      ],
+      Saharsa: [
+        {
+          content1: "SHYAM PLY - Saharsa",
+          mapLocation: "Saharsa, India",
+          phone: "98211 99577",
+        },
+      ],
+      Patna: [
+        {
+          content1: "PATNA PLY - Patna",
+          mapLocation: "Patna, India",
+          phone: "98211 99577",
+        },
+      ],
+    },
+
+    Haryana: {
+      Ambala: [
+        {
+          content1: "M.R. GLASS AND HARDWARE PLY - Ambala",
+          mapLocation: "Ambala, India",
+          phone: "95606 66675",
+        },
+      ],
+      Kaithal: [
+        {
+          content1: "ARORA PLY AND HARDWARE STORE - Kaithal",
+          mapLocation: "Kaithal , India",
+          phone: "95606 66675",
+        },
+      ],
+      Rewari: [
+        {
+          content1: "DUA PLYWOOD & TIMBER TRADERS- Rewari",
+          mapLocation: "Rewari, India",
+          phone: "95606 66675",
+        },
+      ],
+      Gurugram: [
+        {
+          content1: "HARYANA TIMBER STORE - Gurugram",
+          mapLocation: "Gurugram, India",
+          phone: "95606 66675",
+        },
+      ],
+    },
+
+    Chandigarh: {
+      Chandigarh: [
+        {
+          content1: "PLY SAMRAT - Chandigarh",
+          mapLocation: "Chandigarh, India",
+          phone: "95606 66675",
+        },
+      ],
+    },
+
+    Himachal_Pradesh: {
+      Una: [
+        {
+          content1: "SHREE ROOP MARKETING - Una",
+          mapLocation: "Una, India",
+          phone: "98211 99577",
+        },
+      ],
+    },
+    
+    Maharastra: {
+      Bhandara: [
+        {
+          content1: "SINDH PLY AND GLASS AGENCIES - Bhandara",
+          mapLocation: "Bhandara, India",
+          phone: "97024 00627",
+        },
+      ],
+      Hinganghat: [
+        {
+          content1: "KIRTI TRADERS - Hinganghat",
+          mapLocation: "Hinganghat , India",
+          phone: "97024 00627",
+        },
+      ],
+      Thane: [
+        {
+          content1: "DURGA PLYWOOD CENTRE- Thane",
+          mapLocation: "Thane, India",
+          phone: "97024 00627",
+        },
+      ],
+      Chandrapur: [
+        {
+          content1: "INTERIOR STUDIO - Chandrapur",
+          mapLocation: "Chandrapur, India",
+          phone: "97024 00627",
+        },
+      ],
+      Gadchiroli: [
+        {
+          content1: "SACHIN FURNITURE WORKS AND ALUMINIUM - Gadchiroli",
+          mapLocation: "Gadchiroli, India",
+          phone: "97024 00627",
+        },
+      ],
+      Warola: [
+        {
+          content1: "SHIVAM FURNITURE & PLYWOOD CENTER - Warola",
+          mapLocation: "Warola, India",
+          phone: "97024 00627",
+        },
+      ],
+      Wadsa: [
+        {
+          content1: "RAKESH FUTNITURE - Wadsa",
+          mapLocation: "Wadsa, India",
+          phone: "97024 00627",
+        },
+      ],
+      Nandurbar: [
+        {
+          content1: "C.M. PLY & LAMINATES - Nandurbar",
+          mapLocation: "Nandurbar, India",
+          phone: "97024 00627",
+        },
+      ],
+      Nagpur: [
+        {
+          content1: "PLY RANGE - Nagpur",
+          mapLocation: "Nagpur, India",
+          phone: "97024 00627",
+        },
+      ],
+      Washim: [
+        {
+          content1: "MANGALAM PLYWOOD - Washim",
+          mapLocation: "Washim, India",
+          phone: "97024 00627",
+        },
+      ],
+      Panvel: [
+        {
+          content1: "KRISHNA PLYWOOD - Panvel",
+          mapLocation: "Panvel, India",
+          phone: "97024 00627",
+        },
+      ],
+      Dhule: [
+        {
+          content1: "RATHOD PLY - Dhule",
+          mapLocation: "Dhule, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "GANESH SALES - Dhule",
+          mapLocation: "Dhule, India",
+          phone: "97024 00627",
+        },
+      ],
+      Pune: [
+        {
+          content1: "DALAL & ASSOCIATES - Pune",
+          mapLocation: "Pune, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "CITYPLY - Pune",
+          mapLocation: "Pune, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "DIVYA ENTERPRISE - Pune",
+          mapLocation: "Pune, India",
+          phone: "97024 00627",
+        },
+      ],
+      Ahmednagar: [
+        {
+          content1: "JYOTI SALES CORPORATION - Ahmednagar",
+          mapLocation: "Ahmednagar, India",
+          phone: "97024 00627",
+        },
+      ],
+      Vashi: [
+        {
+          content1: "SWASTIK PLYWOOD - Vashi",
+          mapLocation: "Vashi, India",
+          phone: "97024 00627",
+        },
+      ],
+      Mumbai: [
+        {
+          content1: "MANGALAM PLY N LAMINATE - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "SAMEER ENTERPRISES - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "PARAS PLY - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "PLY COTTAGE - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "GOLDEN PLYWOOD - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "HAWA TRADING COMPANY - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "ARCHITEC POINT - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "SAHU & SONS - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "SWASTIK PLYWOOD & VENEERS - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+        {
+          content1: "VASAI TIMBER INDUSTRIES - Mumbai",
+          mapLocation: "Mumbai, India",
+          phone: "97024 00627",
+        },
+
+      ],
+      Amravati: [
+        {
+          content1: "JAIN PLYWOOD - Amravati",
+          mapLocation: "Amravati, India",
+          phone: "97024 00627",
+        },
+      ],
+      Gondia: [
+        {
+          content1: "ASHIRWAD PLYLAM - Gondia",
+          mapLocation: "Gondia, India",
+          phone: "97024 00627",
+        },
+      ],
+      Akola: [
+        {
+          content1: "SHREE BALAJI PLYWOOD - Akola",
+          mapLocation: "Akola, India",
+          phone: "97024 00627",
+        },
+      ],
+    },
+    
     Goa: {
-      DistrictA: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District-A",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Naroda, Goa 382345",
-        mapLocation: "DistrictA, Goa",
-        phone: "0635 9800 014",
-        hours: "09:00 AM to 07:00 PM",
-        destinationLat: 15.412801428860462,
-        destinationLng: 74.15183986168783,
-      },
-      DistrictB: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District-B",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Goa 11111",
-        mapLocation: "DistrictB, Goa",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 15.412801428860462,
-        destinationLng: 74.15183986168783,
-      },
-      DistrictC: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District-C",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Goa 787847",
-        mapLocation: "DistrictC, Goa",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 15.412801428860462,
-        destinationLng: 74.15183986168783,
-      },
-      DistrictD: {
-        content1: "Royalé Touché Laminates and Wooden Floors - District-D",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha,Goa 787847",
-        mapLocation: "DistrictD, Goa",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 15.412801428860462,
-        destinationLng: 74.15183986168783,
-      },
+      Margao: [
+        {
+          content1: "SHREE HARDWARE AND CO - Margao",
+          mapLocation: "Margao, India",
+          phone: "97024 00627",
+        },
+      ],
     },
-    Rajasthan: {
-      Jaipur: {
-        content1: "Royalé Touché Laminates and Wooden Floors -Jaipur",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Jaipur 382345",
-        mapLocation: "DistrictA, Goa",
-        phone: "0635 9800 014",
-        hours: "09:00 AM to 07:00 PM",
-        destinationLat: 27.098378715951807,
-        destinationLng: 74.19051236164566,
-      },
-      Udaipur: {
-        content1: "Royalé Touché Laminates and Wooden Floors -Jaipur",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Jaipur 11111",
-        mapLocation: "DistrictB, Udaipur",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 27.098378715951807,
-        destinationLng: 74.19051236164566,
-      },
-      Jodhpur: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Jaipur",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha, Jaipur 787847",
-        mapLocation: "DistrictC, Jodhpur",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 27.098378715951807,
-        destinationLng: 74.19051236164566,
-      },
-      Kota: {
-        content1: "Royalé Touché Laminates and Wooden Floors - Jaipur",
-        address:
-          "1st Floor, City Center, Naroda Patiya, Near SRP Camp, Varacha,Jaipur 787847",
-        mapLocation: "DistrictD, Kota",
-        phone: "78787 7474 5555",
-        hours: "09:00 AM to 06:00 PM",
-        destinationLat: 27.098378715951807,
-        destinationLng: 74.19051236164566,
-      },
+
+    Jharkhand: {
+      Jamshedpur: [
+        {
+          content1: "JAMSHEDPUR HARDWARE AND SANITARY MART - Jamshedpur",
+          mapLocation: "Jamshedpur, India",
+          phone: "98211 99577",
+        },
+      ],
+      Dhanbad: [
+        {
+          content1: "DHANBAD PLY - Dhanbad",
+          mapLocation: "Dhanbad, India",
+          phone: "98211 99577",
+        },
+      ],
     },
+
+    Andhra_Pradesh: {
+      Kurnool: [
+        {
+          content1: "MARUTI LAMINATES - Kurnool",
+          mapLocation: "Kurnool, India",
+          phone: "83470 09868",
+        },
+      ],
+    },
+
+    Assam: {
+      Guwahati: [
+        {
+          content1: "H M TRADERS - Guwahati",
+          mapLocation: "Guwahati, India",
+          phone: "93289 04813",
+        },
+      ],
+    },
+
+    Punjab: {
+      Sangrur: [
+        {
+          content1: "NEW GLASS HOUSE - Sangrur",
+          mapLocation: "Sangrur, India",
+          phone: "90237 29857",
+        },
+      ],
+    },
+
   };
 
   const [selectedLocationContent, setSelectedLocationContent] = useState(
@@ -232,39 +1003,42 @@ function Mapsection() {
     setSelectedOption2(option);
     setIsOpen2(false);
   };
-
-  const updateSelectedLocationContent = () => {
-    if (
-      locationsData[selectedOption1] &&
-      locationsData[selectedOption1][selectedOption2]
-    ) {
-      const selectedLocation = locationsData[selectedOption1][selectedOption2];
-      setSelectedLocationContent(selectedLocation);
-
-      const url = `https://www.google.com/maps/dir/?api=1&destination=${selectedLocation.destinationLat},${selectedLocation.destinationLng}`;
-      setGetDirectionURL(url);
-    } else 
-    {
-      setSelectedLocationContent({
-        content1: "Invalid Selection",
-        address: "Invalid Selection",
-        mapLocation: "Invalid Selection",
-        phone: "Invalid Selection",
-        hours: "Invalid Selection",
-      });
-      setGetDirectionURL("");
-    }
-  };
-
   const handleSearch = () => {
+    if (!selectedOption1 || !selectedOption2) {
+      alert("Please select both State and City");
+      return;
+    }
     updateSelectedLocationContent();
   };
 
-  // const handleUseMyLocation = () => {
-  //   window.open(
-  //     "https://www.google.com/maps/place/Crown+Decor+Private+Limited,+One42,+North+Tower,+Suite+401+-+403,+4th+Floor,+Ambli+-+Bopal+Rd,+B%2FH,+Ashok+Vatika,+Ahmedabad,+Gujarat+380058"
-  //   );
-  // };
+  const updateSelectedLocationContent = () => {
+    if (!selectedOption1 || !selectedOption2) {
+      setSelectedLocationContent({
+        content1: "Invalid Selection",
+        mapLocation: "Invalid Selection",
+        phone: "Invalid Selection",
+      });
+      return;
+    }
+
+    const selectedLocations =
+      locationsData[selectedOption1] &&
+      locationsData[selectedOption1][selectedOption2]
+        ? locationsData[selectedOption1][selectedOption2]
+        : null;
+
+    if (selectedLocations) {
+      setSelectedLocationContent(selectedLocations);
+    } else {
+      setSelectedLocationContent([
+        {
+          content1: "Invalid Selection",
+          mapLocation: "Invalid Selection",
+          phone: "Invalid Selection",
+        },
+      ]);
+    }
+  };
 
   const storeRef = useRef("");
   let refs = useRef([]);
@@ -395,7 +1169,36 @@ function Mapsection() {
 
       <div className={styles.map_section2}>
         <div className={styles.content30}>
-          <div>
+          {selectedLocationContent.map((location, index) => (
+            <div key={index}>
+              <p className={styles.content_1}>{location.content1}</p>
+              <div className={styles.main_content}>
+                <div className={styles.content}>
+                  <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
+                  <div className={styles.address}>{location.mapLocation}</div>
+                </div>
+                <div className={styles.content}>
+                  <FontAwesomeIcon
+                    icon={faPhoneVolume}
+                    className={styles.allsvg}
+                  />
+                  <div className={styles.address}>{location.phone}</div>
+                </div>
+              </div>
+              <div className={styles.content_border}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="371"
+                  height="2"
+                  viewBox="0 0 371 2"
+                  fill="none"
+                >
+                  <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
+                </svg>
+              </div>
+            </div>
+          ))}
+          {/* <div>
             <p className={styles.content_1}>
               {selectedLocationContent.content1}
             </p>
@@ -427,7 +1230,7 @@ function Mapsection() {
                 <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
               </svg>
             </div>
-          </div>
+          </div> */}
           {/* <div>
             <p className={styles.content_1}>
               {selectedLocationContent.content1}
