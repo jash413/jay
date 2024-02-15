@@ -170,8 +170,8 @@
   }
 
   .main {
-    margin-bottom: 502rem;
-    margin-top: -1080vh;
+    margin-bottom: 502rem !important;
+    margin-top: -1080vh !important;
   }
 
   .body p {
