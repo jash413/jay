@@ -130,14 +130,20 @@ const Airpods = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 251;
+    const frameCount = 272;
     const currentFrame = (index) =>
-      ` https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 8)
+      ` https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/${(index + 8)
         .toString()
         .padStart(4, "0")}.png`;
 
 
-        https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/0000.jpg
+
+
+
+        https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/0001.png
+
+
+        // https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/0000.jpg
         
 
 

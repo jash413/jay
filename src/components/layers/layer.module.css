@@ -184,7 +184,7 @@
 
 .video_loop_outer{
   position: relative;
-  margin-top: -60%;
+  margin-top: -50%;
   margin-bottom: 5rem;
 }
 
@@ -225,6 +225,16 @@
   .plyspin_text {
     font-size: 69px;
   }
+
+
+  .video_loop_outer{
+    position: relative;
+    margin-top: -50%;
+    margin-bottom: 5rem;
+  }
+  
+
+
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
