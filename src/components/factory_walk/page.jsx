@@ -167,7 +167,7 @@ const AirpodsAnimation = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.canvas_layer_setting_first_outer}>
       <section ref={sectionRef} className={styles.factoryWalk_sec}>
         <canvas
           className={styles.canvas_layer_setting}
