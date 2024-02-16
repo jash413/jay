@@ -59,7 +59,7 @@ const page = () => {
         <Common_animation text="KEY FEATURES" />
       </div>
       <div className={styles.inner_carousal_two_top}>
-        <InView triggerOnce={true}>
+        {/* <InView triggerOnce={true}>
           {({ inView, ref }) => (
             <div ref={ref} className={styles.inner_carousal_two_text}>
               <span className={styles.inner_carousal_two_span}>
@@ -84,7 +84,7 @@ const page = () => {
               </span>
             </div>
           )}
-        </InView>
+        </InView> */}
 
         <div className={styles.inner_carousal_top_spacing}>
           <Swiper

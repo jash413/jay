@@ -11,6 +11,7 @@
 .plywood_lights_text {
   color: #c3a464;
   font-size: 37px;
+  text-transform: uppercase;
   font-weight: 600;
   line-height: 144.5%;
 }

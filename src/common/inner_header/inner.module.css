@@ -19,13 +19,14 @@
 .inner_header_text {
   position: absolute;
   top: 50%;
-  width: 61%;
+  width: 76%;
   left: 10rem;
   color: white;
 }
 .inner_header_t1 {
-  font-size: 37px;
+  font-size: 36px;
   font-style: normal;
+  text-transform: uppercase;
   font-weight: 500;
 }
 .inner_header_t2 {
@@ -68,10 +69,18 @@
     width: 112%;
   }
 
+
+  .inner_header_t1 {
+    font-size: 30px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
   .inner_header_text {
     position: absolute;
     top: 50%;
-    width: 49%;
+    width: 50%;
     left: 10rem;
     color: white;
   }
