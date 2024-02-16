@@ -340,11 +340,6 @@ const Airpods = () => {
 
 
 
-
-
-
-
-
   </div>
 
   );

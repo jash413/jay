@@ -5,11 +5,13 @@ import Footer from "@/components/footer/page"
 import Image from "next/image";
 import logo from "@/images/finalNavbarLogo.png";
 import "@/app/allPosts/commonstyles.css"
+import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
 import BlogPostImage6 from "@/images/blogs_imgs_6.jpg";
 const Page = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

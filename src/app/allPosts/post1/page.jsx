@@ -11,6 +11,7 @@ import Image from "next/image";
 import logo from "@/images/finalNavbarLogo.png";
 import "@/app/allPosts/commonstyles.css"
 const Page = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

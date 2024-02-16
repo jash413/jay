@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import logo from "@/images/finalNavbarLogo.png";
 import "@/app/allPosts/commonstyles.css"
 import { AnimatePresence } from "framer-motion";
@@ -10,6 +11,7 @@ import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
 import BlogPostImage12 from "@/images/blogs_imgs_12.jpg"
 const Page = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

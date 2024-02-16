@@ -4,12 +4,14 @@ import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
 import Image from "next/image";
 import logo from "@/images/finalNavbarLogo.png";
+import { useRouter } from "next/navigation";
 import "@/app/allPosts/commonstyles.css"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
 import BlogPostImage13 from "@/images/BlogImage6.jpg";
 const Page = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

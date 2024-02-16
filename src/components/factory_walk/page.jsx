@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import gsap from "gsap";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory_walk/factory_walk.module.css";
-import "./factoryWalk.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const AirpodsAnimation = (props) => {
@@ -17,15 +18,31 @@ const AirpodsAnimation = (props) => {
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
 
-  const handleOpenInfo = () => {
-    setInfo(true);
+
+  const [refButton, inViewButton] = useInView({
+    triggerOnce: false,
+  });
+  const controls = useAnimation();
+
+  const variants = {
+    hidden: { opacity: 0, y: 5 }, // Move the button down initially
+    visible: { opacity: 1, y: -100 }, // Move the button up to its original position
   };
 
-  const handleCloseInfo = () => {
-    setInfo(false);
-  };
+  useEffect(() => {
+    if (inViewButton) {
+      controls.start("visible");
+    }
+  }, [inViewButton, controls]);
+
 
   console.log(info);
+
+
+ 
+
+
+
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -34,8 +51,68 @@ const AirpodsAnimation = (props) => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
     // Set a fixed size for the canvas (adjust as needed)
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    // canvas.width = window.innerWidth;
+    // canvas.height = window.innerHeight;
+
+    const setCanvasSize = () => {
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+  
+      if (windowWidth >= 1600) {
+        canvas.width = 2000; // Width remains constant for desktop screens
+        canvas.height = windowHeight * 1; // Adjust the height for desktop screens
+      } 
+  
+      else if (windowWidth >= 1599) {
+        canvas.width = 1600; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+      } 
+      
+  
+      // else if (windowWidth >= 1440) {
+      //   canvas.width = 1500; // Width remains constant for tablet screens
+      //   canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+      // } 
+      
+      else if (windowWidth >= 1200) {
+        canvas.width = 1600; // Width remains constant for tablet screens
+        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+      } else if (windowWidth >= 1024) {
+        canvas.width = 1700; // Adjust the width for screen width 1024
+        canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
+  
+      }
+      else if (windowWidth >= 820) {
+        canvas.width = 1650; // Adjust the width for screen width 425
+        canvas.height = windowHeight * 1; // Adjust the height for screen width 425
+      }
+      
+      // else if (windowWidth >= 768) {
+      //   canvas.width = 1500; // Adjust the width for screen width 425
+      //   canvas.height = windowHeight * 1; // Adjust the height for screen width 425
+      // }
+  
+  
+      
+      else {
+        canvas.width = 400; // Adjust the width for screen width 320
+        canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
+      }
+  
+      // Update ScrollTrigger end position based on canvas dimensions
+      ScrollTrigger.update();
+    };
+  
+    setCanvasSize();
+    window.addEventListener("resize", setCanvasSize);
+  
+  
+
+
+
+
+
+
 
     const frameCount = 855;
     const currentFrame = (index) =>
@@ -96,19 +173,26 @@ const AirpodsAnimation = (props) => {
           className={styles.canvas_layer_setting}
           ref={canvasRef}
         ></canvas>
-        {/* {animationEnded && (
-          <div>
+      </section>
+       
+      <motion.div
+            ref={refButton}
+            initial="hidden"
+            animate={inViewButton ? "visible" : "hidden"}
+            variants={variants}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className={styles.buttonShowouter}
+          >
           <button
             onClick={() => router.push("/")}
             className={styles.buttonShow}
             role="button"
           >
             <span className={styles.text1}>Buy Now</span>
-            <span className={styles.text1}>Buy Now </span>
+            <span className={styles.text1}>Buy Now</span>
           </button>
-          </div>
-        )} */}
-      </section>
+          </motion.div>
+      
     </div>
   );
 };

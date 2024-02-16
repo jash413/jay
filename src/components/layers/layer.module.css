@@ -250,30 +250,69 @@
     margin-top: -90% !important;
     margin-bottom: 5rem !important;
   }
-}
-
-
-
-
-
-
-@media (min-width: 767px) and (max-width: 1024px) {
-  .plyspin_text {
-    font-size: 69px;
-  }
 
   .ply_spin_outer {
     height: 100vh;
     width: 100%;
     object-fit: cover;
   }
+}
 
 
+
+
+@media(max-width: 820px){
+  .video_loop_outer{
+    position: relative;
+    margin-top: -117% !important;
+    margin-bottom: 5rem !important;
+  }
+  .ply_spin_outer {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+
+@media(max-width:767px){
   .video_loop_outer{
     position: relative;
     margin-top: -109% !important;
     margin-bottom: 5rem !important;
   }
+  .ply_spin_outer {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .ply_spin_outer {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+} */
+@media (min-height: 1350px) and  (max-height: 1370px) {
+  .video_loop_outer{
+    position: relative;
+    margin-top: -100% !important;
+    margin-bottom: 5rem !important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .plyspin_text {
+    font-size: 69px;
+  }
+
+
 
   .video_extra {
     text-align: center;
@@ -294,14 +333,6 @@
 
 
 
-
-@media screen and (max-width: 820px){
-  .video_loop_outer{
-    position: relative;
-    margin-top: -117%;
-    margin-bottom: 5rem;
-  }
-}
 
 
 @media screen and (max-width: 768px){
@@ -326,7 +357,7 @@
     position: relative;
     margin-top: -197% !important;
 
-    margin-bottom: 10rem !important;
+    margin-bottom: 3rem !important;
   }
 
   .video_extra {
@@ -356,7 +387,7 @@
   .video_loop_outer{
     position: relative;
     margin-top: -195%;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -371,7 +402,7 @@
   .video_loop_outer{
     position: relative;
     margin-top: -216% !important;
-    margin-bottom: 10rem !important;
+    margin-bottom: 3rem !important;
   }
 }
 
@@ -382,8 +413,8 @@
 
   .video_loop_outer{
     position: relative;
-    margin-top: -250%;
-    margin-bottom: 2rem;
+    margin-top: -250% !important;
+    margin-bottom: 2rem !important;
   }
 
 }
