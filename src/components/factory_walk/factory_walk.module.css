@@ -205,6 +205,15 @@
     padding: 1px 9px;
     top: 145px;
   }
+
+
+  .canvas_layer_setting_first_outer{
+    display: none;
+  }
+
+  .canvas_layer_setting_outer{
+    display: block;
+  }
 }
 
 
