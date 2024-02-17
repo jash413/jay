@@ -1,5 +1,5 @@
 .whyPlywood {
-  padding: 50px 200px;
+  padding: 50px 150px;
 }
 .whyPlywood_heading {
   text-align: center;
@@ -17,8 +17,10 @@
 }
 .whyPlywoodItem_wrap {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 -50px;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0 -50px; */
 }
 .whyPlywoodItem {
   width: 50%;
@@ -40,12 +42,33 @@
   font-weight: 300;
   line-height: normal;
 }
+.left {
+  width: 50%;
+}
+.right {
+  width: 45%;
+}
+.right img {
+  max-width: 100%;
+  display: block;
+  height: 90vh;
+  object-fit: cover;
+}
+.left ul {
+  list-style: none;
+  padding: 20px 40px 20px 0;
+}
+.left ul li {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
 @media (max-width: 1199px) {
   .whyPlywood {
-    padding: 50px 150px;
+    padding: 50px 100px;
   }
   .whyPlywood_heading {
-    margin: 0 0 110px;
+    margin: 0 auto 110px;
   }
   .whyPlywoodItem {
     padding: 0 50px;
@@ -54,32 +77,48 @@
 }
 @media (max-width: 991px) {
   .whyPlywood {
-    padding: 50px 110px;
+    padding: 50px 60px;
   }
   .whyPlywood_heading {
-    margin: 0 0 60px;
+    margin: 0 auto 60px;
   }
   .whyPlywoodItem_wrap {
-    margin: 0 -30px;
+    /* margin: 0 -30px; */
   }
   .whyPlywoodItem {
     padding: 0 30px;
     margin: 0 0 40px;
   }
+  .left ul {
+    padding: 20px 20px 20px 0;
+  }
 }
 @media (max-width: 767px) {
   .whyPlywood {
-    padding: 50px 50px;
+    padding: 50px 20px;
   }
   .whyPlywood_heading {
-    margin: 0 0 40px;
+    margin: 0 auto 40px;
   }
   .whyPlywoodItem_wrap {
-    margin: 0 -20px;
+    /* margin: 0 -20px; */
+    flex-direction: column-reverse;
   }
   .whyPlywoodItem {
     padding: 0 20px;
     margin: 0 0 30px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .left ul {
+    padding: 40px 0 0;
+  }
+  .left ul li {
+    font-size: 18px;
   }
 }
 @media (max-width: 575px) {
@@ -87,12 +126,12 @@
     padding: 50px 20px;
   }
   .whyPlywood_heading {
-    margin: 0 0 40px;
+    margin: 0 auto 40px;
     font-size: 45px;
   }
   .whyPlywoodItem_wrap {
     margin: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .whyPlywoodItem {
     padding: 0;
@@ -101,5 +140,10 @@
   }
   .plywood_content p {
     font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .whyPlywood_heading {
+    font-size: 35px;
   }
 }

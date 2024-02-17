@@ -52,7 +52,7 @@
   font-weight: 300;
   width: 60%;
   color: white;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .justforfooterbutton {
@@ -68,11 +68,14 @@
 .footer_copyright {
   color: white;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
+  text-align: right;
+  padding: 0 100px 40px;
 }
 .copyright_company_name {
   color: #c3a464;
   font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 1440px) {

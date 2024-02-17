@@ -7,10 +7,16 @@
   position: relative;
   background: #C3A464;
 }
+.ply_side1:hover{
+  background: #d1b06e;
+}
 .block_side2 {
   width: 50%;
   position: relative;
   background: #006F69;
+}
+.block_side2:hover{
+  background: #017570;
 }
 .plywood {
   margin-top: 10rem;

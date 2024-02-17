@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
@@ -172,11 +172,7 @@ const Page = () => {
       <SmartChioceTable />
       <Plywood_main />
       {/* <ProductOverview /> */}
-     
-     
-      
-      
-     
+
       <Form />
       <Footer />
     </main>
