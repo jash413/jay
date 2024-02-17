@@ -84,10 +84,10 @@
   font-size: 18px;
   text-transform: uppercase;
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
-  width: 27%;
+  width: 38%;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -133,11 +133,11 @@
   .header_comment {
     text-align: center;
     font-size: 22px;
-    top: 48%;
+    top: 46%;
     left: 50%;
     font-weight: 300;
     transform: translate(-50%, -50%) !important;
-    width: 30%;
+    width: 38%;
     font-style: normal;
     margin-top: 2rem;
   }
