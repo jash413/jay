@@ -133,7 +133,7 @@ const Page = () => {
               initial="hidden"
               variants={textAnimation}
             >
-              Product Overview:
+              Product Overview
             </motion.div>
             <p className={styles.plywood_lights_small_text}>
               {

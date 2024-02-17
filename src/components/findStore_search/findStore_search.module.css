@@ -330,7 +330,7 @@
     font-weight: 300;
   }
   .map_section2 {
-    flex-direction: column;
+    flex-direction:column-reverse;
     overflow: hidden;
   }
   .map_section1 {
@@ -354,6 +354,9 @@
   }
   .map_frame {
     max-width: 100%;
+  }
+  .map_frame {
+    height: 50vh;
   }
   .select_menu {
     padding-bottom: 20px;

@@ -351,7 +351,7 @@
   }
 
   .img_main_outer {
-    width: 30%;
+    width: 35%;
   }
 
   .first_timeline_outer {
@@ -394,14 +394,14 @@
   .line {
     left: calc(7% - -1px);
     width: 2px;
-    top: 396px;
-    bottom: 220px;
+    top: 440px;
+    bottom: 215px;
   }
 
   .bead {
     left: 7.2%;
     z-index: 2;
-    top: 62%;
+    top: 66%;
     transform: translateX(-50%);
   }
 
@@ -490,7 +490,7 @@
 @media (min-width: 320px) and (max-width: 575px) {
   .contentX {
     width: 100%;
-    padding: 46px 0px 0px 47px;
+    padding: 46px 0px 0px 42px;
     width: calc(0);
     font-size: 20px;
   }
@@ -501,7 +501,7 @@
 
 
   .img_main_outer {
-    width: 50%;
+    width: 70%;
   }
   .timeline {
     position: relative;
@@ -524,7 +524,7 @@
   .line {
     left: calc(10% - -1px);
     width: 2px;
-    top: 214px;
+    top: 315px;
     bottom: 217px;
   }
   .bead {
@@ -536,7 +536,7 @@
     background-color: #0f8a83;
     left: 10.3%;
     z-index: 2;
-    top: 52%;
+    top: 57%;
     transform: translateX(-50%);
   }
 
@@ -551,8 +551,22 @@
 }
 @media (max-width: 455px) {
   .line {
-    top: 257px;
+    top: 315px;
     bottom: 212px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contentX {
+    width: 100%;
+    padding: 30px 0px 0px 42px;
+    width: calc(0);
+    font-size: 20px;
+  }
+
+  .line {
+    top: 310px;
+    bottom: 208px;
   }
 }
 

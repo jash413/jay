@@ -51,60 +51,60 @@ const AirpodsAnimation = (props) => {
     const context = canvas.getContext("2d");
     contextRef.current = context;
     // Set a fixed size for the canvas (adjust as needed)
-    // canvas.width = window.innerWidth;
-    // canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    const setCanvasSize = () => {
-      const windowWidth = window.innerWidth;
-      const windowHeight = window.innerHeight;
+//     const setCanvasSize = () => {
+//       const windowWidth = window.innerWidth;
+//       const windowHeight = window.innerHeight;
   
-      if (windowWidth >= 1600) {
-        canvas.width = 2000; // Width remains constant for desktop screens
-        canvas.height = windowHeight * 1; // Adjust the height for desktop screens
-      } 
+//       if (windowWidth >= 1600) {
+//         canvas.width = 2000; // Width remains constant for desktop screens
+//         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
+//       } 
   
-      else if (windowWidth >= 1599) {
-        canvas.width = 1600; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } 
+//       else if (windowWidth >= 1599) {
+//         canvas.width = 1600; // Width remains constant for tablet screens
+//         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+//       } 
       
   
-      // else if (windowWidth >= 1440) {
-      //   canvas.width = 1500; // Width remains constant for tablet screens
-      //   canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      // } 
+//       // else if (windowWidth >= 1440) {
+//       //   canvas.width = 1500; // Width remains constant for tablet screens
+//       //   canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+//       // } 
       
-      else if (windowWidth >= 1200) {
-        canvas.width = 1600; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } else if (windowWidth >= 1024) {
-        canvas.width = 1700; // Adjust the width for screen width 1024
-        canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
+//       else if (windowWidth >= 1200) {
+//         canvas.width = 1600; // Width remains constant for tablet screens
+//         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+//       } else if (windowWidth >= 1024) {
+//         canvas.width = 1700; // Adjust the width for screen width 1024
+//         canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
   
-      }
-      else if (windowWidth >= 820) {
-        canvas.width = 1650; // Adjust the width for screen width 425
-        canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      }
+//       }
+//       else if (windowWidth >= 820) {
+//         canvas.width = 1650; // Adjust the width for screen width 425
+//         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
+//       }
       
-      // else if (windowWidth >= 768) {
-      //   canvas.width = 1500; // Adjust the width for screen width 425
-      //   canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      // }
+//       // else if (windowWidth >= 768) {
+//       //   canvas.width = 1500; // Adjust the width for screen width 425
+//       //   canvas.height = windowHeight * 1; // Adjust the height for screen width 425
+//       // }
   
   
       
-      else {
-        canvas.width = 400; // Adjust the width for screen width 320
-        canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
-      }
+//       else {
+//         canvas.width = 400; // Adjust the width for screen width 320
+//         canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
+//       }
   
-      // Update ScrollTrigger end position based on canvas dimensions
-      ScrollTrigger.update();
-    };
+//       // Update ScrollTrigger end position based on canvas dimensions
+//       ScrollTrigger.update();
+//     };
   
-    setCanvasSize();
-    window.addEventListener("resize", setCanvasSize);
+//     setCanvasSize();
+//     window.addEventListener("resize", setCanvasSize);
   
   
 
@@ -114,13 +114,14 @@ const AirpodsAnimation = (props) => {
 
 
 
-    const frameCount = 855;
+    const frameCount = 1022;
     const currentFrame = (index) =>
-      ` https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalk/F${(index + 1)
+      `https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalkmobile/${(index + 1)
         .toString()
-        .padStart(3, "0")}.jpg`;
+        .padStart(2, "0")}.jpg`;
 
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
+        https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalkmobile/01.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -167,10 +168,10 @@ const AirpodsAnimation = (props) => {
   }, []);
 
   return (
-    <div className={styles.canvas_layer_setting_first_outer}>
+    <div className={styles.canvas_layer_setting_outer}>
       <section ref={sectionRef} className={styles.factoryWalk_sec}>
         <canvas
-          className={styles.canvas_layer_setting}
+          className={styles.canvas_layer_setting2}
           ref={canvasRef}
         ></canvas>
       </section>

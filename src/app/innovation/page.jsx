@@ -6,6 +6,7 @@ import Innovation_circles from "@/components/innovation_circles/page";
 import Innovation_cards from "@/components/innovation_cards/page";
 import Innovation_flex from "@/components/innovation_flex/page";
 import Factory_walk from "@/components/factory_walk/page";
+import Factory_walk1 from "@/components/factory_walk/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import innovation_image from "@/images/InnovationNewBanner.jpg";
@@ -114,6 +115,7 @@ const Page = () => {
           heading_big="INNOVATION"
         />
         <Factory_walk />
+        <Factory_walk1 />
   
       </div>
 
