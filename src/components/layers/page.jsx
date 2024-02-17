@@ -25,15 +25,21 @@ const Airpods = () => {
     }
   }, [controlsVideo, inViewText]);
 
-  const variants = {
-    visible: { opacity: 1, y: 0, scale: 1 }, // Added scale property
-    hidden: { opacity: 0, y: 50, scale: 5 }, // Adjust scale as needed
+  // const variants = {
+  //   visible: { opacity: 1, y: -120, scale: 1 }, // Added scale property
+  //   hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust scale as needed
+  // };
+
+  const textVariants = {
+    visible: { opacity: 1, y: -130, scale: 1 }, // Adjust y value for text
+    hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust y value for text
+  };
+  
+  const buttonVariants = {
+    visible: { opacity: 1, y: -40, scale: 1 }, // Adjust y value for button
+    hidden: { opacity: 0, y: 50, scale: 4 }, // Adjust y value for button
   };
 
-  const outOfViewVariants = {
-    visible: { opacity: 0, y: 50, scale: 5 },
-    hidden: { opacity: 0, y: 50, scale: 5 },
-  };
 
   const controls = useAnimation();
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -216,7 +222,7 @@ const Airpods = () => {
         })
         .then(() => {
           controls.start({
-            opacity: 1,
+            opacity: 0,
             y: 0,
             transition: { duration: 0.5 },
           });
@@ -231,11 +237,8 @@ const Airpods = () => {
         const currentScrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
         if (currentScrollTop > lastScrollTop) {
-          // Scrolling down
-          // setScrollPercentage(0); // Hide the counter when scrolling down
         } else {
-          // Scrolling up
-          // The counter will be updated by the GSAP timeline onUpdate
+
         }
         lastScrollTop = currentScrollTop;
       });
@@ -250,18 +253,20 @@ const Airpods = () => {
 
   useEffect(() => {
     // Set display text based on counter count
-    if (counterCount >= 1 && counterCount <= 11) {
+    if (counterCount >= 1 && counterCount <= 10) {
       setDisplayText(
         "Crafted using advanced cross-bonding technology, adjacent layers of select hardwood species "
       );
-    } else if (counterCount >= 12 && counterCount <= 13) {
+    } else if (counterCount >= 11 && counterCount <= 12) {
       setDisplayText(
         "100% imported Gurjan face veneer imparts strength, durability and elegance to the plywood"
       );
     } else {
-      setDisplayText(""); // Default to empty string
+      setDisplayText(""); // Set to empty string for other counter values
     }
   }, [counterCount]);
+  
+  
 
   return (
     <div className={styles.counter_relm}>
@@ -284,21 +289,6 @@ const Airpods = () => {
       </section>
 
       <div className={styles.video_loop_outer}>
-        {/* <motion.video
-          autoPlay
-          loop
-          muted
-          className={styles.ply_spin_outer}
-          animate={controlsVideo}
-          variants={inViewText ? variants : outOfViewVariants}
-          transition={{ duration: 1 }}
-        >
-          <source
-            className={styles.ply_spin}
-            src={"./video/plyFinalNew.mp4"}
-            type="video/mp4"
-          />
-        </motion.video> */}
 
         <div className={styles.video_extra}>
           <motion.div
@@ -306,8 +296,8 @@ const Airpods = () => {
             ref={refText}
             initial="hidden"
             animate={inViewText ? "visible" : "hidden"}
-            variants={variants}
-            transition={{ duration: 0.6, delay: 1 }}
+            variants={textVariants}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             The Royalè Experience
           </motion.div>
@@ -318,8 +308,8 @@ const Airpods = () => {
             ref={refButton}
             initial="hidden"
             animate={inViewButton ? "visible" : "hidden"}
-            variants={variants}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            variants={buttonVariants}
+            transition={{ duration: 0.6, delay: 0.5 }}
           >
             <Button btn_text="Learn More" />
           </motion.div>

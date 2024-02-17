@@ -98,7 +98,7 @@
   opacity: 0;
 }
 
-@media (min-width: 1600px) and (max-width: 1920px) {
+@media (min-width: 1600px) and (max-width: 2000px) {
   .contentX {
     padding: 67px 0px 0px 260px;
   }

@@ -24,18 +24,12 @@ const Page = () => {
     window.scrollTo(0, 0);
   }, 2000);
 
-
-
-
-
-
-
   return (
     <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-     
+
       <div>
         <Navbar />
       </div>
@@ -44,14 +38,12 @@ const Page = () => {
         <HeroSection
           banner_image={findStore_image}
           header_name="Partners"
-          header_comment="Navigate Through Our Extensive Channel Partner Network for Quality Products and Exceptional Service, Right in Your Neighborhood!
-"
+          header_comment="Navigate Through Our Extensive Channel Partner Network for Quality Products and Exceptional Service"
         />
         <FindStore_search />
       </div>
       <Form />
       <Footer />
-   
     </main>
   );
 };

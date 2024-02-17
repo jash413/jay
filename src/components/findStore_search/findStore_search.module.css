@@ -11,7 +11,7 @@
 .content_Text {
   color: #006f69;
   font-size: 70px;
-  width: 70%;
+  width: 1000px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -256,6 +256,14 @@
     overflow-y: scroll;
     overflow-x: hidden;
     padding-right: 10px;
+  }
+  .content_Text {
+    color: #006f69;
+    font-size: 70px;
+    width: 70%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 }
 
