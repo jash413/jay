@@ -44,6 +44,7 @@
 
 .footer_upper_heading_wrapper {
   margin: 70px 0px 0px 75px;
+  text-transform: uppercase;
 }
 
 .footer_upper_heading {
@@ -56,6 +57,9 @@
 
 .justforfooterbutton {
   margin-top: 25px;
+}
+.justforfooterbutton span {
+  text-transform: uppercase;
 }
 
 .footer_copyright_wrapper {

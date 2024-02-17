@@ -53,7 +53,7 @@ const Page = () => {
           <div className="card-cover">
             <HeroSection
               video_bg="./video/final_k.mp4"
-              homepage_heading="A ply that is a living shield for beautiful and timeless furniture"
+              homepage_heading="ply that is a living shield for beautiful and timeless furniture"
             />
           </div>
         </div>
