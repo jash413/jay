@@ -282,12 +282,12 @@ const Airpods = () => {
     <section ref={sectionRef}>
       <div className={styles.percentage_counter_outer}>
         {displayText && (
-          <motion.div
-            animate={controls}
+          <div
+            // animate={controls}
             className={styles.dynamicText}
           >
             {displayText}
-          </motion.div>
+          </div>
         )}
         <div className={styles.percentageCounter}>{scrollPercentage}</div>
       </div>

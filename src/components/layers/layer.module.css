@@ -17,15 +17,16 @@
 
 .dynamicText {
   position: absolute;
-  width: 38%;
-  left: 32%;
-  /* transform: translateX(-50%); */
+  width: 58%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  font-size: 22px;
+  font-size: 32px;
   color: white;
   bottom: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-
 
 .percentageCounter {
   color: white;
@@ -63,7 +64,6 @@
   color: white;
 }
 
-
 .canvas_layer_settings {
   width: 100%;
   height: 100vh;
@@ -72,11 +72,10 @@
 }
 @media (min-width: 1600px) and (max-width: 1920px) {
   .dynamicText {
-    left: 34%;
-    width: 30%;
-    font-size: 22px;
+    /* left: 34%; */
+    /* width: 30%; */
+    font-size: 32px;
     bottom: 6rem;
-
   }
 
   .percentageCounter {
@@ -95,13 +94,21 @@
     font-size: 46px;
   }
 }
+@media (max-width: 1199px) {
+  .dynamicText {
+    /* left: 34%; */
+    /* width: 30%; */
+    font-size: 22px;
+    bottom: 4rem;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .percentageCounter {
     font-size: 46px;
   }
   .dynamicText {
-    left: 25%;
+    /* left: 25%; */
     width: 50%;
     font-size: 22px;
     bottom: 4rem;
@@ -113,11 +120,10 @@
     font-size: 46px;
   }
   .dynamicText {
-    left: 15%;
+    /* left: 15%; */
     width: 67%;
     font-size: 20px;
     bottom: 4rem;
-
   }
 }
 
@@ -149,7 +155,7 @@
 
   .dynamicText {
     width: 100%;
-    left: 0;
+    /* left: 0; */
     font-size: 18px;
     bottom: 8rem;
   }
@@ -161,7 +167,7 @@
   }
   .dynamicText {
     width: 78%;
-    left: 35px;
+    /* left: 35px; */
     font-size: 18px;
     bottom: 8rem;
   }
@@ -173,21 +179,17 @@
   }
   .dynamicText {
     width: 90%;
-    left: 17px;
+    /* left: 17px; */
     font-size: 18px;
     bottom: 8rem;
-
   }
 }
 
-
-
-.video_loop_outer{
+.video_loop_outer {
   position: relative;
   margin-top: -50%;
   margin-bottom: 5rem;
 }
-
 
 .ply_spin_outer {
   height: 100%;
@@ -205,8 +207,10 @@
 
 .plyspin_text {
   color: white;
-  font-weight: 500;
-  font-size: 69px;
+  font-weight: 300;
+  font-size: 66px;
+  text-transform: uppercase;
+  width: max-content;
 }
 
 .plyspin_btn_outer {
@@ -223,43 +227,35 @@
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .plyspin_text {
-    font-size: 69px;
+    font-size: 66 px;
   }
 
-  .video_loop_outer{
+  .video_loop_outer {
     position: relative;
     margin-top: -50%;
     margin-bottom: 5rem;
   }
-
-
 }
 
-@media(max-width:1440px){
-  .video_loop_outer{
+@media (max-width: 1440px) {
+  .video_loop_outer {
     position: relative;
     margin-top: -55%;
     margin-bottom: 5rem;
   }
 }
 
-
-@media(max-width:1024px){
-  .video_loop_outer{
+@media (max-width: 1024px) {
+  .video_loop_outer {
     position: relative;
     margin-top: -90%;
     margin-bottom: 5rem;
   }
 }
 
-
-
-
-
-
 @media (min-width: 767px) and (max-width: 1024px) {
   .plyspin_text {
-    font-size: 69px;
+    font-size: 55px;
   }
 
   .ply_spin_outer {
@@ -268,8 +264,7 @@
     object-fit: cover;
   }
 
-
-  .video_loop_outer{
+  .video_loop_outer {
     position: relative;
     margin-top: -105%;
     margin-bottom: 5rem;
@@ -286,19 +281,22 @@
   }
 
   .plyspin_text {
-    font-weight: 500;
     font-size: 55px;
+    margin: 0 auto;
   }
 }
 
-
-
-
-@media screen and (max-width: 820px){
-  .video_loop_outer{
+@media screen and (max-width: 820px) {
+  .video_loop_outer {
     position: relative;
     margin-top: -117%;
     margin-bottom: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .plyspin_text {
+    font-size: 42px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -309,9 +307,7 @@
     object-fit: cover;
   }
 
-
-
-  .video_loop_outer{
+  .video_loop_outer {
     position: relative;
     margin-top: -179%;
     margin-bottom: 10rem;
@@ -328,22 +324,20 @@
   }
 
   .plyspin_text {
-    font-size: 35px;
+    font-size: 28px;
+    margin: 0 auto 30px;
   }
 }
 
 @media (min-width: 200px) and (max-width: 320px) {
   .plyspin_text {
-    font-size: 28px;
+    font-size: 22px;
+    margin: 0 auto 30px;
   }
 
-
-  .video_loop_outer{
+  .video_loop_outer {
     position: relative;
     margin-top: -50%;
     margin-bottom: 5rem;
   }
 }
-
-
-

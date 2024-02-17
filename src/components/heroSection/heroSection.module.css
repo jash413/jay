@@ -25,7 +25,8 @@
   left: 6rem;
   font-weight: 300;
   line-height: normal;
-  width: 59%;
+  width: 50%;
+  text-transform: uppercase;
 }
 
 .header_text2 {
@@ -144,6 +145,7 @@
     bottom: 23rem;
     left: 6rem;
     width: 50%;
+    
   }
 
   .header_text2 {

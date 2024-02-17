@@ -8,7 +8,11 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin: 0 0 175px;
+  /* margin: 0 0 175px; */
+  border-bottom: 1px solid #000;
+  width: max-content;
+  margin: 0 auto 175px;
+  text-transform: uppercase;
 }
 .whyPlywoodItem_wrap {
   display: flex;
