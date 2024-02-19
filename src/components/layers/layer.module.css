@@ -343,7 +343,7 @@
 
   .video_loop_outer {
     position: relative;
-    transform: translateY(745px);
+    transform: translateY(550px);
   }
 
   /* .video_loop_outer {
@@ -377,7 +377,7 @@
 
   .video_loop_outer {
     position: relative;
-    transform: translateY(740px);
+    transform: translateY(550px);
   }
 
   /* .video_loop_outer {

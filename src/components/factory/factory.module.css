@@ -230,7 +230,7 @@
 
 @media (max-width: 375px) {
   .main {
-    margin-bottom: 420rem;
-    margin-top: -1080vh;
+    margin-bottom: 420rem !important;
+    margin-top: -1080vh !important;
   }
 }
