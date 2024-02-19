@@ -25,11 +25,6 @@ const Airpods = () => {
     }
   }, [controlsVideo, inViewText]);
 
-  // const variants = {
-  //   visible: { opacity: 1, y: -120, scale: 1 }, // Added scale property
-  //   hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust scale as needed
-  // };
-
   const textVariants = {
     visible: { opacity: 1, y: -130, scale: 1 }, // Adjust y value for text
     hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust y value for text
@@ -114,17 +109,9 @@ const Airpods = () => {
     const frameCount = 360;
     const currentFrame = (index) =>
       `https://royaltouchassets.humbeestudio.xyz/assets/images/stackfull/${(
-        index + 0
-      )
+        index + 0)
         .toString()
         .padStart(3, "0")}.png`;
-
-    // https://royaltouchassets.humbeestudio.xyz/assets/images/stackfull/000.png
-
-    // https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/0001.png
-
-    // https://royaltouchassets.humbeestudio.xyz/assets/images/stacklayers/0000.jpg
-
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);

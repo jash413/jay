@@ -7,3 +7,15 @@
   gap: 40px;
 }
 
+
+@media (max-width: 575px) {
+  .footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 1rem;
+    gap: 40px;
+  }
+}

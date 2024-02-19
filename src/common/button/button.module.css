@@ -235,7 +235,8 @@
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
-  font-family: '__Lato_712376';
+  /* font-family: '__Lato_712376'; */
+  font-family: "LatoRegular";
   line-height: 15px;
   padding: 20px 38px 18px;
   font-size: 20px;
@@ -253,6 +254,7 @@
 
 .button4 span:first-child {
   position: relative;
+  font-family: "LatoRegular";
   transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
   z-index: 10;
 }
@@ -260,6 +262,7 @@
 .button4 span:last-child {
   color: #006f69;
   display: block;
+  font-family: "LatoRegular";
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -280,7 +283,8 @@
   left: 0;
   width: 100%;
   color: #006f69;
-  font-family: '__Lato_712376';
+  font-family: "LatoRegular";
+  /* font-family: '__Lato_712376'; */
   height: 100%;
   background-color: white;
   border: 1px solid #006f69;
@@ -296,13 +300,15 @@
 .button4:hover:after {
   transform-origin: bottom center;
   border: 1px solid #006f69;
+  font-family: "LatoRegular";
   transform: skewY(9.3deg) scaleY(2);
 }
 
 .button4:hover span:last-child {
   transform: translateX(-50%) translateY(-110%);
   opacity: 1;
-  font-family: '__Lato_712376';
+  font-family: "LatoRegular";
+  /* font-family: '__Lato_712376'; */
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 

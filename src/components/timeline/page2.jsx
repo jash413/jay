@@ -137,7 +137,7 @@ const Page2 = () => {
                   <Image src={usp8} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>07</p>
-                <h2 className={styles.twoo}>High Nail Welding Capacity</h2>
+                <h2 className={styles.twoo}>High Screw & Nail Holding Capacity</h2>
                 <p className={styles.timeline_sec_comment}>
                   made from all composed full sheet veneers of select hardwood
                   species, ensuring a robust and well-structured plywood.
