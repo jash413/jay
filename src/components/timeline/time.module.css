@@ -180,6 +180,74 @@
   }
 }
 
+
+@media (max-width: 1370px) {
+  .twoo {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
+  .line {
+    position: absolute;
+    z-index: 1;
+    left: calc(20% - -1px);
+    width: 2px;
+    top: 120px;
+    bottom: 430px;
+    border-right: 2px solid #218e88;
+  }
+
+  .contentX {
+    width: 100%;
+    padding: 66px 0px 0px 220px;
+    width: calc(100% - 0rem);
+    color: #26aca5;
+    font-size: 35px;
+    opacity: 0;
+  }
+
+  .section {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 2.6rem 0rem 19rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 218px;
+    color: white;
+  }
+
+
+
+  .line {
+    position: absolute;
+    z-index: 1;
+    left: calc(20% - -1px);
+    width: 2px;
+    top: 114px;
+    bottom: 550px;
+    border-right: 2px solid #218e88;
+  }
+  .bead {
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #0f8a83;
+    left: 20.3%;
+    z-index: 2;
+    top: 16%;
+    transform: translateX(-50%);
+  }
+
+
+
+}
+
 @media (min-width: 767px) and (max-width: 1024px) {
   .display {
     display: block;
@@ -199,7 +267,7 @@
   }
 
   .img_main_outer {
-    width: 30%;
+    width: 55%;
   }
 
   .first_timeline_outer {
@@ -242,19 +310,19 @@
   .line {
     left: calc(7% - -1px);
     width: 2px;
-    top: 477px;
-    bottom: 270px;
+    top: 585px;
+    bottom: 280px;
   }
 
   .bead {
     left: 7.2%;
     z-index: 2;
-    top: 62%;
+    top: 66%;
     transform: translateX(-50%);
   }
 
   .section {
-    padding: 12rem 0rem 0rem;
+    padding: 5rem 0rem 0rem;
     border-radius: 1rem;
     min-height: 218px;
   }
@@ -292,8 +360,8 @@
   .line {
     left: 65px;
     width: 2px;
-    top: 450px;
-    bottom: 257px;
+    top: 508px;
+    bottom: 180px;
   }
   .bead {
     display: block;
@@ -302,7 +370,7 @@
     background-color: #0f8a83;
     left: 66px;
     z-index: 2;
-    top: 69%;
+    top: 72%;
     transform: translateX(-50%);
   }
   .contentX {
@@ -619,7 +687,6 @@
     left: calc(10% - -1px);
     width: 2px;
     top: 190px;
-
     bottom: 230px;
     border-right: 2px solid #218e88;
   }
