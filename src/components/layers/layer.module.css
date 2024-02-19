@@ -284,11 +284,10 @@
     object-fit: cover;
   }
 
-  /* .video_loop_outer {
+  .video_loop_outer {
     position: relative;
-    margin-top: -100% !important;
-    margin-bottom: 5rem !important;
-  } */
+    transform: translateY(1000px);
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -342,6 +341,11 @@
     object-fit: cover;
   }
 
+  .video_loop_outer {
+    position: relative;
+    transform: translateY(745px);
+  }
+
   /* .video_loop_outer {
     position: relative;
     margin-top: -197% !important;
@@ -369,6 +373,11 @@
   .plyspin_text {
     font-size: 22px;
     margin: 0 auto 0px;
+  }
+
+  .video_loop_outer {
+    position: relative;
+    transform: translateY(740px);
   }
 
   /* .video_loop_outer {
