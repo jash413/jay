@@ -160,8 +160,7 @@ const Page = () => {
 
       <Inner_header
         inner_header_image={innovation_image}
-        heading="Plywood that is engineered to outsmart termites and borers, fights fire and is safe for your loved 
-        ones with E-0 emissions - An all in one Ply in its true sense"
+        heading="Plywood that is engineered to outsmart termites and borers, fights fire and is safe for your loved ones with E-0 emissions - An all in one Ply in its true sense"
       />
       <Plywood_lights />
       <Inner_page_slider3 />
