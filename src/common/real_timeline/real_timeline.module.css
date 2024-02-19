@@ -120,7 +120,7 @@
     opacity: 0;
     position: absolute;
     top: 6.6rem;
-    left: 28rem;
+    left: 26rem;
   }
 
   .content {
@@ -147,8 +147,6 @@
     right: -12rem;
   }
 }
-
-
 
 @media (max-width: 1024px) {
   .content {
