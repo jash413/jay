@@ -213,7 +213,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media(max-width: 375px) {
   .footer_copyright {
     color: white;
     font-size: 18px;
@@ -221,6 +221,15 @@
     text-align: right;
     padding: 0px 78px 15px 22px;
   }
+
+  .footer_copyright {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right !important;
+    padding: 0px 58px 15px 22px !important;
+  }
+
 }
 
 
