@@ -8,7 +8,7 @@ import Navbar from "@/components/navbar/index";
 import Contact_Map from "@/common/contact_map/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import HeroSection from "@/components/heroSection/page";
+import HeroSection from "@/components/Hero_ContactUs/page";
 import ContactAddress from "@/components/contactAddress/Page";
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(true);
