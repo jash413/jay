@@ -21,11 +21,11 @@
   font-size: 71px;
   font-style: normal;
   position: absolute;
-  bottom: 17rem;
+  bottom: 10rem;
   left: 6rem;
   font-weight: 300;
   line-height: normal;
-  width: 50%;
+  width: 62%;
   text-transform: uppercase;
 }
 
@@ -133,7 +133,7 @@
   .header_comment {
     text-align: center;
     font-size: 22px;
-    top: 46%;
+    top: 50%;
     left: 50%;
     font-weight: 300;
     transform: translate(-50%, -50%) !important;
@@ -159,6 +159,7 @@
 }
 @media (min-width: 1550px) {
   .header_comment {
+    top: 50%;
     margin-top: 2rem;
   }
 }
@@ -168,7 +169,7 @@
     font-size: 62px;
     bottom: 14rem;
     left: 4rem;
-    width: 722px;
+    width: 815px;
   }
 
   .logo {
@@ -184,6 +185,7 @@
     left: 5rem;
   }
   .header_comment {
+    top: 50%;
     margin-top: 1.5rem;
   }
 }
@@ -193,7 +195,7 @@
     font-size: 52px;
     bottom: 11rem;
     left: 4rem;
-    width: 650px;
+    width: 700px;
   }
   .header_name {
     font-size: 70px;

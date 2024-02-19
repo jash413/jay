@@ -82,12 +82,12 @@
   }
   .plywood_promax{
     position: absolute;
-    top: 31%;
+    top: 36%;
     left: 8%;
   }
   .plywood_promaxplus{
     position: absolute;
-    top: 48%;
+    top: 53%;
     left: 9%;
   }
 }
@@ -164,13 +164,28 @@
     margin: 0px 0 0;
   }
   .plywood_promax{
-    display: none;
+    top: 41%;
+    width: 53%;
+    object-fit: contain;
   }
   .plywood_promaxplus{
-    display: none;
+    top: 55%;
+    width: 53%;
+    object-fit: contain;
   }
 }
-
+@media (max-width: 375px) {
+  .plywood_promax{
+    top: 41%;
+    width: 50%;
+    object-fit: contain;
+  }
+  .plywood_promaxplus{
+    top: 53%;
+    width: 50%;
+    object-fit: contain;
+  }
+}
 @media (max-width: 320px) {
   .plywood_lights_text {
     font-size: 28px;
