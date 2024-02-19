@@ -29,12 +29,11 @@ const Airpods = () => {
     visible: { opacity: 1, y: -130, scale: 1 }, // Adjust y value for text
     hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust y value for text
   };
-  
+
   const buttonVariants = {
     visible: { opacity: 1, y: -40, scale: 1 }, // Adjust y value for button
     hidden: { opacity: 0, y: 50, scale: 4 }, // Adjust y value for button
   };
-
 
   const controls = useAnimation();
   const [scrollPercentage, setScrollPercentage] = useState(0);
@@ -109,7 +108,8 @@ const Airpods = () => {
     const frameCount = 360;
     const currentFrame = (index) =>
       `https://royaltouchassets.humbeestudio.xyz/assets/images/stackfull/${(
-        index + 0)
+        index + 0
+      )
         .toString()
         .padStart(3, "0")}.png`;
     for (let i = 0; i < frameCount; i++) {
@@ -225,7 +225,6 @@ const Airpods = () => {
           window.pageYOffset || document.documentElement.scrollTop;
         if (currentScrollTop > lastScrollTop) {
         } else {
-
         }
         lastScrollTop = currentScrollTop;
       });
@@ -252,8 +251,6 @@ const Airpods = () => {
       setDisplayText(""); // Set to empty string for other counter values
     }
   }, [counterCount]);
-  
-  
 
   return (
     <div className={styles.counter_relm}>
@@ -276,7 +273,6 @@ const Airpods = () => {
       </section>
 
       <div className={styles.video_loop_outer}>
-
         <div className={styles.video_extra}>
           <motion.div
             className={styles.plyspin_text}

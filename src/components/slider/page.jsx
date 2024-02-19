@@ -2,6 +2,7 @@ import { Navigation, EffectFade, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import rightArrow from "@/images/arrow2.svg";
+import rightArrowMobile from "@/images/arrow2mobile.svg";
 import image1 from "@/images/Stateoftheartfacility-01011.jpg";
 import image2 from "@/images/VacuumPressureTreatment1.jpg";
 import image3 from "@/images/gapless1.jpg";
@@ -207,6 +208,22 @@ const Page = () => {
             <Image
               className={styles.navigation_arrow}
               src={rightArrow}
+              alt="rightArrow"
+            />
+          </div>
+        </div>
+        <div className={styles.customerCard_sideTwo_mobile}>
+          <div className={styles.image_swiper_button_next}>
+            <Image
+              className={styles.navigation_arrow}
+              src={rightArrowMobile}
+              alt="rightArrow"
+            />
+          </div>
+          <div className={styles.image_swiper_button_prev}>
+            <Image
+              className={styles.navigation_arrow}
+              src={rightArrowMobile}
               alt="rightArrow"
             />
           </div>
