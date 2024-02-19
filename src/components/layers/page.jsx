@@ -141,6 +141,7 @@ const Airpods = () => {
         scrub: 1.5,
         end: "+=700%",
       },
+      
     });
 
     timeline.to(airpodsRef.current, {
