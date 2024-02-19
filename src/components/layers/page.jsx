@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Button from "@/common/button/button4";
 import styles from "@/components/layers/layer.module.css";
+import dynamic from "next/dynamic";
 gsap.registerPlugin(ScrollTrigger);
 
 const Airpods = () => {
@@ -26,12 +27,12 @@ const Airpods = () => {
   }, [controlsVideo, inViewText]);
 
   const textVariants = {
-    visible: { opacity: 1, y: -130, scale: 1 }, // Adjust y value for text
+    visible: { opacity: 1, y: 0, scale: 1 }, // Adjust y value for text
     hidden: { opacity: 0, y: 30, scale: 4 }, // Adjust y value for text
   };
 
   const buttonVariants = {
-    visible: { opacity: 1, y: -40, scale: 1 }, // Adjust y value for button
+    visible: { opacity: 1, y: 30, scale: 1 }, // Adjust y value for button
     hidden: { opacity: 0, y: 50, scale: 4 }, // Adjust y value for button
   };
 
@@ -130,7 +131,7 @@ const Airpods = () => {
 
     const timeline = gsap.timeline({
       onUpdate: () => {
-        const progress = (timeline.progress() * 13).toFixed(0);
+        const progress = (timeline.progress() * 20).toFixed(0);
         setScrollPercentage(progress);
         setCounterCount(parseInt(progress)); // Update counter count
         render();
@@ -139,9 +140,8 @@ const Airpods = () => {
         trigger: section,
         pin: true,
         scrub: 1.5,
-        end: "+=700%",
+        end: "+=1300%",
       },
-      
     });
 
     timeline.to(airpodsRef.current, {
@@ -201,7 +201,7 @@ const Airpods = () => {
   }, []);
 
   useEffect(() => {
-    if (counterCount === 12) {
+    if (counterCount === 13) {
       controls
         .start({
           opacity: 0,
@@ -244,7 +244,7 @@ const Airpods = () => {
       setDisplayText(
         "Crafted using advanced cross-bonding technology, adjacent layers of select hardwood species "
       );
-    } else if (counterCount >= 11 && counterCount <= 12) {
+    } else if (counterCount >= 11 && counterCount <= 13) {
       setDisplayText(
         "100% imported Gurjan face veneer imparts strength, durability and elegance to the plywood"
       );
@@ -265,40 +265,43 @@ const Airpods = () => {
               {displayText}
             </div>
           )}
-          <div className={styles.percentageCounter}>{scrollPercentage}</div>
+          {counterCount < 14 && (
+            <div className={styles.percentageCounter}>{scrollPercentage}</div>
+          )}
+          {counterCount > 14 && (
+            <div className={styles.video_loop_outer}>
+              <div className={styles.video_extra}>
+                <motion.div
+                  className={styles.plyspin_text}
+                  // ref={refText}
+                  initial="hidden"
+                  animate={counterCount > 14 ? "visible" : "hidden"}
+                  variants={textVariants}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                >
+                  The Royalè Experience
+                </motion.div>
+              </div>
+
+              <div className={styles.plyspin_btn_outer}>
+                <motion.div
+                  // ref={refButton}
+                  initial="hidden"
+                  animate={counterCount > 14 ? "visible" : "hidden"}
+                  variants={buttonVariants}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <Button btn_text="Learn More" />
+                </motion.div>
+              </div>
+            </div>
+          )}
         </div>
         <canvas
           className={styles.canvas_layer_settings}
           ref={canvasRef}
         ></canvas>
       </section>
-
-      <div className={styles.video_loop_outer}>
-        <div className={styles.video_extra}>
-          <motion.div
-            className={styles.plyspin_text}
-            ref={refText}
-            initial="hidden"
-            animate={inViewText ? "visible" : "hidden"}
-            variants={textVariants}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            The Royalè Experience
-          </motion.div>
-        </div>
-
-        <div className={styles.plyspin_btn_outer}>
-          <motion.div
-            ref={refButton}
-            initial="hidden"
-            animate={inViewButton ? "visible" : "hidden"}
-            variants={buttonVariants}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <Button btn_text="Learn More" />
-          </motion.div>
-        </div>
-      </div>
     </div>
   );
 };

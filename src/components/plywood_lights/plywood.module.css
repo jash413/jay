@@ -31,15 +31,18 @@
   left: 48%;
   top: 0;
 }
-.plywood_promax{
+.plywood_promax {
   position: absolute;
   top: 17%;
   left: 13%;
 }
-.plywood_promaxplus{
+.plywood_promaxplus {
   position: absolute;
-  top: 41%;
+  top: 37%;
   left: 14%;
+  width: 275px;
+  height: 100px;
+  object-fit: cover;
 }
 .plywood_standing_lamp {
   position: absolute;
@@ -60,12 +63,12 @@
     left: -14rem;
     bottom: 0;
   }
-  .plywood_promax{
+  .plywood_promax {
     position: absolute;
     top: 28%;
     left: 13%;
   }
-  .plywood_promaxplus{
+  .plywood_promaxplus {
     position: absolute;
     top: 48%;
     left: 14%;
@@ -80,12 +83,12 @@
     left: -12rem;
     bottom: 0;
   }
-  .plywood_promax{
+  .plywood_promax {
     position: absolute;
     top: 36%;
     left: 8%;
   }
-  .plywood_promaxplus{
+  .plywood_promaxplus {
     position: absolute;
     top: 53%;
     left: 9%;
@@ -108,12 +111,12 @@
     left: 45%;
     top: 0;
   }
-  .plywood_promax{
+  .plywood_promax {
     position: absolute;
     top: 60%;
     left: 8%;
   }
-  .plywood_promaxplus{
+  .plywood_promaxplus {
     position: absolute;
     top: 79%;
     left: 9%;
@@ -150,7 +153,6 @@
     font-size: 18px;
     margin: 10px 0 0;
   }
-  
 }
 
 @media (max-width: 425px) {
@@ -163,24 +165,24 @@
     font-size: 18px;
     margin: 0px 0 0;
   }
-  .plywood_promax{
+  .plywood_promax {
     top: 41%;
     width: 53%;
     object-fit: contain;
   }
-  .plywood_promaxplus{
+  .plywood_promaxplus {
     top: 55%;
     width: 53%;
     object-fit: contain;
   }
 }
 @media (max-width: 375px) {
-  .plywood_promax{
+  .plywood_promax {
     top: 41%;
     width: 50%;
     object-fit: contain;
   }
-  .plywood_promaxplus{
+  .plywood_promaxplus {
     top: 53%;
     width: 50%;
     object-fit: contain;
