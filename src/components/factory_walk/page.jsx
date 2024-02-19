@@ -184,7 +184,7 @@ const AirpodsAnimation = (props) => {
             className={styles.buttonShowouter}
           >
           <button
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/contactUs")}
             className={styles.buttonShow}
             role="button"
           >
