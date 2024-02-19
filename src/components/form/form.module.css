@@ -54,7 +54,7 @@
   border-bottom: 1px solid #d1d1d1;
   height: 40px;
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "LatoRegular";
   font-size: 16px;
 }
 
@@ -70,7 +70,7 @@
   border-bottom: 1px solid #d1d1d1;
   /* height: 40px; */
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "LatoRegular";
   font-size: 16px;
 }
 .field textarea:focus {
@@ -82,6 +82,7 @@
   border: 1.3px solid #fff;
   background: #0f8a83;
   width: 100%;
+  font-family: "LatoRegular";
   height: 42px;
   cursor: pointer;
   color: white;
@@ -100,11 +101,11 @@
 
 .common_button_outer2 {
   width: 100%;
+  font-family: "LatoRegular";
   margin-top: 1rem;
 }
 .common_button_outer2 span{
-  text-transform: uppercase;
-  font-family: '__Lato_712376', '__Lato_Fallback_712376';
+  font-family: "LatoRegular";
 }
 
 
@@ -113,9 +114,7 @@
     font-size: 46px;
     margin-bottom: 30px;
   }
-  .contact_form_wrapper{
-    /* height: 100vh; */
-  }
+
 
   .Form_content{
     /* width: 50%; */
