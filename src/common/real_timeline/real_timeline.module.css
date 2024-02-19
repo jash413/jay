@@ -6,7 +6,8 @@
 .timeline_heading {
   font-size: 60px;
   margin-bottom: 2rem;
-  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 400;
   padding-top: 9rem;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -143,9 +144,19 @@
     opacity: 0;
   }
   .content {
+    right: -12rem;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .content {
     right: -9rem;
   }
 }
+
+
 
 @media (max-width: 1199px) {
   .timeline_year {
@@ -213,7 +224,7 @@
   .timeline_heading {
     font-size: 45px;
     margin-bottom: 0rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 3rem;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -274,7 +285,7 @@
   .timeline_heading {
     font-size: 45px;
     margin-bottom: 0rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 3rem;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -350,7 +361,7 @@
   .timeline_heading {
     font-size: 45px;
     margin-bottom: 0rem;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: 3rem;
     color: rgb(0, 0, 0);
     text-align: center;

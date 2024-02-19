@@ -1,5 +1,5 @@
 .ourStory {
-  background-color: #d9d9d9;
+  background-color: #fff;
   padding: 120px 0;
 }
 .wrapper {
@@ -9,10 +9,13 @@
   color: #000;
   font-size: 60px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
+  text-transform: uppercase;
   text-align: center;
-  margin: 0 0 60px;
+  border-bottom: 1px solid #000;
+  width: max-content;
+  margin: 0 auto 60px;
 }
 .content_wrapper {
   display: flex;
@@ -26,6 +29,7 @@
   width: 100%;
   max-width: 100%;
   display: block;
+  border-radius: 18px;
 }
 .right {
   width: 55%;
@@ -124,6 +128,12 @@
 @media(max-width:575px){
   .heading h3 {
     font-size: 45px;
-    margin: 0 0 60px;
+    margin: 0 auto 60px;
+  }
+}
+@media(max-width:420px){
+  .heading h3 {
+    font-size: 35px;
+    margin: 0 auto 60px;
   }
 }

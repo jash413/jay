@@ -44,6 +44,7 @@
 
 .footer_upper_heading_wrapper {
   margin: 70px 0px 0px 75px;
+  text-transform: uppercase;
 }
 
 .footer_upper_heading {
@@ -51,11 +52,14 @@
   font-weight: 300;
   width: 60%;
   color: white;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .justforfooterbutton {
   margin-top: 25px;
+}
+.justforfooterbutton span {
+  text-transform: uppercase;
 }
 
 .footer_copyright_wrapper {
@@ -64,11 +68,14 @@
 .footer_copyright {
   color: white;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
+  text-align: right;
+  padding: 0 100px 40px;
 }
 .copyright_company_name {
   color: #c3a464;
   font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 1440px) {
@@ -126,11 +133,11 @@
     padding: 60px 50px;
     display: block;
   }
-  .footer_firstSide,
+  /* .footer_firstSide,
   .footer_secondSide,
   .footer_thirdSide {
     margin: 20px 0;
-  }
+  } */
 
   .footer_upper_heading {
     font-size: 87px;
@@ -157,19 +164,21 @@
 
 @media (max-width: 787px) {
   .footer_wrapper {
-    padding: 60px 25px;
+    padding: 35px 25px;
     display: block;
   }
-
+/* 
   .footer_logo_image {
     height: 100%;
     width: 100%;
-  }
+  } */
 
   .footer_firstSide {
     height: 100%;
     width: 75%;
     margin-left: 2rem;
+    margin-bottom: 3rem;
+
   }
 
   .footer_secondSide,
@@ -196,5 +205,13 @@
   }
   .copyright_company_name {
     font-weight: 400;
+  }
+}
+
+
+@media (max-width: 787px) {
+  .footer_wrapper {
+    padding: 25px 25px;
+    display: block;
   }
 }

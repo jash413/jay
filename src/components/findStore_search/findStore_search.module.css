@@ -11,7 +11,7 @@
 .content_Text {
   color: #006f69;
   font-size: 70px;
-  width: 70%;
+  width: 1000px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -257,6 +257,14 @@
     overflow-x: hidden;
     padding-right: 10px;
   }
+  .content_Text {
+    color: #006f69;
+    font-size: 70px;
+    width: 70%;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -330,7 +338,7 @@
     font-weight: 300;
   }
   .map_section2 {
-    flex-direction: column;
+    flex-direction:column-reverse;
     overflow: hidden;
   }
   .map_section1 {
@@ -354,6 +362,9 @@
   }
   .map_frame {
     max-width: 100%;
+  }
+  .map_frame {
+    height: 50vh;
   }
   .select_menu {
     padding-bottom: 20px;

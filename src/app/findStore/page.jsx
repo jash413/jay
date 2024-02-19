@@ -11,12 +11,12 @@ import findStore_image from "@/images/new_channel.png";
 import HeroSection from "@/components/heroSection/page";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -29,6 +29,7 @@ const Page = () => {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
+
       <div>
         <Navbar />
       </div>
@@ -37,8 +38,7 @@ const Page = () => {
         <HeroSection
           banner_image={findStore_image}
           header_name="Partners"
-          header_comment="Navigate Through Our Extensive Channel Partner Network for Quality Products and Exceptional Service, Right in Your Neighborhood!
-"
+          header_comment="Navigate Through Our Extensive Channel Partner Network for Quality Products and Exceptional Service"
         />
         <FindStore_search />
       </div>

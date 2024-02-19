@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
+import Footer from "@/components/footer/page";
 import Navbar from "@/components/navbar/index";
 import styles from "@/app/terms_and_condition/terms.module.css";
 const Page = () => {
@@ -314,6 +315,8 @@ const Page = () => {
           </div>
         </div>
       </div>
+      <Footer />
+      
     </div>
   );
 };

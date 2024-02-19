@@ -5,6 +5,10 @@
   margin-left: 4rem;
 }
 
+.canvas_layer_setting_outer{
+  display: none;
+}
+
 .canvas_layer_setting{
   width: 100%;
   height: 100vh;
@@ -81,8 +85,17 @@
 /* button */
 
 
-.buttonShow {
+
+.buttonShowouter{
   position: relative;
+}
+
+
+
+
+.buttonShow {
+  position: absolute;
+  left: 46%;
   overflow: hidden;
   display: inline-block;
   border-radius: 30px;
@@ -157,14 +170,28 @@
 
 
 
-
-
-
-
-
-
-
-
+@media (max-width: 1024px) {
+  .buttonShow {
+    position: absolute;
+    left: 44%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 15px;
+    padding: 13px 27px 15px;
+    font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+    font-size: 20px;
+    border: 2px solid #c3a464;
+    color: #c3a464;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 20;
+    background: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
 
 
 
@@ -174,12 +201,66 @@
     padding: 1px 9px;
     top: 145px;
   }
+
+
+  .canvas_layer_setting_first_outer{
+    display: none;
+  }
+
+  .canvas_layer_setting_outer{
+    display: block;
+  }
 }
+
+
+@media (max-width: 768px) {
+  .buttonShow {
+    position: absolute;
+    left: 44%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 15px;
+    padding: 13px 27px 15px;
+    font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+    font-size: 20px;
+    border: 2px solid #c3a464;
+    color: #c3a464;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 20;
+    background: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+
 @media (max-width: 787px) {
   .info {
     top: 105px;
   }
+
+  .canvas_layer_setting_first_outer{
+    display: none;
+  }
+
+  .canvas_layer_setting_outer{
+    display: block;
+  }
+
+
+  .canvas_layer_setting2{
+    width: 100%;
+  height: 100vh;
+  /* object-fit: cover; */
+  object-position: center;
+  }
 }
+
+
+
 @media (max-width: 575px) {
   .infoData {
     width: 100%;
@@ -190,4 +271,20 @@
     display: flex;
     justify-content: left;
   }
+
+
+
+  .buttonShow {
+    position: absolute;
+    left: 44%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 15px;
+    padding: 13px 27px 15px;
+    font-family: '__Lato_d890f0', '__Lato_Fallback_d890f0';
+ 
+  }
+
+
 }

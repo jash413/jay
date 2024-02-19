@@ -2,11 +2,16 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navbar/index";
 import Footer from "@/components/footer/page"
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import logo from "@/images/finalNavbarLogo.png";
+import "@/app/allPosts/commonstyles.css"
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import InnerBlogPost from "@/common/innerBlogPost/page";
-import BlogPostImage3 from "@/images/blogs_img3.png";
+import BlogPostImage5 from "@/images/BlogImage5.jpg";
 const Page = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -30,8 +35,17 @@ const Page = () => {
       </AnimatePresence>  
 
       <Navbar />
+      <div className="iamouter">
+  <Image
+    onClick={() => router.push("/")}
+    src={logo}
+    alt="image"
+    className="iamimage"
+   
+  />
+</div>
       <InnerBlogPost
-        image={BlogPostImage3}
+        image={BlogPostImage5}
         Date="March 20, 2024"
         blog_name="Interior Design10"
         blogPost_heading="Know everything about veneer plywood

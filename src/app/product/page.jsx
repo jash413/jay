@@ -85,16 +85,14 @@ const Page = () => {
     <>
       <div className={styles.ply_bock}>
         <Navbar />
-            <Link className={styles.ply_side1} href="product/plywood">
-      
-          <div className={styles.plywood} ref={plywoodRef}>
-          
-            <h2 className={`${styles.plywood_title} two_heading_animation`}>
-              {splitWords("Plywood")}
-            </h2>
-        
-          </div>
-          <div className={styles.big_arrow_outer}>
+        <div className={styles.ply_side1}>
+          <Link href="product/plywood">
+            <div className={styles.plywood} ref={plywoodRef}>
+              <h2 className={`${styles.plywood_title} two_heading_animation`}>
+                {splitWords("Plywood")}
+              </h2>
+            </div>
+            <div className={styles.big_arrow_outer}>
               <div
                 ref={(el) => {
                   plywoodRef.current = el;
@@ -109,20 +107,20 @@ const Page = () => {
                   className={styles.big_arrow}
                 />
               </div>
-          </div>
-       
-            </Link>
+            </div>
+          </Link>
+        </div>
 
-
-            <Link className={styles.block_side2} href="/product/blockwood">
-    
-          <div className={styles.blockboard} ref={blockboardRef}>
-            <h2 className={`${styles.blockboard_title} two_heading_animation`}>
-              {splitWords("Blockboard")}
-            </h2>
-          
-          </div>
-          <div className={styles.big_arrow_outer}>
+        <div className={styles.block_side2}>
+          <Link href="/product/blockwood">
+            <div className={styles.blockboard} ref={blockboardRef}>
+              <h2
+                className={`${styles.blockboard_title} two_heading_animation`}
+              >
+                {splitWords("Blockboard")}
+              </h2>
+            </div>
+            <div className={styles.big_arrow_outer}>
               <div
                 ref={(el) => (blockboardRef.current = el)}
                 onMouseEnter={() => handleImageHover(blockboardRef.current)}
@@ -134,10 +132,9 @@ const Page = () => {
                   className={styles.big_arrow}
                 />
               </div>
-          </div>
-   
-            </Link>
-
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );

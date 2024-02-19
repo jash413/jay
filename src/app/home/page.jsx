@@ -7,7 +7,7 @@ import Footer from "@/components/footer/page";
 import Layers from "@/components/layers/page";
 import Factory from "@/components/factory/page";
 import Form from "@/components/form/page";
-import Plyspin from "@/components/plyspin/page"
+import Plyspin from "@/components/plyspin/page";
 import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
 import gsap from "gsap";
@@ -53,14 +53,14 @@ const Page = () => {
           <div className="card-cover">
             <HeroSection
               video_bg="./video/final_k.mp4"
-              homepage_heading="A ply that is a living shield for beautiful and timeless furniture"
+              homepage_heading="ply that is a living shield for beautiful and timeless furniture"
             />
           </div>
         </div>
-      <Factory />
+        <Factory />
       </section>
       <Layers />
-      <Plyspin />
+      {/* <Plyspin /> */}
       <Timeline />
       <Timeline1 />
       <HomeStore />

@@ -9,14 +9,15 @@ import Contact_Map from "@/common/contact_map/page";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/heroSection/page";
+import ContactAddress from "@/components/contactAddress/Page";
 const ContactUs = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -41,6 +42,7 @@ const ContactUs = () => {
           header_comment="Connect with Confidence: Reach Out to Royal Touch Plywood's Dedicated Channel Partners for Prompt Assistance and Expert Guidance with Any Queries or Concerns You Have."
         />
         <Contact_Map />
+        <ContactAddress />
       </div>
       <Form />
       <Footer />

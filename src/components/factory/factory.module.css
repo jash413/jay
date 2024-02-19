@@ -55,7 +55,7 @@
     height: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 557rem;
+    margin-bottom: 800rem;
     margin-top: -1080vh;
   }
 }
@@ -71,29 +71,51 @@
   }
 }
 
+
+@media (max-height: 920px) {
+  .main {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 480rem !important;
+    margin-top: -1077vh !important;
+  }
+}
+
 @media (max-height: 800px) {
   .main {
     display: flex;
     height: 100%;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 447rem;
-    margin-top: -1077vh;
+    margin-bottom: 430rem !important;
+    margin-top: -1077vh !important;
   }
 }
 @media (max-width: 1440px) {
   .main {
-    margin-bottom: 527rem;
-    margin-top: -1080vh;
+    margin-bottom: 420rem !important;
+    margin-top: -1080vh !important;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1340px) {
   .main {
-    margin-bottom: 527rem;
-    margin-top: -1080vh;
+    margin-bottom: 770rem !important;
+    margin-top: -1155vh !important;
   }
 }
+/* @media (max-height: 1400px) {
+  .main {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 720rem;
+    margin-top: -1080vh;
+  }
+} */
 
 @media (max-width: 991px) {
   .scroll_text_header {
@@ -104,17 +126,17 @@
     font-weight: 300;
   }
   .main {
-    margin-bottom: 502rem;
-    margin-top: -1080vh;
+    margin-bottom: 720rem !important;
+    margin-top: -1155vh !important;
   }
 }
 
-@media (max-width: 820px) {
+/* @media (max-width: 820px) {
   .main {
     margin-bottom: 677rem;
     margin-top: -1156vh;
   }
-}
+} */
 
 @media (max-width: 787px) {
   .body p {
@@ -124,10 +146,10 @@
     font-weight: 300;
   }
 
-  .main {
+  /* .main {
     margin-bottom: 527rem;
     margin-top: -1080vh;
-  }
+  } */
 
   .scroll_text_header {
     position: absolute;
@@ -148,12 +170,12 @@
   }
 
   .main {
-    margin-bottom: 502rem;
-    margin-top: -1080vh;
+    margin-bottom: 502rem !important;
+    margin-top: -1080vh !important;
   }
 
   .body p {
-    font-size: 22px;
+    font-size: 26px;
     margin: 0px;
     margin-right: 1.8vw;
     font-weight: 300;
@@ -162,7 +184,7 @@
 
 @media (max-width: 375px) {
   .main {
-    margin-bottom: 527rem;
+    margin-bottom: 420rem;
     margin-top: -1080vh;
   }
 }

@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from "@/common/innerBlogPost/innerblogpost.module.css"
 import Image from 'next/image';
+import logo from "@/images/logo.png"
 
 const BlogPost = (props) => {
 

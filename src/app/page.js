@@ -7,12 +7,12 @@ import Home from "@/app/home/page";
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import('locomotive-scroll')).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -20,14 +20,16 @@ export default function Page() {
       document.body.style.cursor = 'default';
       window.scrollTo(0, 0);
     }
-  }, 2000);
+  }, 3500);
 
+  
   return (
     <main>
-      <AnimatePresence mode='wait'>
+     <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Home />
+ 
     </main>
   );
 }

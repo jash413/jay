@@ -8,21 +8,21 @@ import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import Real_Timeline from "@/common/real_timeline/page";
 import Slider from "@/components/slider/page";
-import Innovation_cards from "@/components/innovation_cards/page";
-import image1 from "@/images/Laminate.jpg";
-import image2 from "@/images/Plywood.jpg";
-import image3 from "@/images/Wooden-Floor.jpg";
+// import Innovation_cards from "@/components/innovation_cards/page";
+// import image1 from "@/images/Laminate.jpg";
+// import image2 from "@/images/Plywood.jpg";
+// import image3 from "@/images/Wooden-Floor.jpg";
 import aboutUs_image from "@/images/new_about.jpg";
 import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -32,11 +32,13 @@ const Page = () => {
     }
   }, 2000);
 
+
   return (
     <main>
-      <AnimatePresence mode="wait">
+       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
+     
       <div>
         <Navbar />
       </div>
@@ -50,20 +52,10 @@ const Page = () => {
         <WhyPlywood />
         <Real_Timeline />
         <Slider />
-        {/* <Innovation_cards
-          link1={"https://royaletouche.com/"}
-          link2={"https://royaletouche.com/woodenfloors/"}
-          link3={"/product/plywood"}
-          image1={image1}
-          image2={image3}
-          image3={image2}
-          card1Text={"Laminate"}
-          card2Text={"Wooden Flooring"}
-          card3Text={"Plywood"}                 
-        /> */}
       </div>
       <Form />
       <Footer />
+    
     </main>
   );
 };

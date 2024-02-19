@@ -35,14 +35,22 @@ const AirpodsAnimation = () => {
       } else if (windowWidth >= 1024) {
         canvas.width = 1200; // Adjust the width for screen width 1024
         canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
-      } else if (windowWidth >= 768) {
+      } 
+      else if (windowWidth >= 768) {
         canvas.width = 1200; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } else if (windowWidth >= 425) {
-        canvas.width = 700; // Adjust the width for screen width 425
+      } 
+
+      else if (windowWidth >= 430) {
+        canvas.width = 900; // Adjust the width for screen width 425
+        canvas.height = windowHeight * 1; // Adjust the height for screen width 425
+      } 
+      else if (windowWidth >= 425) {
+
+        canvas.width = 900; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } else if (windowWidth >= 375) {
-        canvas.width = 700; // Adjust the width for screen width 375
+        canvas.width = 800; // Adjust the width for screen width 375
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } else if (windowWidth >= 320) {
         canvas.width = 800; // Adjust the width for screen width 375
@@ -58,13 +66,14 @@ const AirpodsAnimation = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 285;
+    const frameCount = 157;
     const currentFrame = (index) =>
-      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 5)
+      `https://royaltouchassets.humbeestudio.xyz/assets/images/factoryzoomhome/F${(
+        index + -6)
         .toString()
-        .padStart(5, "0")}-scaled.jpg`;
+        .padStart(3, "0")}.jpg`;
 
-        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
+    // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -108,10 +117,8 @@ const AirpodsAnimation = () => {
     };
   }, []);
 
-
-
   const phrase =
-  "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";
+    "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";
 
   let refs = useRef([]);
   const body = useRef(null);
@@ -127,7 +134,7 @@ const AirpodsAnimation = () => {
       scrollTrigger: {
         trigger: container.current,
         scrub: true,
-        start: `top 40%`,
+        start: `top 90%`,
         end: `+=${window.innerHeight / 1.55}`,
       },
       opacity: 1,
@@ -163,37 +170,25 @@ const AirpodsAnimation = () => {
     return letters;
   };
 
-
-
-
-
-
-
-
   return (
-
-    
-  
-      <section>
-     
-        <section ref={sectionRef}>
-      <canvas
-        className={styles.canvas_factory_settings}
-        ref={canvasRef}
-      ></canvas>
-    </section>
-    <div className={styles.scroll_text_wrapper}>
-      <div ref={container} className={styles.main}>
-        <div ref={body} className={styles.body}>
-          {splitWords(phrase)}
-          <h1 className={styles.scroll_text_header}>
-            Royale Touché Performance Ply
-          </h1>
+    <section>
+      <section ref={sectionRef}>
+        <canvas
+          className={styles.canvas_factory_settings}
+          ref={canvasRef}
+        ></canvas>
+      </section>
+      <div className={styles.scroll_text_wrapper}>
+        <div ref={container} className={styles.main}>
+          <div ref={body} className={styles.body}>
+            {splitWords(phrase)}
+            <h1 className={styles.scroll_text_header}>
+              Royale Touché Performance Ply
+            </h1>
+          </div>
         </div>
       </div>
-    </div>
-      </section>
- 
+    </section>
   );
 };
 

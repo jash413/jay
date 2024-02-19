@@ -8,7 +8,9 @@
   cursor: pointer;
   width: 100%;
 }
-
+.homepage_image{
+  filter: brightness(0.8);
+}
 .homepage_image_wrapper3 {
   position: relative;
   width: 100%;
@@ -23,7 +25,8 @@
   left: 6rem;
   font-weight: 300;
   line-height: normal;
-  width: 59%;
+  width: 50%;
+  text-transform: uppercase;
 }
 
 .header_text2 {
@@ -69,6 +72,7 @@
   font-style: normal;
   position: absolute;
   top: 40%;
+  text-transform: uppercase;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   font-weight: 300;
@@ -78,15 +82,16 @@
   color: #fff;
   text-align: center;
   font-size: 18px;
+  text-transform: uppercase;
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%) !important;
-  width: 27%;
+  width: 38%;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .nav_menu_names {
@@ -128,12 +133,13 @@
   .header_comment {
     text-align: center;
     font-size: 22px;
-    top: 48%;
+    top: 46%;
     left: 50%;
+    font-weight: 300;
     transform: translate(-50%, -50%) !important;
-    width: 30%;
+    width: 38%;
     font-style: normal;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 
   .header_text {
@@ -141,6 +147,7 @@
     bottom: 23rem;
     left: 6rem;
     width: 50%;
+    
   }
 
   .header_text2 {
@@ -152,7 +159,7 @@
 }
 @media (min-width: 1550px) {
   .header_comment {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 
@@ -162,6 +169,12 @@
     bottom: 14rem;
     left: 4rem;
     width: 722px;
+  }
+
+  .logo {
+    height: 100%;
+    cursor: pointer;
+    width: revert-layer;
   }
 
   .header_text2 {
@@ -327,7 +340,7 @@
   .header_comment {
     text-align: center;
     font-size: 22px;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
@@ -380,7 +393,7 @@
 
 @media (max-width: 425px) {
   .header_comment {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 16px;
     position: absolute;
     top: 58%;
@@ -402,7 +415,7 @@
 
 @media (max-width: 375px) {
   .header_comment {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -410,7 +423,7 @@
   .header_comment {
     text-align: center;
     font-size: 14px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     top: 59%;
     left: 50%;
     transform: translate(-50%, -50%) !important;

@@ -107,7 +107,7 @@ const Section1 = () => {
                     delay: 1,
                   }}
                 >
-                  <Button8 btn_text={"Buy Now"} />
+                  <Button8 btn_text={"BUY NOW"} />
                 </motion.div>
               )}
             </InView>

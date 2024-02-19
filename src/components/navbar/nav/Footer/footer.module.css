@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 30px;
   cursor: pointer;
   gap: 40px;
 }

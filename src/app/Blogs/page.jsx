@@ -23,14 +23,22 @@ const Blogs = () => {
       window.scrollTo(0, 0);
     }
   }, 2000);
+
+
+
   return (
     <main>
-      <AnimatePresence mode="wait">
+       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
+        </AnimatePresence>
+
+
+
       <Inner_header inner_header_image={Blogs_banner} heading_big="BLOGS" />
       <BlogPost />
       <Footer />
+     
+      
     </main>
   );
 };

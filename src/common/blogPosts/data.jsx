@@ -3,11 +3,13 @@ import BlogPostImage2 from "@/images/BlogImage2.jpg";
 import BlogPostImage3 from "@/images/BlogImage3.jpg";
 import BlogPostImage4 from "@/images/BlogImage4.jpg";
 import BlogPostImage5 from "@/images/BlogImage5.jpg";
+import BlogPostImage13 from "@/images/BlogImage6.jpg";
 import BlogPostImage6 from "@/images/blogs_imgs_6.jpg";
 import BlogPostImage7 from "@/images/blogs_images_1.jpg";
 import BlogPostImage8 from "@/images/blogs_imgs_8.jpg";
 import BlogPostImage11 from "@/images/blogs_imgs_11.jpg";
 import BlogPostImage12 from "@/images/blogs_imgs_12.jpg"
+import BlogPostImage14 from "@/images/blogs_imgs_14.jpg"
 
 
 const Data = [
@@ -20,7 +22,7 @@ const Data = [
         readMoreRoute: "/allPosts/post1",
     },
     {
-        image: BlogPostImage6,
+        image: BlogPostImage14,
         date: "March 20, 2024",
         blog_name: "Interior Design2",
         blogPost_heading: "5 Tips on how to maintain plywood sheets",
@@ -37,7 +39,7 @@ const Data = [
     },
 
     {
-        image: BlogPostImage6,
+        image: BlogPostImage13,
         date: "January 11, 2024",
         blog_name: "Interior Design4",
         blogPost_heading: "Types of plywood size & what are the difference",
