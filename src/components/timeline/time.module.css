@@ -213,7 +213,7 @@
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding: 2.6rem 0rem 19rem;
+    padding: 2.6rem 0rem 17rem;
     border-radius: 1rem;
     align-items: center;
     min-height: 218px;
@@ -228,7 +228,7 @@
     left: calc(20% - -1px);
     width: 2px;
     top: 114px;
-    bottom: 550px;
+    bottom: 530px;
     border-right: 2px solid #218e88;
   }
   .bead {
