@@ -11,7 +11,9 @@ import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/Hero_ContactUs/page";
 import ContactAddress from "@/components/contactAddress/Page";
 const ContactUs = () => {
-  document.title="Contact Royale Touche";
+  useEffect(() => {
+    document.title = "Contact Royale Touche";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {

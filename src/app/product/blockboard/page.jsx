@@ -119,7 +119,9 @@ const SpecificationsRightData = [
 ];
 
 const Page = () => {
-  document.title="Blockboard";
+  useEffect(() => {
+    document.title = "Blockboard";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {
