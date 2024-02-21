@@ -68,11 +68,12 @@ const AirpodsAnimation = () => {
 
     const frameCount = 157;
     const currentFrame = (index) =>
-      `https://royaltouchassets.humbeestudio.xyz/assets/images/factoryzoomhome/F${(
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F${(
         index + -6)
         .toString()
         .padStart(3, "0")}.jpg`;
 
+        https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F000.jpg
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
