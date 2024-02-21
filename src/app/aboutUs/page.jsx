@@ -15,7 +15,10 @@ import Slider from "@/components/slider/page";
 import aboutUs_image from "@/images/new_about.jpg";
 import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
+
 const Page = () => {
+  
+  document.title = "About Royale Touche";
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {
@@ -34,7 +37,7 @@ const Page = () => {
 
 
   return (
-    <main>
+    <main>  
        <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
