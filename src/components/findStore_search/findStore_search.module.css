@@ -156,7 +156,7 @@
   width: 29%;
   margin: 30px;
   height: 657px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding-right: 10px;
 }
@@ -167,7 +167,7 @@
 }
 .content30::-webkit-scrollbar-thumb {
   display: block;
-  overflow-y: scroll;
+  overflow-y: auto;
   background: #b2965b;
   border-radius: 10px;
 }
@@ -241,7 +241,7 @@
     width: 23%;
     margin: 30px;
     height: 656px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px;
 
@@ -253,7 +253,7 @@
     width: 34.5%;
     margin: 30px;
     height: 657px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px;
   }
@@ -272,7 +272,7 @@
     width: 40%;
     margin: 30px;
     height: 657px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px;
   }

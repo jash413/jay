@@ -7,6 +7,7 @@ import Preloader from "@/components/preloader/page"
 import Claim_banner from "@/images/claim_banner.png"
 import PolicyData from "@/components/policyData/page"
 const Blogs = () => {
+  document.title="Privacy Policy";
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {

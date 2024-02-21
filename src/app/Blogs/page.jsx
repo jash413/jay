@@ -8,6 +8,7 @@ import Blogs_banner from "@/images/blogs_banner.png";
 import BlogPost from "@/common/blogPosts/page";
 
 const Blogs = () => {
+  document.title="Blogs - Royale Touch Performance Ply";
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {

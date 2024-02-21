@@ -8,6 +8,7 @@ import Claim_banner from "@/images/claim_banner.png";
 import WarrantyForm from "@/components/warrantyForm/page";
 import WarrantyAccordian from "@/components/warrantyAccordian/page";
 const Blogs = () => {
+  document.title="Claim Warranty for Product";
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {

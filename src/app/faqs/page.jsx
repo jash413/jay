@@ -7,6 +7,7 @@ import Preloader from "@/components/preloader/page"
 import Claim_banner from "@/images/claim_banner.png"
 import Faqs_page from "@/components/faqs_page/page"
 const Page = () => {
+  document.title="FAQs";
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
