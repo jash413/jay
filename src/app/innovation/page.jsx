@@ -32,7 +32,6 @@ const Page = () => {
       window.scrollTo(0, 0);
     }
   }, 3000);
-  
 
   // const setLoadingComplete = (status) => {
   //   setIsLoading(!status);

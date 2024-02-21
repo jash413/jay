@@ -133,7 +133,7 @@ const SpecificationsRightData = [
   {
     title: "TENSILE STRENGTH",
     text: "Along The Grain > 58 N/ MM2",
-    text: "Across The Grain 	> 39 N/ MM2",
+    text: "Across The Grain > 39 N/ MM2",
     text: "Sum Of Tensile > 97 N/MM2",
   },
 ];
