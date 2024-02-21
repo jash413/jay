@@ -5,7 +5,7 @@ import image3 from "@/images/whyPlywood-image3.svg";
 import image4 from "@/images/whyPlywood-image4.svg";
 import WhyPlywoodItem from "./WhyPlywoodItem";
 import Image from "next/image";
-import newImage from "@/images/whyPlywoodImage.png";
+import newImage from "@/images/whyPlywoodNew.png";
 
 const whyPlywoodData = [
   {
