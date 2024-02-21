@@ -1,13 +1,15 @@
 "use client";
-import React, { useEffect, useState } from "react"
-import Footer from "@/components/footer/page"
-import { AnimatePresence } from "framer-motion"
-import Inner_header from "@/common/inner_header/page"
-import Preloader from "@/components/preloader/page"
-import Claim_banner from "@/images/claim_banner.png"
-import Faqs_page from "@/components/faqs_page/page"
+import React, { useEffect, useState } from "react";
+import Footer from "@/components/footer/page";
+import { AnimatePresence } from "framer-motion";
+import Inner_header from "@/common/inner_header/page";
+import Preloader from "@/components/preloader/page";
+import Claim_banner from "@/images/claim_banner.png";
+import Faqs_page from "@/components/faqs_page/page";
 const Page = () => {
-  document.title="FAQs";
+  useEffect(() => {
+    document.title = "FAQs";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     (async () => {
@@ -24,16 +26,15 @@ const Page = () => {
     }
   }, 2000);
   return (
-    <main >
+    <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Inner_header inner_header_image={Claim_banner} heading_big="FAQ's" />
-      <Faqs_page/>
+      <Faqs_page />
       <Footer />
     </main>
   );
 };
-
 
 export default Page;

@@ -16,7 +16,9 @@ import innovation_flex_img1 from "@/images/innovation1.png";
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
 const Page = () => {
-  document.title = " Innovation - Royale Touch Performance Ply";
+  useEffect(() => {
+    document.title = "Innovation - Royale Touch Performance Ply";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {

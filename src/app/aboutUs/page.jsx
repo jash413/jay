@@ -17,8 +17,10 @@ import WhyPlywood from "@/components/whyPlywood/WhyPlywood";
 import OurStory from "@/components/ourStory/page";
 
 const Page = () => {
-  
-  document.title = "About Royale Touche";
+  useEffect(() => {
+    document.title = "About Royale Touche";
+  }, []);
+
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {

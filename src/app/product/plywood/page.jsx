@@ -139,7 +139,9 @@ const SpecificationsRightData = [
 ];
 
 const Page = () => {
-  document.title="Plywood";
+  useEffect(() => {
+    document.title = "Plywood";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {
