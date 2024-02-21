@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import HeroSection from "@/components/heroSection/page";
 import Timeline from "@/components/timeline/page";
 import Timeline1 from "@/components/timeline/page2";
