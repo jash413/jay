@@ -51,7 +51,7 @@
 .right img {
   max-width: 100%;
   display: block;
-  height: 90vh;
+  /* height: 90vh; */
   object-fit: cover;
   border-radius: 18px;
 }
@@ -68,12 +68,22 @@
   .whyPlywood {
     padding: 50px 100px;
   }
+  .whyPlywoodItem_wrap {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: stretch;
+    justify-content: space-between;
+    /* margin: 0 -50px; */
+  }
   .whyPlywood_heading {
     margin: 0 auto 110px;
   }
   .whyPlywoodItem {
     padding: 0 50px;
     margin: 0 0 70px;
+  }
+  .right img {
+    height: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -116,7 +126,8 @@
     width: 100%;
   }
   .right img {
-   width: 100%;
+    width: 100%;
+    height: auto;
   }
   .left ul {
     padding: 40px 0 0;

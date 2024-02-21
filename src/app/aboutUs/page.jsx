@@ -32,13 +32,12 @@ const Page = () => {
     }
   }, 2000);
 
-
   return (
     <main>
-       <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-     
+
       <div>
         <Navbar />
       </div>
@@ -55,7 +54,6 @@ const Page = () => {
       </div>
       <Form />
       <Footer />
-    
     </main>
   );
 };

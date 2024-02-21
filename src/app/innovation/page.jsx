@@ -12,7 +12,7 @@ import Form from "@/components/form/page";
 import innovation_image from "@/images/InnovationNewBanner.jpg";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import innovation_flex_img1 from "@/images/innovation1.png";  
+import innovation_flex_img1 from "@/images/innovation1.png";
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
 const Page = () => {
@@ -32,9 +32,6 @@ const Page = () => {
     }
   }, 3000);
 
-
-
-
   // const setLoadingComplete = (status) => {
   //   setIsLoading(!status);
   // };
@@ -44,7 +41,7 @@ const Page = () => {
   //     await Promise.all([
   //       new Promise((resolve, reject) => {
   //         const images = document.querySelectorAll("img");
-       
+
   //         const videos = document.querySelectorAll("video");
 
   //         let loadedCount = 0;
@@ -96,16 +93,9 @@ const Page = () => {
   //     });
   // }, []);
 
-
-
-
-
-
-
-
   return (
     <main>
-     <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
 
@@ -116,13 +106,10 @@ const Page = () => {
         />
         <Factory_walk />
         <Factory_walk1 />
-  
       </div>
 
       <Form />
       <Footer />
-    
-  
     </main>
   );
 };

@@ -18,7 +18,6 @@ const AirpodsAnimation = (props) => {
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
 
-
   const [refButton, inViewButton] = useInView({
     triggerOnce: false,
   });
@@ -35,14 +34,7 @@ const AirpodsAnimation = (props) => {
     }
   }, [inViewButton, controls]);
 
-
   console.log(info);
-
-
- 
-
-
-
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -57,70 +49,52 @@ const AirpodsAnimation = (props) => {
     const setCanvasSize = () => {
       const windowWidth = window.innerWidth;
       const windowHeight = window.innerHeight;
-  
+
       if (windowWidth >= 1600) {
         canvas.width = 2000; // Width remains constant for desktop screens
         canvas.height = windowHeight * 1; // Adjust the height for desktop screens
-      } 
-  
-      else if (windowWidth >= 1599) {
+      } else if (windowWidth >= 1599) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } 
-      
-  
-      else if (windowWidth >= 1440) {
+      } else if (windowWidth >= 1440) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } 
-      
-      else if (windowWidth >= 1200) {
+      } else if (windowWidth >= 1200) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
       } else if (windowWidth >= 1024) {
         canvas.width = 1700; // Adjust the width for screen width 1024
         canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
-  
-      }
-      else if (windowWidth >= 820) {
+      } else if (windowWidth >= 820) {
         canvas.width = 1650; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       }
-      
+
       // else if (windowWidth >= 768) {
       //   canvas.width = 1500; // Adjust the width for screen width 425
       //   canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       // }
-  
-  
-      
       else {
         canvas.width = 400; // Adjust the width for screen width 320
         canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
       }
-  
+
       // Update ScrollTrigger end position based on canvas dimensions
       ScrollTrigger.update();
     };
-  
+
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
-  
-  
-
-
-
-
-
-
 
     const frameCount = 855;
     const currentFrame = (index) =>
-      ` https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalk/F${(index + 1)
+      ` https://royaltouchassets.humbeestudio.xyz/assets/images/factorywalk/F${(
+        index + 1
+      )
         .toString()
         .padStart(3, "0")}.jpg`;
 
-        // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
+    // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
@@ -174,25 +148,24 @@ const AirpodsAnimation = (props) => {
           ref={canvasRef}
         ></canvas>
       </section>
-       
+
       <motion.div
-            ref={refButton}
-            initial="hidden"
-            animate={inViewButton ? "visible" : "hidden"}
-            variants={variants}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className={styles.buttonShowouter}
-          >
-          <button
-            onClick={() => router.push("/contactUs")}
-            className={styles.buttonShow}
-            role="button"
-          >
-            <span className={styles.text1}>Buy Now</span>
-            <span className={styles.text1}>Buy Now</span>
-          </button>
-          </motion.div>
-      
+        ref={refButton}
+        initial="hidden"
+        animate={inViewButton ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className={styles.buttonShowouter}
+      >
+        <button
+          onClick={() => router.push("/contactUs")}
+          className={styles.buttonShow}
+          role="button"
+        >
+          <span className={styles.text1}>Buy Now</span>
+          <span className={styles.text1}>Buy Now</span>
+        </button>
+      </motion.div>
     </div>
   );
 };

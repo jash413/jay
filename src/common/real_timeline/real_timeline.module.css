@@ -265,7 +265,7 @@
     color: #000000;
     position: absolute;
     width: 54%;
-    top: 230px;
+    top: 82%;
     right: 10px;
     padding-bottom: 0;
     padding-top: 3rem;
@@ -276,7 +276,7 @@
     font-size: 15px;
     width: 400px;
     margin-bottom: 1rem;
-    top: 67%;
+    top: 64%;
     left: 28%;
   }
 
@@ -294,7 +294,7 @@
     color: #000000;
     opacity: 0;
     position: absolute;
-    top: 8rem;
+    top: 5rem;
     left: 12rem;
   }
   .section {
@@ -302,9 +302,10 @@
     position: relative;
     justify-content: space-evenly;
     z-index: 1;
-    margin-top: 13rem;
+    margin-top: 0;
     align-items: center;
-    min-height: 290px;
+    min-height: 220px;
+    margin-bottom: 155px;
   }
 }
 
@@ -325,7 +326,7 @@
     width: 400px;
     margin-bottom: 1rem;
     top: 67%;
-    left: 26%;
+    left: 28%;
   }
 
   .timeline_image {
@@ -342,7 +343,7 @@
   .content {
     color: #000000;
     position: absolute;
-    top: 257px;
+    top: 80%;
     right: 10px;
     padding-bottom: 0;
     padding-top: 3.5rem;
@@ -352,8 +353,9 @@
   .timeline_comment {
     font-size: 15px;
     width: 300px;
-    width: 50%;
+    width: 60%;
     margin-bottom: 1rem;
+    
   }
 
   .timeline_heading {
@@ -370,12 +372,24 @@
     color: #000000;
     opacity: 0;
     position: absolute;
-    top: 8rem;
+    top: 5rem;
     left: 28%;
+  }
+  .section:last-child .content{
+    top: 105%;
+  }
+  .section:nth-child(5) .content{
+    top: 86%;
+  }
+  .section:nth-child(6) .content{
+    top: 90%;
+  }
+  .section:nth-child(10) .content{
+    top: 90%;
   }
 }
 @media (max-width: 420px) {
-  .timeline_comment {
+  /* .timeline_comment {
     font-size: 15px;
     width: 220px;
     margin-bottom: 1rem;
@@ -387,7 +401,7 @@
     position: absolute;
     top: 8rem;
     left: 30%;
-  }
+  } */
 }
 
 
