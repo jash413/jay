@@ -5,7 +5,7 @@ import Preloader from "@/components/preloader/page";
 import Home from "@/app/home/page";
 
 export default function Page() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     document.title = "Royale Touche Performance Ply";
   }, []);
@@ -17,13 +17,14 @@ export default function Page() {
   //   })();
   // }, []);
 
-  setTimeout(() => {
-    setIsLoading(false);
-    if (typeof document !== "undefined") {
-      document.body.style.cursor = "default";
-      window.scrollTo(0, 0);
-    }
-  }, 3500);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  //   if (typeof document !== "undefined") {
+  //     document.body.style.cursor = "default";
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, 3500);
+ 
 
   return (
     <main>
