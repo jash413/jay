@@ -8,9 +8,10 @@ import Blogs_banner from "@/images/blogs_banner.png";
 import BlogPost from "@/common/blogPosts/page";
 
 const Blogs = () => {
-  document.title="Blogs - Royale Touch Performance Ply";
+  // document.title="Blogs - Royale Touch Performance Ply";
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
+    document.title = "Blogs - Royale Touch Performance Ply";
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const locomotiveScroll = new LocomotiveScroll();
@@ -25,21 +26,15 @@ const Blogs = () => {
     }
   }, 2000);
 
-
-
   return (
     <main>
-       <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-        </AnimatePresence>
-
-
+      </AnimatePresence>
 
       <Inner_header inner_header_image={Blogs_banner} heading_big="BLOGS" />
       <BlogPost />
       <Footer />
-     
-      
     </main>
   );
 };
