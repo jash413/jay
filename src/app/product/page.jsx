@@ -112,7 +112,7 @@ const Page = () => {
         </div>
 
         <div className={styles.block_side2}>
-          <Link href="/product/blockwood">
+          <Link href="/product/blockboard">
             <div className={styles.blockboard} ref={blockboardRef}>
               <h2
                 className={`${styles.blockboard_title} two_heading_animation`}

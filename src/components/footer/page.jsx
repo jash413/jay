@@ -111,7 +111,7 @@ const Page = () => {
               <Link href="/product/plywood">{"Plywood"}</Link>
             </li>
             <li className={styles.footer_item_list}>
-              <Link href="/product/blockwood">{"Blockboard"}</Link>
+              <Link href="/product/blockboard">{"Blockboard"}</Link>
             </li>
           </ul>
         </div>

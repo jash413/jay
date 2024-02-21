@@ -21,7 +21,7 @@ export default function Example() {
         <p className="accordian_header_main_text">FREQUENTLY ASKED QUESTIONS</p>
       </div>
       <div className="accordion">
-        <div className="accordion__item">
+        {/* <div className="accordion__item">
           <div className="accordion__heading">
             <div className="accordion__button">
               What is the process for a warranty certificate?
@@ -92,9 +92,9 @@ export default function Example() {
               Touche Industries Limited or by the Company.
             </p>
           </div>
-        </div>
-        {viewmore && (
-          <>
+        </div> */}
+      
+          
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
@@ -185,6 +185,8 @@ export default function Example() {
               </div>
             </div>
 
+        {viewmore && (
+          <>
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
@@ -344,9 +346,12 @@ export default function Example() {
                   other various plywood widths.
                 </p>
               </div>
+            
             </div>
-          </>
-        )}
+            </>
+             )}
+      
+       
       </div>
 
       <div className="viewmore" onClick={handleClick}>

@@ -151,7 +151,7 @@
   }
 
   .Blockboard_led img {
-    width: 120%;
+    width: 100%;
     height: auto;
   }
 
@@ -183,12 +183,12 @@
   }
 
   .Blockboard_led img {
-    width: 100%;
+    width: 110%;
     height: auto;
   }
 
   .Blockboard_led {
-    right: 0%;
+    right: 2%;
     top: 0%;
   }
 
@@ -219,8 +219,8 @@
   }
 
   .Blockboard_led {
-    right: 0%;
-    top: -1%;
+    right: -7%;
+    top: 0%;
   }
 
   .Blockboard_desk img {
@@ -231,4 +231,13 @@
   .Blockboard_desk {
     margin-top: 6.5rem;
   }
+}
+@media (max-width: 320px) {
+  .Blockboard_led {
+    display: none;
+  }
+.Blockboard_details{
+  padding: 2rem 2rem 0rem 2rem;
+}
+
 }
