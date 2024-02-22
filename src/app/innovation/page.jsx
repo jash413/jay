@@ -10,11 +10,13 @@ import Factory_walk1 from "@/components/factory_walk/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import innovation_image from "@/images/InnovationNewBanner.jpg";
+import innovation_image_mobile from "@/images/inn_banner_new.png";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import innovation_flex_img1 from "@/images/innovation1.png";
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
+import styles from "@/app/innovation/innovation.module.css"
 const Page = () => {
   useEffect(() => {
     document.title = "Innovation - Royale Touch Performance Ply";
@@ -106,11 +108,23 @@ const Page = () => {
       </AnimatePresence>
 
       <div>
+        <div className={styles.innovation_desk}>
         <Inner_header
           inner_header_image={innovation_image}
           heading_big="INNOVATION"
         />
+
+        </div>
+        <div className={styles.innovation_mobile}>
+        <Inner_header
+          inner_header_image={innovation_image_mobile}
+          heading_big="INNOVATION"
+        />
+        </div>
+        <Factory_walk />
+
         <Factory_walk loadFacoryWalk={handleLoad} />
+
         <Factory_walk1 />
       </div>
 

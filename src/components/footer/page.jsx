@@ -7,6 +7,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "@/common/AnimatedText/HeadingTextAnimation";
 import Button from "@/common/button/button4";
+import logo from "@/images/pvot_logo.png"
 import ScrollToTop from "react-scroll-to-top";
 import Title from "@/components/footer/test";
 import styles from "@/components/footer/footer.module.css";
@@ -126,10 +127,11 @@ const Page = () => {
       </div>
       <div className={styles.footer_copyright}>
         © 2024 All Rights Reserved. Website Designed By{" "}
-        <span className={styles.copyright_company_name}> PVOT</span>
+        <span className={styles.copyright_company_name}>
+         <Link href="https://pvotdesigns.com/" target="_blank"><Image src={logo} alt="none" /></Link></span>
       </div>
     </div>
-  );
+  );                                                        
 };
 
 export default Page;
