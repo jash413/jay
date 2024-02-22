@@ -76,6 +76,7 @@
   color: #c3a464;
   font-weight: 400;
   font-weight: 600;
+  margin-left: 2px;
 }
 
 @media (max-width: 1440px) {
