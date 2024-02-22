@@ -17,21 +17,25 @@ export default function Page() {
   //   })();
   // }, []);
 
-  setTimeout(() => {
-    setIsLoading(false);
-    if (typeof document !== "undefined") {
-      document.body.style.cursor = "default";
-      window.scrollTo(0, 0);
-    }
-  }, 3500);
- 
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  //   if (typeof document !== "undefined") {
+  //     document.body.style.cursor = "default";
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, 3500);
+
+  function handleLoad(data) {
+    console.log(data);
+    setIsLoading(data);
+  }
 
   return (
     <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Home />
+      <Home lData={handleLoad} />
     </main>
   );
 }
