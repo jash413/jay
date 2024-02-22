@@ -27,13 +27,16 @@ const Page = () => {
   //   })();
   // }, []);
 
-  setTimeout(() => {
-    setIsLoading(false);
-    if (typeof document !== "undefined") {
-      document.body.style.cursor = "default";
-      window.scrollTo(0, 0);
-    }
-  }, 3000);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  //   if (typeof document !== "undefined") {
+  //     document.body.style.cursor = "default";
+  //     window.scrollTo(0, 0);
+  //   }
+  // }, 3000);
+  function handleLoad(data) {
+    setIsLoading(data);
+  }
 
   // const setLoadingComplete = (status) => {
   //   setIsLoading(!status);
@@ -107,7 +110,7 @@ const Page = () => {
           inner_header_image={innovation_image}
           heading_big="INNOVATION"
         />
-        <Factory_walk />
+        <Factory_walk loadFacoryWalk={handleLoad} />
         <Factory_walk1 />
       </div>
 

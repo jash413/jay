@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory_walk/factory_walk.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const AirpodsAnimation = (props) => {
+const AirpodsAnimation = ({ loadFacoryWalk }) => {
   const router = useRouter();
   const [info, setInfo] = useState(false);
   const [animationEnded, setAnimationEnded] = useState(false); // State to track animation end
@@ -17,6 +17,9 @@ const AirpodsAnimation = (props) => {
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
+  const [loadingCounter, setLoadingCounter] = useState(0);
+  const [loading, setLoading] = useState(true);
+  console.log("FactoryWalk loading", loading);
 
   const [refButton, inViewButton] = useInView({
     triggerOnce: false,
@@ -95,13 +98,39 @@ const AirpodsAnimation = (props) => {
         .padStart(4, "0")}.jpg`;
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
-
+    let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
       imagesRef.current.push(img);
+      imgL.push(img.src);
     }
 
+    const loadImages = async () => {
+      try {
+        const loadImagePromises = imgL.map((imageUrl, index) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => {
+              setLoadingCounter(index + 1);
+              resolve();
+            };
+          });
+        });
+
+        await Promise.all(loadImagePromises);
+
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        // Handle error loading images
+      }
+    };
+    loadImages();
+    console.log(imgL);
+    // const lCouner = Math.floor()
+    console.log("Counter", loadingCounter);
     const animationTimeline = gsap.timeline({
       onUpdate: render,
       onComplete: () => setAnimationEnded(true), // Set animationEnded to true when animation completes
@@ -138,7 +167,9 @@ const AirpodsAnimation = (props) => {
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, []);
+  }, [loadingCounter]);
+  console.log(loading ? "FactoryWalk Loading" : "FactoryWalk Complate");
+  console.log(loadFacoryWalk(loading));
 
   return (
     <div className={styles.canvas_layer_setting_first_outer}>
