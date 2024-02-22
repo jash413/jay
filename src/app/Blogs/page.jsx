@@ -4,7 +4,7 @@ import Footer from "@/components/footer/page";
 import { AnimatePresence } from "framer-motion";
 import Inner_header from "@/common/inner_header/page";
 import Preloader from "@/components/preloader/page";
-import Blogs_banner from "@/images/blogs_banner.png";
+import Blogs_banner from "@/images/Blog_Banner.jpg";
 import BlogPost from "@/common/blogPosts/page";
 
 const Blogs = () => {
