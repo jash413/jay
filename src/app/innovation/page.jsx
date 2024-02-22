@@ -10,7 +10,7 @@ import Factory_walk1 from "@/components/factory_walk/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import innovation_image from "@/images/InnovationNewBanner.jpg";
-import innovation_image_mobile from "@/images/innovation_mobile.png";
+import innovation_image_mobile from "@/images/inn_banner_new.png";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
 import innovation_flex_img1 from "@/images/innovation1.png";
