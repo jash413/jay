@@ -212,7 +212,7 @@ const Home = ({loadUSP}) => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>04</p>
-                <h2 className={styles.twoo}>Ternite & Borer Proof</h2>
+                <h2 className={styles.twoo}>Termie & Borer Proof</h2>
                 <p className={styles.timeline_sec_comment}>
                   Shielded against microbes, viruses, bacteria, fungi, termites,
                   and borers in their favourable conditions.
