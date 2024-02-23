@@ -7,7 +7,7 @@ import Footer from "@/components/footer/page";
 import Layers from "@/components/layers/page";
 import Factory from "@/components/factory/page";
 import Form from "@/components/form/page";
-import Plyspin from "@/components/plyspin/page";
+// import Plyspin from "@/components/plyspin/page";
 import Navbar from "@/components/navbar/index";
 import HomeStore from "@/components/homeStore/page";
 import gsap from "gsap";
