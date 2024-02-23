@@ -11,11 +11,16 @@
   /* max-width: 800px; */
   width: 50%;
 }
+.sectionX{
+  display: flex;
+  justify-content: end;
+  padding-right:100px !important ;
+}
 
 .canvas_layer {
   height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: 50%;
+  object-fit: fill;
   object-position: center;
 }
 
