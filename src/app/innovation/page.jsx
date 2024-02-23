@@ -16,7 +16,7 @@ import Preloader from "@/components/preloader/page";
 import innovation_flex_img1 from "@/images/innovation1.png";
 import innovation_flex_img2 from "@/images/innovation2.png";
 import innvotion_flex_img3 from "@/images/innvotion3.png";
-import styles from "@/app/innovation/innovation.module.css"
+import styles from "@/app/innovation/innovation.module.css";
 const Page = () => {
   useEffect(() => {
     document.title = "Innovation - Royale Touch Performance Ply";
@@ -109,17 +109,16 @@ const Page = () => {
 
       <div>
         <div className={styles.innovation_desk}>
-        <Inner_header
-          inner_header_image={innovation_image}
-          heading_big="INNOVATION"
-        />
-
+          <Inner_header
+            inner_header_image={innovation_image}
+            heading_big="INNOVATION"
+          />
         </div>
         <div className={styles.innovation_mobile}>
-        <Inner_header
-          inner_header_image={innovation_image_mobile}
-          heading_big="INNOVATION"
-        />
+          <Inner_header
+            inner_header_image={innovation_image_mobile}
+            heading_big="INNOVATION"
+          />
         </div>
         {/* <Factory_walk /> */}
 
