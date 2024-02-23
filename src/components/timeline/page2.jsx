@@ -93,7 +93,7 @@ const Page2 = () => {
                   <Image src={usp4} alt="image" className={styles.img_main} />
                 </div>
                 <p className={styles.timeline_number}>04</p>
-                <h2 className={styles.twoo}>Ternite & Borer Proof</h2>
+                <h2 className={styles.twoo}>Termite & Borer Proof</h2>
                 <p className={styles.timeline_sec_comment}>
                   Shielded against microbes, viruses, bacteria, fungi, termites,
                   and borers in their favourable conditions.
