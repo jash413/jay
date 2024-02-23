@@ -114,7 +114,6 @@ const AirpodsAnimation = ({ loadImage }) => {
         });
 
         await Promise.all(loadImagePromises);
-        // for (let i = 0; i < 100; i++) console.log(i);
         setLoading(false);
       } catch (error) {
         console.error("Error loading images:", error);

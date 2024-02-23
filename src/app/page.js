@@ -6,9 +6,9 @@ import Home from "@/app/home/page";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => {
-  //   document.title = "Royale Touche Performance Ply";
-  // }, []);
+  useEffect(() => {
+    document.title = "Royale Touche Performance Ply";
+  }, []);
 
   // useEffect(() => {
   //   (async () => {
