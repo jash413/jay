@@ -11,8 +11,8 @@ const Home = ({loadUSP}) => {
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
-  const [loading, setLoading] = useState(true);
-  console.log("USP loading", loading);
+  // const [loading, setLoading] = useState(true);
+  // console.log("USP loading", loading);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -75,33 +75,33 @@ const Home = ({loadUSP}) => {
 
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F000.jpg
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/001-scaled.jpg
-        let imgL = [];
+        // let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
       imagesRef.current.push(img);
-      imgL.push(img.src);
+      // imgL.push(img.src);
     }
-    const loadImages = async () => {
-      try {
-        const loadImagePromises = imgL.map((imageUrl) => {
-          return new Promise((resolve) => {
-            const img = new Image();
-            img.src = imageUrl;
-            img.onload = () => resolve();
-          });
-        });
+    // const loadImages = async () => {
+    //   try {
+    //     const loadImagePromises = imgL.map((imageUrl) => {
+    //       return new Promise((resolve) => {
+    //         const img = new Image();
+    //         img.src = imageUrl;
+    //         img.onload = () => resolve();
+    //       });
+    //     });
 
-        await Promise.all(loadImagePromises);
-        // for (let i = 0; i < 100; i++) console.log(i);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error loading images:", error);
-        // Handle error loading images
-      }
-    };
-    loadImages();
-    console.log(imgL);
+    //     await Promise.all(loadImagePromises);
+    //     // for (let i = 0; i < 100; i++) console.log(i);
+    //     setLoading(false);
+    //   } catch (error) {
+    //     console.error("Error loading images:", error);
+    //     // Handle error loading images
+    //   }
+    // };
+    // loadImages();
+    // console.log(imgL);
     gsap
       .timeline({
         onUpdate: render,
@@ -139,8 +139,8 @@ const Home = ({loadUSP}) => {
     };
   }, []);
   
-  console.log(loading ? "USP Loading" : "USP Complate");
-  console.log(loadUSP(loading));
+  // console.log(loading ? "USP Loading" : "USP Complate");
+  // console.log(loadUSP(loading));
 
   const container = useRef(null);
 

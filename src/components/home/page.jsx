@@ -62,7 +62,7 @@ const Page = ({ lData }) => {
       </section>
       <Layers loadLayer={lData} />
       {/* <Plyspin /> */}
-      <Timeline loadUSP={lData} />
+      <Timeline  />
       <Timeline1 />
       <HomeStore />
       <Form />
