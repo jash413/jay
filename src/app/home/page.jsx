@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeroSection from "@/components/heroSection/page";
 import Timeline from "@/components/timeline/page";
 import Timeline1 from "@/components/timeline/page2";
@@ -45,31 +45,29 @@ const Page = ({ lData }) => {
     return () => ctx.revert();
   }, []);
   return (
-    <>
+    <div>
       <div>
-        <div>
-          <Navbar />
-        </div>
-        <section className="cards">
-          <div className="card">
-            <div className="card-cover">
-              <HeroSection
-                video_bg="./video/final_k.mp4"
-                homepage_heading="ply that is a living shield for beautiful and timeless furniture"
-              />
-            </div>
-          </div>
-          <Factory loadImage={lData} />
-        </section>
-        <Layers loadLayer={lData} />
-        {/* <Plyspin /> */}
-        <Timeline loadUSP={lData} />
-        <Timeline1 />
-        <HomeStore />
-        <Form />
-        <Footer />
+        <Navbar />
       </div>
-    </>
+      <section className="cards">
+        <div className="card">
+          <div className="card-cover">
+            <HeroSection
+              video_bg="./video/final_k.mp4"
+              homepage_heading="ply that is a living shield for beautiful and timeless furniture"
+            />
+          </div>
+        </div>
+        <Factory loadImage={lData} />
+      </section>
+      <Layers loadLayer={lData} />
+      {/* <Plyspin /> */}
+      <Timeline loadUSP={lData} />
+      <Timeline1 />
+      <HomeStore />
+      <Form />
+      <Footer />
+    </div>
   );
 };
 export default Page;
