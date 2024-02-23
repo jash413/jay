@@ -162,7 +162,7 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
         canvas.height
       );
     }
-
+    // canvas_layer_setting_outer
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
