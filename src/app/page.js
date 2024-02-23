@@ -2,12 +2,14 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "@/components/preloader/page";
-import Home from "@/app/home/page";
+import Home from "@/components/home/page";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     document.title = "Royale Touche Performance Ply";
+
+    
   }, []);
 
   // useEffect(() => {
