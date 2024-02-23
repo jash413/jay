@@ -12,7 +12,6 @@ import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
 import Inner_page_slider2 from "@/common/inner_page_slider2/page";
 import SmartChioceTable from "@/common/SmartChoice-Table/page2";
-
 const SpecificationsLeftData = [
   {
     title: "GRADE:",
@@ -120,6 +119,9 @@ const SpecificationsRightData = [
 ];
 
 const Page = () => {
+  useEffect(() => {
+    document.title = "Blockboard";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {
@@ -140,8 +142,7 @@ const Page = () => {
       </AnimatePresence>
       <Inner_header
         inner_header_image={innovation_image}
-        heading="With the dimensional stability of solid wood and appearance and sleekness of plywood, Royale 
-        Touche Blockboard gives you warp-free furniture that lasts a lifetime."
+        heading="With the dimensional stability of solid wood and appearance and sleekness of plywood, Royale Touche Blockboard gives you warp-free furniture that lasts a lifetime."
       />
       <Blockwood_flex />
       <Inner_page_slider2 />

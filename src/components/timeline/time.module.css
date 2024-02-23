@@ -5,16 +5,22 @@
   display: flex;
   font-weight: 400;
   color: white;
+  /* background-color: #005F57; */
 }
 .first_timeline_inner {
   /* max-width: 800px; */
-  width: 50%;
+  /* width: 50%; */
 }
+/* .sectionX{
+  display: flex;
+  justify-content: end;
+  padding-right:100px !important ;
+} */
 
 .canvas_layer {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   object-position: center;
 }
 
@@ -32,7 +38,7 @@
 }
 
 .canvas_side_outer {
-  width: 50%;
+  width: 100%;
 }
 
 .timeline {

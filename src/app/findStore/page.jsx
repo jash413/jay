@@ -10,6 +10,9 @@ import Preloader from "@/components/preloader/page";
 import findStore_image from "@/images/new_channel.png";
 import HeroSection from "@/components/heroSection/page";
 const Page = () => {
+  useEffect(() => {
+    document.title = "Find Nearest Plywood Store";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {

@@ -162,7 +162,7 @@
 @media (max-width: 430px) {
   .BlogPost_outer {
     background-color: white;
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 3rem 3rem;
   }
 }
 
@@ -185,7 +185,7 @@
 
   .BlogPost_outer {
     background-color: white;
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 3rem 3rem;
   }
 
   .BlogPost_name {
@@ -254,7 +254,7 @@
 
   .BlogPost_outer {
     background-color: white;
-    padding: 7rem 3rem 0rem 3rem;
+    padding: 7rem 3rem 1.5rem 3rem;
   }
   .BlogPost_name {
     width: 50%;
@@ -347,7 +347,7 @@
 
   .BlogPost_outer {
     background-color: white;
-    padding: 7rem 2rem 0rem 2rem;
+    padding: 7rem 2rem 1rem 2rem;
   }
 
   .BlogPost_text {

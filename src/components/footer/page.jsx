@@ -7,6 +7,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import HeadingTextAnimation from "@/common/AnimatedText/HeadingTextAnimation";
 import Button from "@/common/button/button4";
+import logo from "@/images/pvot_logo.png";
 import ScrollToTop from "react-scroll-to-top";
 import Title from "@/components/footer/test";
 import styles from "@/components/footer/footer.module.css";
@@ -111,7 +112,7 @@ const Page = () => {
               <Link href="/product/plywood">{"Plywood"}</Link>
             </li>
             <li className={styles.footer_item_list}>
-              <Link href="/product/blockwood">{"Blockboard"}</Link>
+              <Link href="/product/blockboard">{"Blockboard"}</Link>
             </li>
           </ul>
         </div>
@@ -125,11 +126,18 @@ const Page = () => {
         />
       </div>
       <div className={styles.footer_copyright}>
-        © 2024 All Rights Reserved. Website Designed By{" "}
-        <span className={styles.copyright_company_name}> PVOT</span>
+        © 2024 All Rights Reserved
+        <span className={styles.copyright_company_name}>
+          <Link href="https://pvotdesigns.com/" target="_blank">
+            PVOT
+          </Link>
+        </span>
       </div>
     </div>
   );
 };
+{
+  /* <Image src={logo} alt="none" /> */
+}
 
 export default Page;

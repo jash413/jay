@@ -11,6 +11,9 @@ import Preloader from "@/components/preloader/page";
 import HeroSection from "@/components/Hero_ContactUs/page";
 import ContactAddress from "@/components/contactAddress/Page";
 const ContactUs = () => {
+  useEffect(() => {
+    document.title = "Contact Royale Touche";
+  }, []);
   const [isLoading, setIsLoading] = useState(true);
   // useEffect(() => {
   //   (async () => {
@@ -39,7 +42,7 @@ const ContactUs = () => {
         <HeroSection
           banner_image={contactUs_image}
           header_name="Contact Us"
-          header_comment="Connect with Confidence: Reach Out to Royal Touch Plywood's Dedicated Channel Partners for Prompt Assistance and Expert Guidance with Any Queries or Concerns You Have."
+          header_comment="Connect with Confidence: Reach Out to Royal Touch Plywood's Assistance with Any Queries You Have."
         />
         <Contact_Map />
         <ContactAddress />
