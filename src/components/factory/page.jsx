@@ -74,6 +74,8 @@ const AirpodsAnimation = ({ loadImage }) => {
       )
         .toString()
         .padStart(3, "0")}.jpg`;
+
+        
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F000.jpg
 
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg

@@ -71,6 +71,8 @@ const Home = ({loadUSP}) => {
         .toString()
         .padStart(3, "0")}-scaled.jpg`;
 
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F0000.jpg
+
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F000.jpg
         // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/001-scaled.jpg
         let imgL = [];

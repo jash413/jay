@@ -121,11 +121,11 @@ const Page = () => {
           heading_big="INNOVATION"
         />
         </div>
-        <Factory_walk />
+        {/* <Factory_walk /> */}
 
         <Factory_walk loadFacoryWalk={handleLoad} />
 
-        <Factory_walk1 />
+        <Factory_walk1 loadFacoryWalkMobile={handleLoad} />
       </div>
 
       <Form />
