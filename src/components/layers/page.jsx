@@ -110,11 +110,13 @@ const Airpods = ({loadLayer}) => {
 
     const frameCount = 360;
     const currentFrame = (index) =>
-      `https://royaltouchassets.humbeestudio.xyz/assets/images/stackfull/${(
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/plystack/${(
         index + 0
       )
         .toString()
         .padStart(3, "0")}.png`;
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/plystack/000.png
+
     let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();

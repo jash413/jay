@@ -177,7 +177,7 @@ const Home = ({loadUSP}) => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>01</p>
-                <h2 className={styles.twoo}>Vaccuum Pressure Treatment</h2>
+                <h2 className={styles.twoo}>Vacuum Pressure Treatment</h2>
                 <p className={styles.timeline_sec_comment}>
                   The only plywood in India made with 100% scientifically
                   researched proprietary Vacuum Pressure Chemical Treated veneer
@@ -212,7 +212,7 @@ const Home = ({loadUSP}) => {
               <div className={styles.bead}></div>
               <div className={`${styles.contentX} triggered-element`}>
                 <p className={styles.timeline_number}>04</p>
-                <h2 className={styles.twoo}>Termie & Borer Proof</h2>
+                <h2 className={styles.twoo}>Termite & Borer Proof</h2>
                 <p className={styles.timeline_sec_comment}>
                   Shielded against microbes, viruses, bacteria, fungi, termites,
                   and borers in their favourable conditions.
