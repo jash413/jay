@@ -89,7 +89,7 @@ const AirpodsAnimation = (props) => {
     const frameCount = 1198;
     const currentFrame = (index) =>
       `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F${(
-        index + 1
+        index + 0
       )
         .toString()
         .padStart(4, "0")}.jpg`;
