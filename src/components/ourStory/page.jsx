@@ -6,9 +6,9 @@ const Page = () => {
   return (
     <div className={styles.ourStory}>
       <div className={styles.wrapper}>
-        <div className={styles.heading}>
+        {/* <div className={styles.heading}>
           <h3>Our Story</h3>
-        </div>
+        </div> */}
         <div className={styles.content_wrapper}>
           <div className={styles.left}>
             <div className={styles.image}>
@@ -17,6 +17,9 @@ const Page = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.right_wrapper}>
+            <div className={styles.heading}>
+          <h3>Our Story</h3>
+        </div>
               <div className={styles.content}>
                 The year was
                 <span>
