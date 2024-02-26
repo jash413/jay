@@ -297,6 +297,7 @@
   .content30 {
     width: 92%;
     margin: 24px;
+    height: auto;
     order: 2;
   }
   .map_frame {
@@ -352,6 +353,7 @@
   }
   .content30 {
     width: 86%;
+    height: auto;
     margin: 24px;
   }
   .select_menu .options {

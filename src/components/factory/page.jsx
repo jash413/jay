@@ -1,17 +1,23 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory/factory.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const AirpodsAnimation = () => {
+const AirpodsAnimation = ({ loadImage }) => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
   const textRef = useRef(null);
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
-  const airpodsRef = useRef({ frame: 6 });
+  const airpodsRef = useRef({ frame: 0 });
+  const [loading, setLoading] = useState(true);
+
+  // const [imgLoad, setImgLoad] = useState(true);
+  // console.log(loadImage(imgLoad));
+  console.log("factory loading", loading);
+
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -35,18 +41,13 @@ const AirpodsAnimation = () => {
       } else if (windowWidth >= 1024) {
         canvas.width = 1200; // Adjust the width for screen width 1024
         canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
-      } 
-      else if (windowWidth >= 768) {
+      } else if (windowWidth >= 768) {
         canvas.width = 1200; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } 
-
-      else if (windowWidth >= 430) {
+      } else if (windowWidth >= 430) {
         canvas.width = 900; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      } 
-      else if (windowWidth >= 425) {
-
+      } else if (windowWidth >= 425) {
         canvas.width = 900; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
       } else if (windowWidth >= 375) {
@@ -66,20 +67,63 @@ const AirpodsAnimation = () => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 157;
+    const frameCount = 156;
     const currentFrame = (index) =>
-      `https://royaltouchassets.humbeestudio.xyz/assets/images/factoryzoomhome/F${(
-        index + -6)
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F${(
+        index + 1
+      )
         .toString()
         .padStart(3, "0")}.jpg`;
 
+        
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F000.jpg
+
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/00001-scaled.jpg
+    let imgL = [];
 
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
       imagesRef.current.push(img);
+      imgL.push(img.src);
+      // fetch(img.src)
+      //   .then((res) => res.statusText)
+      //   .then((data) => console.log("data", setImgLoad(data)))
+      //   .catch((error) => console.error("error", error));
     }
+    // imgL.map((imageUrl) => {
+    //   return new Promise((resolve) => {
+    //     const img = new Image();
+    //     img.src = imageUrl;
+    //     img.onload = () => resolve();
+    //   });
+    // });
+
+    // Promise.all(imgL).then(() => {
+    //   setLoading(false);
+    // });
+
+    const loadImages = async () => {
+      try {
+        const loadImagePromises = imgL.map((imageUrl) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => resolve();
+          });
+        });
+
+        await Promise.all(loadImagePromises);
+        // for (let i = 0; i < 100; i++) console.log(i);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        // Handle error loading images
+      }
+    };
+    loadImages();
+
+    console.log(imgL);
 
     gsap
       .timeline({
@@ -116,6 +160,8 @@ const AirpodsAnimation = () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
+  console.log(loading ? "Loading" : "Complate");
+  console.log(loadImage(loading));
 
   const phrase =
     "For those who accept nothing less than the finest. A ply that has it all. Carefully engineered using proprietary 4-stage preservative treatment of select hardwood species, cross-bonded with 100% BWP grade phenolic resins using 4 press technology, a ply that is safe for your home and loved ones with E-0 emissions and fire retardant properties.";

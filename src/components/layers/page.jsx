@@ -8,7 +8,7 @@ import styles from "@/components/layers/layer.module.css";
 import dynamic from "next/dynamic";
 gsap.registerPlugin(ScrollTrigger);
 
-const Airpods = () => {
+const Airpods = ({loadLayer}) => {
   const controlsVideo = useAnimation();
   const [refText, inViewText] = useInView({
     triggerOnce: true,
@@ -47,7 +47,8 @@ const Airpods = () => {
   const contextRef = useRef(null);
   const imagesRef = useRef([]);
   const airpodsRef = useRef({ frame: 0 });
-
+  const [loading, setLoading] = useState(true);
+  console.log("Layers's loading", loading);
   useEffect(() => {
     const section = sectionRef.current;
     const canvas = canvasRef.current;
@@ -113,12 +114,32 @@ const Airpods = () => {
       )
         .toString()
         .padStart(3, "0")}.png`;
+    let imgL = [];
     for (let i = 0; i < frameCount; i++) {
       let img = new Image();
       img.src = currentFrame(i);
       imagesRef.current.push(img);
+      imgL.push(img.src);
     }
+    const loadImages = async () => {
+      try {
+        const loadImagePromises = imgL.map((imageUrl) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = imageUrl;
+            img.onload = () => resolve();
+          });
+        });
 
+        await Promise.all(loadImagePromises);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        // Handle error loading images
+      }
+    };
+    loadImages();
+    console.log(imgL);
     // Fade in the counter and circle on mount
     gsap.from(
       [`.${styles.percentageCounter}`, `.${styles.percentage_counter_outer}`],
@@ -199,6 +220,8 @@ const Airpods = () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
+  console.log(loading ? "Layers Loading" : "Layers Complate");
+  console.log(loadLayer(loading));
 
   useEffect(() => {
     if (counterCount === 13) {

@@ -1,21 +1,25 @@
 .footer {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
   font-size: 30px;
   cursor: pointer;
   gap: 40px;
+  border-top: 1px solid #c3a464;
+  padding: 20px 0 0;
+  margin: 20px auto 0;
 }
-
 
 @media (max-width: 575px) {
   .footer {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-evenly;
     font-size: 30px;
     cursor: pointer;
-    padding: 1rem;
+    /* padding: 1rem; */
     gap: 40px;
+    padding: 20px 0 0;
+    margin: 20px auto 0;
   }
 }

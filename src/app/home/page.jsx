@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import HeroSection from "@/components/heroSection/page";
 import Timeline from "@/components/timeline/page";
 import Timeline1 from "@/components/timeline/page2";
@@ -15,7 +15,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import { useLayoutEffect } from "react";
 import "./homeParallax.css";
-const Page = () => {
+
+const Page = ({ lData }) => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // lenis integration for smooth scroll
@@ -57,11 +58,11 @@ const Page = () => {
             />
           </div>
         </div>
-        <Factory />
+        <Factory loadImage={lData} />
       </section>
-      <Layers />
+      <Layers loadLayer={lData} />
       {/* <Plyspin /> */}
-      <Timeline />
+      <Timeline loadUSP={lData} />
       <Timeline1 />
       <HomeStore />
       <Form />
