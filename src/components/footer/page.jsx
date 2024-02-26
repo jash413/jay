@@ -10,6 +10,7 @@ import Button from "@/common/button/button4";
 import logo from "@/images/pvot_logo.png";
 import ScrollToTop from "react-scroll-to-top";
 import Title from "@/components/footer/test";
+import { useRouter } from "next/navigation";
 import styles from "@/components/footer/footer.module.css";
 import "./scroll_to_top.css";
 import { usePathname } from "next/navigation";
@@ -26,7 +27,7 @@ const Page = () => {
       controls.start("visible");
     }
   }, [controls, inView]);
-
+  const router = useRouter();
   return (
     <div>
       <div className={styles.footer_upper_heading_wrapper}>
@@ -57,6 +58,7 @@ const Page = () => {
       <div className={styles.footer_wrapper}>
         <div className={styles.footer_firstSide}>
           <Image
+          onClick={() => router.push("/")}
             src={footer_logo}
             alt="Footer-logo"
             className={styles.footer_logo_image}

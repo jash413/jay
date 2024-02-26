@@ -33,13 +33,15 @@ const whyPlywoodData = [
 const WhyPlywood = () => {
   return (
     <div className={styles.whyPlywood}>
-      <div className={styles.whyPlywood_heading}>Why Plywood</div>
+      
       <div className={styles.whyPlywoodItem_wrap}>
         {/* {whyPlywoodData.map((item, index) => (
           <WhyPlywoodItem key={index} {...item} />
         ))} */}
         <div className={styles.left}>
+        <div className={styles.whyPlywood_heading}>Why Plywood</div>
           <ul>
+          
             <li>
               With the exponential boom in the building industry, Royale Touche
               decided to venture into another vertical that aligned with our

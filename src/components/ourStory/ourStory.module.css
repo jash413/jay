@@ -12,10 +12,10 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
   border-bottom: 1px solid #000;
   width: max-content;
-  margin: 0 auto 60px;
+  margin-bottom: 1.5rem;
 }
 .content_wrapper {
   display: flex;
@@ -128,12 +128,12 @@
 @media(max-width:575px){
   .heading h3 {
     font-size: 45px;
-    margin: 0 auto 60px;
+    margin-bottom: 1rem;
   }
 }
 @media(max-width:420px){
   .heading h3 {
     font-size: 35px;
-    margin: 0 auto 60px;
+    margin-bottom: 1rem;
   }
 }

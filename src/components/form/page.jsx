@@ -122,7 +122,7 @@ const Contactform = () => {
   const handleStateChange = (selectedOption) => {
     setSelectedState(selectedOption);
     setFieldValue("state", selectedOption.value);
-    setFieldValue("year", "");
+    setFieldValue("City", selectedOption.value);
     switch (selectedOption.value) {
       case "AndraPradesh":
         setCities(["Anantapur","Chittoor","East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"]);
@@ -245,9 +245,9 @@ const Contactform = () => {
   const initialValue = {
     fullName: "",
     Email: "",
-    Phone: "",
+    PhoneNo: "",
     state: "",
-    year: "",
+    City: "",
     message: "",
   };
 
@@ -322,14 +322,16 @@ const Contactform = () => {
             <div className={styles.field}>
               <label htmlFor="phone">Phone</label>
               <input
-                type="text"
-                name="Phone"
+                type="number"
+                name="PhoneNo"
                 onChange={handleChange}
-                value={values.Phone}
+                value={values.PhoneNo}
+                pattern="\d{10}"
+                maxlength="10"
                 placeholder="8140X XXXXX"
               />
-              {touched.Phone && errors.Phone && (
-                <p className={styles.error}>{errors.Phone}</p>
+              {touched.PhoneNo || errors.PhoneNo && (
+                <p className={styles.error}>{errors.PhoneNo}</p>
               )}
             </div>
 
@@ -362,10 +364,10 @@ const Contactform = () => {
                 placeholder={
                   selectedState ? "Select City" : "Please select a state first"
                 }
-                value={values.year}
+                value={values.City}
                 onChange={(selectedOption) => {
                   let event = {
-                    target: { name: "year", value: selectedOption },
+                    target: { name: "City", value: selectedOption },
                   };
                   handleChange(event);
                 }}
@@ -375,8 +377,8 @@ const Contactform = () => {
                 name="year"
                 isDisabled={!selectedState}
               />
-              {touched.year && errors.year && (
-                <p className={styles.error}>{errors.year}</p>
+              {touched.City && errors.City && (
+                <p className={styles.error}>{errors.City}</p>
               )}
             </div>
             <div className={styles.field}>
