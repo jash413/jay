@@ -57,8 +57,8 @@ const FormCommon = () => {
       ]);
     } else {
       setThicknessOptions([
-        { name: "6mm", code: "6mm" },
-        { name: "9mm", code: "9mm" },
+        { name: "19mm", code: "19mm" },
+        { name: "25mm", code: "25mm" },
       ]);
     }
   };

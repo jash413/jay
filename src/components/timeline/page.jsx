@@ -67,10 +67,13 @@ const Home = ({loadUSP}) => {
     const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F${(index + 1)
         .toString()
-        .padStart(3, "0")}-scaled.jpg`;
+        .padStart(4, "0")}.jpg`;
 
+
+
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F0000.jpg
 
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F000.jpg
