@@ -100,13 +100,13 @@ const Page = () => {
           <div className={styles.footer_titles}>{"PRODUCT GUIDE"}</div>
           <ul className={styles.footer_headers}>
             <li className={styles.footer_item_list}>
-              <Link href="https://royaletouche.com/">{"Laminates"}</Link>
+              <a target="_blank" href="https://royaletouche.com/">{"Laminates"}</a>
             </li>
             <li className={styles.footer_item_list}>
-              <Link href="https://royaletouche.com/woodenfloors/">
+              <a target="_blank" href="https://royaletouche.com/woodenfloors/">
                 {" "}
                 {"Wooden Floors"}{" "}
-              </Link>
+              </a>
             </li>
             <li className={styles.footer_item_list}>
               <Link href="/product/plywood">{"Plywood"}</Link>
@@ -126,7 +126,7 @@ const Page = () => {
         />
       </div>
       <div className={styles.footer_copyright}>
-        © 2024 All Rights Reserved
+      Copyright © 2024 All Rights Reserved by Royale Touche Performance Ply
         <span className={styles.copyright_company_name}>
           <Link href="https://pvotdesigns.com/" target="_blank">
             PVOT

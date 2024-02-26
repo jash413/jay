@@ -1,6 +1,6 @@
-.accordion__button:hover {
+/* .accordion__button:hover {
   background: #006f69;
-}
+} */
 .accordian_header_main {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -28,12 +28,13 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  text-transform: capitalize;
+  cursor: default !important;
+  text-transform: math-auto !important;
 }
 
 .accordion__button::before {
   float: right;
-  display: none;
+  display: none !important;
 }
 
 .accordion__button:before {
@@ -51,7 +52,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: math-auto !important;
   background-color: #06625b;
 }
 .main_Accordian_header button {
