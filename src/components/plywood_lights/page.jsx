@@ -4,7 +4,7 @@ import Image from "next/image";
 import plywood_wall_light from "@/images/wall_light.png";
 import plywood_standing_lamp from "@/images/standing_lamp.png";
 import plywood_desk from "@/images/desk.png";
-import Promax_image from "@/images/pro_image.png"
+import Promax_image from "@/images/promax.png"
 import Promaxplus_image from "@/images/Promax-plusNew.png"
 import styles from "@/components/plywood_lights/plywood.module.css";
 const Page = () => {

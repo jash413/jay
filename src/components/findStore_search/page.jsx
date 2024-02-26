@@ -1097,7 +1097,7 @@ function Mapsection() {
     <div className={styles.Map_section}>
       <div className={styles.map_section1}>
         <div className={styles.content_Text} ref={storeRef}>
-          {splitWords("Royale Touché Experience Centre Near Me")}
+          {splitWords("Royalé Touché Experience Centre Near Me")}
         </div>
         <div className={styles.option_section}>
           <div
@@ -1198,97 +1198,7 @@ function Mapsection() {
               </div>
             </div>
           ))}
-          {/* <div>
-            <p className={styles.content_1}>
-              {selectedLocationContent.content1}
-            </p>
-            <div className={styles.main_content}>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.mapLocation}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faPhoneVolume}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.phone}
-                </div>
-              </div>
-            </div>
-            <div className={styles.content_border}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="371"
-                height="2"
-                viewBox="0 0 371 2"
-                fill="none"
-              >
-                <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-              </svg>
-            </div>
-          </div> */}
-          {/* <div>
-            <p className={styles.content_1}>
-              {selectedLocationContent.content1}
-            </p>
-            <div className={styles.main_content}>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faLocationDot}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.address}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.mapLocation}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faPhoneVolume}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.phone}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faClock} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.hours}
-                </div>
-              </div>
-            </div>
-            <div className={styles.content_buttons}>
-              {getDirectionURL && (
-                <button
-                  className={styles.content_button}
-                  onClick={() => window.open(getDirectionURL, "_blank")}
-                >
-                  Get Direction
-                </button>
-              )}
-            </div>
-            <div className={styles.content_border}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="371"
-                height="2"
-                viewBox="0 0 371 2"
-                fill="none"
-              >
-                <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-              </svg>
-            </div>
-          </div> */}
+
         </div>
         <div className={styles.content70}>
           <iframe

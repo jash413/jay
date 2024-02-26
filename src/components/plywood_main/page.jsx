@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
-import plywood_main_img from "@/images/plywood_main_table.png";
+import plywood_main_img from "@/images/plywood_main_table1.png";
 import plywood_main from "@/images/floor.png";
 import Button8 from "@/common/button/button8";
 import Common_animation from "@/common/common_animation/animation";

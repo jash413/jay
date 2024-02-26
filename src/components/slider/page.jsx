@@ -18,6 +18,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import styles from "@/components/slider/slider.module.css";
 const Page = () => {
+  
   return (
     <div className={styles.sliderCard_outer_first}>
       <div className={styles.sliderCard}>
@@ -29,7 +30,7 @@ const Page = () => {
           }}
           modules={[Navigation, EffectFade, A11y]}
           spaceBetween={5}
-          loop={true}
+          loop={false}
           slidesPerView={1}
           navigation={{
             nextEl: ".slider_image_swiper_button_next__Eddeo img",

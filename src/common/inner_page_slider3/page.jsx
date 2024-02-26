@@ -91,7 +91,7 @@ const page = () => {
             modules={[Navigation, EffectFade, A11y, Autoplay]}
             spaceBetween={12}
             slidesPerView={3}
-            loop={true}
+            loop={false}
             navigation={true}
             autoplay={{ delay: 5000 }}
             speed={1000}
