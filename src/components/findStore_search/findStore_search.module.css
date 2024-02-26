@@ -125,7 +125,9 @@
 .search_button {
   border-radius: 30px;
   background: #006f69;
-  font-family: lato;
+  /* font-family: '__Lato_d890f0'; */
+  /* font-family: lato; */
+  font-family: inherit;
   outline: none;
   border: none;
   box-shadow: 39px 35px 28px -20px rgba(0, 0, 0, 0.05);

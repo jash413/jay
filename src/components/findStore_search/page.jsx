@@ -979,10 +979,15 @@ function Mapsection() {
     },
 
   };
-
-  const [selectedLocationContent, setSelectedLocationContent] = useState(
-    locationsData["Gujarat"]["Ahmedabad"]
-  );
+  const resetSelection = () => {
+    setSelectedOption1("");
+    setSelectedOption2("");
+  };
+  const [selectedLocationContent, setSelectedLocationContent] = useState([
+    {
+      content1: "Please select State and City to search Royalè Touchè Experience Centre near your location",
+    },
+  ]);
   const [getDirectionURL, setGetDirectionURL] = useState("");
   const toggleDropdown1 = () => {
     setIsOpen1(!isOpen1);
@@ -1013,11 +1018,11 @@ function Mapsection() {
 
   const updateSelectedLocationContent = () => {
     if (!selectedOption1 || !selectedOption2) {
-      setSelectedLocationContent({
-        content1: "Invalid Selection",
-        mapLocation: "Invalid Selection",
-        phone: "Invalid Selection",
-      });
+      setSelectedLocationContent([
+        {
+          content1: "Please select both State and City",
+        },
+      ]);
       return;
     }
 
@@ -1029,6 +1034,7 @@ function Mapsection() {
 
     if (selectedLocations) {
       setSelectedLocationContent(selectedLocations);
+      resetSelection();
     } else {
       setSelectedLocationContent([
         {
@@ -1170,33 +1176,47 @@ function Mapsection() {
       <div className={styles.map_section2}>
         <div className={styles.content30}>
           {selectedLocationContent.map((location, index) => (
+            <>
+            {/* <div>
+              <p>sasasas</p>
+              </div> */}
             <div key={index}>
               <p className={styles.content_1}>{location.content1}</p>
-              <div className={styles.main_content}>
-                <div className={styles.content}>
-                  <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
-                  <div className={styles.address}>{location.mapLocation}</div>
+              {location.mapLocation && location.phone && (
+                <div className={styles.main_content}>
+                  {/* Display mapLocation and phone only if available */}
+                  <div className={styles.content}>
+                    <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
+                    <div className={styles.address}>{location.mapLocation}</div>
+                  </div>
+                  <div className={styles.content}>
+                    <FontAwesomeIcon
+                      icon={faPhoneVolume}
+                      className={styles.allsvg}
+                    />
+                    <div className={styles.address}>{location.phone}</div>
+                  </div>
                 </div>
-                <div className={styles.content}>
-                  <FontAwesomeIcon
-                    icon={faPhoneVolume}
-                    className={styles.allsvg}
-                  />
-                  <div className={styles.address}>{location.phone}</div>
+              )}
+              {location.mapLocation && location.phone && (
+                <div className={styles.content_border}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="371"
+                    height="2"
+                    viewBox="0 0 371 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M0.5 1H371"
+                      stroke="#CFB071"
+                      strokeWidth="2"
+                    />
+                  </svg>
                 </div>
-              </div>
-              <div className={styles.content_border}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="371"
-                  height="2"
-                  viewBox="0 0 371 2"
-                  fill="none"
-                >
-                  <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-                </svg>
-              </div>
+              )}
             </div>
+            </>
           ))}
 
         </div>
