@@ -122,7 +122,7 @@ const Contactform = () => {
   const handleStateChange = (selectedOption) => {
     setSelectedState(selectedOption);
     setFieldValue("state", selectedOption.value);
-    setFieldValue("year", "");
+    setFieldValue("City", selectedOption.value);
     switch (selectedOption.value) {
       case "AndraPradesh":
         setCities(["Anantapur","Chittoor","East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"]);
@@ -247,7 +247,7 @@ const Contactform = () => {
     Email: "",
     Phone: "",
     state: "",
-    year: "",
+    City: "",
     message: "",
   };
 
@@ -362,10 +362,10 @@ const Contactform = () => {
                 placeholder={
                   selectedState ? "Select City" : "Please select a state first"
                 }
-                value={values.year}
+                value={values.City}
                 onChange={(selectedOption) => {
                   let event = {
-                    target: { name: "year", value: selectedOption },
+                    target: { name: "City", value: selectedOption },
                   };
                   handleChange(event);
                 }}
@@ -375,8 +375,8 @@ const Contactform = () => {
                 name="year"
                 isDisabled={!selectedState}
               />
-              {touched.year && errors.year && (
-                <p className={styles.error}>{errors.year}</p>
+              {touched.City && errors.City && (
+                <p className={styles.error}>{errors.City}</p>
               )}
             </div>
             <div className={styles.field}>

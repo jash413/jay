@@ -41,6 +41,9 @@
 .footer_item_list:hover::after {
   width: 100%;
 }
+.footer_logo_image{
+  cursor: pointer;
+}
 
 .footer_upper_heading_wrapper {
   margin: 70px 0px 0px 75px;
@@ -175,7 +178,6 @@
     width: 75%;
     margin-left: 2rem;
     margin-bottom: 3rem;
-
   }
 
   .footer_secondSide,

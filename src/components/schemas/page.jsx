@@ -8,6 +8,6 @@ export const ContactFormSchemas = Yup.object({
   .max(10, 'Must be exactly 10 digits')
   .required('Phone number is required'),
   // state: Yup.object().required("please select any one of the state"),
-  year: Yup.object().required("please select any one of the city"),
+  City: Yup.object().required("please select any one of the city"),
   message: Yup.string().required("message is required"),
 });
