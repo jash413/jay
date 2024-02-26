@@ -5,6 +5,8 @@
 }
 .BlogPost_image {
   width: 100%;
+  aspect-ratio: 4/2;
+  object-fit:cover;
   height: auto;
 }
 .BlogPost_smallOuter {
