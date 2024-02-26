@@ -9,6 +9,7 @@
   object-fit:cover;
   height: auto;
 }
+
 .BlogPost_smallOuter {
   display: flex;
   width: 30%;
