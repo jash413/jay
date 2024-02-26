@@ -38,8 +38,8 @@ function Mapsection() {
       districts: [
         "Ahmedabad",
         "Dahod",
-        "Rajpipla_Narmada",
-        "Ankleshwar_Bharuch",
+        "Rajpipla Narmada",
+        "Ankleshwar Bharuch",
         "Gandhinagar",
         "Surat",
         "Vapi",
@@ -1097,7 +1097,7 @@ function Mapsection() {
     <div className={styles.Map_section}>
       <div className={styles.map_section1}>
         <div className={styles.content_Text} ref={storeRef}>
-          {splitWords("Royale Touché experience center near me")}
+          {splitWords("Royale Touché Experience Centre Near Me")}
         </div>
         <div className={styles.option_section}>
           <div
