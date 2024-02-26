@@ -67,9 +67,9 @@ const Home = ({loadUSP}) => {
     const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F${(index + 1)
+      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
         .toString()
-        .padStart(4, "0")}.jpg`;
+        .padStart(3, "0")}-scaled.jpg`;
 
 
 
