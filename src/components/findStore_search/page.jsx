@@ -985,7 +985,7 @@ function Mapsection() {
   };
   const [selectedLocationContent, setSelectedLocationContent] = useState([
     {
-      content1: "Welcome to Royale Touché experience center",
+      content1: "Please select State and City and search Royalè Touchè Experience Centre near your location",
     },
   ]);
   const [getDirectionURL, setGetDirectionURL] = useState("");
