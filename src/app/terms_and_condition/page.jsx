@@ -100,10 +100,10 @@ const Page = () => {
               <ul className={styles.list}>
                 <li>a. Royalé Touché laboratory</li>
                 <li>b. All nationally renowned laboratories including:</li>
-                <li>National Test House</li>
-                <li>Shriram Test House, Delhi</li>
-                <li> B.I.S.</li>
-                <li> Other government recognised laboratories</li>
+                <li>b. National Test House</li>
+                <li>d. Shriram Test House, Delhi</li>
+                <li>e. B.I.S.</li>
+                <li>f. Other government recognised laboratories</li>
               </ul>
             </p>
           </div>
@@ -250,19 +250,13 @@ const Page = () => {
               than Royalé Touché Industries Private Limited
             </p>
           </div>
-          <div className={styles.description}>
-            <p>
-              16. Customers are requested to check the image below for proper
-              identification of products manufactured by Royalé Touché
-              Industries Private Limited.
-            </p>
-          </div>
+
 
           <p>Attach image of board</p>
 
           <div className={styles.description}>
             <p>
-              17. The liability of Royalé Touché Industries Private Limited is
+              16. The liability of Royalé Touché Industries Private Limited is
               strictly limited to the extent of replacement or refund of the
               material actually defective and no further monetary claim on the
               damaged product or portion can be claimed from Royalé Touché
@@ -291,7 +285,7 @@ const Page = () => {
 
           <div className={styles.description}>
             <p>
-              18. The customer/end user expressly agrees that all claims,
+              17. The customer/end user expressly agrees that all claims,
               disputes or differences between the parties hereto arising out of
               relating to the terms herein shall be resolved by arbitration
               before a Sole Arbitrator which shall be nominated by Royalé Touché
@@ -308,9 +302,9 @@ const Page = () => {
 
           <div className={styles.description}>
             <p>
-              19. This warranty applies to all the warrantied products
+              18. This warranty applies to all the warrantied products
               manufactured by Royalé Touché Industries Private Limited after 1st
-              January, 2023.
+              January, 2024.
             </p>
           </div>
         </div>
