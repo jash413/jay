@@ -94,8 +94,6 @@ const Page = () => {
         "
         blogPost_text10="Choosing high-quality plywood for your furniture project involves a combination of understanding the grading system, core material, veneer quality, adhesive type, and thickness. By carefully considering these factors and tailoring your selection to the intended application, you can create furniture that not only looks impressive but also stands the test of time. Investing time and effort in selecting the right plywood will undoubtedly pay off in the longevity and durability of your finished pieces.
         "
-
-
       />
          <Footer />
     </div>

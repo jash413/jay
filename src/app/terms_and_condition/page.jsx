@@ -98,12 +98,14 @@ const Page = () => {
               thereafter send it for physical/ chemical examination to any of
               the following places:
               <ul className={styles.list}>
-                <li>a. Royalé Touché laboratory</li>
-                <li>b. All nationally renowned laboratories including:</li>
-                <li>b. National Test House</li>
-                <li>d. Shriram Test House, Delhi</li>
-                <li>e. B.I.S.</li>
-                <li>f. Other government recognised laboratories</li>
+               <p> a. Royalé Touché laboratory</p>
+               <p> b. All nationally renowned laboratories including:</p>
+               <div className={styles.list12}>
+                <li >a. National Test House</li>
+                <li>b. Shriram Test House, Delhi</li>
+                <li>c. B.I.S.</li>
+                <li>d. Other government recognised laboratories</li>
+                </div>
               </ul>
             </p>
           </div>

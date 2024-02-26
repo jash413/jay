@@ -116,10 +116,9 @@
 .projects_pagination {
   display: flex;
   justify-content: center;
-background-color: white;
+  background-color: white;
   padding: 3rem 0;
 }
-
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .BlogPost_text {
@@ -162,7 +161,6 @@ background-color: white;
     margin-top: 2rem;
   }
 }
-
 
 @media (max-width: 991px) {
   .BlogPost_outer {
