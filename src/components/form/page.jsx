@@ -245,7 +245,7 @@ const Contactform = () => {
   const initialValue = {
     fullName: "",
     Email: "",
-    Phone: "",
+    PhoneNo: "",
     state: "",
     City: "",
     message: "",
@@ -322,14 +322,16 @@ const Contactform = () => {
             <div className={styles.field}>
               <label htmlFor="phone">Phone</label>
               <input
-                type="text"
-                name="Phone"
+                type="number"
+                name="PhoneNo"
                 onChange={handleChange}
-                value={values.Phone}
+                value={values.PhoneNo}
+                pattern="\d{10}"
+                maxlength="10"
                 placeholder="8140X XXXXX"
               />
-              {touched.Phone && errors.Phone && (
-                <p className={styles.error}>{errors.Phone}</p>
+              {touched.PhoneNo || errors.PhoneNo && (
+                <p className={styles.error}>{errors.PhoneNo}</p>
               )}
             </div>
 
