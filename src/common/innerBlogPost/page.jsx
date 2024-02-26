@@ -3,9 +3,9 @@ import React from 'react';
 import styles from "@/common/innerBlogPost/innerblogpost.module.css"
 import Image from 'next/image';
 import logo from "@/images/logo.png"
-
+import { useRouter } from "next/navigation";
 const BlogPost = (props) => {
-
+  const router = useRouter();
   return (
     <div>
       <div className={styles.BlogPost_outer}>
@@ -137,7 +137,14 @@ const BlogPost = (props) => {
         <div className={styles.BlogPost_secHeading}>{props.blogPost_heading17}</div>
         <div className={styles.BlogPost_text_inner}>{props.blogPost_text22}</div>
         
-
+        <button
+           onClick={()=> router.push("/Blogs")}               
+            className={styles.button9}
+            role="button"
+          >
+            <span className={styles.text3}>Explore Other Blogs</span>
+            <span className={styles.text3}>Explore Other Blogs</span>
+          </button>
           
       </div>
     </div>
