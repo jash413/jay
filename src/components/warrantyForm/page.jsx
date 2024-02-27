@@ -11,6 +11,7 @@ import invoice_icon from "@/images/invoice_svg.svg";
 import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "@/components/warrantyForm/warrantyForm.module.css";
+import Link from "next/link";
 const FormCommon = () => {
   const router = useRouter();
   const form = useRef();
@@ -212,8 +213,6 @@ const FormCommon = () => {
     setUploadedInvoice3(null);
   };
 
-
-
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,
     validationSchema: FormSchemas,
@@ -243,11 +242,8 @@ const FormCommon = () => {
       submitMessage();
     },
   });
-  console.log("FINAL VALUES",values);
+  console.log("FINAL VALUES", values);
   console.log("response", formResponse.text);
-  
-
-
 
   return (
     <div className={styles.Form_Container}>
@@ -525,7 +521,7 @@ const FormCommon = () => {
                   options={thicknessOptions}
                   optionLabel="name"
                   name="No_of_thickness"
-                  placeholder="Select Thickness"  
+                  placeholder="Select Thickness"
                   className={styles.input_field}
                   // disabled={!selectedProduct}
                 />
@@ -636,7 +632,6 @@ const FormCommon = () => {
             </div>
           ))}
 
-
           <div className={styles.Form_btn_Outer}>
             <button onClick={addSection} class="button-57" role="button">
               <span className="text">
@@ -656,7 +651,7 @@ const FormCommon = () => {
                   />
                 </svg>
                 {/* </div> */}
-                ADD MORE 
+                ADD MORE
               </span>
               <span>CLICK TO ADD MORE</span>
             </button>
@@ -669,16 +664,20 @@ const FormCommon = () => {
             <p className={styles.upload_invoice_text}>
               Click here to upload invoice*
             </p>
-          </div>  
+          </div>
           {/* Invoice */}
           <div className={styles.invoice_Main}>
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards}  onClick={() => document.getElementById("getFile").click()}>
-                <label
-                  htmlFor="img"
-                 
-                >
-                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
+              <div
+                className={styles.invoice_inner_cards}
+                onClick={() => document.getElementById("getFile").click()}
+              >
+                <label htmlFor="img">
+                  <Image
+                    src={invoice_icon}
+                    alt="none"
+                    className={styles.invc_img}
+                  />
                   <input
                     type="file"
                     data-max-size="2048"
@@ -703,11 +702,16 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile1").click()}>
-                <label
-                  htmlFor="img"
-                >
-                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
+              <div
+                className={styles.invoice_inner_cards}
+                onClick={() => document.getElementById("getFile1").click()}
+              >
+                <label htmlFor="img">
+                  <Image
+                    src={invoice_icon}
+                    alt="none"
+                    className={styles.invc_img}
+                  />
                   <input
                     type="file"
                     data-max-size="2048"
@@ -731,11 +735,16 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile").click()}>
-                <label
-                  htmlFor="img"
-                >
-                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
+              <div
+                className={styles.invoice_inner_cards}
+                onClick={() => document.getElementById("getFile").click()}
+              >
+                <label htmlFor="img">
+                  <Image
+                    src={invoice_icon}
+                    alt="none"
+                    className={styles.invc_img}
+                  />
                   <input
                     type="file"
                     data-max-size="2048"
@@ -759,11 +768,16 @@ const FormCommon = () => {
             </div>
 
             <div className={styles.inovoice_inner_flex}>
-              <div className={styles.invoice_inner_cards} onClick={() => document.getElementById("getFile").click()}>
-                <label
-                  htmlFor="img"
-                >
-                  <Image src={invoice_icon} alt="none" className={styles.invc_img}/>
+              <div
+                className={styles.invoice_inner_cards}
+                onClick={() => document.getElementById("getFile").click()}
+              >
+                <label htmlFor="img">
+                  <Image
+                    src={invoice_icon}
+                    alt="none"
+                    className={styles.invc_img}
+                  />
                   <input
                     type="file"
                     data-max-size="2048"
@@ -801,15 +815,19 @@ const FormCommon = () => {
                   required
                 />
               </div>
-             
+
               <p className={styles.form_agree_content}>
                 Click here to agree to{" "}
-                <span className={styles.forms_terms_condition} onClick={()=> router.push("/terms_and_condition")}>
-                <a href="/terms_and_condition" target="_blank">Terms And Conditions</a>
+                <span
+                  className={styles.forms_terms_condition}
+                  // onClick={() => router.push("/terms_and_condition")}
+                >
+                  <Link href="/terms_and_condition" target="_blank">
+                    Terms And Conditions
+                  </Link>
                 </span>
               </p>
             </div>
-            
 
             {/* <div className={styles.form_last_section_content}>
               <div>
@@ -825,7 +843,7 @@ const FormCommon = () => {
               <p className={styles.form_agree_content}>
                 Click here to receive updates on WhatsApp
               </p>
-            </div> */}           
+            </div> */}
             {/* <div className={styles.form_last_section_content}>
               <div>
                 <input
@@ -844,7 +862,11 @@ const FormCommon = () => {
           </div>
           {/*  */}
           <div className={styles.Form_btn_Outer_Main}>
-            <button class="button-57" role="button"  disabled={!values.agreeTerms}>
+            <button
+              class="button-57"
+              role="button"
+              disabled={!values.agreeTerms}
+            >
               <span class="text"> Submit</span>
               <span> Submit</span>
             </button>
