@@ -6,7 +6,7 @@ import Preloader from "@/components/preloader/page";
 import Inner_header from "@/common/inner_header/page";
 import Blockwood_flex from "@/components/blockwood_flex/page";
 import Blockboard_main from "@/components/blockboard_main/page";
-import innovation_image from "@/images/blockwood_header_img.png";
+import innovation_image from "@/images/blockwood_header_img.webp";
 import Specifications from "@/common/specifications/page2";
 import Footer from "@/components/footer/page";
 import Form from "@/components/form/page";
