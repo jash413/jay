@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import spec_img from "@/images/BlockBoard_19mm.png";
-import spec_img1 from "@/images/BlockBoard_25mm.png";
+import spec_img1 from "@/images/Blockboard-Image.png";
 // import spec_img2 from "@/images/plywood thickness_25.png";
 import styles from "@/common/specifications/specifications.module.css";
 // import LeftContent from "@/common/specifications/data";
@@ -159,7 +159,7 @@ const Page = ({ leftData, rightData }) => {
             </motion.div>
           </div>
         </div>
-        <motion.div
+        {/* <motion.div
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -167,7 +167,7 @@ const Page = ({ leftData, rightData }) => {
           className={styles.specifications_img}
         >
           <Image src={spec_img} alt="image" className={styles.s} />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           ref={ref}
