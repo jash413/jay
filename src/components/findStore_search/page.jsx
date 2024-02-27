@@ -38,8 +38,8 @@ function Mapsection() {
       districts: [
         "Ahmedabad",
         "Dahod",
-        "Rajpipla Narmada",
-        "Ankleshwar Bharuch",
+        "Rajpipla_Narmada",
+        "Ankleshwar_Bharuch",
         "Gandhinagar",
         "Surat",
         "Vapi",
@@ -1037,9 +1037,7 @@ function Mapsection() {
     } else {
       setSelectedLocationContent([
         {
-          content1: "Invalid Selection",
-          mapLocation: "Invalid Selection",
-          phone: "Invalid Selection",
+          content1: "No Experience Centre found in selected location",
         },
       ]);
     }
@@ -1109,6 +1107,7 @@ function Mapsection() {
             className={`${styles.select_menu} ${isOpen1 ? styles.active : ""}`}
             onClick={toggleDropdown1}
           >
+
             <div className={styles.select_btn} onClick={toggleDropdown1}>
               <div className={styles.sBtn_text}>
                 {selectedOption1 || "Select State"}
