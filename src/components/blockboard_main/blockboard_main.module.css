@@ -23,7 +23,7 @@
   font-size: 20px;
   font-weight: 400;
   width: 100%;
-  padding: 6rem 19rem 0rem 6rem;
+  padding: 6rem 19rem 0rem 3.5rem;
 }
 
 .blockboard_button {
@@ -33,6 +33,7 @@
 .black_txt {
   color: black;
   width: 100%;
+  width: 385px;
 }
 
 .blockboard_button {
@@ -75,7 +76,7 @@
     font-size: 20px;
     font-weight: 400;
     width: fit-content;
-    padding: 6rem 60rem 0rem 18rem;
+    padding: 6rem 75rem 0rem 3.5rem;
   }
 }
 
@@ -104,10 +105,19 @@
 
   .Blockboard_details {
     font-size: 18px;
-    padding: 6rem 20rem 0rem 8rem;
+    padding: 6rem 20rem 0rem 3.5rem;
+  }
+  .black_txt {
+    width: 370px;
   }
 }
 
+@media (max-width: 991px) {
+  .Blockboard_details {
+    font-size: 18px;
+    padding: 6rem 20rem 0rem 2rem;
+  }
+}
 @media (max-width: 768px) {
   .Blockboard_title {
     padding-top: 3.5rem;
@@ -116,11 +126,11 @@
 
   .Blockboard_details {
     font-size: 16px;
-    padding: 6rem 18rem 0rem 4rem;
+    padding: 6rem 18rem 0rem 2rem;
   }
 
   .Blockboard_led img {
-    width: 150%;
+    width: 100%;
     height: auto;
   }
 
@@ -147,11 +157,11 @@
 
   .Blockboard_details {
     font-size: 17px;
-    padding: 6rem 13rem 0rem 3rem;
+    padding: 6rem 2rem 0rem 1rem;
   }
 
   .Blockboard_led img {
-    width: 100%;
+    width: 50px;
     height: auto;
   }
 
@@ -168,8 +178,10 @@
   .Blockboard_desk {
     margin-top: 6.5rem;
   }
+  .black_txt {
+    width: 100%;
+  }
 }
-
 
 @media (max-width: 475px) {
   .Blockboard_title {
@@ -179,13 +191,12 @@
 
   .Blockboard_details {
     font-size: 14px;
-    padding: 4rem 5rem 0rem 2rem;
   }
 
-  .Blockboard_led img {
+  /* .Blockboard_led img {
     width: 110%;
     height: auto;
-  }
+  } */
 
   .Blockboard_led {
     right: 2%;
@@ -210,13 +221,12 @@
 
   .Blockboard_details {
     font-size: 14px;
-    padding: 4rem 6rem 0rem 2rem;
   }
 
-  .Blockboard_led img {
+  /* .Blockboard_led img {
     width: 80%;
     height: auto;
-  }
+  } */
 
   .Blockboard_led {
     right: -7%;
@@ -236,8 +246,4 @@
   .Blockboard_led {
     display: none;
   }
-.Blockboard_details{
-  padding: 2rem 2rem 0rem 2rem;
-}
-
 }
