@@ -68,6 +68,9 @@
   .whyPlywood {
     padding: 50px 100px;
   }
+  .left ul li {
+    font-size: 21px;
+  }
   .whyPlywoodItem_wrap {
     display: flex;
     /* flex-wrap: wrap; */
@@ -77,6 +80,7 @@
   }
   .whyPlywood_heading {
     /* margin: 0 auto 110px; */
+    font-size: 50px;
   }
   .whyPlywoodItem {
     padding: 0 50px;
@@ -121,6 +125,7 @@
   }
   .left {
     width: 100%;
+    padding: 40px 0 0;
   }
   .right {
     width: 100%;
@@ -161,4 +166,10 @@
   .whyPlywood_heading {
     font-size: 35px;
   }
+  .left ul {
+    padding: 30px 0 0;
+  }
+  .left {
+    padding: 30px 0 0;
+}
 }
