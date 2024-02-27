@@ -71,6 +71,9 @@ const Home = ({loadUSP}) => {
         .toString()
         .padStart(3, "0")}-scaled.jpg`;
 
+
+
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F0000.jpg
 
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F000.jpg

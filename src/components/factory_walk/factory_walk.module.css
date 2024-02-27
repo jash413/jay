@@ -262,7 +262,31 @@
 
   .buttonShow {
     position: absolute;
-    left: 44%;
+    left: 35%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 30px;
+    line-height: 15px;
+    padding: 13px 27px 15px;
+    font-family: "LatoRegular";
+  }
+}
+
+
+@media (max-width: 320px) {
+  .infoData {
+    width: 100%;
+  }
+  .close {
+    cursor: pointer;
+    margin: 0 0 20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .buttonShow {
+    position: absolute;
+    left: 29%;
     overflow: hidden;
     display: inline-block;
     border-radius: 30px;

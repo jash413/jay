@@ -34,6 +34,9 @@
 .plywood_promax {
   position: absolute;
   top: 17%;
+  width: 277px;
+  height: 100px;
+  object-fit: cover;
   left: 13%;
 }
 .plywood_promaxplus {

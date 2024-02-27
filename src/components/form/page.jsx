@@ -300,7 +300,7 @@ const Contactform = () => {
                 name="fullName"
                 onChange={handleChange}
                 value={values.fullName}
-                placeholder="Rajesh Sharma"
+                placeholder="Your Name"
               />
               {touched.fullName && errors.fullName && (
                 <p className={styles.error}>{errors.fullName}</p>

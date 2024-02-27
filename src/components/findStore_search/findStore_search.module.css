@@ -30,7 +30,7 @@
   background: #fff;
   padding: 18px;
   width: 200px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   align-items: center;
   cursor: pointer;
@@ -75,7 +75,7 @@
   margin-right: 12px;
 }
 .select_menu .options .option .option_text {
-  font-size: 17px;
+  font-size: 16px;
   text-transform: capitalize;
   color: #333;
 }

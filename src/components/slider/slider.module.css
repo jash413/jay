@@ -90,6 +90,7 @@
   transform: translate(-50%, -50%);
 }
 
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .image_swiper_button_next {
     z-index: 1;

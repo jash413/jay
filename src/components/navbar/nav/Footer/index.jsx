@@ -9,7 +9,7 @@ export default function index() {
         target="_blank"
         className={styles.social_names}
       >
-        In
+        Instagram
       </a>
       <a
         href="https://www.facebook.com/RoyaleToucheOfficial?utm_source=Royale-Touche&utm_medium=store_locator&utm_content=footer"
@@ -17,7 +17,7 @@ export default function index() {
         rel="noopener noreferrer"
         className={styles.social_names}
       >
-        Fb
+        Facebook
       </a>
       <a
         href="https://www.linkedin.com/company/31261499/admin/feed/posts/?utm_source=Royale-Touche&utm_medium=store_locator&utm_content=footer"
@@ -25,7 +25,7 @@ export default function index() {
         rel="noopener noreferrer"
         className={styles.social_names}
       >
-        Li
+        LinkedIn
       </a>
     </div>
   );

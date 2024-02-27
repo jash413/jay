@@ -66,7 +66,7 @@ const WhyPlywood = () => {
           </ul>
         </div>
         <div className={styles.right}>
-          <Image src={newImage} />
+          <Image src={newImage} alt="newImage" />
         </div>
       </div>
     </div>

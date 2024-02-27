@@ -2,13 +2,16 @@ import { Navigation, EffectFade, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import rightArrow from "@/images/arrow2.svg";
+import rightArrowDisable from "@/images/arrow2Disable.svg";
 import rightArrowMobile from "@/images/arrow2mobile.svg";
+import rightArrowMobileDisable from "@/images/arrow2mobileDisable.svg";
 import image1 from "@/images/Stateoftheartfacility-01011.jpg";
 import image2 from "@/images/VacuumPressureTreatment1.jpg";
 import image3 from "@/images/gapless1.jpg";
 import image4 from "@/images/BWPPlywoodBoilingWaterproofPlywood1.jpg";
 import image5 from "@/images/4PressTechnology1.jpg";
 import image6 from "@/images/Multiplequalitychecks1.jpg";
+import "./slider.css"
 
 // Import Swiper styles
 import "swiper/css";
@@ -18,6 +21,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 import styles from "@/components/slider/slider.module.css";
 const Page = () => {
+  
   return (
     <div className={styles.sliderCard_outer_first}>
       <div className={styles.sliderCard}>
@@ -29,7 +33,7 @@ const Page = () => {
           }}
           modules={[Navigation, EffectFade, A11y]}
           spaceBetween={5}
-          loop={true}
+          loop={false}
           slidesPerView={1}
           navigation={{
             nextEl: ".slider_image_swiper_button_next__Eddeo img",
@@ -203,6 +207,11 @@ const Page = () => {
               src={rightArrow}
               alt="rightArrow"
             />
+            <Image
+              className={`${styles.navigation_arrow} disable`}
+              src={rightArrowDisable}
+              alt="rightArrow"
+            />
           </div>
           <div className={styles.image_swiper_button_prev}>
             <Image
@@ -210,6 +219,11 @@ const Page = () => {
               src={rightArrow}
               alt="rightArrow"
             />
+            <Image
+              className={`${styles.navigation_arrow} disable`}
+              src={rightArrowDisable}
+              alt="rightArrow"
+                          />
           </div>
         </div>
         <div className={styles.customerCard_sideTwo_mobile}>
@@ -219,11 +233,21 @@ const Page = () => {
               src={rightArrowMobile}
               alt="rightArrow"
             />
+            <Image
+               className={`${styles.navigation_arrow} disable`}
+              src={rightArrowMobileDisable}
+              alt="rightArrow"
+            />
           </div>
           <div className={styles.image_swiper_button_prev}>
             <Image
               className={styles.navigation_arrow}
               src={rightArrowMobile}
+              alt="rightArrow"
+            />
+             <Image
+               className={`${styles.navigation_arrow} disable`}
+              src={rightArrowMobileDisable}
               alt="rightArrow"
             />
           </div>

@@ -98,12 +98,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  What is plywood used for?
+                 Q : What is plywood used for?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Plywood is an extremely versatile building material, and it
+                 A : Plywood is an extremely versatile building material, and it
                   can be used in a variety of applications, based on a variety
                   of factors such as reinforcement and decorative surfaces. Due
                   to its strength and cost, it is often used in interior and
@@ -116,12 +116,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  What if the plywood gets wet?
+                 Q : What if the plywood gets wet?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Most BWP plywood boards will resist the harmful effects of raw
+                 A : Most BWP plywood boards will resist the harmful effects of raw
                   water, and stronger woods are better equipped to manage
                   prolonged water damage and film-coated plywood is an example.
                   Like most timber, even if it is waterproof plywood, prolonged
@@ -134,11 +134,11 @@ export default function Example() {
 
             <div className="accordion__item">
               <div className="accordion__heading">
-                <div className="accordion__button">Can plywood be bent?</div>
+                <div className="accordion__button"> Q : Can plywood be bent?</div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Although plywood sheet can be bent, it should be specialized,
+                 A : Although plywood sheet can be bent, it should be specialized,
                   as most other plywood will crumble and break if they are bent.
                   The best plywood available for flexing should have grain close
                   together so that the surface does not separate during bending.
@@ -151,12 +151,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  Can the plywood be sanded and polished?
+                 Q : Can the plywood be sanded and polished?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Plywood can be sanded and polished. However, like any other
+                 A : Plywood can be sanded and polished. However, like any other
                   wood, it is important to use the right equipment to ensure
                   that the finish appears as desired. Individuals should start
                   with 80-grit sandpaper to flatten the base surface before
@@ -169,12 +169,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  How thick is the plywood?
+                 Q : How thick is the plywood?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  The thickness of the plywood varies depending on what pieces
+                 A : The thickness of the plywood varies depending on what pieces
                   are being used. If plywood is being used as a support, it
                   needs to be thicker and stiffer than if it were being used as
                   veneer. Conventional plywood thickness can vary up to 6 mm to
@@ -190,36 +190,36 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  What are advantages of plywood?
+                 Q : What are advantages of plywood?
                 </div>
               </div>
               <div className="accordion__panel">
-                <p className="main_accordian_header_text">
-                  <ul>
-                    <li>
-                      Increased stability. Plywood offers all the inherent
+                <div className="main_accordian_header_text">
+                 
+                    <div>
+                     A : Increased stability. Plywood offers all the inherent
                       advantages of the parent wood plus enhanced properties in
                       its laminated structure.
-                    </li>
+                    </div>
                     <li>High impact resistance.</li>
                     <li>Surface dimensional stability.</li>
                     <li>High strength to weight ratio.</li>
                     <li>Panel shear</li>
                     <li>Chemical resistance</li>
-                  </ul>
-                </p>
+                  </div>
+               
               </div>
             </div>
 
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  Is MDF better than plywood?
+                 Q : Is MDF better than plywood?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Neither MDF nor plywood is universally better than the other.
+                 A : Neither MDF nor plywood is universally better than the other.
                   The choice depends on the specific requirements of your
                   project. For applications where a smooth finish is crucial and
                   moisture exposure is limited, MDF might be a good choice. For
@@ -231,11 +231,11 @@ export default function Example() {
 
             <div className="accordion__item">
               <div className="accordion__heading">
-                <div className="accordion__button">Is plywood fire proof?</div>
+                <div className="accordion__button">Q : Is plywood fire proof?</div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Untreated wood tends to be highly flammable and burn rather
+                 A : Untreated wood tends to be highly flammable and burn rather
                   quickly.The treatment process of fire-rated plywood prevents
                   combustion and can delay the spread of smoke and fire.
                 </p>
@@ -245,12 +245,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  How do I identify plywood?
+                 Q :  How do I identify plywood?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  The best quality of plywood can be identified with ISI marks
+                 A : The best quality of plywood can be identified with ISI marks
                   stamped onto it - for example, “IS:303” or “IS:710” Plywood is
                   typically labeled with information about its grade, type of
                   wood veneer, and other specifications. Look for stamps or
@@ -267,12 +267,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  Which ply is good for bed?
+                  Q : Which ply is good for bed?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Plywood is known for its strength and stability, making it
+                 A : Plywood is known for its strength and stability, making it
                   suitable for bed platforms that require a sturdy and reliable
                   base. Blockboard: Blockboard is a cost-effective choice for
                   bed platforms, offering good strength and stability, making it
@@ -283,11 +283,11 @@ export default function Example() {
 
             <div className="accordion__item">
               <div className="accordion__heading">
-                <div className="accordion__button">What is UV plywood?</div>
+                <div className="accordion__button">Q : What is UV plywood?</div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  UV plywood refers to plywood that has been treated with a
+                 A : UV plywood refers to plywood that has been treated with a
                   special type of finish known as ultraviolet (UV) cured
                   coating. This coating consists of a clear finish that is cured
                   or hardened using ultraviolet light. The UV curing process
@@ -303,11 +303,11 @@ export default function Example() {
 
             <div className="accordion__item">
               <div className="accordion__heading">
-                <div className="accordion__button">Does plywood expire?</div>
+                <div className="accordion__button">Q : Does plywood expire?</div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  With the advantage of being manufactured 100% from natural
+                  A : With the advantage of being manufactured 100% from natural
                   plantation wood, plywood has relatively high durability and a
                   lifespan of up to 50 years.
                 </p>
@@ -317,12 +317,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  Can plywood be repaired?
+                 Q : Can plywood be repaired?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  In conclusion, damaged plywood sheets can be effectively
+                 A : In conclusion, damaged plywood sheets can be effectively
                   repaired and restored with the right techniques and materials.
                   By assessing the damage, filling cracks, replacing damaged
                   sections, reinforcing weak areas, and applying a protective
@@ -335,12 +335,12 @@ export default function Example() {
             <div className="accordion__item">
               <div className="accordion__heading">
                 <div className="accordion__button">
-                  What is the measurement of plywood?
+                 Q : What is the measurement of plywood?
                 </div>
               </div>
               <div className="accordion__panel">
                 <p className="main_accordian_header_text">
-                  Plywood is typically measured and sold in sheets. The standard
+                 A : Plywood is typically measured and sold in sheets. The standard
                   size of plywood sheet is 4 feet by 8 feet, however, ply board
                   size is available in 3 feet by 7 feet, 3 feet by 6 feet and
                   other various plywood widths.

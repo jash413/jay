@@ -38,8 +38,8 @@ function Mapsection() {
       districts: [
         "Ahmedabad",
         "Dahod",
-        "Rajpipla_Narmada",
-        "Ankleshwar_Bharuch",
+        "Rajpipla Narmada",
+        "Ankleshwar Bharuch",
         "Gandhinagar",
         "Surat",
         "Vapi",
@@ -1103,7 +1103,7 @@ function Mapsection() {
     <div className={styles.Map_section}>
       <div className={styles.map_section1}>
         <div className={styles.content_Text} ref={storeRef}>
-          {splitWords("Royale Touché experience center near me")}
+          {splitWords("Royalé Touché Experience Centre Near Me")}
         </div>
         <div className={styles.option_section}>
           <div
@@ -1218,101 +1218,11 @@ function Mapsection() {
             </div>
             </>
           ))}
-          {/* <div>
-            <p className={styles.content_1}>
-              {selectedLocationContent.content1}
-            </p>
-            <div className={styles.main_content}>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.mapLocation}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faPhoneVolume}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.phone}
-                </div>
-              </div>
-            </div>
-            <div className={styles.content_border}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="371"
-                height="2"
-                viewBox="0 0 371 2"
-                fill="none"
-              >
-                <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-              </svg>
-            </div>
-          </div> */}
-          {/* <div>
-            <p className={styles.content_1}>
-              {selectedLocationContent.content1}
-            </p>
-            <div className={styles.main_content}>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faLocationDot}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.address}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faMapPin} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.mapLocation}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon
-                  icon={faPhoneVolume}
-                  className={styles.allsvg}
-                />
-                <div className={styles.address}>
-                  {selectedLocationContent.phone}
-                </div>
-              </div>
-              <div className={styles.content}>
-                <FontAwesomeIcon icon={faClock} className={styles.allsvg} />
-                <div className={styles.address}>
-                  {selectedLocationContent.hours}
-                </div>
-              </div>
-            </div>
-            <div className={styles.content_buttons}>
-              {getDirectionURL && (
-                <button
-                  className={styles.content_button}
-                  onClick={() => window.open(getDirectionURL, "_blank")}
-                >
-                  Get Direction
-                </button>
-              )}
-            </div>
-            <div className={styles.content_border}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="371"
-                height="2"
-                viewBox="0 0 371 2"
-                fill="none"
-              >
-                <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-              </svg>
-            </div>
-          </div> */}
+
         </div>
         <div className={styles.content70}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.425164494458!2d72.5118402758819!3d23.044869315494672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b51fe5be8d9%3A0x1c4999478aa4081a!2sRoyale%20Touche%20Laminates%20and%20Wooden%20Floors%20-%20Ahmedabad!5e0!3m2!1sen!2sin!4v1699507206577!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.802628858455!2d72.46987617617147!3d23.03101801601143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b09932f1e99%3A0x75fbb34492ff4f3e!2sRoyale%20Touche%20Wooden%20Floors!5e0!3m2!1sen!2sin!4v1708933279442!5m2!1sen!2sin"
             width="100%"
             height="720"
             allowfullscreen=""
