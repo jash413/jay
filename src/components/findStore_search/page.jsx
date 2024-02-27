@@ -979,10 +979,6 @@ function Mapsection() {
     },
 
   };
-  const resetSelection = () => {
-    setSelectedOption1("");
-    setSelectedOption2("");
-  };
   const [selectedLocationContent, setSelectedLocationContent] = useState([
     {
       content1: "Please select State and City to search Royalè Touchè Experience Centre near your location",
@@ -995,6 +991,10 @@ function Mapsection() {
   };
 
   const handleOptionClick1 = (option) => {
+    if (selectedOption1 !== option) {
+      setSelectedOption2("");
+    }
+
     setSelectedOption1(option);
     setIsOpen1(false);
   };
@@ -1034,7 +1034,6 @@ function Mapsection() {
 
     if (selectedLocations) {
       setSelectedLocationContent(selectedLocations);
-      resetSelection();
     } else {
       setSelectedLocationContent([
         {
