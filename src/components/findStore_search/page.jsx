@@ -981,7 +981,7 @@ function Mapsection() {
   };
   const [selectedLocationContent, setSelectedLocationContent] = useState([
     {
-      content1: "Please select State and City to search Royalè Touchè Experience Centre near your location",
+      content1: "Please select State and City to search Royalè Touchè Experience Centre near your location.",
     },
   ]);
   const [getDirectionURL, setGetDirectionURL] = useState("");
@@ -1037,7 +1037,7 @@ function Mapsection() {
     } else {
       setSelectedLocationContent([
         {
-          content1: "No Experience Centre found in selected location",
+          content1: "No Experience Centre found in selected location. Send us a message if you need any help!",
         },
       ]);
     }
