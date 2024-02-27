@@ -1,6 +1,7 @@
 "use client";
 import { Lato } from "next/font/google";
 import "./globals.css";
+import { useEffect } from "react";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700"],
@@ -14,14 +15,16 @@ const lato = Lato({
 // }
 
 export default function RootLayout({ children }) {
-  console.log(window);
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+  useEffect(() => {
+    console.log(window);
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag("config", "G-MTKLKTNEJT");
+    gtag("config", "G-MTKLKTNEJT");
+  });
   return (
     <html lang="en">
       <head>
