@@ -1,12 +1,12 @@
 "use client";
-import { Lato } from 'next/font/google'
-import './globals.css'
+import { Lato } from "next/font/google";
+import "./globals.css";
 
 const lato = Lato({
-  weight:['100','300','400','700'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+  weight: ["100", "300", "400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 // export const metadata = {
 //   title: 'Royale touche',
@@ -14,10 +14,24 @@ const lato = Lato({
 // }
 
 export default function RootLayout({ children }) {
+  console.log(window);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-MTKLKTNEJT");
   return (
     <html lang="en">
-      <body className={lato.className}>{children}
-      </body>
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MTKLKTNEJT"
+        ></script>
+      </head>
+
+      <body className={lato.className}>{children}</body>
     </html>
-  )
+  );
 }
