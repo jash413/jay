@@ -96,7 +96,7 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
       )
         .toString()
         .padStart(4, "0")}.jpg`;
-        // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factorywalk/F0000.jpg
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factorywalk/F0000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
     let imgL = [];
