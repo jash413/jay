@@ -24,10 +24,10 @@ export default function Index() {
   }, [index]);
   useEffect(() => {
     let intervalId;
-    if (percentage < 100) {
+    if (percentage < 99) {
       intervalId = setInterval(() => {
         setPercentage((prevPercentage) => prevPercentage + 1);
-      }, 18); // Set the interval time as needed
+      }, 100); // Set the interval time as needed
     } else {
       clearInterval(intervalId);
     }
