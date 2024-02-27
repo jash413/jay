@@ -4,6 +4,9 @@ const ContactAddressItem = ({
   heading,
   address,
   address2,
+  address3,
+  address4,
+  address5,
   number1,
   number2,
   mail1,
@@ -14,6 +17,9 @@ const ContactAddressItem = ({
       {heading && <div className={styles.heading}>{heading}</div>}
       {address && <div className={styles.address}>{address}</div>}
       {address2 && <div className={styles.address}>{address2}</div>}
+      {address3 && <div className={styles.address}>{address3}</div>}
+      {address4 && <div className={styles.address}>{address4}</div>}
+      {address5 && <div className={styles.address}>{address5}</div>}
       {number1 && (
         <div className={styles.number}>
           <a href={`to:${number1}`}>+91 {number1}</a>

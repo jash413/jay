@@ -2,6 +2,8 @@ import styles from "@/components/preloader/preloader.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "@/components/preloader/anime";
+import Image from "next/image";
+import spinner from "@/images/loadingSpinner.gif"
 const words = ["નમસ્તે", "hello", "Ciao", "Hallå", "नमस्ते", "hello"];
 export default function Index() {
   const [index, setIndex] = useState(0);
@@ -83,6 +85,10 @@ export default function Index() {
           </svg>
         </div>
       )}
+     {/* <div className={styles.loading}>
+      Loading
+      <Image src={spinner} alt="spinner" />
+     </div> */}
     </motion.div>
   );
 }

@@ -4,7 +4,11 @@ import styles from "@/components/contactAddress/contactAddress.module.css";
 const contactAddressData = [
   {
     heading: "Registered Head Office",
-    address: "Olympic Decor LLP One 42, 401 North Tower,  Near Jayantilal Park BRTS, Ambli-Bopal Road Ahmedabad, Gujarat, India - 380058",
+    address: "Olympic Decor LLP,",
+    address2:"One 42, 401 North Tower,",
+    address3:"Near Jayantilal Park BRTS,",
+    address4:"Ambli-Bopal Road, Ahmedabad,",
+    address5 : "Gujarat, India - 380058"
     // address2: " Ambli Bopal Road, Ahmedabad 380054. Gujarat, India.",
   },
   {

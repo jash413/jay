@@ -63,6 +63,23 @@
   bottom: -17rem;
   color: #fff;
 }
+.loading {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding-right: 20px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.loading img {
+  max-width: 100%;
+  width: 60px;
+  height: 70px;
+  padding-top: 10px;
+}
 
 @media (min-width: 1600px) and (max-width: 1920px) {
   .percentageCounter {
@@ -73,7 +90,7 @@
 }
 
 @media (max-width: 1024px) {
-  .preloader_text{
+  .preloader_text {
     position: absolute;
     right: -8rem;
     bottom: 13rem;

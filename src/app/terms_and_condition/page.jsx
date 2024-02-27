@@ -244,21 +244,21 @@ const Page = () => {
             </p>
           </div>
 
-          <div className={styles.description}>
+          {/* <div className={styles.description}>
             <p>
               15. This warranty shall not be applicable if the Royalé Touché
               branded products have been misused, altered or modified by the
               consumer or any other person including the product seller other
               than Royalé Touché Industries Private Limited
             </p>
-          </div>
+          </div> */}
 
 
-          <p>Attach image of board</p>
+          {/* <p>Attach image of board</p> */}
 
           <div className={styles.description}>
             <p>
-              16. The liability of Royalé Touché Industries Private Limited is
+              15. The liability of Royalé Touché Industries Private Limited is
               strictly limited to the extent of replacement or refund of the
               material actually defective and no further monetary claim on the
               damaged product or portion can be claimed from Royalé Touché
@@ -287,7 +287,7 @@ const Page = () => {
 
           <div className={styles.description}>
             <p>
-              17. The customer/end user expressly agrees that all claims,
+              16. The customer/end user expressly agrees that all claims,
               disputes or differences between the parties hereto arising out of
               relating to the terms herein shall be resolved by arbitration
               before a Sole Arbitrator which shall be nominated by Royalé Touché
@@ -304,7 +304,7 @@ const Page = () => {
 
           <div className={styles.description}>
             <p>
-              18. This warranty applies to all the warrantied products
+              17. This warranty applies to all the warrantied products
               manufactured by Royalé Touché Industries Private Limited after 1st
               January, 2024.
             </p>
