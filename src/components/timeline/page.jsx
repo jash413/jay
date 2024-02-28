@@ -20,56 +20,80 @@ const Home = ({loadUSP}) => {
     const text = textRef.current;
     const context = canvas.getContext("2d");
     contextRef.current = context;
+    // canvas.width = window.innerWidth;
+    canvas.width = 750;
+    canvas.height = 780;
 
-    const setCanvasSize = () => {
-      const windowWidth = window.innerWidth;
-      const windowHeight = window.innerHeight;
 
-      if (windowWidth >= 1600) {
-        canvas.width = 1000; // Width remains constant for desktop screens
-        canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
-      }
-      else if (windowWidth >= 1440) {
-        canvas.width = 800; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
-      }
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    let canvasHeight;
+  
+    // if (windowWidth >= 1700) {
+    //   canvasHeight = 800; // Set height for large screens (>=1600px width)
+    // } 
 
-      else if (windowWidth >= 1336) {
-        canvas.width = 800; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
-      }
+    if (windowWidth >= 1600) {
+      canvasHeight = 750; // Set height for large screens (>=1600px width)
+    } 
+    
+    else if (windowWidth >= 1200) {
+      canvasHeight = 780; // Set height for medium screens (>=1200px width)
+    } else {
+      canvasHeight = 780; // Set height for small screens (<1200px width)
+    }
+  
+    canvas.height = canvasHeight;
+
+    // const setCanvasSize = () => {
+    //   const windowWidth = window.innerWidth;
+    //   const windowHeight = window.innerHeight;
+
+    //   if (windowWidth >= 1600) {
+    //     canvas.width = 1000; // Width remains constant for desktop screens
+    //     canvas.height = windowHeight * 0.8; // Adjust the height for desktop screens
+    //   }
+    //   else if (windowWidth >= 1440) {
+    //     canvas.width = 800; // Width remains constant for tablet screens
+    //     canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
+    //   }
+
+    //   else if (windowWidth >= 1336) {
+    //     canvas.width = 800; // Width remains constant for tablet screens
+    //     canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
+    //   }
       
-      else if (windowWidth >= 1200) {
-        canvas.width = 800; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      }
+    //   else if (windowWidth >= 1200) {
+    //     canvas.width = 800; // Width remains constant for tablet screens
+    //     canvas.height = windowHeight * 1; // Adjust the height for tablet screens
+    //   }
 
-      else if (windowWidth >= 1024) {
-        canvas.width = 800; // Width remains constant for tablet screens
-        canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
-      }
+    //   else if (windowWidth >= 1024) {
+    //     canvas.width = 800; // Width remains constant for tablet screens
+    //     canvas.height = windowHeight * 0.8; // Adjust the height for tablet screens
+    //   }
 
      
       
       
-      else {
-        canvas.width = 530; // Width remains constant for mobile screens
-        canvas.height = windowHeight * 0.7; // Adjust the height for mobile screens
-      }
+    //   else {
+    //     canvas.width = 530; // Width remains constant for mobile screens
+    //     canvas.height = windowHeight * 0.7; // Adjust the height for mobile screens
+    //   }
 
-      // Update ScrollTrigger end position based on canvas dimensions
-      ScrollTrigger.update();
-    };
+    //   // Update ScrollTrigger end position based on canvas dimensions
+    //   ScrollTrigger.update();
+    // };
 
-    setCanvasSize();
-    window.addEventListener("resize", setCanvasSize);
+    // setCanvasSize();
+    // window.addEventListener("resize", setCanvasSize);
 
     const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/${(index + 1)
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F${(index + 1)
         .toString()
-        .padStart(3, "0")}-scaled.jpg`;
+        .padStart(4, "0")}.jpg`;
 
 
 
@@ -124,22 +148,41 @@ const Home = ({loadUSP}) => {
 
     imagesRef.current[0].onload = render;
 
+    // function render() {
+    //   context.clearRect(0, 0, canvas.width, canvas.height);
+    //   context.drawImage(
+    //     imagesRef.current[airpodsRef.current.frame],
+    //     0,
+    //     0,
+    //     canvas.width,
+    //     canvas.height
+    //   );
+    // }
+
+
     function render() {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(
-        imagesRef.current[airpodsRef.current.frame],
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
+      const frame = imagesRef.current[airpodsRef.current.frame];
+      const canvasWidth = canvasRef.current.width;
+      const canvasHeight = canvasRef.current.height;
+      
+      const frameWidth = 450; // Original width of your frames
+      const frameHeight = (frame.height * frameWidth) / frame.width; // Maintain aspect ratio
+    
+      const xOffset = (canvasWidth - frameWidth) / 2;
+      const yOffset = (canvasHeight - frameHeight) / 2;
+    
+      context.clearRect(0, 0, canvasWidth, canvasHeight);
+      context.drawImage(frame, xOffset, yOffset, frameWidth, frameHeight);
     }
+    
+
 
     // Cleanup
     return () => {
-      window.removeEventListener("resize", setCanvasSize);
+      // window.removeEventListener("resize", setCanvasSize);
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
+
   }, []);
   
   // console.log(loading ? "USP Loading" : "USP Complate");

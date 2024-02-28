@@ -286,7 +286,7 @@
 
   .video_loop_outer {
     position: relative;
-    transform: translateY(1000px);
+    transform: translateY(800px);
   }
 }
 
