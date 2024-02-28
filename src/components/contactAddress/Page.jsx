@@ -4,7 +4,7 @@ import styles from "@/components/contactAddress/contactAddress.module.css";
 const contactAddressData = [
   {
     heading: "Registered Head Office",
-    address: "Olympic Decor LLP,",
+    address: "Royale Touche Industries PVT LTD,",
     address2:"One 42, 401 North Tower,",
     address3:"Near Jayantilal Park BRTS,",
     address4:"Ambli-Bopal Road, Ahmedabad,",

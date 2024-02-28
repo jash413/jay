@@ -42,7 +42,7 @@ const ContactUs = () => {
         <HeroSection
           banner_image={contactUs_image}
           header_name="Contact Us"
-          header_comment="Connect with Confidence: Reach Out to Royal Touch Plywood's Assistance with Any Queries You Have."
+          header_comment="Connect with Confidence: Reach Out to Royale Touché Plywood's Assistance with Any Queries You Have."
         />
         <Contact_Map />
         <ContactAddress />

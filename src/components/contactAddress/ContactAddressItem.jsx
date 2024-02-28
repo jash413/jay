@@ -22,12 +22,12 @@ const ContactAddressItem = ({
       {address5 && <div className={styles.address}>{address5}</div>}
       {number1 && (
         <div className={styles.number}>
-          <a href={`to:${number1}`}>+91 {number1}</a>
+          <a href={`to:${number1}`}>{number1}</a>
         </div>
       )}
       {number2 && (
         <div className={styles.number}>
-          <a href={`to:${number2}`}>+91 {number2}</a>
+          <a href={`to:${number2}`}>{number2}</a>
         </div>
       )}
       {mail1 && (
