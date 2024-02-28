@@ -108,13 +108,15 @@ const Airpods = ({loadLayer}) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 360;
+    const frameCount = 350;
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/plystack/${(
-        index + 0
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/plystack/${(
+        index + 1
       )
         .toString()
-        .padStart(3, "0")}.png`;
+        .padStart(5, "0")}.jpg`;
+
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/plystack/00001.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/plystack/000.png
 
     let imgL = [];
