@@ -22,7 +22,7 @@ const Home = ({loadUSP}) => {
     contextRef.current = context;
     // canvas.width = window.innerWidth;
     canvas.width = 750;
-    canvas.height = 780;
+    canvas.height = 750;
 
 
     const windowWidth = window.innerWidth;
@@ -38,9 +38,9 @@ const Home = ({loadUSP}) => {
     } 
     
     else if (windowWidth >= 1200) {
-      canvasHeight = 780; // Set height for medium screens (>=1200px width)
+      canvasHeight = 750; // Set height for medium screens (>=1200px width)
     } else {
-      canvasHeight = 780; // Set height for small screens (<1200px width)
+      canvasHeight = 750; // Set height for small screens (<1200px width)
     }
   
     canvas.height = canvasHeight;
