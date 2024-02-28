@@ -58,7 +58,7 @@
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  padding: 2.6rem 0rem 7rem;
+  /* padding: 2.6rem 0rem 7rem ; */
   border-radius: 1rem;
   align-items: center;
   min-height: 218px;
@@ -125,7 +125,7 @@
   }
 
   .section {
-    padding: 2.6rem 0rem 14rem;
+    padding: 2.6rem 0rem 14rem ;
     border-radius: 1rem;
   }
 
@@ -150,7 +150,7 @@
 
 @media(max-height:995px){
   .section {
-    padding: 2.6rem 0rem 14rem;
+    padding: 2.6rem 0rem 14rem ;
     border-radius: 1rem;
   }
 }
@@ -166,12 +166,28 @@
 
 @media(max-height:920px){
   .section {
-    padding: 2.6rem 0rem 12rem;
+    padding: 2.6rem 0rem 12rem ;
     border-radius: 1rem;
   }
 
 }
 
+@media(max-height:730px){
+  .section {
+    padding: 2.6rem 0rem 7rem ;
+    border-radius: 1rem;
+  }
+
+}
+
+
+@media(max-height:700px){
+  .section {
+    padding: 2.6rem 0rem 7rem ;
+    border-radius: 1rem;
+  }
+
+}
 
 
 @media (max-width: 1440px) {
