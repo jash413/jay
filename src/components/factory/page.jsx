@@ -69,12 +69,12 @@ const AirpodsAnimation = ({ loadImage }) => {
 
     const frameCount = 160;
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factoryzoom/F${(
-        index + 1
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F${(
+        index + 0
       )
         .toString()
         .padStart(3, "0")}.jpg`;
-
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factoryzoom/F000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/factoryzoom/F000.jpg
 
