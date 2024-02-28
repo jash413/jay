@@ -343,7 +343,7 @@
     left: calc(20% - -1px);
     width: 2px;
     top: 120px;
-    bottom: 480px;
+    bottom: 545px;
     border-right: 2px solid #218e88;
   }
 
@@ -361,7 +361,7 @@
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding: 2.6rem 0rem 15rem;
+    padding: 2.6rem 0rem 20rem;
     border-radius: 1rem;
     align-items: center;
     min-height: 218px;
