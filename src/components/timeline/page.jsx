@@ -91,12 +91,12 @@ const Home = ({loadUSP}) => {
     const frameCount = 483;
 
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F${(index + 1)
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F${(index + 1)
         .toString()
         .padStart(4, "0")}.jpg`;
 
 
-
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/usp/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/usp/F0000.jpg
 
