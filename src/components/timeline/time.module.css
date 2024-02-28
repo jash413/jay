@@ -5,18 +5,11 @@
   display: flex;
   font-weight: 400;
   color: white;
-  /* background-color: #005F57; */
 }
 .first_timeline_inner {
-  /* max-width: 800px; */
   width: 50%;
 }
 
-/* .sectionX{
-  display: flex;
-  justify-content: end;
-  padding-right:100px !important ;
-} */
 
 .canvas_layer {
   /* height: 100%; */
@@ -104,6 +97,59 @@
   font-size: 35px;
   opacity: 0;
 }
+
+
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .contentX {
+    padding: 67px 0px 0px 405px;
+  }
+
+
+  .timeline_sec_comment {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .display1 {
+    display: block;
+  }
+
+  .timeline {
+    margin-bottom: 8rem;
+    margin-top: 10rem;
+  }
+
+  .section {
+    padding: 2.6rem 0rem 13rem !important;
+    border-radius: 1rem;
+  }
+
+  .twoo {
+    font-size: 95px;
+    letter-spacing: 1px;
+  }
+
+  .line {
+    left: calc(20% - -1px);
+    width: 2px;
+    top: 130px;
+    bottom: 480px;
+    border-right: 2px solid #218e88;
+  }
+
+  .timeline_animation_text {
+    font-size: 86px;
+    margin-left: 4rem;
+  }
+}
+
+
+
 
 
 

@@ -49,6 +49,19 @@
   background-color: #006f69;
 }
 
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .main {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 530rem;
+    margin-top: -1080vh;
+  }
+}
+
+
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .main {
     display: flex;

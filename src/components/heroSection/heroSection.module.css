@@ -123,6 +123,48 @@
   padding: 12px 28px;
 }
 
+
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .homepage_image_wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 67/35;
+  }
+
+  .header_comment {
+    text-align: center;
+    font-size: 22px;
+    top: 50%;
+    left: 50%;
+    font-weight: 300;
+    transform: translate(-50%, -50%) !important;
+    width: 38%;
+    font-style: normal;
+    margin-top: 2rem;
+  }
+
+  .header_text {
+    font-size: 86px;
+    bottom: 32rem;
+    left: 6rem;
+    width: 50%;
+    
+  }
+
+  .header_text2 {
+    font-size: 86px;
+    width: 75%;
+    bottom: 25rem;
+    left: 5rem;
+  }
+}
+
+
+
+
+
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .homepage_image_wrapper {
     position: relative;

@@ -81,6 +81,15 @@
   padding-top: 10px;
 }
 
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+  .percentageCounter {
+    font-size: 5em;
+    right: -60rem;
+    bottom: -25rem;
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1920px) {
   .percentageCounter {
     font-size: 5em;
