@@ -38,9 +38,9 @@ const Home = ({loadUSP}) => {
     } 
     
     else if (windowWidth >= 1200) {
-      canvasHeight = 750; // Set height for medium screens (>=1200px width)
+      canvasHeight = 700; // Set height for medium screens (>=1200px width)
     } else {
-      canvasHeight = 750; // Set height for small screens (<1200px width)
+      canvasHeight = 700; // Set height for small screens (<1200px width)
     }
   
     canvas.height = canvasHeight;
