@@ -8,6 +8,7 @@ function Map() {
         width="100%"
         height="750"
         allowfullscreen=""
+        className={styles.map_height}
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
