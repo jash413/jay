@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import { FormSchemas } from "@/components/warrantyForm/formSchema";
 import "./warrantyForm.css";
+import axios from 'axios';
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import invoice_icon from "@/images/invoice_svg.svg";
@@ -212,35 +213,35 @@ const FormCommon = () => {
     setUploadedInvoice2(null);
     setUploadedInvoice3(null);
   };
+  // ...
 
+
+
+// ...
+
+const onSubmit = async (values, actions) => {
+  try {
+    await axios.post('/api/sendMail', values);
+    toast.success('Form Submitted Successfully...');
+    console.log('Email sent successfully');
+    actions.resetForm();
+  } catch (error) {
+    console.error('Error submitting form: ', error);
+    toast.error('Error submitting form. Please try again.');
+
+    // Log the error response data
+    if (error.response) {
+      console.log('Error response data:', error.response.data);
+    }
+  }
+};
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
+    
     initialValues: initialValue,
     validationSchema: FormSchemas,
     // innerRef: form,
-    onSubmit: (value, action) => {
-      console.log("Form values", value);
-      if (uploadedInvoice) {
-        console.log("Uploaded PDF file:", uploadedInvoice);
-      }
-      clearUploadedFile();
-      emailjs
-        .send(
-          "service_6pitte7",
-          "template_g1gqwr7",
-          values,
-          "dp6xvACY2kw4Z6gwc"
-        )
-        .then((response) => {
-          console.log("Email sent successfully:", response);
-          setFormResponse(response);
-          action.resetForm();
-          // resetForm();
-        })
-        .catch((error) => {
-          console.error("Email send error:", error);
-        });
-      submitMessage();
-    },
+    onSubmit,
+    
   });
   console.log("FINAL VALUES", values);
   console.log("response", formResponse.text);

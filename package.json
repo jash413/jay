@@ -11,7 +11,6 @@
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
-  
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@emotion/react": "^11.11.3",
@@ -24,6 +23,7 @@
     "@mui/material": "^5.15.5",
     "@next/bundle-analyzer": "^14.1.0",
     "@studio-freight/lenis": "^1.0.29",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "canvas-confetti": "^1.9.0",
     "cross-env": "^7.0.3",
@@ -32,6 +32,8 @@
     "gsap": "^3.12.2",
     "locomotive-scroll": "^5.0.0-beta.8",
     "next": "^13.5.6",
+    "nodemailer": "^6.9.11",
+    "nodemailer-sendmail-transport": "^1.0.2",
     "primereact": "^10.3.2",
     "react": "^18",
     "react-accessible-accordion": "^5.0.0",
