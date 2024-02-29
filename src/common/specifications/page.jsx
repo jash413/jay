@@ -4,12 +4,9 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import spec_img from "@/images/specs_grp.png";
-// import spec_img1 from "@/images/plywood thickness_12.png";
-// import spec_img2 from "@/images/plywood thickness_25.png";
 import styles from "@/common/specifications/specifications.module.css";
-// import LeftContent from "@/common/specifications/data";
-// import RightContent from "@/common/specifications/data2";
 import Common_animation from "@/common/common_animation/animation";
+
 const Page = ({ leftData, rightData }) => {
   const [ref, inView] = useInView({ triggerOnce: true });
   const controls = useAnimation();

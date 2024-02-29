@@ -23,7 +23,7 @@
   font-size: 20px;
   font-weight: 400;
   width: 100%;
-  padding: 6rem 19rem 0rem 3.5rem;
+  padding: 6rem 41rem 0rem 3.5rem;
 }
 
 .blockboard_button {
@@ -33,7 +33,7 @@
 .black_txt {
   color: black;
   width: 100%;
-  width: 385px;
+  /* width: 385px; */
 }
 
 .blockboard_button {
