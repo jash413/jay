@@ -89,13 +89,15 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
     setCanvasSize();
     window.addEventListener("resize", setCanvasSize);
 
-    const frameCount = 1198;
+    const frameCount = 1199;
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factorywalk/F${(
-        index + 1
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F${(
+        index + 0
       )
         .toString()
         .padStart(4, "0")}.jpg`;
+
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factorywalk/F0000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
@@ -139,7 +141,7 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
         trigger: section,
         pin: true,
         scrub: 0.1,
-        end: "+=3500%",
+        end: "+=5500%",
       },
     });
 

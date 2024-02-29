@@ -53,13 +53,13 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
 
     const frameCount = 1199;
     const currentFrame = (index) =>
-      `https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/mobilewalk/F${(
+      `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F${(
         index + 0
       )
         .toString()
         .padStart(4, "0")}.jpg`;
 
-
+        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/mobilewalk/F0000.jpg
         // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
 
@@ -103,7 +103,7 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
         trigger: section,
         pin: true,
         scrub: 0.1,
-        end: "+=3500%",
+        end: "+=5500%",
       },
     });
 
