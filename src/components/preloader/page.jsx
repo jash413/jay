@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { opacity, slideUp } from "@/components/preloader/anime";
 import Image from "next/image";
 import spinner from "@/images/loadingSpinner.gif"
+import "./preloader.css"
 const words = ["નમસ્તે", "hello", "Ciao", "Hallå", "नमस्ते", "hello"];
 export default function Index() {
   const [index, setIndex] = useState(0);
@@ -48,7 +49,7 @@ export default function Index() {
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.4 },
     },
   };
   return (
@@ -66,7 +67,17 @@ export default function Index() {
             initial="initial"
             animate="enter"
           >
-            {percentage}%
+            {/* {percentage}% */}
+            <div class="dot-spinner">
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+</div>
           </motion.div>
           <motion.p
             className={styles.preloader_text}
@@ -89,6 +100,9 @@ export default function Index() {
       Loading
       <Image src={spinner} alt="spinner" />
      </div> */}
+
+
+     
     </motion.div>
   );
 }

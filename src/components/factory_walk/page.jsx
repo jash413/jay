@@ -7,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory_walk/factory_walk.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const AirpodsAnimation = ({ loadFacoryWalk }) => {
+const FactoryWalk = ({ loadFacoryWalk }) => {
   const router = useRouter();
   const [info, setInfo] = useState(false);
   const [animationEnded, setAnimationEnded] = useState(false); // State to track animation end
@@ -71,18 +71,10 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
       } else if (windowWidth >= 820) {
         canvas.width = 1650; // Adjust the width for screen width 425
         canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      }
-
-      // else if (windowWidth >= 768) {
-      //   canvas.width = 1500; // Adjust the width for screen width 425
-      //   canvas.height = windowHeight * 1; // Adjust the height for screen width 425
-      // }
-      else {
+      } else {
         canvas.width = 400; // Adjust the width for screen width 320
         canvas.height = windowHeight * 0.6; // Adjust the height for screen width 320
       }
-
-      // Update ScrollTrigger end position based on canvas dimensions
       ScrollTrigger.update();
     };
 
@@ -97,7 +89,7 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
         .toString()
         .padStart(4, "0")}.jpg`;
 
-        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/factorywalk/F0000.jpg
     // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkdesktop/F0000.jpg
     // https://royaletouche.humbeestudio.xyz/wp-content/uploads/2024/02/000001-scaled.jpg
@@ -165,8 +157,6 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
         canvas.height
       );
     }
-    // canvas_layer_setting_outer
-    // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -204,4 +194,4 @@ const AirpodsAnimation = ({ loadFacoryWalk }) => {
   );
 };
 
-export default AirpodsAnimation;
+export default FactoryWalk;
