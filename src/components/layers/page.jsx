@@ -75,7 +75,11 @@ const Airpods = ({loadLayer}) => {
       else if (windowWidth >= 1200) {
         canvas.width = 1600; // Width remains constant for tablet screens
         canvas.height = windowHeight * 1; // Adjust the height for tablet screens
-      } else if (windowWidth >= 1024) {
+      } else if (windowWidth >= 1180) {
+        canvas.width = 1700; // Adjust the width for screen width 1024
+        canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
+      } 
+      else if (windowWidth >= 1024) {
         canvas.width = 2000; // Adjust the width for screen width 1024
         canvas.height = windowHeight * 1; // Adjust the height for screen width 1024
       } else if (windowWidth >= 820) {

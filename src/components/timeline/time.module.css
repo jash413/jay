@@ -12,8 +12,6 @@
 
 
 .canvas_layer {
-  /* height: 100%; */
-  /* width: 100%; */
   object-fit: fill;
   object-position: center;
 }
@@ -433,9 +431,82 @@
     transform: translateX(-50%);
   }
 
+}
+
+@media (max-width: 1180px) {
+  .twoo {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
+
+  .timeline {
+    position: relative;
+    min-height: 150px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .line {
+    position: absolute;
+    z-index: 1;
+    left: calc(20% - -1px);
+    width: 2px;
+    top: 114px;
+    bottom: 390px;
+    border-right: 2px solid #218e88;
+  }
+  .bead {
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #0f8a83;
+    left: 20.3%;
+    z-index: 2;
+    top: 22%;
+    transform: translateX(-50%);
+  }
+
+  .timeline_animation_text {
+    font-size: 58px;
+    margin-left: 4rem;
+  }
+  .timeline_sec_comment {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .contentX {
+    width: 100%;
+    padding: 66px 0px 0px 220px;
+    width: calc(100% - 0rem);
+    color: #26aca5;
+    font-size: 35px;
+    opacity: 0;
+  }
+
+  .section {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 2.6rem 0rem 12rem;
+    border-radius: 1rem;
+    align-items: center;
+    min-height: 218px;
+    color: white;
+  }
 
 
 }
+
+
+
+
 
 @media (min-width: 767px) and (max-width: 1024px) {
   .display {

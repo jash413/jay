@@ -59,7 +59,7 @@
 
 .content1 {
   flex: 1;
-  margin: 0px 0px 115px 10px;
+  margin: 0px 0px 115px 0px;
 }
 
 .image_wrapper {
@@ -75,7 +75,7 @@
 @media (max-width: 1440px) {
   .content1 {
     flex: 1;
-    margin: 0px 0px 115px 10px;
+    margin: 0px 0px 115px 0px;
   }
 
   .image_wrapper {
@@ -87,7 +87,7 @@
 
 @media (max-width: 1199px) {
   .heading {
-    font-size: 62px;
+    font-size: 59px;
   }
 
   .heading span {
@@ -97,6 +97,10 @@
     font-size: 22px;
   }
 
+  .image {
+    max-width: 100%;
+    margin: 0;
+  }
   .content {
     font-size: 22px;
     width: 72%;
@@ -124,17 +128,17 @@
 
   .content1 {
     flex: 1;
-    margin: 190px 0px 115px 10px;
+    margin: 190px 0px 115px 0px;
   }
 
   .image_wrapper {
     flex: 1;
-    margin-top: 128px;
-    margin-bottom: 50px;
+    margin-top: 185px;
+    margin-bottom: 45px;
   }
   .image {
     height: 100%;
-    width: 90%;
+    width: revert-layer;
   }
 }
 

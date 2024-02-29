@@ -86,7 +86,6 @@
   width: 100%;
   padding: 13px 10px 15px;
   font-size: 15px;
-
   border: 1px solid #c3a464;
   color: #c3a464;
   text-decoration: none;
@@ -732,6 +731,15 @@ margin-top: 1.5rem;
   }
 }
 
+
+@media (max-width: 1199px) {
+  .button2 {
+    position: relative;
+    font-family: "LatoRegular";
+    font-size: 13px;
+    border: 1px solid #c3a464;
+  }
+}
 
 
 @media (max-width:1024px){
