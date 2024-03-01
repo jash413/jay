@@ -107,7 +107,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  top: 20px;
+  top: 25px;
 }
 
 .buttonShow span:first-child {
