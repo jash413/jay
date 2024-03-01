@@ -376,13 +376,11 @@ const page = () => {
                     <div className={styles.inner_carousal_data_heading}>
                       Lifetime Warranty
                     </div>
-                    {/* <div className={styles.inner_carousal_paragraph_flex}>
+                    <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                      Royale Touche blockboard offers peace of mind with a lifetime warranty, ensuring enduring quality and reliability
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
