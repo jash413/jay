@@ -43,7 +43,7 @@ const Home = ({loadUSP}) => {
       canvasHeight = 700; // Set height for small screens (<1200px width)
     }
   
-    canvas.height = canvasHeight;
+    canvas.height = canvasHeight; 
 
     // const setCanvasSize = () => {
     //   const windowWidth = window.innerWidth;

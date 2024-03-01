@@ -2,8 +2,6 @@ import React from "react";
 import { Navigation, EffectFade, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { InView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import Common_animation from "@/common/common_animation/animation";
 import slide1 from "@/images/blockSlider13.jpg";
 import slide2 from "@/images/blockSlider14.jpg";
@@ -12,12 +10,10 @@ import slide4 from "@/images/blockSlider12.jpg";
 import slide5 from "@/images/blockSlider1.jpg";
 import slide6 from "@/images/blockSlider2.jpg";
 import slide7 from "@/images/blockSlider3.jpg";
-import slide8 from "@/images/blockSlider6.jpg";
-import slide10 from "@/images/blockSlider5.jpg";
-import slide11 from "@/images/plywoodImage13.jpg";
-import slide12 from "@/images/blockSlider10.jpg";
-import slide13 from "@/images/blockSlider11.jpg";
-import slide14 from "@/images/blockSlider15.jpg";
+import slide8 from "@/images/blockSlider5.jpg";
+import slide9 from "@/images/plywoodImage13.jpg";
+import slide10 from "@/images/blockSlider11.jpg";
+import slide11 from "@/images/blockSlider15.jpg";
 import styles from "@/common/inner_page_slider2/inner_slider2.module.css";
 import "@/common/inner_page_slider2/inn.css";
 import "swiper/css";
@@ -125,7 +121,7 @@ const page = () => {
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        The only plywood in India made with 100% scientifically
+                        The only blockboard in India made with 100% scientifically
                         researched proprietary Vacuum Pressure Chemical Treated
                         veneer to provide protection against termites, borers
                         and fire.
@@ -298,7 +294,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -324,12 +320,12 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide10}
+                    src={slide8}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -356,7 +352,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide11}
+                    src={slide9}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -410,7 +406,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide13}
+                    src={slide10}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -437,7 +433,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide14}
+                    src={slide11}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
