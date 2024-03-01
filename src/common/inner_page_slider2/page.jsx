@@ -10,10 +10,12 @@ import slide4 from "@/images/blockSlider12.jpg";
 import slide5 from "@/images/blockSlider1.jpg";
 import slide6 from "@/images/blockSlider2.jpg";
 import slide7 from "@/images/blockSlider3.jpg";
-import slide8 from "@/images/blockSlider5.jpg";
-import slide9 from "@/images/plywoodImage13.jpg";
-import slide10 from "@/images/blockSlider11.jpg";
-import slide11 from "@/images/blockSlider15.jpg";
+import slide8 from "@/images/blockSlider6.jpg";
+import slide10 from "@/images/blockSlider5.jpg";
+import slide11 from "@/images/plywoodImage13.jpg";
+import slide12 from "@/images/blockSlider10.jpg";
+import slide13 from "@/images/blockSlider11.jpg";
+import slide14 from "@/images/blockSlider15.jpg";
 import styles from "@/common/inner_page_slider2/inner_slider2.module.css";
 import "@/common/inner_page_slider2/inn.css";
 import "swiper/css";
@@ -23,28 +25,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 
 const page = () => {
-  const text = [
-    "Super",
-    "Exclusive",
-    "handcrafted",
-    "luxury",
-    "laminates",
-    "that",
-    "make",
-    "a bold ",
-    "statement",
-    "Always",
-    "Classy",
-    "Beautifully",
-    "Luxurious",
-    "ONE",
-    "transcends",
-    "trends",
-    "to ",
-    "create",
-    "timeless",
-    "elegance.",
-  ];
 
   return (
     <div className={styles.inner_carousal_two_outer}>
@@ -52,32 +32,7 @@ const page = () => {
         <Common_animation text="KEY FEATURES" />
       </div>
       <div className={styles.inner_carousal_two_top}>
-        {/* <InView triggerOnce={true}>
-          {({ inView, ref }) => (
-            <div ref={ref} className={styles.inner_carousal_two_text}>
-              <span className={styles.inner_carousal_two_span}>
-                {text.map((el, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0 }}
-                    animate={inView ? { opacity: 1 } : {}}
-                    transition={{
-                      duration: 1,
-                      delay: inView ? i / 15 : 0,
-                    }}
-                    className={
-                      el === "Super" || el === "Exclusive"
-                        ? styles.Blue_text2
-                        : ""
-                    }
-                  >
-                    {el}{" "}
-                  </motion.span>
-                ))}
-              </span>
-            </div>
-          )}
-        </InView> */}
+        
 
         <div className={styles.inner_carousal_top_spacing}>
           <Swiper
@@ -121,7 +76,7 @@ const page = () => {
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        The only blockboard in India made with 100% scientifically
+                        The only blockboad in India made with 100% scientifically
                         researched proprietary Vacuum Pressure Chemical Treated
                         veneer to provide protection against termites, borers
                         and fire.
@@ -325,7 +280,7 @@ const page = () => {
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide8}
+                    src={slide10}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -348,11 +303,12 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide9}
+                    src={slide11}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -375,7 +331,8 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
+
+            <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -401,12 +358,13 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide10}
+                    src={slide13}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -429,11 +387,12 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
-                    src={slide11}
+                    src={slide14}
                     alt="slide"
                     className={styles.inner_carousal_slider_img}
                   />
@@ -457,6 +416,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
+            
           </Swiper>
         </div>
       </div>
