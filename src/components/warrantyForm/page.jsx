@@ -25,15 +25,12 @@ const FormCommon = () => {
     { name: "8ft x 4ft", code: "NY" },
     { name: "7ft x 4ft", code: "RM" },
   ];
-
-  // const [selectedCategory, setSelectedCategory] = useState(null);
   const categories = [
     { name: "Royale Touche Performance Ply-Promaxx", code: "1" },
     { name: "Royale Touche Performance Ply-Promaxx+", code: "2" },
     { name: "Royale Touche Blockboard", code: "3" },
   ];
 
-  // const [selectedThickness, setSelectedThickness] = useState(null);
   const [thicknessOptions, setThicknessOptions] = useState([]);
   const handleCategoryChange = (category) => {
     values.Category = category;
@@ -64,23 +61,6 @@ const FormCommon = () => {
       ]);
     }
   };
-  // const [selectedSheets, setSelectedSheets] = useState(null);
-  // const sheets = [
-  //   { name: "1", code: "1" },
-  //   { name: "2", code: "2" },
-  //   { name: "3", code: "3" },
-  //   { name: "4", code: "4" },
-  //   { name: "5", code: "5" },
-  // ];
-  // const Thicknesses = [
-  //   { name: "6mm", code: "1" },
-  //   { name: "9mm", code: "2" },
-  //   { name: "12mm", code: "3" },
-  //   { name: "16mm", code: "4" },
-  //   { name: "19mm", code: "5" },
-  //   { name: "25mm", code: "5" },
-  // ];
-
   const submitMessage = () => {
     toast.success("Form Submitted Successfully...");
   };
@@ -260,6 +240,7 @@ const onSubmit = async (values, actions) => {
       <form
         ref={form}
         onSubmit={handleSubmit}
+        enctype="multipart/form-data"
         className={styles.RT_Form_Main_Form}
       >
         <div className={styles.RT_Form_main}>
@@ -683,6 +664,7 @@ const onSubmit = async (values, actions) => {
                     type="file"
                     data-max-size="2048"
                     id="getFile"
+                    accept=".pdf" 
                     name="Invoice_File"
                     onChange={chooseFile}
                     value={values.Invoice_File}
@@ -738,7 +720,7 @@ const onSubmit = async (values, actions) => {
             <div className={styles.inovoice_inner_flex}>
               <div
                 className={styles.invoice_inner_cards}
-                onClick={() => document.getElementById("getFile").click()}
+                onClick={() => document.getElementById("getFile2").click()}
               >
                 <label htmlFor="img">
                   <Image
@@ -771,7 +753,7 @@ const onSubmit = async (values, actions) => {
             <div className={styles.inovoice_inner_flex}>
               <div
                 className={styles.invoice_inner_cards}
-                onClick={() => document.getElementById("getFile").click()}
+                onClick={() => document.getElementById("getFile3").click()}
               >
                 <label htmlFor="img">
                   <Image
@@ -866,6 +848,7 @@ const onSubmit = async (values, actions) => {
             <button
               class="button-57"
               role="button"
+              onClick={submitMessage}
               disabled={!values.agreeTerms}
             >
               <span class="text"> Submit</span>
