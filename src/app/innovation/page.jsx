@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useEffect, useState } from "react";
-import { Suspense } from "react";
 import Inner_header from "@/common/inner_header/page";
 import Factory_walk from "@/components/factory_walk/page";
 import Factory_walk1 from "@/components/factory_walk/page2";
@@ -39,12 +38,8 @@ const Page = () => {
             heading_big="INNOVATION"
           />
         </div>
-
         <Factory_walk loadFacoryWalk={handleLoad} />
-
-        <Suspense>
           <Factory_walk1 loadFacoryWalkMobile={handleLoad} />
-        </Suspense>
       </div>
       <Form />
       <Footer />
