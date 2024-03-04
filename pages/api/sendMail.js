@@ -29,15 +29,24 @@ export default async function handler(req, res) {
         const transporter = nodemailer.createTransport({
           host: 'smtp.gmail.com',
           port: 587,
-  secure: false, 
+          secure: false, 
             auth: {
-              user: 'jaykalariya.humbee@gmail.com',
-              pass: 'wecdoqzwxfcifkss',
+              user: 'pvotweb3@gmail.com',
+              pass: 'gqmkacgjfuabcrsj',
             },
           });
+
+
+//           const autoReplyMessage = `
+//           Hello ${fullName},
+//           We received your application to claim the warranty certificate for Royale Touche Performance Ply. Please share the invoices for the purchased product in order to proceed further and claim your warranty certificate.
+//           Thanks & Regards,
+//           Team Royale Touche
+// `;
+
       const mailOptions = {
-        from: 'jaykalariya.humbee@gmail.com', // sender address
-        to: 'jaykalariya.humbee@gmail.com',   // receiver address
+        from: 'pvotweb3@gmail.com', // sender address
+        to: 'pvotweb3@gmail.com',   // receiver address
         subject: 'New Form Submission of Claim Warranty By user', // Subject line
         // html:`
         // <div class="${styles.emailContainer}">
@@ -72,9 +81,11 @@ export default async function handler(req, res) {
           Product_Name: ${Product_Name ? Product_Name.name : ''}
           sheets: ${sheets}
           No_of_thickness: ${No_of_thickness ? No_of_thickness.name : ''}
-          Invoice_File: ${Invoice_File}
         `,
         attachments,
+        // replyTo: email,
+        // subject: 'Auto-Reply: Warranty Claim Form Submission',
+        // html: autoReplyMessage,
         // attachments: [
         //   {
         //     filename: 'invoice.pdf', // Adjust the filename as needed
@@ -102,7 +113,22 @@ export default async function handler(req, res) {
       try {
         // Send the email
         await transporter.sendMail(mailOptions);
+
+        const autoReplyOptions = {
+          from: 'pvotweb3@gmail.com',
+          to: email,
+          subject: 'Claim your Warranty Certificate - From Royale Touche Performance Ply',
+          html: `
+            <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; color: #333;">
+              <h2>Hello ${fullName},</h2>
+              <p>We received your application to claim the warranty certificate for Royale Touche Performance Ply. Please share the invoices for the purchased product in order to proceed further and claim your warranty certificate.</p>
+              <p>Thanks & Regards,</p>
+              <p style="font-weight: bold;">Team Royale Touche</p>
+            </div>
+          `,
+        };
         
+        await transporter.sendMail(autoReplyOptions);
         // Respond with a success message
         res.status(200).json({ message: 'Email sent successfully' });
       } catch (error) {

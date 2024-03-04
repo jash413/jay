@@ -37,6 +37,10 @@
 .RT_Form_field {
   width: 100%;
 }
+.submit{
+  font-size: 20px;
+  padding-top: 1rem;
+}
 .form_Label {
   padding-bottom: 0.5rem;
   color: #000;
@@ -57,7 +61,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   background: #d9d9d9;
   padding: 1rem 1rem 1rem 1rem;
 }

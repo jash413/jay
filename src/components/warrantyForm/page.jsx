@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import { FormSchemas } from "@/components/warrantyForm/formSchema";
 import "./warrantyForm.css";
-import axios from 'axios';
+import axios from "axios";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import invoice_icon from "@/images/invoice_svg.svg";
@@ -21,6 +21,9 @@ const FormCommon = () => {
   const [uploadedInvoice1, setUploadedInvoice1] = useState(null);
   const [uploadedInvoice2, setUploadedInvoice2] = useState(null);
   const [uploadedInvoice3, setUploadedInvoice3] = useState(null);
+  const [submit, setSubmit] = useState(false);
+  
+  console.log("submit", submit ? "submit" : "unsubmit");
   const products = [
     { name: "8ft x 4ft", code: "NY" },
     { name: "7ft x 4ft", code: "RM" },
@@ -182,7 +185,7 @@ const FormCommon = () => {
     Invoice_File1: "",
     Invoice_File2: "",
     Invoice_File3: "",
-    // agreeTerms: "",
+    agreeTerms: false,
     // updates: "",
     // offers: "",
   };
@@ -195,33 +198,35 @@ const FormCommon = () => {
   };
   // ...
 
+  // ...
 
+  const onSubmit = async (values, actions) => {
+    try {
+      await axios.post("/api/sendMail", values);
+      toast.success("Form Submitted Successfully...");
+      console.log("Email sent successfully");
+      setSubmit(true);
+      actions.resetForm();
+      setUploadedInvoice(null);
+      setUploadedInvoice1(null);
+      setUploadedInvoice2(null);
+      setUploadedInvoice3(null);
+      setSelectedProduct(null);
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      toast.error("Error submitting form. Please try again.");
 
-// ...
-
-const onSubmit = async (values, actions) => {
-  try {
-    await axios.post('/api/sendMail', values);
-    toast.success('Form Submitted Successfully...');
-    console.log('Email sent successfully');
-    actions.resetForm();
-  } catch (error) {
-    console.error('Error submitting form: ', error);
-    toast.error('Error submitting form. Please try again.');
-
-    // Log the error response data
-    if (error.response) {
-      console.log('Error response data:', error.response.data);
+      // Log the error response data
+      if (error.response) {
+        console.log("Error response data:", error.response.data);
+      }
     }
-  }
-};
+  };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
-    
     initialValues: initialValue,
     validationSchema: FormSchemas,
     // innerRef: form,
     onSubmit,
-    
   });
   console.log("FINAL VALUES", values);
   console.log("response", formResponse.text);
@@ -664,7 +669,7 @@ const onSubmit = async (values, actions) => {
                     type="file"
                     data-max-size="2048"
                     id="getFile"
-                    accept=".pdf" 
+                    accept=".pdf"
                     name="Invoice_File"
                     onChange={chooseFile}
                     value={values.Invoice_File}
@@ -796,6 +801,7 @@ const onSubmit = async (values, actions) => {
                   // checked={values.agreeTerms}
                   onChange={handleChange}
                   required
+                  checked={values.agreeTerms}
                 />
               </div>
 
@@ -812,36 +818,6 @@ const onSubmit = async (values, actions) => {
               </p>
             </div>
 
-            {/* <div className={styles.form_last_section_content}>
-              <div>
-                <input
-                className={styles.checkbox}
-                  type="checkbox"
-                  id="updates"
-                  name="updates"
-                  checked={values.updates}
-                  onChange={handleChange}
-                />
-              </div>
-              <p className={styles.form_agree_content}>
-                Click here to receive updates on WhatsApp
-              </p>
-            </div> */}
-            {/* <div className={styles.form_last_section_content}>
-              <div>
-                <input
-                className={styles.checkbox}
-                  type="checkbox"
-                  id="offers"
-                  name="offers"
-                  checked={values.offers}
-                  onChange={handleChange}
-                />
-              </div>
-              <p className={styles.form_agree_content}>
-                I wish to apply for consumer promotion offer
-              </p>
-            </div> */}
           </div>
           {/*  */}
           <div className={styles.Form_btn_Outer_Main}>
@@ -854,7 +830,9 @@ const onSubmit = async (values, actions) => {
               <span class="text"> Submit</span>
               <span> Submit</span>
             </button>
-
+            <div className={styles.submit}>
+              {submit && "Form Submitted Successfully"}
+            </div>
             {/* <button className={styles.Form_btn_inner} onClick={notify}>
               Submit
             </button> */}
