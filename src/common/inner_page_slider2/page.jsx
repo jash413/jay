@@ -2,8 +2,6 @@ import React from "react";
 import { Navigation, EffectFade, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { InView } from "react-intersection-observer";
-import { motion } from "framer-motion";
 import Common_animation from "@/common/common_animation/animation";
 import slide1 from "@/images/blockSlider13.jpg";
 import slide2 from "@/images/blockSlider14.jpg";
@@ -27,28 +25,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/effect-fade";
 
 const page = () => {
-  const text = [
-    "Super",
-    "Exclusive",
-    "handcrafted",
-    "luxury",
-    "laminates",
-    "that",
-    "make",
-    "a bold ",
-    "statement",
-    "Always",
-    "Classy",
-    "Beautifully",
-    "Luxurious",
-    "ONE",
-    "transcends",
-    "trends",
-    "to ",
-    "create",
-    "timeless",
-    "elegance.",
-  ];
 
   return (
     <div className={styles.inner_carousal_two_outer}>
@@ -56,32 +32,7 @@ const page = () => {
         <Common_animation text="KEY FEATURES" />
       </div>
       <div className={styles.inner_carousal_two_top}>
-        {/* <InView triggerOnce={true}>
-          {({ inView, ref }) => (
-            <div ref={ref} className={styles.inner_carousal_two_text}>
-              <span className={styles.inner_carousal_two_span}>
-                {text.map((el, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0 }}
-                    animate={inView ? { opacity: 1 } : {}}
-                    transition={{
-                      duration: 1,
-                      delay: inView ? i / 15 : 0,
-                    }}
-                    className={
-                      el === "Super" || el === "Exclusive"
-                        ? styles.Blue_text2
-                        : ""
-                    }
-                  >
-                    {el}{" "}
-                  </motion.span>
-                ))}
-              </span>
-            </div>
-          )}
-        </InView> */}
+        
 
         <div className={styles.inner_carousal_top_spacing}>
           <Swiper
@@ -125,7 +76,7 @@ const page = () => {
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        The only plywood in India made with 100% scientifically
+                        The only blockboad in India made with 100% scientifically
                         researched proprietary Vacuum Pressure Chemical Treated
                         veneer to provide protection against termites, borers
                         and fire.
@@ -298,7 +249,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -324,7 +275,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
@@ -352,6 +303,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
@@ -379,7 +331,8 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
-            {/* <SwiperSlide>
+
+            <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
                   <Image
@@ -405,7 +358,8 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide> */}
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
@@ -422,17 +376,16 @@ const page = () => {
                     <div className={styles.inner_carousal_data_heading}>
                       Lifetime Warranty
                     </div>
-                    {/* <div className={styles.inner_carousal_paragraph_flex}>
+                    <div className={styles.inner_carousal_paragraph_flex}>
                       <div className={styles.inner_carousal_paragraph1}>
-                        Made from carefully selected hardwood timber to ensure
-                        high strength and durability.Gurjan species used in the
-                        face veneers.
+                      Royale Touche blockboard offers peace of mind with a lifetime warranty, ensuring enduring quality and reliability
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
+
             <SwiperSlide>
               <div className={styles.inner_carousal_slider_outer}>
                 <div className={styles.inner_carousal_slider_img_outer}>
@@ -461,6 +414,7 @@ const page = () => {
                 </div>
               </div>
             </SwiperSlide>
+            
           </Swiper>
         </div>
       </div>

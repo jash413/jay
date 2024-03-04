@@ -3,8 +3,8 @@ export const opacity = {
           opacity: 0
       },
       enter: {
-          opacity: 0.75,
-          transition: {duration: 1.3, delay: 0.2}
+          opacity: 1,
+          transition: {duration: 1.3, delay: 0.1}
       },
   }
   
@@ -14,6 +14,6 @@ export const opacity = {
       },
       exit: {
           top: "-100vh",
-          transition: {duration:1.3, ease: [0.76, 0, 0.24, 1], delay: 0.2}
+          transition: {duration:1.3, ease: [0.76, 0, 0.24, 1], delay: 0.3}
       }
   }

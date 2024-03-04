@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import gsap from "gsap";
@@ -8,7 +7,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "@/components/factory_walk/factory_walk.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
+const FactoryWalkMobile = ({ loadFacoryWalkMobile }) => {
   const router = useRouter();
   const [info, setInfo] = useState(false);
   const [animationEnded, setAnimationEnded] = useState(false); // State to track animation end
@@ -29,7 +28,7 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
 
   const variants = {
     hidden: { opacity: 0, y: 5 }, // Move the button down initially
-    visible: { opacity: 1, y: -100 }, // Move the button up to its original position
+    visible: { opacity: 1, y: -200 }, // Move the button up to its original position
   };
 
   useEffect(() => {
@@ -50,7 +49,6 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-
     const frameCount = 1199;
     const currentFrame = (index) =>
       `https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F${(
@@ -59,9 +57,9 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
         .toString()
         .padStart(4, "0")}.jpg`;
 
-        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
-        // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/mobilewalk/F0000.jpg
-        // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/Original/mobilewalk/F0000.jpg
+    // https://newroyaltouch.pvotdesigns.xyz/assets/images/compressed/walkmobile/F0000.jpg
 
     let imgL = [];
     for (let i = 0; i < frameCount; i++) {
@@ -127,13 +125,14 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
         canvas.height
       );
     }
-    // canvas_layer_setting_outer
     // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, [loadingCounter]);
-  console.log(loading ? "FactoryWalk mobile Loading" : "FactoryWalk mobile Complate");
+  console.log(
+    loading ? "FactoryWalk mobile Loading" : "FactoryWalk mobile Complate"
+  );
   console.log(loadFacoryWalkMobile(loading));
 
   return (
@@ -166,4 +165,4 @@ const AirpodsAnimation = ({ loadFacoryWalkMobile }) => {
   );
 };
 
-export default AirpodsAnimation;
+export default FactoryWalkMobile;

@@ -483,7 +483,7 @@ const page = () => {
                       Lifetime Warranty
                     </div>
                     <div className={styles.inner_carousal_paragraph_flex}>
-                      <div className={styles.inner_carousal_paragraph1}></div>
+                      <div className={styles.inner_carousal_paragraph1}>Royale Touche Performance plywood offers peace of mind with a lifetime warranty, ensuring enduring quality and reliability</div>
                     </div>
                   </div>
                 </div>
