@@ -90,13 +90,23 @@
   }
 }
 
-@media (min-width: 1600px) and (max-width: 1920px) {
+@media (min-width: 1701px) and (max-width: 1920px) {
   .percentageCounter {
     font-size: 5em;
     right: -50rem;
     bottom: -22rem;
   }
 }
+
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+  .percentageCounter {
+    font-size: 5em;
+    right: -40rem;
+    bottom: -19rem;
+  }
+}
+
 
 @media (max-width: 1440px) {
   .percentageCounter {

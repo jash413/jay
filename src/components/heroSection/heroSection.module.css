@@ -198,6 +198,11 @@
     left: 6rem;
     width: 58%;
   }
+  .logo {
+    height: revert-layer;
+    cursor: pointer;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1550px) {
