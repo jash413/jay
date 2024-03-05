@@ -128,7 +128,7 @@ const Page = () => {
         />
       </div>
       <div className={styles.footer_copyright}>
-      Copyright © 2024 All Rights Reserved by Royale Touche Performance Ply /
+      Copyright © 2024 All Rights Reserved by Royale Touche Performance Ply |
         <span className={styles.copyright_company_name}>
           <Link href="https://pvotdesigns.com/" target="_blank">
             {' PVOT'}
